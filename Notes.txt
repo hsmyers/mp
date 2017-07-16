@@ -1,0 +1,22 @@
+%
+% General project notes…
+%
+% Where:
+%
+% ?       means not sure,
+% !       means informational,
+% √ A251  means yes and done,
+% ≈ A247  means partial,
+% α A224  means alpha state,
+% ß A225  means beta state,
+% Ω A234  means omega state,
+% • A0149 is list dot,
+% µ A0181 means micro state,
+% ¼ A0188 means 1/4 done,
+% ½ A0189 means 1/2 done,
+% ¾ A0190 means 3/4 done,
+% × A0215 means no,
+%
+[!] 001 initial entry for mp fractal development program
+[!] 002 git config --global core.editor "name of editor"
+[ ] 003

@@ -640,27 +640,3 @@ __float128 fabsq( __float128 x ) {
     }
     return x;
 }
-
-Parameters zeroP( void ) {
-    Parameters g;
-
-    g.centerX = 0;
-    g.centerY = 0;
-    g.magnify = 0;
-    g.diameter = 0;
-    g.maxiter = 0;
-    g.cv = 0;
-    g.width = 0;
-    g.height = 0;
-    g.filename = NULL;
-    g.file2name = NULL;
-    g.palname = NULL;
-    g.config = NULL;
-    g.next = 0;
-    g.rgb = 0;
-    g.color = 0;
-    g.aa = 0;
-    g.tweak = 0;
-
-    return g;
-}

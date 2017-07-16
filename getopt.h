@@ -15,13 +15,11 @@ typedef struct  {
     int          width;
     int          height;
     char        *filename;
-    char        *file2name;
     char        *palname;
     char        *config;
+    char        *aa;
     int          next;
-    int          rgb;
     int          color;
-    bool         aa;
     int          tweak;
 } Parameters;
 
@@ -29,6 +27,7 @@ char *getstr( char *arg );
 int getNext( char *path );
 Parameters getParameters( int argc, char *argv[], char *Version, char *Date );
 Parameters parse_ini_file( char * ini_name );
+Parameters zeroP( void );
 void freeParameters( Parameters p );
 void help( char c, char *Program, char *Version, char *Date );
 void showParameters( Parameters p );
