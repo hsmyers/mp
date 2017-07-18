@@ -16,25 +16,36 @@
 #include <ctype.h>
 #include "iniparser.h"
 #include "getopt.h"
+#include "cJSON.h"
+#include "util.h"
 
 #ifdef TEST
-char *Version = "0.016";
-char *Date = "Sun Jul 16 11:54:11 2017";
+char *Version = "0.019";
+char *Date = "Mon Jul 17 09:05:17 2017";
 
 int main( int argc, char **argv ) {
     Parameters p = getParameters( argc, argv, Version, Date );
 
+    printf("\n  optind='%d', argc='%d'\n\n", optind, argc );
     showParameters( p );
-    freeParameters( p );
+    printf("\n");
+    for (int i = optind; i < argc; ++i) {
+        printf("  argv[%d]='%s'\n", i, argv[i] );
+    }
 
     return 0;
 }
 #endif
 
 Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
-    Parameters p = parse_ini_file( "mandel.cfg" );
-    char buffer[256];
+    Parameters p = zeroP();
+    p = parse_ini_file( "mandel.cfg", p );
+    static char nextname[128];
+    const char *options = "a:c:d:f:hi:j:l:m:n::p:r:t:vw:x:y:";
     int c;
+#ifdef TEST
+    printf( "  getParameters()\n");
+#endif
 
     while ( true ) {
         static struct option long_options[] = {
@@ -45,6 +56,7 @@ Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
             {"height", required_argument, 0, 'l'},
             {"help", no_argument, 0, 'h'},
             {"iteration", required_argument, 0, 'i'},
+            {"json", required_argument, 0, 'j'},
             {"magnify", required_argument, 0, 'm'},
             {"next", optional_argument, 0, 'n'},
             {"palette", required_argument, 0, 'p'},
@@ -58,7 +70,11 @@ Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
         };
         int option_index = 0;
 
-        c = getopt_long( argc, argv, "l:a:d:t:r:c:x:y:m:i:w:h::d:f:p:n::vl", long_options, &option_index );
+        c = getopt_long( argc, argv, options, long_options, &option_index );
+        if ( optind == 1) {
+            p = rawCl( argc, argv, p );
+            break;
+        }
         if ( c == -1 )
             break;
 
@@ -66,8 +82,7 @@ Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
             case 0:
                 break;
             case 'a':
-                free( p.aa );
-                p.aa = getstr( optarg );
+                p.aa = optarg;
                 break;
             case 'x':
                 sscanf( optarg, "%Lf", &p.centerX );
@@ -88,13 +103,11 @@ Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
                 } else {
                     p.next = getNext( "jpg" );
                 }
-                sprintf( buffer, "fractal.%03d.jpg", p.next++ );
-                free( p.filename );
-                p.filename = getstr( buffer );
+                sprintf( nextname, "fractal.%03d.jpg", p.next++ );
+                p.filename = nextname;
                 break;
             case 'c':
-                free( p.config );
-                p.config = getstr( optarg );
+                p.config = optarg;
                 break;
             case 'r':
                 p.color = atoi( optarg );
@@ -108,16 +121,18 @@ Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
             case 'w':
                 p.width = atoi( optarg );
                 break;
+            case 'j':
+                p.json = optarg;
+                p = fromJSON( p.json, p );
+                break;
             case 'l':
                 p.height = atoi( optarg );
                 break;
             case 'f':
-                free( p.filename );
-                p.filename = getstr( optarg );
+                p.filename = optarg;
                 break;
             case 'p':
-                free( p.palname );
-                p.palname = getstr( optarg );
+                p.palname = optarg;
                 break;
             case '?':
                 help( '?', argv[0], Version, Date );
@@ -135,6 +150,108 @@ Parameters getParameters( int argc, char *argv[], char *Version, char *Date ) {
     return p;
 }
 
+Parameters fromJSON( char *jsonfile, Parameters p ) {
+    Parameters g = p;
+    char buffer[100];
+#ifdef TEST
+    printf( "  fromJSON()\n" );
+#endif
+    g.json = jsonfile;
+    char *json = ReadFile( g.json );
+    if ( json != NULL ) {
+        cJSON *root = cJSON_Parse( json );
+        cJSON *params = cJSON_GetObjectItemCaseSensitive( root, "params" );
+        cJSON *centerX_item = cJSON_GetObjectItemCaseSensitive( params, "centerX" );
+        if ( cJSON_IsString( centerX_item ) ) {
+            strcpy( buffer, centerX_item->valuestring );
+            g.centerX = strtold( buffer, NULL );
+        } else if ( cJSON_IsNumber( centerX_item ) ) {
+            g.centerX = centerX_item->valuedouble;
+        }
+        cJSON *centerY_item = cJSON_GetObjectItemCaseSensitive( params, "centerY" );
+        if ( cJSON_IsString( centerY_item ) ) {
+            strcpy( buffer, centerY_item->valuestring );
+            g.centerY = strtold( buffer, NULL );
+        } else if ( cJSON_IsNumber( centerY_item ) ) {
+            g.centerY = centerY_item->valuedouble;
+        }
+        cJSON *magnify_item = cJSON_GetObjectItemCaseSensitive( params, "magnify" );
+        if ( cJSON_IsString( magnify_item ) ) {
+            strcpy( buffer, magnify_item->valuestring );
+            g.diameter = strtold( buffer, NULL );
+        } else if ( cJSON_IsNumber( magnify_item ) ) {
+            g.diameter = magnify_item->valuedouble;
+        }
+        cJSON *maxIterations_item = cJSON_GetObjectItemCaseSensitive( params, "maxIterations" );
+        if ( cJSON_IsNumber( maxIterations_item ) )
+            g.maxiter = ( long ) maxIterations_item->valuedouble;
+        cJSON *width_item = cJSON_GetObjectItemCaseSensitive( params, "width" );
+        if ( cJSON_IsNumber( width_item ) )
+            g.width = ( int ) width_item->valuedouble;
+        cJSON *height_item = cJSON_GetObjectItemCaseSensitive( params, "height" );
+        if ( cJSON_IsNumber( height_item ) )
+            g.height = ( int ) height_item->valuedouble;
+        cJSON_Delete( root );
+        free( json );
+    } else {
+            printf( "error in JSON parameter file: %s\n", g.json );
+            exit(1);
+    }
+    return g;
+}
+
+Parameters rawCl( int argc, char *argv[], Parameters p ) {
+    Parameters g = p;
+#ifdef TEST
+    printf( "  rawCl()\n");
+#endif
+    if ( argc >= 3 && argc <= 7 ) {
+        g.filename = argv[2];
+        g = fromJSON( argv[1], g );
+        if ( argc >= 4 ) {
+            g.color = atoi( argv[3] );
+        }
+        if ( argc >= 5 ) {
+            g.tweak = atoi( argv[4] );
+        }
+        if ( argc >= 6 ) {
+            g.aa = argv[5];
+        }
+    } else if ( argc >= 8 ) {
+        g.centerX  = strtold( argv[1], NULL );
+        g.centerY  = strtold( argv[2], NULL );
+        g.diameter = strtold( argv[3], NULL );
+        g.maxiter  = atol( argv[4] );
+        g.width    = atol( argv[5] );
+        g.height   = atol( argv[6] );
+        g.filename = argv[7];
+        if ( argc >= 9 ) {
+            g.color = atoi( argv[8] );
+        }
+        if ( argc >= 10 ) {
+            g.tweak = atoi( argv[9] );
+        }
+        if ( argc >= 11 ) {
+            g.aa = argv[10];
+        }
+
+    } else {
+        printf( "Usage: either a JSON parameter filename and output file,\n" );
+        printf( "    or the above with the name of an anti-aliased file,\n" );
+        printf( "    or 7 parameters:\n" );
+        printf( "\n" );
+        printf( "    center X parameter\n" );
+        printf( "    center Y parameter\n" );
+        printf( "    diameter parameter\n" );
+        printf( "    iteration parameter\n" );
+        printf( "    width parameter\n" );
+        printf( "    height parameter\n" );
+        printf( "    output filename\n" );
+        exit(1);
+    }
+    return g;   
+}
+
 void help( char c, char *Program, char *Version, char *Date ) {
     printf( "%s v%s dated %s\n", Program, Version, Date );
     if ( c == 'h' || c == '?' ) {
@@ -145,6 +262,7 @@ void help( char c, char *Program, char *Version, char *Date ) {
         printf( "  --diameter    requires real as an argument   -d\n" );
         printf( "  --iteration   requires number as an argument -i\n" );
         printf( "  --width       requires number as an argument -w\n" );
+        printf( "  --json        requires number as an argument -j\n" );
         printf( "  --height      requires number as an argument -l\n" );
         printf( "  --file        requires string as an argument -f\n" );
         printf( "  --palette     requires string as an argument -p\n" );
@@ -163,18 +281,13 @@ void help( char c, char *Program, char *Version, char *Date ) {
     exit( 0 );
 }
 
-void freeParameters( Parameters p ) {
-    free( p.filename );
-    free( p.aa );
-    free( p.palname );
-    free( p.config );
-    return;
-}
-
-Parameters parse_ini_file( char *ini_name ) {
-    Parameters p;
+Parameters parse_ini_file( char *ini_name, Parameters g ) {
+    Parameters p = g;
     dictionary *ini;
 
+#ifdef TEST
+    printf( "  parse_ini_file()\n");
+#endif    
     ini = iniparser_load( ini_name );
     if ( ini == NULL ) {
         fprintf( stderr, "cannot parse file: %s\n", ini_name );
@@ -190,6 +303,7 @@ Parameters parse_ini_file( char *ini_name ) {
 
     p.cv = iniparser_getint( ini, "color:cv", 64 );
     p.tweak = iniparser_getint( ini, "color:tweak", 3 );
+    p.color = iniparser_getint( ini, "color:color", 10 );
 
     p.filename = getstr( ( char * )
                          iniparser_getstring( ini, "files:filename", "fractal.000.jpg" ) );
@@ -246,6 +360,7 @@ void showParameters( Parameters p ) {
     printf( "  p.maxiter   = '%d'\n", p.maxiter );
     printf( "  p.cv        = '%d'\n", p.cv );
     printf( "  p.width     = '%d'\n", p.width );
+    printf( "  p.json      = '%s'\n", p.json );
     printf( "  p.height    = '%d'\n", p.height );
     printf( "  p.filename  = '%s'\n", p.filename );
     printf( "  p.palname   = '%s'\n", p.palname );
@@ -270,9 +385,10 @@ Parameters zeroP( void ) {
     g.filename = NULL;
     g.palname = NULL;
     g.config = NULL;
+    g.aa = NULL;
+    g.json = NULL;
     g.next = 0;
     g.color = 0;
-    g.aa = NULL;
     g.tweak = 0;
 
     return g;

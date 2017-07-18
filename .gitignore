@@ -1,8 +1,10 @@
 *.bak
 *.bat
 *.exe
-!mp.exe
 *.jpeg
 *.jpg
 *.*~
+*.json
+*.7z
+
 

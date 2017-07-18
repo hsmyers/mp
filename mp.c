@@ -20,13 +20,12 @@
 #include <gd.h>
 #include <float.h>
 #include "palette.h"
-#include "cJSON.h"
 #include "elapsed.h"
-#include "util.h"
 #include "colors.h"
+#include "getopt.h"
 
-char *Version = "0.015";
-char *Date = "Sat Jul 15 07:51:21 2017";
+char *Version = "0.016";
+char *Date = "Mon Jul 17 17:19:59 2017";
 
 enum {
     FLT,
@@ -165,99 +164,12 @@ float hpf_filter_3[3][3] = {
 };
 
 int main( int argc, char *argv[] ) {
-    Parameters g = zeroP();
-    char buffer[100];
-
-    if ( argc >= 3 && argc <= 7 ) {
-        char *json = ReadFile( argv[1] );
-        g.filename = argv[2];
-        if ( json != NULL ) {
-            cJSON *root = cJSON_Parse( json );
-            cJSON *params = cJSON_GetObjectItemCaseSensitive( root, "params" );
-            cJSON *centerX_item = cJSON_GetObjectItemCaseSensitive( params, "centerX" );
-            if ( cJSON_IsString( centerX_item ) ) {
-                strcpy( buffer, centerX_item->valuestring );
-                g.centerX = strtold( buffer, NULL );
-            } else if ( cJSON_IsNumber( centerX_item ) ) {
-                g.centerX = centerX_item->valuedouble;
-            }
-            cJSON *centerY_item = cJSON_GetObjectItemCaseSensitive( params, "centerY" );
-            if ( cJSON_IsString( centerY_item ) ) {
-                strcpy( buffer, centerY_item->valuestring );
-                g.centerY = strtold( buffer, NULL );
-            } else if ( cJSON_IsNumber( centerY_item ) ) {
-                g.centerY = centerY_item->valuedouble;
-            }
-            cJSON *magnify_item = cJSON_GetObjectItemCaseSensitive( params, "magnify" );
-            if ( cJSON_IsString( magnify_item ) ) {
-                strcpy( buffer, magnify_item->valuestring );
-                g.diameter = strtold( buffer, NULL );
-            } else if ( cJSON_IsNumber( magnify_item ) ) {
-                g.diameter = magnify_item->valuedouble;
-            }
-            cJSON *maxIterations_item = cJSON_GetObjectItemCaseSensitive( params, "maxIterations" );
-            if ( cJSON_IsNumber( maxIterations_item ) )
-                g.maxiter = ( long ) maxIterations_item->valuedouble;
-            cJSON *width_item = cJSON_GetObjectItemCaseSensitive( params, "width" );
-            if ( cJSON_IsNumber( width_item ) )
-                g.width = ( int ) width_item->valuedouble;
-            cJSON *height_item = cJSON_GetObjectItemCaseSensitive( params, "height" );
-            if ( cJSON_IsNumber( height_item ) )
-                g.height = ( int ) height_item->valuedouble;
-            cJSON_Delete( root );
-            free( json );
-            if ( argc >= 4 ) {
-                g.color = atoi( argv[3] );
-            }
-            if ( argc >= 5 ) {
-                g.tweak = atoi( argv[4] );
-            }
-            if ( argc >= 6 ) {
-                g.aa = true;
-                g.file2name = argv[5];
-            }
-        } else {
-            printf( "error in JSON parameter file: %s\n", argv[1] );
-            return 1;
-        }
-    } else if ( argc >= 8 ) {
-        g.centerX  = strtold( argv[1], NULL );
-        g.centerY  = strtold( argv[2], NULL );
-        g.diameter = strtold( argv[3], NULL );
-        g.maxiter  = atol( argv[4] );
-        g.width    = atol( argv[5] );
-        g.height   = atol( argv[6] );
-        g.filename = argv[7];
-        if ( argc >= 9 ) {
-            g.color = atoi( argv[8] );
-        }
-        if ( argc >= 10 ) {
-            g.tweak = atoi( argv[9] );
-        }
-        if ( argc >= 11 ) {
-            g.aa = true;
-            g.file2name = argv[10];
-        }
-
-    } else {
-        printf( "Usage: either a JSON parameter filename and output file,\n" );
-        printf( "    or the above with the name of an anti-aliased file,\n" );
-        printf( "    or 7 parameters:\n" );
-        printf( "\n" );
-        printf( "    center X parameter\n" );
-        printf( "    center Y parameter\n" );
-        printf( "    diameter parameter\n" );
-        printf( "    iteration parameter\n" );
-        printf( "    width parameter\n" );
-        printf( "    height parameter\n" );
-        printf( "    output filename\n" );
-        return 1;
-    }
+    Parameters g = getParameters( argc, argv, Version, Date );
     struct timeval tvBegin, tvEnd, tvDiff;
 
     gettimeofday( &tvBegin, NULL );
     int guess = bestGuess( g.diameter, g.width );
-    printf( "%s-diameter:%.17Lg, dims: %dx%d %s color=%d, tweak=%d aa=%d\n", guessStr( guess ),
+    printf( "%s-diameter:%.17Lg, dims: %dx%d %s color=%d, tweak=%d aa=%s\n", guessStr( guess ),
             ( long double ) g.diameter, g.width, g.height, g.filename, g.color, g.tweak, g.aa );
     switch ( guess ) {
         case FLT:
@@ -285,9 +197,9 @@ int main( int argc, char *argv[] ) {
     gdImageJpeg( im, fp, 95 );
     fclose( fp );
     if ( g.aa ) {
-        printf( "Convolving image...\n" );
-        gdImageConvolution( im, hpf_filter_3, 0.75, 0.5 );
-        FILE *cfp = fopen( g.file2name, "wb" );
+        printf( "Convolving image to %s...\n", g.aa );
+        gdImageConvolution( im, hpf_filter_1, 0.75, 0.5 );
+        FILE *cfp = fopen( g.aa, "wb" );
         gdImageJpeg( im, cfp, 95 );
         fclose( cfp );
     }
@@ -359,6 +271,7 @@ void msetFLT( Parameters g ) {
                 float Zx2;
                 float Zy2;
                 float colorPoly = 0;
+                float Exps = 0;
                 int Iteration;
 
                 for ( Iteration = 0; Iteration < g.maxiter; Iteration++ ) {
@@ -368,6 +281,7 @@ void msetFLT( Parameters g ) {
                         break;
                     Zy = 2 * Zx * Zy + Cy;
                     Zx = Zx2 - Zy2 + Cx;
+                    Exps += exp( Zx2 + Zy2 );
                 }
                 if ( g.color > 2 ) {
                     complex C = Cx + Cy * I;

@@ -28,6 +28,7 @@ Rgb getRgbSmoothCPFLT( float cp, int count, int MaxCount );
 Rgb getRgb( int count, int MaxCount );
 Rgb getRgb2( int count, int MaxCount );
 Rgb getRgb3( int count, int MaxCount );
+Rgb getRgb4( int count, int MaxCount );
 Rgb getRgbFromTable( int count, int MaxCount );
 Rgb getRgbSmooth( int count, int MaxCount );
 

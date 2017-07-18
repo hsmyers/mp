@@ -13,5 +13,6 @@ typedef struct {
 
 Rgb HSVToRGB( HSV hsv );
 HSV RGBToHSV( Rgb rgb );
+float calcDistance( float a, float b );
 
 #endif // CSPACE_H_

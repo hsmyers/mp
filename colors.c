@@ -28,6 +28,8 @@ Rgb getColorFLT( float colorPoly, int rgb, int n, int maxiter ) {
             return getRgb2( n, maxiter );
         case 10:
             return getRgb3( n, maxiter );
+        case 11:
+            return getRgb4( n, maxiter );
         default:
             return getRgb( n, maxiter );
         }
@@ -50,6 +52,8 @@ Rgb getColorDBL( double colorPoly, int rgb, int n, int maxiter ) {
             return getRgb2( n, maxiter );
         case 10:
             return getRgb3( n, maxiter );
+        case 11:
+            return getRgb4( n, maxiter );
         default:
             return getRgb( n, maxiter );
         }
@@ -72,6 +76,8 @@ Rgb getColorLDBL( long double colorPoly, int rgb, int n, int maxiter ) {
             return getRgb2( n, maxiter );
         case 10:
             return getRgb3( n, maxiter );
+        case 11:
+            return getRgb4( n, maxiter );
         default:
             return getRgb( n, maxiter );
         }
@@ -94,6 +100,8 @@ Rgb getColor128( __float128 colorPoly, int rgb, int n, int maxiter ) {
             return getRgb2( n, maxiter );
         case 10:
             return getRgb3( n, maxiter );
+        case 11:
+            return getRgb4( n, maxiter );
         default:
             return getRgb( n, maxiter );
     }
@@ -104,7 +112,7 @@ long double getCColorLDBL( long double complex Z, long double complex C,unsigned
         Z = Z * Z + C;
         n++;
     }
-    switch (P.rgb) {
+    switch (P.color) {
         case 3:
             return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
@@ -127,7 +135,7 @@ float getCColorFLT( float complex Z, float complex C,unsigned int n, Parameters 
         Z = Z * Z + C;
         n++;
     }
-    switch (P.rgb) {
+    switch (P.color) {
         case 3:
             return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
@@ -150,7 +158,7 @@ double getCColorDBL( double complex Z, double complex C,unsigned int n, Paramete
         Z = Z * Z + C;
         n++;
     }
-    switch (P.rgb) {
+    switch (P.color) {
         case 3:
             return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
@@ -173,7 +181,7 @@ __float128 getCColor128( __complex128 Z, __complex128 C,unsigned int n, Paramete
         Z = Z * Z + C;
         n++;
     }
-    switch (P.rgb) {
+    switch (P.color) {
         case 3:
             return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
@@ -189,6 +197,19 @@ __float128 getCColor128( __complex128 Z, __complex128 C,unsigned int n, Paramete
         default:
             return 0.0;
     }
+}
+
+Rgb getRgb4( int count, int MaxCount ) {
+    Rgb color = { 0, 0, 0 };
+    HSV rainbow = {
+        (count * 6) % 256,
+        0,
+        count % 256,
+    };
+    if ( count < MaxCount ) {
+        color = HSVToRGB( rainbow );
+    }
+    return color;
 }
 
 Rgb getRgb3( int count, int MaxCount ) {

@@ -2,6 +2,7 @@
 // cspace.c
 //
 #include <math.h>
+#include <complex.h>
 #include "cspace.h"
 
 static double Min( double a, double b ) {
@@ -113,3 +114,21 @@ HSV RGBToHSV( Rgb rgb ) {
 
     return hsv;
 }
+
+float calcDistance( float a, float b ) {
+    complex c = a + b * I;
+    complex z = 0;
+    complex dz= 0;
+    float m2;
+
+    for( int i = 0; i < 1024; i++ ) {
+        dz = 2.0 * z * dz + 1.0;
+        z = z * z + c;
+        m2 = cabs(z);
+        if( m2 > 1e20 )
+            break;
+    }
+
+    return sqrtf( m2/cabs(dz) ) * 0.5 * log(m2);
+}
+

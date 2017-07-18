@@ -1,0 +1,418 @@
+\begin{theindex}
+
+  \item {aa}
+    \subitem {Parameters}, \hyperpage{16}
+  \item {Array}, \hyperpage{7}
+    \subitem {array}, \hyperpage{7}
+    \subitem {size}, \hyperpage{7}
+    \subitem {used}, \hyperpage{7}
+  \item {array}
+    \subitem {Array}, \hyperpage{7}
+  \item {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {ctxfactor}, \hyperpage{8}
+    \subitem {ctyfactor}, \hyperpage{8}
+    \subitem {xmax}, \hyperpage{8}
+    \subitem {xmin}, \hyperpage{8}
+    \subitem {ymax}, \hyperpage{8}
+    \subitem {ymin}, \hyperpage{8}
+  \item {Axes\+F\+L\+T128}, \hyperpage{10}
+    \subitem {ctxfactor}, \hyperpage{10}
+    \subitem {ctyfactor}, \hyperpage{10}
+    \subitem {xmax}, \hyperpage{10}
+    \subitem {xmin}, \hyperpage{10}
+    \subitem {ymax}, \hyperpage{11}
+    \subitem {ymin}, \hyperpage{11}
+  \item {Axes\+F\+LT}, \hyperpage{9}
+    \subitem {ctxfactor}, \hyperpage{9}
+    \subitem {ctyfactor}, \hyperpage{9}
+    \subitem {xmax}, \hyperpage{9}
+    \subitem {xmin}, \hyperpage{9}
+    \subitem {ymax}, \hyperpage{9}
+    \subitem {ymin}, \hyperpage{10}
+  \item {Axes\+L\+D\+BL}, \hyperpage{11}
+    \subitem {ctxfactor}, \hyperpage{11}
+    \subitem {ctyfactor}, \hyperpage{11}
+    \subitem {xmax}, \hyperpage{11}
+    \subitem {xmin}, \hyperpage{12}
+    \subitem {ymax}, \hyperpage{12}
+    \subitem {ymin}, \hyperpage{12}
+
+  \indexspace
+
+  \item {b}
+    \subitem {Rgb}, \hyperpage{20}
+  \item {buffer}
+    \subitem {printbuffer}, \hyperpage{19}
+
+  \indexspace
+
+  \item {c\+J\+S\+O\+N\+\_\+\+Hooks}, \hyperpage{14}
+  \item {c\+J\+S\+ON}, \hyperpage{12}
+    \subitem {child}, \hyperpage{12}
+    \subitem {next}, \hyperpage{13}
+    \subitem {prev}, \hyperpage{13}
+    \subitem {string}, \hyperpage{13}
+    \subitem {type}, \hyperpage{13}
+    \subitem {valuedouble}, \hyperpage{13}
+    \subitem {valueint}, \hyperpage{13}
+    \subitem {valuestring}, \hyperpage{13}
+  \item {centerX}
+    \subitem {Parameters}, \hyperpage{16}
+  \item {centerY}
+    \subitem {Parameters}, \hyperpage{16}
+  \item {child}
+    \subitem {c\+J\+S\+ON}, \hyperpage{12}
+  \item {color}
+    \subitem {Parameters}, \hyperpage{16}
+  \item {config}
+    \subitem {Parameters}, \hyperpage{16}
+  \item {content}
+    \subitem {parse\+\_\+buffer}, \hyperpage{18}
+  \item {ctxfactor}
+    \subitem {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {Axes\+F\+L\+T128}, \hyperpage{10}
+    \subitem {Axes\+F\+LT}, \hyperpage{9}
+    \subitem {Axes\+L\+D\+BL}, \hyperpage{11}
+  \item {ctyfactor}
+    \subitem {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {Axes\+F\+L\+T128}, \hyperpage{10}
+    \subitem {Axes\+F\+LT}, \hyperpage{9}
+    \subitem {Axes\+L\+D\+BL}, \hyperpage{11}
+  \item {cv}
+    \subitem {Parameters}, \hyperpage{17}
+
+  \indexspace
+
+  \item {D\+I\+C\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+EY}
+    \subitem {dictionary.\+c}, \hyperpage{24}
+  \item {D\+I\+C\+T\+M\+I\+N\+SZ}
+    \subitem {dictionary.\+c}, \hyperpage{24}
+  \item {depth}
+    \subitem {parse\+\_\+buffer}, \hyperpage{18}
+    \subitem {printbuffer}, \hyperpage{19}
+  \item {diameter}
+    \subitem {Parameters}, \hyperpage{17}
+  \item {dictionary}, \hyperpage{28}
+  \item {dictionary.\+c}, \hyperpage{23}
+    \subitem {D\+I\+C\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+EY}, 
+		\hyperpage{24}
+    \subitem {D\+I\+C\+T\+M\+I\+N\+SZ}, \hyperpage{24}
+    \subitem {dictionary\+\_\+del}, \hyperpage{24}
+    \subitem {dictionary\+\_\+dump}, \hyperpage{25}
+    \subitem {dictionary\+\_\+get}, \hyperpage{25}
+    \subitem {dictionary\+\_\+hash}, \hyperpage{25}
+    \subitem {dictionary\+\_\+new}, \hyperpage{26}
+    \subitem {dictionary\+\_\+set}, \hyperpage{26}
+    \subitem {dictionary\+\_\+unset}, \hyperpage{27}
+    \subitem {M\+A\+X\+V\+A\+L\+SZ}, \hyperpage{24}
+  \item {dictionary.\+h}, \hyperpage{27}
+    \subitem {dictionary\+\_\+del}, \hyperpage{28}
+    \subitem {dictionary\+\_\+dump}, \hyperpage{29}
+    \subitem {dictionary\+\_\+get}, \hyperpage{29}
+    \subitem {dictionary\+\_\+hash}, \hyperpage{30}
+    \subitem {dictionary\+\_\+new}, \hyperpage{30}
+    \subitem {dictionary\+\_\+set}, \hyperpage{30}
+    \subitem {dictionary\+\_\+unset}, \hyperpage{31}
+  \item {dictionary\+\_\+del}
+    \subitem {dictionary.\+c}, \hyperpage{24}
+    \subitem {dictionary.\+h}, \hyperpage{28}
+  \item {dictionary\+\_\+dump}
+    \subitem {dictionary.\+c}, \hyperpage{25}
+    \subitem {dictionary.\+h}, \hyperpage{29}
+  \item {dictionary\+\_\+get}
+    \subitem {dictionary.\+c}, \hyperpage{25}
+    \subitem {dictionary.\+h}, \hyperpage{29}
+  \item {dictionary\+\_\+hash}
+    \subitem {dictionary.\+c}, \hyperpage{25}
+    \subitem {dictionary.\+h}, \hyperpage{30}
+  \item {dictionary\+\_\+new}
+    \subitem {dictionary.\+c}, \hyperpage{26}
+    \subitem {dictionary.\+h}, \hyperpage{30}
+  \item {dictionary\+\_\+set}
+    \subitem {dictionary.\+c}, \hyperpage{26}
+    \subitem {dictionary.\+h}, \hyperpage{30}
+  \item {dictionary\+\_\+unset}
+    \subitem {dictionary.\+c}, \hyperpage{27}
+    \subitem {dictionary.\+h}, \hyperpage{31}
+
+  \indexspace
+
+  \item {error}, \hyperpage{14}
+    \subitem {json}, \hyperpage{14}
+    \subitem {position}, \hyperpage{14}
+
+  \indexspace
+
+  \item {filename}
+    \subitem {Parameters}, \hyperpage{17}
+  \item {format}
+    \subitem {printbuffer}, \hyperpage{19}
+
+  \indexspace
+
+  \item {g}
+    \subitem {Rgb}, \hyperpage{21}
+
+  \indexspace
+
+  \item {H}
+    \subitem {H\+SV}, \hyperpage{15}
+  \item {H\+SV}, \hyperpage{15}
+    \subitem {H}, \hyperpage{15}
+    \subitem {S}, \hyperpage{15}
+    \subitem {V}, \hyperpage{15}
+  \item {height}
+    \subitem {Parameters}, \hyperpage{17}
+  \item {hooks}
+    \subitem {parse\+\_\+buffer}, \hyperpage{18}
+    \subitem {printbuffer}, \hyperpage{20}
+
+  \indexspace
+
+  \item {iniparser.\+c}, \hyperpage{31}
+    \subitem {iniparser\+\_\+dump}, \hyperpage{33}
+    \subitem {iniparser\+\_\+dump\+\_\+ini}, \hyperpage{33}
+    \subitem {iniparser\+\_\+dumpsection\+\_\+ini}, \hyperpage{35}
+    \subitem {iniparser\+\_\+find\+\_\+entry}, \hyperpage{35}
+    \subitem {iniparser\+\_\+freedict}, \hyperpage{36}
+    \subitem {iniparser\+\_\+getboolean}, \hyperpage{36}
+    \subitem {iniparser\+\_\+getdouble}, \hyperpage{37}
+    \subitem {iniparser\+\_\+getint}, \hyperpage{37}
+    \subitem {iniparser\+\_\+getlongdouble}, \hyperpage{38}
+    \subitem {iniparser\+\_\+getlongint}, \hyperpage{38}
+    \subitem {iniparser\+\_\+getnsec}, \hyperpage{39}
+    \subitem {iniparser\+\_\+getseckeys}, \hyperpage{39}
+    \subitem {iniparser\+\_\+getsecname}, \hyperpage{40}
+    \subitem {iniparser\+\_\+getsecnkeys}, \hyperpage{40}
+    \subitem {iniparser\+\_\+getstring}, \hyperpage{41}
+    \subitem {iniparser\+\_\+load}, \hyperpage{41}
+    \subitem {iniparser\+\_\+set}, \hyperpage{42}
+    \subitem {iniparser\+\_\+unset}, \hyperpage{42}
+    \subitem {line\+\_\+status}, \hyperpage{33}
+  \item {iniparser.\+h}, \hyperpage{43}
+    \subitem {iniparser\+\_\+dump}, \hyperpage{44}
+    \subitem {iniparser\+\_\+dump\+\_\+ini}, \hyperpage{44}
+    \subitem {iniparser\+\_\+dumpsection\+\_\+ini}, \hyperpage{45}
+    \subitem {iniparser\+\_\+find\+\_\+entry}, \hyperpage{45}
+    \subitem {iniparser\+\_\+freedict}, \hyperpage{45}
+    \subitem {iniparser\+\_\+getboolean}, \hyperpage{46}
+    \subitem {iniparser\+\_\+getdouble}, \hyperpage{47}
+    \subitem {iniparser\+\_\+getint}, \hyperpage{47}
+    \subitem {iniparser\+\_\+getlongdouble}, \hyperpage{48}
+    \subitem {iniparser\+\_\+getlongint}, \hyperpage{49}
+    \subitem {iniparser\+\_\+getnsec}, \hyperpage{50}
+    \subitem {iniparser\+\_\+getseckeys}, \hyperpage{51}
+    \subitem {iniparser\+\_\+getsecname}, \hyperpage{51}
+    \subitem {iniparser\+\_\+getsecnkeys}, \hyperpage{52}
+    \subitem {iniparser\+\_\+getstring}, \hyperpage{52}
+    \subitem {iniparser\+\_\+load}, \hyperpage{52}
+    \subitem {iniparser\+\_\+set}, \hyperpage{53}
+    \subitem {iniparser\+\_\+set\+\_\+error\+\_\+callback}, 
+		\hyperpage{53}
+    \subitem {iniparser\+\_\+unset}, \hyperpage{53}
+  \item {iniparser\+\_\+dump}
+    \subitem {iniparser.\+c}, \hyperpage{33}
+    \subitem {iniparser.\+h}, \hyperpage{44}
+  \item {iniparser\+\_\+dump\+\_\+ini}
+    \subitem {iniparser.\+c}, \hyperpage{33}
+    \subitem {iniparser.\+h}, \hyperpage{44}
+  \item {iniparser\+\_\+dumpsection\+\_\+ini}
+    \subitem {iniparser.\+c}, \hyperpage{35}
+    \subitem {iniparser.\+h}, \hyperpage{45}
+  \item {iniparser\+\_\+find\+\_\+entry}
+    \subitem {iniparser.\+c}, \hyperpage{35}
+    \subitem {iniparser.\+h}, \hyperpage{45}
+  \item {iniparser\+\_\+freedict}
+    \subitem {iniparser.\+c}, \hyperpage{36}
+    \subitem {iniparser.\+h}, \hyperpage{45}
+  \item {iniparser\+\_\+getboolean}
+    \subitem {iniparser.\+c}, \hyperpage{36}
+    \subitem {iniparser.\+h}, \hyperpage{46}
+  \item {iniparser\+\_\+getdouble}
+    \subitem {iniparser.\+c}, \hyperpage{37}
+    \subitem {iniparser.\+h}, \hyperpage{47}
+  \item {iniparser\+\_\+getint}
+    \subitem {iniparser.\+c}, \hyperpage{37}
+    \subitem {iniparser.\+h}, \hyperpage{47}
+  \item {iniparser\+\_\+getlongdouble}
+    \subitem {iniparser.\+c}, \hyperpage{38}
+    \subitem {iniparser.\+h}, \hyperpage{48}
+  \item {iniparser\+\_\+getlongint}
+    \subitem {iniparser.\+c}, \hyperpage{38}
+    \subitem {iniparser.\+h}, \hyperpage{49}
+  \item {iniparser\+\_\+getnsec}
+    \subitem {iniparser.\+c}, \hyperpage{39}
+    \subitem {iniparser.\+h}, \hyperpage{50}
+  \item {iniparser\+\_\+getseckeys}
+    \subitem {iniparser.\+c}, \hyperpage{39}
+    \subitem {iniparser.\+h}, \hyperpage{51}
+  \item {iniparser\+\_\+getsecname}
+    \subitem {iniparser.\+c}, \hyperpage{40}
+    \subitem {iniparser.\+h}, \hyperpage{51}
+  \item {iniparser\+\_\+getsecnkeys}
+    \subitem {iniparser.\+c}, \hyperpage{40}
+    \subitem {iniparser.\+h}, \hyperpage{52}
+  \item {iniparser\+\_\+getstring}
+    \subitem {iniparser.\+c}, \hyperpage{41}
+    \subitem {iniparser.\+h}, \hyperpage{52}
+  \item {iniparser\+\_\+load}
+    \subitem {iniparser.\+c}, \hyperpage{41}
+    \subitem {iniparser.\+h}, \hyperpage{52}
+  \item {iniparser\+\_\+set}
+    \subitem {iniparser.\+c}, \hyperpage{42}
+    \subitem {iniparser.\+h}, \hyperpage{53}
+  \item {iniparser\+\_\+set\+\_\+error\+\_\+callback}
+    \subitem {iniparser.\+h}, \hyperpage{53}
+  \item {iniparser\+\_\+unset}
+    \subitem {iniparser.\+c}, \hyperpage{42}
+    \subitem {iniparser.\+h}, \hyperpage{53}
+  \item {internal\+\_\+hooks}, \hyperpage{15}
+
+  \indexspace
+
+  \item {json}
+    \subitem {error}, \hyperpage{14}
+
+  \indexspace
+
+  \item {length}
+    \subitem {parse\+\_\+buffer}, \hyperpage{19}
+    \subitem {printbuffer}, \hyperpage{20}
+  \item {line\+\_\+status}
+    \subitem {iniparser.\+c}, \hyperpage{33}
+
+  \indexspace
+
+  \item {M\+A\+X\+V\+A\+L\+SZ}
+    \subitem {dictionary.\+c}, \hyperpage{24}
+  \item {magnify}
+    \subitem {Parameters}, \hyperpage{17}
+  \item {maxiter}
+    \subitem {Parameters}, \hyperpage{17}
+
+  \indexspace
+
+  \item {next}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+    \subitem {Parameters}, \hyperpage{17}
+  \item {noalloc}
+    \subitem {printbuffer}, \hyperpage{20}
+
+  \indexspace
+
+  \item {offset}
+    \subitem {parse\+\_\+buffer}, \hyperpage{19}
+    \subitem {printbuffer}, \hyperpage{20}
+
+  \indexspace
+
+  \item {palname}
+    \subitem {Parameters}, \hyperpage{17}
+  \item {Parameters}, \hyperpage{16}
+    \subitem {aa}, \hyperpage{16}
+    \subitem {centerX}, \hyperpage{16}
+    \subitem {centerY}, \hyperpage{16}
+    \subitem {color}, \hyperpage{16}
+    \subitem {config}, \hyperpage{16}
+    \subitem {cv}, \hyperpage{17}
+    \subitem {diameter}, \hyperpage{17}
+    \subitem {filename}, \hyperpage{17}
+    \subitem {height}, \hyperpage{17}
+    \subitem {magnify}, \hyperpage{17}
+    \subitem {maxiter}, \hyperpage{17}
+    \subitem {next}, \hyperpage{17}
+    \subitem {palname}, \hyperpage{17}
+    \subitem {tweak}, \hyperpage{18}
+    \subitem {width}, \hyperpage{18}
+  \item {parse\+\_\+buffer}, \hyperpage{18}
+    \subitem {content}, \hyperpage{18}
+    \subitem {depth}, \hyperpage{18}
+    \subitem {hooks}, \hyperpage{18}
+    \subitem {length}, \hyperpage{19}
+    \subitem {offset}, \hyperpage{19}
+  \item {position}
+    \subitem {error}, \hyperpage{14}
+  \item {prev}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+  \item {printbuffer}, \hyperpage{19}
+    \subitem {buffer}, \hyperpage{19}
+    \subitem {depth}, \hyperpage{19}
+    \subitem {format}, \hyperpage{19}
+    \subitem {hooks}, \hyperpage{20}
+    \subitem {length}, \hyperpage{20}
+    \subitem {noalloc}, \hyperpage{20}
+    \subitem {offset}, \hyperpage{20}
+
+  \indexspace
+
+  \item {r}
+    \subitem {Rgb}, \hyperpage{21}
+  \item {Rgb}, \hyperpage{20}
+    \subitem {b}, \hyperpage{20}
+    \subitem {g}, \hyperpage{21}
+    \subitem {r}, \hyperpage{21}
+
+  \indexspace
+
+  \item {S}
+    \subitem {H\+SV}, \hyperpage{15}
+  \item {size}
+    \subitem {Array}, \hyperpage{7}
+  \item {string}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+
+  \indexspace
+
+  \item {tweak}
+    \subitem {Parameters}, \hyperpage{18}
+  \item {type}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+
+  \indexspace
+
+  \item {used}
+    \subitem {Array}, \hyperpage{7}
+
+  \indexspace
+
+  \item {V}
+    \subitem {H\+SV}, \hyperpage{15}
+  \item {valuedouble}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+  \item {valueint}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+  \item {valuestring}
+    \subitem {c\+J\+S\+ON}, \hyperpage{13}
+
+  \indexspace
+
+  \item {width}
+    \subitem {Parameters}, \hyperpage{18}
+
+  \indexspace
+
+  \item {xmax}
+    \subitem {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {Axes\+F\+L\+T128}, \hyperpage{10}
+    \subitem {Axes\+F\+LT}, \hyperpage{9}
+    \subitem {Axes\+L\+D\+BL}, \hyperpage{11}
+  \item {xmin}
+    \subitem {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {Axes\+F\+L\+T128}, \hyperpage{10}
+    \subitem {Axes\+F\+LT}, \hyperpage{9}
+    \subitem {Axes\+L\+D\+BL}, \hyperpage{12}
+
+  \indexspace
+
+  \item {ymax}
+    \subitem {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {Axes\+F\+L\+T128}, \hyperpage{11}
+    \subitem {Axes\+F\+LT}, \hyperpage{9}
+    \subitem {Axes\+L\+D\+BL}, \hyperpage{12}
+  \item {ymin}
+    \subitem {Axes\+D\+BL}, \hyperpage{8}
+    \subitem {Axes\+F\+L\+T128}, \hyperpage{11}
+    \subitem {Axes\+F\+LT}, \hyperpage{10}
+    \subitem {Axes\+L\+D\+BL}, \hyperpage{12}
+
+\end{theindex}

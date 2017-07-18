@@ -1,31 +1,80 @@
-## Synopsis
+# Project Mp
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+### Intro
 
-## Code Example
+- Succently, this is a fractal play pen.
+- It is _not_ a library.
+- There is no **_API_**
+- List its most useful/innovative/noteworthy features.
+    * feature one
+    * feature two
+- State its goals/what problem(s) it solves.
+    * Dust off my programming skills.
+    * As much as possible work with what's out there…
+    * Continue working with *fractals*—probably the real point.
+- Key concepts.
+    * concept one
+    * concept two
+- This is now and always will be _alpha_.
+- Does not include badges.
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+### Core Technical Concepts/Inspiration
 
-## Motivation
+- Why does it exist?
+- Frame your project for the potential user. 
+- Compare/contrast your project with other, similar projects so the user knows how it is different from those projects.
+- Highlight the technical concepts that your project demonstrates or supports. Keep it very brief.
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+### Getting Started/Requirements/Prerequisites/Dependencies
+Include any essential instructions for:
+- Getting it
+- Installing It
+- Configuring It
+- Running it
 
-## Installation
+### Mini-Manual…
+``` C
+void help( char c, char *Program, char *Version, char *Date ) {
+    printf( "%s v%s dated %s\n", Program, Version, Date );
+    if ( c == 'h' || c == '?' ) {
+        printf( "\n  Options:\n\n" );
+        printf( "  --x_center    requires real as an argument   -x\n" );
+        printf( "  --y_center    requires real as an argument   -y\n" );
+        printf( "  --magnify     requires real as an argument   -m\n" );
+        printf( "  --diameter    requires real as an argument   -d\n" );
+        printf( "  --iteration   requires number as an argument -i\n" );
+        printf( "  --width       requires number as an argument -w\n" );
+        printf( "  --height      requires number as an argument -l\n" );
+        printf( "  --file        requires string as an argument -f\n" );
+        printf( "  --palette     requires string as an argument -p\n" );
+        printf( "  --next        argument is optional number    -n\n" );
+        printf( "  --config      requires string as an argument -c\n" );
+        printf( "  --color       requires number as an argument -r\n" );
+        printf( "  --aa          requires string as an argument -a\n" );
+        printf( "  --tweak       requires number as an argument -t\n" );
+        printf( "  --version     no argument                    -v\n" );
+        printf( "  --help        no argument                    -h\n" );
+        printf( "\n  long options ('--' prefix) are incremental till unambiguous\n" );
+        printf( "  short options ('-' prefix) are exact\n" );
+        printf( "  Hideously enough, options with optional arguments,\n" );
+        printf( "  take the form [-[-]]option=arg, no spaces.\n" );
+    }
+    exit( 0 );
+}
+```
 
-Provide code examples and explanations of how to get the project.
+### Contributing
+- Chris Thomasson
+- Greg Harley
 
-## API Reference
+### TODO
+- Next steps
+- Features planned
+- Known bugs (shortlist)
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+### Contact
+- hsmyers@gmail.com
+- http://www.sdragons.org/
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+### License
+- see file License.txt

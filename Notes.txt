@@ -19,4 +19,6 @@
 %
 [!] 001 initial entry for mp fractal development program
 [!] 002 git config --global core.editor "name of editor"
-[ ] 003
+[!] 003 7z a nose1.7z nose1.jpg
+[!] 004 ctrl+f5, ctrl+t = insert_date with editplus format
+[ ] 005
