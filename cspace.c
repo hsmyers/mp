@@ -1,6 +1,7 @@
 //
 // cspace.c
 //
+#define _USE_MATH_DEFINES
 #include <math.h>
 #include <complex.h>
 #include "cspace.h"
@@ -37,36 +38,36 @@ Rgb HSVToRGB( HSV hsv ) {
         t = hsv.V * ( 1.0 - ( hsv.S * ( 1.0 - f ) ) );
 
         switch ( i ) {
-        case 0:
-            r = hsv.V;
-            g = t;
-            b = p;
-            break;
-        case 1:
-            r = q;
-            g = hsv.V;
-            b = p;
-            break;
-        case 2:
-            r = p;
-            g = hsv.V;
-            b = t;
-            break;
-        case 3:
-            r = p;
-            g = q;
-            b = hsv.V;
-            break;
-        case 4:
-            r = t;
-            g = p;
-            b = hsv.V;
-            break;
-        default:
-            r = hsv.V;
-            g = p;
-            b = q;
-            break;
+            case 0:
+                r = hsv.V;
+                g = t;
+                b = p;
+                break;
+            case 1:
+                r = q;
+                g = hsv.V;
+                b = p;
+                break;
+            case 2:
+                r = p;
+                g = hsv.V;
+                b = t;
+                break;
+            case 3:
+                r = p;
+                g = q;
+                b = hsv.V;
+                break;
+            case 4:
+                r = t;
+                g = p;
+                b = hsv.V;
+                break;
+            default:
+                r = hsv.V;
+                g = p;
+                b = q;
+                break;
         }
     }
 
@@ -118,17 +119,53 @@ HSV RGBToHSV( Rgb rgb ) {
 float calcDistance( float a, float b ) {
     complex c = a + b * I;
     complex z = 0;
-    complex dz= 0;
+    complex dz = 0;
     float m2;
 
-    for( int i = 0; i < 1024; i++ ) {
+    for ( int i = 0; i < 1024; i++ ) {
         dz = 2.0 * z * dz + 1.0;
         z = z * z + c;
-        m2 = cabs(z);
-        if( m2 > 1e20 )
+        m2 = cabs( z );
+        if ( m2 > 1e20 )
             break;
     }
 
-    return sqrtf( m2/cabs(dz) ) * 0.5 * log(m2);
+    return sqrtf( m2 / cabs( dz ) ) * 0.5 * log( m2 );
 }
 
+HSV GiveHSV( double complex z ) {
+    // The HSV, or HSB, model describes colors in terms of
+    // hue, saturation, and value (brightness).
+    // hue = f(argument(z))
+    // hue values range from .. to ..
+    HSV h;
+    double a = carg( z );
+
+    while ( a < 0 )
+        a += 2 * M_PI;
+    a /= 2 * M_PI;
+    // radius of z
+    double m = cabs( z );
+    double ranges = 0;
+    double rangee = 1;
+    while ( m > rangee ) {
+        ranges = rangee;
+        rangee *= M_E;
+    }
+    double k = ( m - ranges ) / ( rangee - ranges );
+    // saturation = g(abs(z))
+    double sat = k < 0.5 ? k * 2 : 1 - ( k - 0.5 ) * 2;
+    sat = 1 - pow( ( 1 - sat ), 3 );
+    sat = 0.4 + sat * 0.6;
+    // value = h(abs(z))
+    double val = k < 0.5 ? k * 2 : 1 - ( k - 0.5 ) * 2;
+    val = 1 - val;
+    val = 1 - pow( ( 1 - val ), 3 );
+    val = 0.6 + val * 0.4;
+
+    h.H = a;
+    h.S = sat;
+    h.V = val;
+
+    return h;
+}

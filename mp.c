@@ -1,8 +1,8 @@
 //
 // mp.c - An OpenMP Mandelbrot
 //
-// compile: gcc -Wall -o mp -std=c99 -O3 -msse2 -march=native -fopenmp cspace.c colors.c elapsed.c util.c cJSON.c mp.c -ljpeg -lgd
-//          gcc -ggdb -Wall -o mp -std=c99 -msse2 -march=native -fopenmp cspace.c colors.c elapsed.c util.c cJSON.c mp.c -ljpeg -lgd
+// compile: gcc -Wall -o mp -std=c99 -O3 -msse2 -march=native -fopenmp cnames.c cspace.c colors.c elapsed.c util.c cJSON.c mp.c -ljpeg -lgd
+//          gcc -ggdb -Wall -o mp -std=c99 -msse2 -march=native -fopenmp cnames.c cspace.c colors.c elapsed.c util.c cJSON.c mp.c -ljpeg -lgd
 // debug:   gdb -args …
 //
 #define __USE_MINGW_ANSI_STDIO 1
@@ -15,26 +15,15 @@
 #include <stdbool.h>
 #include <math.h>
 #include <complex.h>
-#include <quadmath.h>
-#include <limits.h>
 #include <gd.h>
-#include <float.h>
 #include "palette.h"
 #include "elapsed.h"
 #include "colors.h"
 #include "getopt.h"
+#include "util.h"
 
-char *Version = "0.016";
-char *Date = "Mon Jul 17 17:19:59 2017";
-
-enum {
-    FLT,
-    DBL,
-    LDBL,
-    FLT128,
-    FLTMPC,
-    NOTYET
-};
+char *Version = "0.017";
+char *Date = "Wed Jul 19 09:32:34 2017";
 
 typedef struct {
     __float128 xmin;
@@ -91,11 +80,6 @@ AxesDBL ct_gain_axesDBL( double real, double imag, double diameter, int height, 
 AxesFLT ct_gain_axesFLT( float real, float imag, float diameter, int height, int width );
 AxesFLT128 ct_gain_axesFLT128( __float128 real, __float128 imag, __float128 diameter, int height, int width );
 AxesLDBL ct_gain_axesLDBL( long double real, long double imag, long double diameter, int height, int width );
-char *guessStr( int g );
-double scaleWidth( double d, int N, double E );
-int bestGuess( double diameter, int W );
-int rgb2int( Rgb color );
-Parameters zeroP( void );
 void msetDBL( Parameters g );
 void msetFLT( Parameters g );
 void msetFLT128( Parameters g );
@@ -207,89 +191,38 @@ int main( int argc, char *argv[] ) {
     return 0;
 }
 
-double scaleWidth( double d, int N, double E ) {
-    return ( double ) ( ( d * N ) / ( 2 * E ) );
-}
-
-int bestGuess( double diameter, int W ) {
-    if ( diameter > scaleWidth( FLT_EPSILON, W, 0.01 ) ) {
-        return FLT;
-    } else if ( diameter > scaleWidth( DBL_EPSILON, W, 0.01 ) ) {
-        return DBL;
-    } else if ( diameter > scaleWidth( LDBL_EPSILON, W, 0.01 ) ) {
-        return LDBL;
-    } else if ( diameter > scaleWidth( FLT128_EPSILON, W, 0.01 ) ) {
-        return FLT128;
-    } else {
-        return NOTYET;
-    }
-}
-
-char *guessStr( int g ) {
-    static char *s;
-
-    switch ( g ) {
-        case FLT:
-            s = "FLT";
-            break;
-        case DBL:
-            s = "DBL";
-            break;
-        case LDBL:
-            s = "LDBL";
-            break;
-        case FLT128:
-            s = "FLT128";
-            break;
-        case FLTMPC:
-            s = "FLTMPC";
-            break;
-        case NOTYET:
-            s = "NOTYET";
-            break;
-        default:
-            s = "UNK";
-            break;
-    }
-    return s;
-}
-
 void msetFLT( Parameters g ) {
     im = gdImageCreateTrueColor( g.width, g.height );
     AxesFLT ctaxes = ct_gain_axesFLT( g.centerX, g.centerY, g.diameter, g.height, g.width );
 #pragma omp parallel shared(im)
     {
-        int Y;
+        ColorFLT cp;
+        g.nMax = 0;
 #pragma omp for schedule(dynamic)
-        for ( Y = 0; Y < g.height; Y++ ) {
-            double Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
-            int X;
-            for ( X = 0; X < g.width; X++ ) {
-                float Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
-                float Zx = 0.0;
-                float Zy = 0.0;
+        for (int Y = 0; Y < g.height; Y++ ) {
+            cp.Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
+            for (int X = 0; X < g.width; X++ ) {
+                cp.Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
+                cp.Zx = 0.0;
+                cp.Zy = 0.0;
+                cp.colorPoly = 0;
+                cp.Exps = 0;
                 float Zx2;
                 float Zy2;
-                float colorPoly = 0;
-                float Exps = 0;
-                int Iteration;
 
-                for ( Iteration = 0; Iteration < g.maxiter; Iteration++ ) {
-                    Zx2 = Zx * Zx;
-                    Zy2 = Zy * Zy;
-                    if ( ( Zx2 + Zy2 ) > 4.0 )
+                for ( cp.n = 0; cp.n < g.maxiter; cp.n++ ) {
+                    Zx2 = cp.Zx * cp.Zx;
+                    Zy2 = cp.Zy * cp.Zy;
+                    if ( ( Zx2 + Zy2 ) > g.escape )
                         break;
-                    Zy = 2 * Zx * Zy + Cy;
-                    Zx = Zx2 - Zy2 + Cx;
-                    Exps += exp( Zx2 + Zy2 );
+                    cp.Zy = 2 * cp.Zx * cp.Zy + cp.Cy;
+                    cp.Zx = Zx2 - Zy2 + cp.Cx;
+                    cp.Exps += exp( Zx2 + Zy2 );
                 }
-                if ( g.color > 2 ) {
-                    complex C = Cx + Cy * I;
-                    complex Z = Zx + Zy * I;
-                    colorPoly = getCColorFLT( Z, C, Iteration, g );
+                if ( cp.n < g.maxiter ) {
+                    g.nMax = max( cp.n, g.nMax );
                 }
-                gdImageSetPixel( im, X, Y,
-                                 rgb2int( getColorFLT( colorPoly, g.color, Iteration, g.maxiter ) ) );
+                gdImageSetPixel( im, X, Y, getfColorFLT( g, cp ) );
             }
         }
     }
@@ -300,35 +233,33 @@ void msetDBL( Parameters g ) {
     AxesDBL ctaxes = ct_gain_axesDBL( g.centerX, g.centerY, g.diameter, g.height, g.width );
 #pragma omp parallel shared(im)
     {
-        int Y;
+        ColorDBL cp;
+        g.nMax = 0;
 #pragma omp for schedule(dynamic)
-        for ( Y = 0; Y < g.height; Y++ ) {
-            double Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
-            int X;
-            for ( X = 0; X < g.width; X++ ) {
-                double Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
-                double Zx = 0.0;
-                double Zy = 0.0;
+        for (int Y = 0; Y < g.height; Y++ ) {
+            cp.Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
+            for (int X = 0; X < g.width; X++ ) {
+                cp.Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
+                cp.Zx = 0.0;
+                cp.Zy = 0.0;
+                cp.colorPoly = 0;
+                cp.Exps = 0;
                 double Zx2;
                 double Zy2;
-                double colorPoly = 0;
-                int Iteration;
 
-                for ( Iteration = 0; Iteration < g.maxiter; Iteration++ ) {
-                    Zx2 = Zx * Zx;
-                    Zy2 = Zy * Zy;
-                    if ( ( Zx2 + Zy2 ) > 4.0 )
+                for ( cp.n = 0; cp.n < g.maxiter; cp.n++ ) {
+                    Zx2 = cp.Zx * cp.Zx;
+                    Zy2 = cp.Zy * cp.Zy;
+                    if ( ( Zx2 + Zy2 ) > g.escape )
                         break;
-                    Zy = 2 * Zx * Zy + Cy;
-                    Zx = Zx2 - Zy2 + Cx;
+                    cp.Zy = 2 * cp.Zx * cp.Zy + cp.Cy;
+                    cp.Zx = Zx2 - Zy2 + cp.Cx;
+                    cp.Exps += exp( Zx2 + Zy2 );
                 }
-                if ( g.color > 2 ) {
-                    double complex C = Cx + Cy * I;
-                    double complex Z = Zx + Zy * I;
-                    colorPoly = getCColorDBL( Z, C, Iteration, g );
+                if ( cp.n < g.maxiter ) {
+                    g.nMax = max( cp.n, g.nMax );
                 }
-                gdImageSetPixel( im, X, Y,
-                                 rgb2int( getColorDBL( colorPoly, g.color, Iteration, g.maxiter ) ) );
+                gdImageSetPixel( im, X, Y, getfColorDBL( g, cp ) );
             }
         }
     }
@@ -339,35 +270,33 @@ void msetLDBL( Parameters g ) {
     AxesLDBL ctaxes = ct_gain_axesLDBL( g.centerX, g.centerY, g.diameter, g.height, g.width );
 #pragma omp parallel shared(im)
     {
-        int Y;
+        ColorLDBL cp;
+        g.nMax = 0;
 #pragma omp for schedule(dynamic)
-        for ( Y = 0; Y < g.height; Y++ ) {
-            long double Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
-            int X;
-            for ( X = 0; X < g.width; X++ ) {
-                long double Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
-                long double Zx = 0.0;
-                long double Zy = 0.0;
+        for (int Y = 0; Y < g.height; Y++ ) {
+            cp.Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
+            for (int X = 0; X < g.width; X++ ) {
+                cp.Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
+                cp.Zx = 0.0;
+                cp.Zy = 0.0;
+                cp.colorPoly = 0;
+                cp.Exps = 0;
                 long double Zx2;
                 long double Zy2;
-                long double colorPoly = 0;
-                int Iteration;
 
-                for ( Iteration = 0; Iteration < g.maxiter; Iteration++ ) {
-                    Zx2 = Zx * Zx;
-                    Zy2 = Zy * Zy;
-                    if ( ( Zx2 + Zy2 ) > 4.0 )
+                for ( cp.n = 0; cp.n < g.maxiter; cp.n++ ) {
+                    Zx2 = cp.Zx * cp.Zx;
+                    Zy2 = cp.Zy * cp.Zy;
+                    if ( ( Zx2 + Zy2 ) > g.escape )
                         break;
-                    Zy = 2 * Zx * Zy + Cy;
-                    Zx = Zx2 - Zy2 + Cx;
+                    cp.Zy = 2 * cp.Zx * cp.Zy + cp.Cy;
+                    cp.Zx = Zx2 - Zy2 + cp.Cx;
+                    cp.Exps += exp( Zx2 + Zy2 );
                 }
-                if ( g.color > 2 ) {
-                    long double complex C = Cx + Cy * I;
-                    long double complex Z = Zx + Zy * I;
-                    colorPoly = getCColorLDBL( Z, C, Iteration, g );
+                if ( cp.n < g.maxiter ) {
+                    g.nMax = max( cp.n, g.nMax );
                 }
-                gdImageSetPixel( im, X, Y,
-                                 rgb2int( getColorLDBL( colorPoly, g.color, Iteration, g.maxiter ) ) );
+                gdImageSetPixel( im, X, Y, getfColorLDBL( g, cp ) );
             }
         }
     }
@@ -378,35 +307,33 @@ void msetFLT128( Parameters g ) {
     AxesFLT128 ctaxes = ct_gain_axesFLT128( g.centerX, g.centerY, g.diameter, g.height, g.width );
 #pragma omp parallel shared(im)
     {
-        int Y;
+        Color128 cp;
+        g.nMax = 0;
 #pragma omp for schedule(dynamic)
-        for ( Y = 0; Y < g.height; Y++ ) {
-            __float128 Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
-            int X;
-            for ( X = 0; X < g.width; X++ ) {
-                __float128 Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
-                __float128 Zx = 0.0;
-                __float128 Zy = 0.0;
+        for (int Y = 0; Y < g.height; Y++ ) {
+            cp.Cy = ctaxes.ymax - Y * ctaxes.ctyfactor;
+            for (int X = 0; X < g.width; X++ ) {
+                cp.Cx = ctaxes.xmin + X * ctaxes.ctxfactor;
+                cp.Zx = 0.0;
+                cp.Zy = 0.0;
+                cp.colorPoly = 0;
+                cp.Exps = 0;
                 __float128 Zx2;
                 __float128 Zy2;
-                __float128 colorPoly = 0;
-                int Iteration;
 
-                for ( Iteration = 0; Iteration < g.maxiter; Iteration++ ) {
-                    Zx2 = Zx * Zx;
-                    Zy2 = Zy * Zy;
-                    if ( ( Zx2 + Zy2 ) > 4.0 )
+                for ( cp.n = 0; cp.n < g.maxiter; cp.n++ ) {
+                    Zx2 = cp.Zx * cp.Zx;
+                    Zy2 = cp.Zy * cp.Zy;
+                    if ( ( Zx2 + Zy2 ) > g.escape )
                         break;
-                    Zy = 2 * Zx * Zy + Cy;
-                    Zx = Zx2 - Zy2 + Cx;
+                    cp.Zy = 2 * cp.Zx * cp.Zy + cp.Cy;
+                    cp.Zx = Zx2 - Zy2 + cp.Cx;
+                    cp.Exps += exp( Zx2 + Zy2 );
                 }
-                if ( g.color > 2 ) {
-                    __complex128 C = Cx + Cy * I;
-                    __complex128 Z = Zx + Zy * I;
-                    colorPoly = getCColor128( Z, C, Iteration, g );
+                if ( cp.n < g.maxiter ) {
+                    g.nMax = max( cp.n, g.nMax );
                 }
-                gdImageSetPixel( im, X, Y,
-                                 rgb2int( getColor128( colorPoly, g.color, Iteration, g.maxiter ) ) );
+                gdImageSetPixel( im, X, Y, getfColor128( g, cp ) );
             }
         }
     }
@@ -415,7 +342,7 @@ void msetFLT128( Parameters g ) {
 AxesFLT ct_gain_axesFLT( float real, float imag, float diameter, int height, int width ) {
     float radius = diameter / 2.0;
     AxesFLT ctaxes = {
-        real - radius,
+        real - diameter,
         real + radius,
         imag - radius,
         imag + radius,
@@ -448,7 +375,7 @@ AxesFLT ct_gain_axesFLT( float real, float imag, float diameter, int height, int
 AxesDBL ct_gain_axesDBL( double real, double imag, double diameter, int height, int width ) {
     double radius = diameter / 2.0;
     AxesDBL ctaxes = {
-        real - radius,
+        real - diameter,
         real + radius,
         imag - radius,
         imag + radius,
@@ -481,7 +408,7 @@ AxesDBL ct_gain_axesDBL( double real, double imag, double diameter, int height, 
 AxesLDBL ct_gain_axesLDBL( long double real, long double imag, long double diameter, int height, int width ) {
     long double radius = diameter / 2.0;
     AxesLDBL ctaxes = {
-        real - radius,
+        real - diameter,
         real + radius,
         imag - radius,
         imag + radius,
@@ -514,7 +441,7 @@ AxesLDBL ct_gain_axesLDBL( long double real, long double imag, long double diame
 AxesFLT128 ct_gain_axesFLT128( __float128 real, __float128 imag, __float128 diameter, int height, int width ) {
     __float128 radius = diameter / 2.0;
     AxesFLT128 ctaxes = {
-        real - radius,
+        real - diameter,
         real + radius,
         imag - radius,
         imag + radius,
@@ -542,10 +469,6 @@ AxesFLT128 ct_gain_axesFLT128( __float128 real, __float128 imag, __float128 diam
     ctaxes.ctyfactor = ctheight / ( ( height > 1 ) ? ( height - 1 ) : height );
 
     return ctaxes;
-}
-
-int rgb2int( Rgb color ) {
-    return ( color.r * 256 * 256 ) + ( color.g * 256 ) + color.b;
 }
 
 __float128 fabsq( __float128 x ) {

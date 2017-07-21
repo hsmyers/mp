@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
+#include <float.h>
+#include <quadmath.h>
 #include "util.h"
 
 char *getCl( int argc, char *argv[] ) {
@@ -37,5 +40,52 @@ char *ReadFile( char *filename ) {
         fclose( fp );
     }
     return buffer;
+}
+
+double scaleWidth( double d, int N, double E ) {
+    return ( double ) ( ( d * N ) / ( 2 * E ) );
+}
+
+int bestGuess( double diameter, int W ) {
+    if ( diameter > scaleWidth( FLT_EPSILON, W, 0.01 ) ) {
+        return FLT;
+    } else if ( diameter > scaleWidth( DBL_EPSILON, W, 0.01 ) ) {
+        return DBL;
+    } else if ( diameter > scaleWidth( LDBL_EPSILON, W, 0.01 ) ) {
+        return LDBL;
+    } else if ( diameter > scaleWidth( FLT128_EPSILON, W, 0.01 ) ) {
+        return FLT128;
+    } else {
+        return NOTYET;
+    }
+}
+
+char *guessStr( int g ) {
+    static char *s;
+
+    switch ( g ) {
+        case FLT:
+            s = "FLT";
+            break;
+        case DBL:
+            s = "DBL";
+            break;
+        case LDBL:
+            s = "LDBL";
+            break;
+        case FLT128:
+            s = "FLT128";
+            break;
+        case FLTMPC:
+            s = "FLTMPC";
+            break;
+        case NOTYET:
+            s = "NOTYET";
+            break;
+        default:
+            s = "UNK";
+            break;
+    }
+    return s;
 }
 

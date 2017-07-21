@@ -10,7 +10,9 @@ typedef struct  {
     long double  centerY;
     long double  magnify;
     long double  diameter;
+    float        escape;
     int          maxiter;
+    int          nMax;
     int          cv;
     int          width;
     int          height;
@@ -19,9 +21,11 @@ typedef struct  {
     char        *config;
     char        *aa;
     char        *json;
+    char        *names[2];
     int          next;
     int          color;
     int          tweak;
+    int          nargc;
 } Parameters;
 
 char *getstr( char *arg );
