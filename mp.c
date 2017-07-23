@@ -22,8 +22,8 @@
 #include "getopt.h"
 #include "util.h"
 
-char *Version = "0.017";
-char *Date = "Wed Jul 19 09:32:34 2017";
+char *Version = "0.018";
+char *Date = "Sun Jul 23 07:26:11 2017";
 
 typedef struct {
     __float128 xmin;
@@ -60,13 +60,6 @@ typedef struct {
     float ctxfactor;
     float ctyfactor;
 } AxesFLT;
-
-typedef struct {
-    double H;
-    double S;
-    double V;
-
-} HSV;
 
 typedef struct timespec time_spec;
 
@@ -151,6 +144,13 @@ int main( int argc, char *argv[] ) {
     Parameters g = getParameters( argc, argv, Version, Date );
     struct timeval tvBegin, tvEnd, tvDiff;
 
+    if ( g.palname ) {
+        if ( strncmp( g.palname, "SET", 3 ) == 0 ) {
+            colors = setColors( g );
+        } else {
+            colors = getColors( g.palname );
+        }
+    }
     gettimeofday( &tvBegin, NULL );
     int guess = bestGuess( g.diameter, g.width );
     printf( "%s-diameter:%.17Lg, dims: %dx%d %s color=%d, tweak=%d aa=%s\n", guessStr( guess ),

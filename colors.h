@@ -49,20 +49,24 @@ typedef struct {
     int n;
 } Color128;
 
-__float128 getCColor128( __complex128 Z, __complex128 C, unsigned int n, Parameters P );
-double getCColorDBL( double complex Z, double complex C,unsigned int n, Parameters P );
-float getCColorFLT( float complex Z, float complex C,unsigned int n, Parameters P );
+__float128 getCColor128( Color128 c, Parameters P );
+double getCColorDBL( ColorDBL c, Parameters P );
+float getCColorFLT( ColorFLT c, Parameters P );
 int fractionCount( int n, int max );
-int getfColorFLT( Parameters g, ColorFLT c );
-int getfColorDBL( Parameters g, ColorDBL c );
-int getfColorLDBL( Parameters g, ColorLDBL c );
 int getfColor128( Parameters g, Color128 c );
+int getfColorDBL( Parameters g, ColorDBL c );
+int getfColorFLT( Parameters g, ColorFLT c );
+int getfColorLDBL( Parameters g, ColorLDBL c );
 int rgb2int( Rgb color );
-long double getCColorLDBL( long double complex Z, long double complex C,unsigned int n, Parameters P );
-Rgb getBersteinFLT( Parameters p, ColorFLT g, Rgb rgb_base, Rgb rgb_amp );
-Rgb getBersteinDBL( Parameters p, ColorDBL g, Rgb rgb_base, Rgb rgb_amp );
-Rgb getBersteinLDBL( Parameters p, ColorLDBL g, Rgb rgb_base, Rgb rgb_amp );
+long double getCColorLDBL( ColorLDBL c, Parameters P );
 Rgb getBerstein128( Parameters p, Color128 g, Rgb rgb_base, Rgb rgb_amp );
+Rgb getBersteinDBL( Parameters p, ColorDBL g, Rgb rgb_base, Rgb rgb_amp );
+Rgb getBersteinFLT( Parameters p, ColorFLT g, Rgb rgb_base, Rgb rgb_amp );
+Rgb getBersteinLDBL( Parameters p, ColorLDBL g, Rgb rgb_base, Rgb rgb_amp );
+Rgb getBersteinSineFLT( Parameters p, ColorFLT g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase );
+Rgb getBersteinSineDBL( Parameters p, ColorDBL g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase );
+Rgb getBersteinSineLDBL( Parameters p, ColorLDBL g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase );
+Rgb getBersteinSine128( Parameters p, Color128 g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase );
 Rgb getColor128( __float128 colorPoly, int rgb, int n, int maxiter );
 Rgb getColorDBL( double colorPoly, int rgb, int n, int maxiter );
 Rgb getColorFLT( float colorPoly, int rgb, int n, int maxiter );
@@ -78,7 +82,9 @@ Rgb getRgbSmoothCP128( __float128 cp, int count, int MaxCount );
 Rgb getRgbSmoothCPDBL( double cp, int count, int MaxCount );
 Rgb getRgbSmoothCPFLT( float cp, int count, int MaxCount );
 Rgb getRgbSmoothCPLDBL( long double cp, int count, int MaxCount );
-void setRgb( Rgb *a, Rgb *b, Parameters p );
 void cpyRgb( Rgb source, Rgb *dest );
+void setRgb( Rgb *a, Rgb *b, Parameters p );
+void name2Rgb( char *name, Rgb *dest );
+void raw2Rgb( char *name, Rgb *dest );
 
 #endif // colors_H_

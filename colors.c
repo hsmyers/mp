@@ -1,6 +1,7 @@
 //
 // colors.c
 //
+#define __USE_MINGW_ANSI_STDIO 1
 #include <stdio.h>
 #include <complex.h>
 #include <math.h>
@@ -12,205 +13,101 @@ const double saturation = 0.90;
 const double value = 0.75;
 const double rotation = 172.0;
 
-Rgb getColorFLT( float colorPoly, int rgb, int n, int maxiter ) {
-    switch ( rgb ) {
-        case 1:
-            return getRgbFromTable( n, maxiter );
-        case 2:
-            return getRgbSmooth( n, maxiter );
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-            return getRgbSmoothCPFLT( colorPoly, n, maxiter );
-        case 9:
-            return getRgb2( n, maxiter );
-        case 10:
-            return getRgb3( n, maxiter );
-        case 11:
-            return getRgb4( n, maxiter );
-        case 12:
-            return getRgb5( n, maxiter );
-        case 13:
-            return getRgbSmoothCPFLT( colorPoly, n, maxiter );
-        default:
-            return getRgb( n, maxiter );
-        }
-}
-
-Rgb getColorDBL( double colorPoly, int rgb, int n, int maxiter ) {
-    switch ( rgb ) {
-        case 1:
-            return getRgbFromTable( n, maxiter );
-        case 2:
-            return getRgbSmooth( n, maxiter );
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-            return getRgbSmoothCPDBL( colorPoly, n, maxiter );
-        case 9:
-            return getRgb2( n, maxiter );
-        case 10:
-            return getRgb3( n, maxiter );
-        case 11:
-            return getRgb4( n, maxiter );
-        case 12:
-            return getRgb5( n, maxiter );
-        case 13:
-            return getRgbSmoothCPDBL( colorPoly, n, maxiter );
-        default:
-            return getRgb( n, maxiter );
-        }
-}
-
-Rgb getColorLDBL( long double colorPoly, int rgb, int n, int maxiter ) {
-    switch ( rgb ) {
-        case 1:
-            return getRgbFromTable( n, maxiter );
-        case 2:
-            return getRgbSmooth( n, maxiter );
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-            return getRgbSmoothCPLDBL( colorPoly, n, maxiter );
-        case 9:
-            return getRgb2( n, maxiter );
-        case 10:
-            return getRgb3( n, maxiter );
-        case 11:
-            return getRgb4( n, maxiter );
-        case 12:
-            return getRgb5( n, maxiter );
-        case 13:
-            return getRgbSmoothCPLDBL( colorPoly, n, maxiter );
-        default:
-            return getRgb( n, maxiter );
-        }
-}
-
-Rgb getColor128( __float128 colorPoly, int rgb, int n, int maxiter ) {
-    switch ( rgb ) {
-        case 1:
-            return getRgbFromTable( n, maxiter );
-        case 2:
-            return getRgbSmooth( n, maxiter );
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-            return getRgbSmoothCP128( colorPoly, n, maxiter );
-        case 9:
-            return getRgb2( n, maxiter );
-        case 10:
-            return getRgb3( n, maxiter );
-        case 11:
-            return getRgb4( n, maxiter );
-        case 12:
-            return getRgb5( n, maxiter );
-        case 13:
-            return getRgbSmoothCP128( colorPoly, n, maxiter );
-        default:
-            return getRgb( n, maxiter );
-    }
-}
-
-long double getCColorLDBL( long double complex Z, long double complex C,unsigned int n, Parameters P ) {
+float getCColorFLT( ColorFLT c, Parameters P ) {
+    complex Z = c.Zx + c.Zy * I;
+    complex C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
         Z = Z * Z + C;
-        n++;
+        c.n++;
     }
     switch (P.color) {
         case 3:
-            return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
-            return n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + n - log( log( cabs( Z ) ) ) ) / log( ( long double )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( long double )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( long double )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
         default:
             return 0.0;
     }
 }
 
-float getCColorFLT( float complex Z, float complex C,unsigned int n, Parameters P ) {
+double getCColorDBL( ColorDBL c, Parameters P ) {
+    double complex Z = c.Zx + c.Zy * I;
+    double complex C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
         Z = Z * Z + C;
-        n++;
+        c.n++;
     }
     switch (P.color) {
         case 3:
-            return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
-            return n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
         default:
             return 0.0;
     }
 }
 
-double getCColorDBL( double complex Z, double complex C,unsigned int n, Parameters P ) {
+long double getCColorLDBL( ColorLDBL c, Parameters P ) {
+    long double complex Z = c.Zx + c.Zy * I;
+    long double complex C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
         Z = Z * Z + C;
-        n++;
+        c.n++;
     }
     switch (P.color) {
         case 3:
-            return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
-            return n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + n - log( log( cabs( Z ) ) ) ) / log( ( double )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( double )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( double )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
         default:
             return 0.0;
     }
 }
 
-__float128 getCColor128( __complex128 Z, __complex128 C,unsigned int n, Parameters P ) {
+__float128 getCColor128( Color128 c, Parameters P ) {
+    __complex128 Z = c.Zx + c.Zy * I;
+    __complex128 C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
         Z = Z * Z + C;
-        n++;
+        c.n++;
     }
     switch (P.color) {
         case 3:
-            return n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
         case 4:
-            return n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + n - log( log( cabs( Z ) ) ) ) / log( ( __float128 )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( __float128 )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + n - log2( log2( cabs( Z ) ) ) ) / log2( ( __float128 )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
         default:
             return 0.0;
     }
@@ -359,6 +256,66 @@ Rgb getRgbSmooth( int count, int MaxCount ) {
     return color;
 }
 
+Rgb getBersteinSineFLT( Parameters p, ColorFLT g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase ) {
+    Rgb color = { 0, 0, 0 };
+
+    if ( g.n < p.maxiter ) {
+        color.r =
+            abs(sin(rgb_freq.r * g.n + rgb_phase.r) * (255 - rgb_base.r) + rgb_base.r);
+        color.g =
+            abs(sin(rgb_freq.g * g.n + rgb_phase.g) * (255 - rgb_base.g) + rgb_base.g);
+        color.b =
+            abs(sin(rgb_freq.b * g.n + rgb_phase.b) * (255 - rgb_base.b) + rgb_base.b);
+    }
+
+    return color;
+}
+
+Rgb getBersteinSineDBL( Parameters p, ColorDBL g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase ) {
+    Rgb color = { 0, 0, 0 };
+
+    if ( g.n < p.maxiter ) {
+        color.r =
+            abs(sin(rgb_freq.r * g.n + rgb_phase.r) * (255 - rgb_base.r) + rgb_base.r);
+        color.g =
+            abs(sin(rgb_freq.g * g.n + rgb_phase.g) * (255 - rgb_base.g) + rgb_base.g);
+        color.b =
+            abs(sin(rgb_freq.b * g.n + rgb_phase.b) * (255 - rgb_base.b) + rgb_base.b);
+    }
+
+    return color;
+}
+
+Rgb getBersteinSineLDBL( Parameters p, ColorLDBL g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase ) {
+    Rgb color = { 0, 0, 0 };
+
+    if ( g.n < p.maxiter ) {
+        color.r =
+            abs(sin(rgb_freq.r * g.n + rgb_phase.r) * (255 - rgb_base.r) + rgb_base.r);
+        color.g =
+            abs(sin(rgb_freq.g * g.n + rgb_phase.g) * (255 - rgb_base.g) + rgb_base.g);
+        color.b =
+            abs(sin(rgb_freq.b * g.n + rgb_phase.b) * (255 - rgb_base.b) + rgb_base.b);
+    }
+
+    return color;
+}
+
+Rgb getBersteinSine128( Parameters p, Color128 g, Rgb rgb_base, Rgb rgb_freq, Rgb rgb_phase ) {
+    Rgb color = { 0, 0, 0 };
+
+    if ( g.n < p.maxiter ) {
+        color.r =
+            abs(sin(rgb_freq.r * g.n + rgb_phase.r) * (255 - rgb_base.r) + rgb_base.r);
+        color.g =
+            abs(sin(rgb_freq.g * g.n + rgb_phase.g) * (255 - rgb_base.g) + rgb_base.g);
+        color.b =
+            abs(sin(rgb_freq.b * g.n + rgb_phase.b) * (255 - rgb_base.b) + rgb_base.b);
+    }
+
+    return color;
+}
+
 Rgb getBersteinFLT( Parameters p, ColorFLT g, Rgb rgb_base, Rgb rgb_amp ) {
     Rgb color = { 0, 0, 0 };
     float index_mapped = g.n / p.escape;
@@ -485,8 +442,8 @@ Rgb getRgbSmoothCP128( __float128 colorPoly, int count, int MaxCount ) {
 
 int getfColorFLT( Parameters g, ColorFLT c ) {
     Rgb rcolor = { 0, 0, 0 };
-    Rgb r_amp = { 230, 32, 32 };
-    Rgb r_base = { 0, 28, 61 };
+    Rgb r_amp = { 127, 127, 127 };
+    Rgb r_base = { 0.01, 0.008, 0.005 };
     setRgb( &r_amp, &r_base, g );
     complex Z = c.Zx + c.Zy * I;
 
@@ -503,7 +460,7 @@ int getfColorFLT( Parameters g, ColorFLT c ) {
         case 6:
         case 7:
         case 8:
-            rcolor = getRgbSmoothCPFLT( c.colorPoly, c.n, g.maxiter );
+            rcolor = getRgbSmoothCPFLT( getCColorFLT( c, g ), c.n, g.maxiter );
             break;
         case 9:
             rcolor = getRgb2( c.n, g.maxiter );
@@ -531,6 +488,9 @@ int getfColorFLT( Parameters g, ColorFLT c ) {
         case 16:
             rcolor = getBersteinFLT( g, c, r_base, r_amp );
             break;
+        case 17:
+            rcolor = getBersteinSineFLT( g, c, (Rgb){200,200,200}, (Rgb){0.016,0.013,0.01}, (Rgb){4,2,1} );
+            break;
         default:
             rcolor = getRgb( c.n, g.maxiter );
     }
@@ -557,7 +517,7 @@ int getfColorDBL( Parameters g, ColorDBL c ) {
         case 6:
         case 7:
         case 8:
-            rcolor = getRgbSmoothCPDBL( c.colorPoly, c.n, g.maxiter );
+            rcolor = getRgbSmoothCPDBL( getCColorDBL( c, g ), c.n, g.maxiter );
             break;
         case 9:
             rcolor = getRgb2( c.n, g.maxiter );
@@ -585,6 +545,9 @@ int getfColorDBL( Parameters g, ColorDBL c ) {
         case 16:
             rcolor = getBersteinDBL( g, c, r_base, r_amp );
             break;
+        case 17:
+            rcolor = getBersteinSineDBL( g, c, (Rgb){0.01,0.008,0.005}, (Rgb){0,0,0}, (Rgb){127,127,127} );
+            break;
         default:
             rcolor = getRgb( c.n, g.maxiter );
     }
@@ -611,7 +574,7 @@ int getfColorLDBL( Parameters g, ColorLDBL c ) {
         case 6:
         case 7:
         case 8:
-            rcolor = getRgbSmoothCPLDBL( c.colorPoly, c.n, g.maxiter );
+            rcolor = getRgbSmoothCPLDBL( getCColorLDBL( c, g ), c.n, g.maxiter );
             break;
         case 9:
             rcolor = getRgb2( c.n, g.maxiter );
@@ -639,6 +602,9 @@ int getfColorLDBL( Parameters g, ColorLDBL c ) {
         case 16:
             rcolor = getBersteinLDBL( g, c, r_base, r_amp );
             break;
+        case 17:
+            rcolor = getBersteinSineLDBL( g, c, (Rgb){0.01,0.008,0.005}, (Rgb){0,0,0}, (Rgb){127,127,127} );
+            break;
         default:
             rcolor = getRgb( c.n, g.maxiter );
     }
@@ -665,7 +631,7 @@ int getfColor128( Parameters g, Color128 c ) {
         case 6:
         case 7:
         case 8:
-            rcolor = getRgbSmoothCP128( c.colorPoly, c.n, g.maxiter );
+            rcolor = getRgbSmoothCP128( getCColor128( c, g ), c.n, g.maxiter );
             break;
         case 9:
             rcolor = getRgb2( c.n, g.maxiter );
@@ -693,6 +659,9 @@ int getfColor128( Parameters g, Color128 c ) {
         case 16:
             rcolor = getBerstein128( g, c, r_base, r_amp );
             break;
+        case 17:
+            rcolor = getBersteinSine128( g, c, (Rgb){0.01,0.008,0.005}, (Rgb){0,0,0}, (Rgb){127,127,127} );
+            break;
         default:
             rcolor = getRgb( c.n, g.maxiter );
     }
@@ -704,17 +673,24 @@ int rgb2int( Rgb color ) {
 }
 
 void setRgb( Rgb *a, Rgb *b, Parameters p ) {
-    Rgb n1;
-    Rgb n2;
 
     if ( p.nargc == 2 ) {
-        str2Rgb( p.names[0], &n1);
-        str2Rgb( p.names[1], &n2);
-        cpyRgb( n1, a );
-        cpyRgb( n2, b );
+        if ( p.names[0][0] != '{' ) {
+            name2Rgb( p.names[0], a );
+        } else {
+            raw2Rgb( p.names[0], a );
+        }
+        if ( p.names[0][0] != '{' ) {
+            name2Rgb( p.names[1], b );
+        } else {
+            raw2Rgb( p.names[1], b );
+        }
     } else if ( p.nargc == 1 ) {
-        str2Rgb( p.names[0], &n1);
-        cpyRgb( n1, a );
+        if ( p.names[0][0] != '{' ) {
+            name2Rgb( p.names[0], a );
+        } else {
+            raw2Rgb( p.names[0], a );
+        }
     }
 }
 
@@ -722,4 +698,18 @@ void cpyRgb( Rgb source, Rgb *dest ) {
     dest->r = source.r;
     dest->g = source.g;
     dest->b = source.b;
+}
+
+void name2Rgb( char *name, Rgb *dest ) {
+    Rgb r;
+
+    str2Rgb( name, &r );
+    cpyRgb( r, dest );
+}
+
+void raw2Rgb( char *name, Rgb *dest ) {
+    Rgb color;
+
+    sscanf( name, "{%hhu,%hhu,%hhu}", &color.r, &color.g, &color.b );
+    cpyRgb( color, dest );
 }

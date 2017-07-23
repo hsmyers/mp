@@ -881,7 +881,9 @@ typedef enum Color {
   COLOR_ZINNWALDITE_BROWN
 } Color;
 
-bool str2Rgb( char *s, Rgb *color );
+bool RgbEQ( Rgb a, Rgb b );
 bool RgbNE( Rgb a, Rgb b );
+bool str2Rgb( char *s, Rgb *color );
+char *RgbName( Rgb color );
 
 #endif // CNAMES_H_

@@ -17,9 +17,15 @@
 % ¾ A0190 means 3/4 done,
 % × A0215 means no,
 %
-[!] 001 initial entry for mp fractal development program
-[!] 002 git config --global core.editor "name of editor"
-[!] 003 7z a nose1.7z nose1.jpg
-[!] 004 ctrl+f5, ctrl+t = insert_date with editplus format
-[!] 005 when locked out unload  malwarebytes—wait a while and restore…
-[] 006
+[!] 001. initial entry for mp fractal development program
+[!] 002. git config --global core.editor "name of editor"
+[!] 003. 7z a nose1.7z nose1.jpg
+[!] 004. ctrl+f5, ctrl+t = insert_date with editplus format
+[!] 005. when locked out unload  malwarebytes—wait a while and restore…
+[≈] 006. mode to specify start and stop colors in increment of maxiter?
+    [×] 01. No. maxiter would be too large—for now 1k? 512? Some fraction of maxiter?
+    [√] 02. Allow user to specify with palname == SET:128 and the like…
+    [≈] 03. Try switch to HSV for interpolation
+    [] 04.
+[≈] 007 palette preview output? Based on magic palname?
+[] 008
