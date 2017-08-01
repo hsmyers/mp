@@ -1,0 +1,122 @@
+c:\>test-16
+
+mp -j MSet[00].JSON -f Mset[00].test-coord.jpg -r 10 -e 128.0
+FLT-diameter:2.75, dims: 3840x2160 Mset[00].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:0:6:351200
+30:07:2017 00:16:36.490207 MDT
+maxiter = '500', nMax = '499'
+——————————————————————————————
+
+mp -j MSet[01].JSON -f Mset[01].test-coord.jpg -r 10 -e 128.0
+FLT-diameter:0.16, dims: 3840x2160 Mset[01].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:12:31:266796
+30:07:2017 00:29:08.014004 MDT
+maxiter = '10000', nMax = '9996'
+——————————————————————————————
+
+mp -j MSet[02].JSON -f Mset[02].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:0.01276, dims: 3840x2160 Mset[02].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:3:15:287998
+30:07:2017 00:32:23.522002 MDT
+maxiter = '15000', nMax = '14999'
+——————————————————————————————
+
+mp -j MSet[03].JSON -f Mset[03].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:0.00069999999999999999, dims: 3840x2160 Mset[03].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:2:41:824400
+30:07:2017 00:35:05.578402 MDT
+maxiter = '20000', nMax = '19998'
+——————————————————————————————
+
+mp -j MSet[04].JSON -f Mset[04].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:0.002, dims: 3840x2160 Mset[04].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:0:9:737400
+30:07:2017 00:35:15.619802 MDT
+maxiter = '1000', nMax = '999'
+——————————————————————————————
+
+mp -j MSet[05].JSON -f Mset[05].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:0.00050000000000000001, dims: 3840x2160 Mset[05].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:0:11:549541
+30:07:2017 00:35:27.575402 MDT
+maxiter = '1500', nMax = '1498'
+——————————————————————————————
+
+mp -j MSet[06].JSON -f Mset[06].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:0.0001, dims: 3840x2160 Mset[06].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:0:16:269800
+30:07:2017 00:35:44.283202 MDT
+maxiter = '2500', nMax = '2494'
+——————————————————————————————
+
+mp -j MSet[07].JSON -f Mset[07].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:6.2500000000000003e-006, dims: 3840x2160 Mset[07].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:1:6:058000
+30:07:2017 00:36:50.728202 MDT
+maxiter = '10000', nMax = '9995'
+——————————————————————————————
+
+mp -j MSet[08].JSON -f Mset[08].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:3.9060000000000002e-007, dims: 3840x2160 Mset[08].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:32:23:859335
+30:07:2017 01:09:14.892597 MDT
+maxiter = '25000', nMax = '24999'
+——————————————————————————————
+
+mp -j MSet[09].JSON -f Mset[09].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:3.072e-008, dims: 3840x2160 Mset[09].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:31:39:642194
+30:07:2017 01:40:54.721791 MDT
+maxiter = '200000', nMax = '199997'
+——————————————————————————————
+
+mp -j MSet[10].JSON -f Mset[10].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:9.5999999999999999e-010, dims: 3840x2160 Mset[10].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:2:1:188107
+30:07:2017 01:42:56.227898 MDT
+maxiter = '2500', nMax = '2499'
+——————————————————————————————
+
+mp -j MSet[11].JSON -f Mset[11].test-coord.jpg -r 10 -e 128.0
+DBL-diameter:6e-011, dims: 3840x2160 Mset[11].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:2:4:239400
+30:07:2017 09:16:03.381131 MDT
+maxiter = '7000', nMax = '6993'
+——————————————————————————————
+
+mp -j MSet[12].JSON -f Mset[12].test-coord.jpg -r 10 -e 128.0
+LDBL-diameter:7.5e-012, dims: 3840x2160 Mset[12].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:3:14:089761
+30:07:2017 09:19:17.727931 MDT
+maxiter = '22000', nMax = '21892'
+——————————————————————————————
+
+mp -j MSet[13].JSON -f Mset[13].test-coord.jpg -r 10 -e 128.0
+LDBL-diameter:9.3749999999999999e-013, dims: 3840x2160 Mset[13].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:6:56:852997
+30:07:2017 09:26:14.860928 MDT
+maxiter = '50000', nMax = '35568'
+——————————————————————————————
+
+mp -j MSet[14].JSON -f Mset[14].test-coord.jpg -r 10 -e 128.0
+LDBL-diameter:8e-014, dims: 3840x2160 Mset[14].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:5:45:759398
+30:07:2017 09:32:01.005326 MDT
+maxiter = '15000', nMax = '14961'
+——————————————————————————————
+
+mp -j MSet[15].JSON -f Mset[15].test-coord.jpg -r 10 -e 128.0
+FLT128-diameter:5.9999999999999997e-015, dims: 3840x2160 Mset[15].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:31:8:137395
+30:07:2017 05:17:19.899155 MDT
+maxiter = '30000', nMax = '28553'
+——————————————————————————————
+
+mp -j MSet[16].JSON -f Mset[16].test-coord.jpg -r 10 -e 128.0
+FLT128-diameter:7.4999999999999996e-016, dims: 3840x2160 Mset[16].test-coord.jpg color=10, tweak=3 aa=(null)
+elapsed time 0:0:41:43:865207
+30:07:2017 05:59:04.087362 MDT
+maxiter = '50000', nMax = '47392'
+——————————————————————————————
+
+c:\>

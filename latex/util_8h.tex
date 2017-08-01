@@ -1,0 +1,132 @@
+\hypertarget{util_8h}{}\section{util.\+h File Reference}
+\label{util_8h}\index{util.\+h@{util.\+h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$complex.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{util_8h_ac39d9cef6a5e030ba8d9e11121054268}{max}(x,  y)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\hyperlink{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba5d3bb8918cbed4e5ce7d26fd81236cb4}{F\+LT}, 
+\hyperlink{util_8h_a06fc87d81c62e9abb8790b6e5713c55baa7b7ad27665e918c9b35318101379529}{D\+BL}, 
+\hyperlink{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba3ea811c12f81fe2bad0627a9a6a70372}{L\+D\+BL}, 
+\hyperlink{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba2655df16a554ef52cfd4b64b4099b9c2}{F\+L\+T128}, 
+\newline
+\hyperlink{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba9079f85b06fb0405f363d38e70c6c198}{F\+L\+T\+M\+PC}, 
+\hyperlink{util_8h_a06fc87d81c62e9abb8790b6e5713c55baaf6647a53538f26aa13eaf60e3452c3e}{N\+O\+T\+Y\+ET}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+float128 \hyperlink{util_8h_afd8eb7be8de6cd9479e2b5c737a7b114}{fabsq} (\+\_\+\+\_\+float128 x)
+\item 
+char $\ast$ \hyperlink{util_8h_a1b25cdaf77c824997cc56eb3a4593e6e}{get\+Cl} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+char $\ast$ \hyperlink{util_8h_a6a544c95555f3b6fe9df537f915772ba}{guess\+Str} (int g)
+\item 
+char $\ast$ \hyperlink{util_8h_a11a9bd674e096fc80f9a828e26a2397c}{Read\+File} (char $\ast$filename)
+\item 
+double \hyperlink{util_8h_aecf66ad96a12d1c1182cf9c3d0bcc658}{scale\+Width} (double d, int N, double E)
+\item 
+int \hyperlink{util_8h_a2b5d458faf1411991315b18a1cadb186}{best\+Guess} (double diameter, int W)
+\item 
+void \hyperlink{util_8h_a8742ba0429f6355220c5cea0d64aefe3}{str2abbr} (char $\ast$abbr, size\+\_\+t size, const char $\ast$s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{util_8h_ac39d9cef6a5e030ba8d9e11121054268}\label{util_8h_ac39d9cef6a5e030ba8d9e11121054268}} 
+\index{util.\+h@{util.\+h}!max@{max}}
+\index{max@{max}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily \#define max(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+( \(\backslash\)
+    \{ \_\_auto\_type \_\_x = (x); \_\_auto\_type \_\_y = (y); \(\backslash\)
+      \_\_x > \_\_y ? \_\_x : \_\_y; \})
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+LT@{F\+LT}!util.\+h@{util.\+h}}\index{util.\+h@{util.\+h}!F\+LT@{F\+LT}}}\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba5d3bb8918cbed4e5ce7d26fd81236cb4}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba5d3bb8918cbed4e5ce7d26fd81236cb4}} 
+F\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+BL@{D\+BL}!util.\+h@{util.\+h}}\index{util.\+h@{util.\+h}!D\+BL@{D\+BL}}}\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55baa7b7ad27665e918c9b35318101379529}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55baa7b7ad27665e918c9b35318101379529}} 
+D\+BL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+D\+BL@{L\+D\+BL}!util.\+h@{util.\+h}}\index{util.\+h@{util.\+h}!L\+D\+BL@{L\+D\+BL}}}\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba3ea811c12f81fe2bad0627a9a6a70372}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba3ea811c12f81fe2bad0627a9a6a70372}} 
+L\+D\+BL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+L\+T128@{F\+L\+T128}!util.\+h@{util.\+h}}\index{util.\+h@{util.\+h}!F\+L\+T128@{F\+L\+T128}}}\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba2655df16a554ef52cfd4b64b4099b9c2}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba2655df16a554ef52cfd4b64b4099b9c2}} 
+F\+L\+T128&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+L\+T\+M\+PC@{F\+L\+T\+M\+PC}!util.\+h@{util.\+h}}\index{util.\+h@{util.\+h}!F\+L\+T\+M\+PC@{F\+L\+T\+M\+PC}}}\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba9079f85b06fb0405f363d38e70c6c198}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55ba9079f85b06fb0405f363d38e70c6c198}} 
+F\+L\+T\+M\+PC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+T\+Y\+ET@{N\+O\+T\+Y\+ET}!util.\+h@{util.\+h}}\index{util.\+h@{util.\+h}!N\+O\+T\+Y\+ET@{N\+O\+T\+Y\+ET}}}\mbox{\Hypertarget{util_8h_a06fc87d81c62e9abb8790b6e5713c55baaf6647a53538f26aa13eaf60e3452c3e}\label{util_8h_a06fc87d81c62e9abb8790b6e5713c55baaf6647a53538f26aa13eaf60e3452c3e}} 
+N\+O\+T\+Y\+ET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{util_8h_a2b5d458faf1411991315b18a1cadb186}\label{util_8h_a2b5d458faf1411991315b18a1cadb186}} 
+\index{util.\+h@{util.\+h}!best\+Guess@{best\+Guess}}
+\index{best\+Guess@{best\+Guess}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{best\+Guess()}{bestGuess()}}
+{\footnotesize\ttfamily int best\+Guess (\begin{DoxyParamCaption}\item[{double}]{diameter,  }\item[{int}]{W }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{util_8h_afd8eb7be8de6cd9479e2b5c737a7b114}\label{util_8h_afd8eb7be8de6cd9479e2b5c737a7b114}} 
+\index{util.\+h@{util.\+h}!fabsq@{fabsq}}
+\index{fabsq@{fabsq}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{fabsq()}{fabsq()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+float128 fabsq (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+float128}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{util_8h_a1b25cdaf77c824997cc56eb3a4593e6e}\label{util_8h_a1b25cdaf77c824997cc56eb3a4593e6e}} 
+\index{util.\+h@{util.\+h}!get\+Cl@{get\+Cl}}
+\index{get\+Cl@{get\+Cl}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{get\+Cl()}{getCl()}}
+{\footnotesize\ttfamily char$\ast$ get\+Cl (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{util_8h_a6a544c95555f3b6fe9df537f915772ba}\label{util_8h_a6a544c95555f3b6fe9df537f915772ba}} 
+\index{util.\+h@{util.\+h}!guess\+Str@{guess\+Str}}
+\index{guess\+Str@{guess\+Str}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{guess\+Str()}{guessStr()}}
+{\footnotesize\ttfamily char$\ast$ guess\+Str (\begin{DoxyParamCaption}\item[{int}]{g }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{util_8h_a11a9bd674e096fc80f9a828e26a2397c}\label{util_8h_a11a9bd674e096fc80f9a828e26a2397c}} 
+\index{util.\+h@{util.\+h}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{Read\+File()}{ReadFile()}}
+{\footnotesize\ttfamily char$\ast$ Read\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{util_8h_aecf66ad96a12d1c1182cf9c3d0bcc658}\label{util_8h_aecf66ad96a12d1c1182cf9c3d0bcc658}} 
+\index{util.\+h@{util.\+h}!scale\+Width@{scale\+Width}}
+\index{scale\+Width@{scale\+Width}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{scale\+Width()}{scaleWidth()}}
+{\footnotesize\ttfamily double scale\+Width (\begin{DoxyParamCaption}\item[{double}]{d,  }\item[{int}]{N,  }\item[{double}]{E }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{util_8h_a8742ba0429f6355220c5cea0d64aefe3}\label{util_8h_a8742ba0429f6355220c5cea0d64aefe3}} 
+\index{util.\+h@{util.\+h}!str2abbr@{str2abbr}}
+\index{str2abbr@{str2abbr}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{str2abbr()}{str2abbr()}}
+{\footnotesize\ttfamily void str2abbr (\begin{DoxyParamCaption}\item[{char $\ast$}]{abbr,  }\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+

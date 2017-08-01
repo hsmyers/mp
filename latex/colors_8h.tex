@@ -1,0 +1,523 @@
+\hypertarget{colors_8h}{}\section{colors.\+h File Reference}
+\label{colors_8h}\index{colors.\+h@{colors.\+h}}
+{\ttfamily \#include $<$quadmath.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}palette.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}getopt.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT}
+\item 
+struct \hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL}
+\item 
+struct \hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL}
+\item 
+struct \hyperlink{colors_8h_struct_color128}{Color128}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+float128 \hyperlink{colors_8h_a7aaa1b98cb29a55a32cf0c69c1a3e6f6}{get\+C\+Color128} (\hyperlink{colors_8h_struct_color128}{Color128} c, \hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\item 
+double \hyperlink{colors_8h_a4cd786dfd212fae1ec392d069f1809c6}{get\+C\+Color\+D\+BL} (\hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL} c, \hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\item 
+float \hyperlink{colors_8h_afa4960ee74768ec7cf60e5997e1ca0e0}{get\+C\+Color\+F\+LT} (\hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT} c, \hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\item 
+int \hyperlink{colors_8h_a950fbd59fe19131bff3732d052f81c69}{fraction\+Count} (int n, int \hyperlink{util_8h_ac39d9cef6a5e030ba8d9e11121054268}{max})
+\item 
+int \hyperlink{colors_8h_a6d0cfc58809258e02fa577d89ef7e34d}{getf\+Color128} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g, \hyperlink{colors_8h_struct_color128}{Color128} c)
+\item 
+int \hyperlink{colors_8h_afd1c0a7cc16fa8414fe8576005e95932}{getf\+Color\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g, \hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL} c)
+\item 
+int \hyperlink{colors_8h_a42ee92e366a5054de1e1e07ef0314236}{getf\+Color\+F\+LT} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g, \hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT} c)
+\item 
+int \hyperlink{colors_8h_a1355dc756fc0c753e21ca9dee2f1d197}{getf\+Color\+L\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g, \hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL} c)
+\item 
+int \hyperlink{colors_8h_a2eef02e1944e3347670f1a9036b5824f}{rgb2int} (\hyperlink{palette_8h_struct_rgb}{Rgb} color)
+\item 
+long double \hyperlink{colors_8h_aa430806ce128affbe0e3ab53d5a3fe91}{get\+C\+Color\+L\+D\+BL} (\hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL} c, \hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a95eb397eac787e11622b098b87a51687}{get\+Berstein128} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color128}{Color128} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+amp)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a3081ae747b735be4e267fa8993686e3f}{get\+Berstein\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+amp)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a708868273987ead513a155070156e635}{get\+Berstein\+F\+LT} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+amp)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_aab480b035968d7428efc5a0edc6a2504}{get\+Berstein\+L\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+amp)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a3724e1b6156a7476f903dbdfd7f6e4c4}{get\+Berstein\+Sine\+F\+LT} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+freq, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+phase)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a8451e8541355531594c4bc5b4377779d}{get\+Berstein\+Sine\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+freq, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+phase)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a4ee5c8f18ecb397c3fd2963a29b53454}{get\+Berstein\+Sine\+L\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+freq, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+phase)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a886df6c6c5adbf7a163c9e00634aba20}{get\+Berstein\+Sine128} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, \hyperlink{colors_8h_struct_color128}{Color128} g, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+base, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+freq, \hyperlink{palette_8h_struct_rgb}{Rgb} rgb\+\_\+phase)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a35b1a9c5715ed2d1028f0e9babba9427}{get\+Color128} (\+\_\+\+\_\+float128 color\+Poly, int rgb, int n, int maxiter)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a2e52055de4712760f38a282cbc41b04f}{get\+Color\+D\+BL} (double color\+Poly, int rgb, int n, int maxiter)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_afc6ce1676d0fd02dcc243edcdc4f6417}{get\+Color\+F\+LT} (float color\+Poly, int rgb, int n, int maxiter)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a1c376cd606fb3607e87012b1563cbd56}{get\+Color\+L\+D\+BL} (long double color\+Poly, int rgb, int n, int maxiter)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a1677acec9347271c34c06baceb1d0c95}{get\+Rgb} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a68a5615d256031e81e9a8b3687dad4b5}{get\+Rgb2} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a8c9ff8cdc10b75c208eddd8c1152df7b}{get\+Rgb3} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a22fd94098c5f2c32426edeeccf2a5697}{get\+Rgb4} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a050195542b7d8359766590db52c46a71}{get\+Rgb5} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a09197c4c630100ca49b7a60d74f669a4}{get\+Rgb\+From\+Table} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a723cc7ea49a919d34f74dee1141ce65a}{get\+Rgb\+Smooth} (int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a04fa67ccc64ee5e54b05be82899d1a10}{get\+Rgb\+Smooth\+C\+P128} (\+\_\+\+\_\+float128 cp, int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a84281c21d3d96fac752167e55588d8d7}{get\+Rgb\+Smooth\+C\+P\+D\+BL} (double cp, int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a494893f562929c2ba3d86c329afe73ce}{get\+Rgb\+Smooth\+C\+P\+F\+LT} (float cp, int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{colors_8h_a02129065c3a9f026a7eb4d2d7d6fb29a}{get\+Rgb\+Smooth\+C\+P\+L\+D\+BL} (long double cp, int \hyperlink{c_j_s_o_n_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}, int Max\+Count)
+\item 
+void \hyperlink{colors_8h_a8db5cd4266b08e36dffd30c5c091412f}{cpy\+Rgb} (\hyperlink{palette_8h_struct_rgb}{Rgb} source, \hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$dest)
+\item 
+void \hyperlink{colors_8h_ab3cfea2895e91f6b68c9f529f7f9f058}{set\+Rgb} (\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$a, \hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$\hyperlink{c_j_s_o_n_8h_a1a175e87536301df98c805ac0636ad7c}{b}, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\item 
+void \hyperlink{colors_8h_a550950fc0a959ac9a524d3fc49fd6c42}{name2\+Rgb} (char $\ast$name, \hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$dest)
+\item 
+void \hyperlink{colors_8h_ad8880c9b23fefb7463619c1af939f66c}{raw2\+Rgb} (char $\ast$name, \hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$dest)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{colors_8h_ad272d0c60d35409d4207da06bcf17b1a}{colors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Data Structure Documentation}
+\index{Color\+F\+LT@{Color\+F\+LT}}\label{struct_color_f_l_t}
+\Hypertarget{colors_8h_struct_color_f_l_t}
+\subsubsection{struct Color\+F\+LT}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{colors_8h_a9ac4dfc637230f01cc278625e4c08f63}\label{colors_8h_a9ac4dfc637230f01cc278625e4c08f63}} 
+float&
+colorPoly&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_af4d84f668f31ebdd414ddb19d7e42f8a}\label{colors_8h_af4d84f668f31ebdd414ddb19d7e42f8a}} 
+float&
+Cx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a17d65d9420a8ed144559a9d3d591b680}\label{colors_8h_a17d65d9420a8ed144559a9d3d591b680}} 
+float&
+Cy&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a142bf1562c32e79af417a8258e764514}\label{colors_8h_a142bf1562c32e79af417a8258e764514}} 
+float&
+Exps&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a43254e86f118bc92dd21f5a58013e7e4}\label{colors_8h_a43254e86f118bc92dd21f5a58013e7e4}} 
+int&
+n&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a70cc5d58d2522cdf732cf5d3756756f8}\label{colors_8h_a70cc5d58d2522cdf732cf5d3756756f8}} 
+float&
+Zx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a644638d709023a61d56084c27e2f6f40}\label{colors_8h_a644638d709023a61d56084c27e2f6f40}} 
+float&
+Zy&
+\\
+\hline
+
+\end{DoxyFields}
+\index{Color\+D\+BL@{Color\+D\+BL}}\label{struct_color_d_b_l}
+\Hypertarget{colors_8h_struct_color_d_b_l}
+\subsubsection{struct Color\+D\+BL}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{colors_8h_a0036bac7853b4736d63df2c9ddd5415f}\label{colors_8h_a0036bac7853b4736d63df2c9ddd5415f}} 
+double&
+colorPoly&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a2a18d1e704fd3e7edd36e58aa1ad608e}\label{colors_8h_a2a18d1e704fd3e7edd36e58aa1ad608e}} 
+double&
+Cx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a846fc0a4774b9a47d7dcc197aac61775}\label{colors_8h_a846fc0a4774b9a47d7dcc197aac61775}} 
+double&
+Cy&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_ae15fca56fd7556c23cbe7c527989d4fb}\label{colors_8h_ae15fca56fd7556c23cbe7c527989d4fb}} 
+double&
+Exps&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a386d58a5189f753a7f74e3d7f250cf29}\label{colors_8h_a386d58a5189f753a7f74e3d7f250cf29}} 
+int&
+n&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_afc3882aafb004e9426d0672e7c01edaf}\label{colors_8h_afc3882aafb004e9426d0672e7c01edaf}} 
+double&
+Zx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a295cfca80e80dc85e9ae1b13194a0287}\label{colors_8h_a295cfca80e80dc85e9ae1b13194a0287}} 
+double&
+Zy&
+\\
+\hline
+
+\end{DoxyFields}
+\index{Color\+L\+D\+BL@{Color\+L\+D\+BL}}\label{struct_color_l_d_b_l}
+\Hypertarget{colors_8h_struct_color_l_d_b_l}
+\subsubsection{struct Color\+L\+D\+BL}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{colors_8h_ab83bc1e6d6d0590aa7b5a539cc66c3e2}\label{colors_8h_ab83bc1e6d6d0590aa7b5a539cc66c3e2}} 
+long double&
+colorPoly&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a9f083a843499dd55048426903ba90f6f}\label{colors_8h_a9f083a843499dd55048426903ba90f6f}} 
+long double&
+Cx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_adc2ea68700059c1af12b0f49e19e6687}\label{colors_8h_adc2ea68700059c1af12b0f49e19e6687}} 
+long double&
+Cy&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a1b70845f196a0f1d127570d8a926f1ce}\label{colors_8h_a1b70845f196a0f1d127570d8a926f1ce}} 
+long double&
+Exps&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a075068bb3c5fa4e120df4f54a95f69bd}\label{colors_8h_a075068bb3c5fa4e120df4f54a95f69bd}} 
+int&
+n&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a4b4b1a35d4396ec2dbbaad51f9ff4079}\label{colors_8h_a4b4b1a35d4396ec2dbbaad51f9ff4079}} 
+long double&
+Zx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a51a0c2cb239dcadc284963eb8a5ba423}\label{colors_8h_a51a0c2cb239dcadc284963eb8a5ba423}} 
+long double&
+Zy&
+\\
+\hline
+
+\end{DoxyFields}
+\index{Color128@{Color128}}\label{struct_color128}
+\Hypertarget{colors_8h_struct_color128}
+\subsubsection{struct Color128}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{colors_8h_aad976108c20d5dac944813afb39e1b39}\label{colors_8h_aad976108c20d5dac944813afb39e1b39}} 
+\_\_float128&
+colorPoly&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a9c7a57c32aa6d05bac44b977d83261b2}\label{colors_8h_a9c7a57c32aa6d05bac44b977d83261b2}} 
+\_\_float128&
+Cx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_ac7bd2873d9dcc9496c30762846e9357a}\label{colors_8h_ac7bd2873d9dcc9496c30762846e9357a}} 
+\_\_float128&
+Cy&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a3895ee8a70d847ed619c50b24c8302d1}\label{colors_8h_a3895ee8a70d847ed619c50b24c8302d1}} 
+\_\_float128&
+Exps&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a75ba840a2e2fa86970dbbe43b2a6acff}\label{colors_8h_a75ba840a2e2fa86970dbbe43b2a6acff}} 
+int&
+n&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a1b9594bb49e14fb65892cb73b76cfdad}\label{colors_8h_a1b9594bb49e14fb65892cb73b76cfdad}} 
+\_\_float128&
+Zx&
+\\
+\hline
+
+\mbox{\Hypertarget{colors_8h_a7fc499c167fb236d20ad9b2e6052b4b3}\label{colors_8h_a7fc499c167fb236d20ad9b2e6052b4b3}} 
+\_\_float128&
+Zy&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{colors_8h_a8db5cd4266b08e36dffd30c5c091412f}\label{colors_8h_a8db5cd4266b08e36dffd30c5c091412f}} 
+\index{colors.\+h@{colors.\+h}!cpy\+Rgb@{cpy\+Rgb}}
+\index{cpy\+Rgb@{cpy\+Rgb}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{cpy\+Rgb()}{cpyRgb()}}
+{\footnotesize\ttfamily void cpy\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{source,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$}]{dest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a950fbd59fe19131bff3732d052f81c69}\label{colors_8h_a950fbd59fe19131bff3732d052f81c69}} 
+\index{colors.\+h@{colors.\+h}!fraction\+Count@{fraction\+Count}}
+\index{fraction\+Count@{fraction\+Count}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{fraction\+Count()}{fractionCount()}}
+{\footnotesize\ttfamily int fraction\+Count (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a95eb397eac787e11622b098b87a51687}\label{colors_8h_a95eb397eac787e11622b098b87a51687}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein128@{get\+Berstein128}}
+\index{get\+Berstein128@{get\+Berstein128}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein128()}{getBerstein128()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein128 (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color128}{Color128}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+amp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a3081ae747b735be4e267fa8993686e3f}\label{colors_8h_a3081ae747b735be4e267fa8993686e3f}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+D\+BL@{get\+Berstein\+D\+BL}}
+\index{get\+Berstein\+D\+BL@{get\+Berstein\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+D\+B\+L()}{getBersteinDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+amp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a708868273987ead513a155070156e635}\label{colors_8h_a708868273987ead513a155070156e635}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+F\+LT@{get\+Berstein\+F\+LT}}
+\index{get\+Berstein\+F\+LT@{get\+Berstein\+F\+LT}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+F\+L\+T()}{getBersteinFLT()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+amp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_aab480b035968d7428efc5a0edc6a2504}\label{colors_8h_aab480b035968d7428efc5a0edc6a2504}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+L\+D\+BL@{get\+Berstein\+L\+D\+BL}}
+\index{get\+Berstein\+L\+D\+BL@{get\+Berstein\+L\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+L\+D\+B\+L()}{getBersteinLDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+amp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a886df6c6c5adbf7a163c9e00634aba20}\label{colors_8h_a886df6c6c5adbf7a163c9e00634aba20}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+Sine128@{get\+Berstein\+Sine128}}
+\index{get\+Berstein\+Sine128@{get\+Berstein\+Sine128}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+Sine128()}{getBersteinSine128()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+Sine128 (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color128}{Color128}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+freq,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a8451e8541355531594c4bc5b4377779d}\label{colors_8h_a8451e8541355531594c4bc5b4377779d}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+Sine\+D\+BL@{get\+Berstein\+Sine\+D\+BL}}
+\index{get\+Berstein\+Sine\+D\+BL@{get\+Berstein\+Sine\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+Sine\+D\+B\+L()}{getBersteinSineDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+Sine\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+freq,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a3724e1b6156a7476f903dbdfd7f6e4c4}\label{colors_8h_a3724e1b6156a7476f903dbdfd7f6e4c4}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+Sine\+F\+LT@{get\+Berstein\+Sine\+F\+LT}}
+\index{get\+Berstein\+Sine\+F\+LT@{get\+Berstein\+Sine\+F\+LT}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+Sine\+F\+L\+T()}{getBersteinSineFLT()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+Sine\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+freq,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a4ee5c8f18ecb397c3fd2963a29b53454}\label{colors_8h_a4ee5c8f18ecb397c3fd2963a29b53454}} 
+\index{colors.\+h@{colors.\+h}!get\+Berstein\+Sine\+L\+D\+BL@{get\+Berstein\+Sine\+L\+D\+BL}}
+\index{get\+Berstein\+Sine\+L\+D\+BL@{get\+Berstein\+Sine\+L\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Berstein\+Sine\+L\+D\+B\+L()}{getBersteinSineLDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Berstein\+Sine\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p,  }\item[{\hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL}}]{g,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+base,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+freq,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{rgb\+\_\+phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a7aaa1b98cb29a55a32cf0c69c1a3e6f6}\label{colors_8h_a7aaa1b98cb29a55a32cf0c69c1a3e6f6}} 
+\index{colors.\+h@{colors.\+h}!get\+C\+Color128@{get\+C\+Color128}}
+\index{get\+C\+Color128@{get\+C\+Color128}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+C\+Color128()}{getCColor128()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+float128 get\+C\+Color128 (\begin{DoxyParamCaption}\item[{\hyperlink{colors_8h_struct_color128}{Color128}}]{c,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a4cd786dfd212fae1ec392d069f1809c6}\label{colors_8h_a4cd786dfd212fae1ec392d069f1809c6}} 
+\index{colors.\+h@{colors.\+h}!get\+C\+Color\+D\+BL@{get\+C\+Color\+D\+BL}}
+\index{get\+C\+Color\+D\+BL@{get\+C\+Color\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+C\+Color\+D\+B\+L()}{getCColorDBL()}}
+{\footnotesize\ttfamily double get\+C\+Color\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL}}]{c,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_afa4960ee74768ec7cf60e5997e1ca0e0}\label{colors_8h_afa4960ee74768ec7cf60e5997e1ca0e0}} 
+\index{colors.\+h@{colors.\+h}!get\+C\+Color\+F\+LT@{get\+C\+Color\+F\+LT}}
+\index{get\+C\+Color\+F\+LT@{get\+C\+Color\+F\+LT}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+C\+Color\+F\+L\+T()}{getCColorFLT()}}
+{\footnotesize\ttfamily float get\+C\+Color\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT}}]{c,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_aa430806ce128affbe0e3ab53d5a3fe91}\label{colors_8h_aa430806ce128affbe0e3ab53d5a3fe91}} 
+\index{colors.\+h@{colors.\+h}!get\+C\+Color\+L\+D\+BL@{get\+C\+Color\+L\+D\+BL}}
+\index{get\+C\+Color\+L\+D\+BL@{get\+C\+Color\+L\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+C\+Color\+L\+D\+B\+L()}{getCColorLDBL()}}
+{\footnotesize\ttfamily long double get\+C\+Color\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL}}]{c,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a35b1a9c5715ed2d1028f0e9babba9427}\label{colors_8h_a35b1a9c5715ed2d1028f0e9babba9427}} 
+\index{colors.\+h@{colors.\+h}!get\+Color128@{get\+Color128}}
+\index{get\+Color128@{get\+Color128}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Color128()}{getColor128()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Color128 (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+float128}]{color\+Poly,  }\item[{int}]{rgb,  }\item[{int}]{n,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a2e52055de4712760f38a282cbc41b04f}\label{colors_8h_a2e52055de4712760f38a282cbc41b04f}} 
+\index{colors.\+h@{colors.\+h}!get\+Color\+D\+BL@{get\+Color\+D\+BL}}
+\index{get\+Color\+D\+BL@{get\+Color\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Color\+D\+B\+L()}{getColorDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Color\+D\+BL (\begin{DoxyParamCaption}\item[{double}]{color\+Poly,  }\item[{int}]{rgb,  }\item[{int}]{n,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_afc6ce1676d0fd02dcc243edcdc4f6417}\label{colors_8h_afc6ce1676d0fd02dcc243edcdc4f6417}} 
+\index{colors.\+h@{colors.\+h}!get\+Color\+F\+LT@{get\+Color\+F\+LT}}
+\index{get\+Color\+F\+LT@{get\+Color\+F\+LT}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Color\+F\+L\+T()}{getColorFLT()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Color\+F\+LT (\begin{DoxyParamCaption}\item[{float}]{color\+Poly,  }\item[{int}]{rgb,  }\item[{int}]{n,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a1c376cd606fb3607e87012b1563cbd56}\label{colors_8h_a1c376cd606fb3607e87012b1563cbd56}} 
+\index{colors.\+h@{colors.\+h}!get\+Color\+L\+D\+BL@{get\+Color\+L\+D\+BL}}
+\index{get\+Color\+L\+D\+BL@{get\+Color\+L\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Color\+L\+D\+B\+L()}{getColorLDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Color\+L\+D\+BL (\begin{DoxyParamCaption}\item[{long double}]{color\+Poly,  }\item[{int}]{rgb,  }\item[{int}]{n,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a6d0cfc58809258e02fa577d89ef7e34d}\label{colors_8h_a6d0cfc58809258e02fa577d89ef7e34d}} 
+\index{colors.\+h@{colors.\+h}!getf\+Color128@{getf\+Color128}}
+\index{getf\+Color128@{getf\+Color128}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{getf\+Color128()}{getfColor128()}}
+{\footnotesize\ttfamily int getf\+Color128 (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g,  }\item[{\hyperlink{colors_8h_struct_color128}{Color128}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_afd1c0a7cc16fa8414fe8576005e95932}\label{colors_8h_afd1c0a7cc16fa8414fe8576005e95932}} 
+\index{colors.\+h@{colors.\+h}!getf\+Color\+D\+BL@{getf\+Color\+D\+BL}}
+\index{getf\+Color\+D\+BL@{getf\+Color\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{getf\+Color\+D\+B\+L()}{getfColorDBL()}}
+{\footnotesize\ttfamily int getf\+Color\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g,  }\item[{\hyperlink{colors_8h_struct_color_d_b_l}{Color\+D\+BL}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a42ee92e366a5054de1e1e07ef0314236}\label{colors_8h_a42ee92e366a5054de1e1e07ef0314236}} 
+\index{colors.\+h@{colors.\+h}!getf\+Color\+F\+LT@{getf\+Color\+F\+LT}}
+\index{getf\+Color\+F\+LT@{getf\+Color\+F\+LT}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{getf\+Color\+F\+L\+T()}{getfColorFLT()}}
+{\footnotesize\ttfamily int getf\+Color\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g,  }\item[{\hyperlink{colors_8h_struct_color_f_l_t}{Color\+F\+LT}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a1355dc756fc0c753e21ca9dee2f1d197}\label{colors_8h_a1355dc756fc0c753e21ca9dee2f1d197}} 
+\index{colors.\+h@{colors.\+h}!getf\+Color\+L\+D\+BL@{getf\+Color\+L\+D\+BL}}
+\index{getf\+Color\+L\+D\+BL@{getf\+Color\+L\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{getf\+Color\+L\+D\+B\+L()}{getfColorLDBL()}}
+{\footnotesize\ttfamily int getf\+Color\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g,  }\item[{\hyperlink{colors_8h_struct_color_l_d_b_l}{Color\+L\+D\+BL}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a1677acec9347271c34c06baceb1d0c95}\label{colors_8h_a1677acec9347271c34c06baceb1d0c95}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb@{get\+Rgb}}
+\index{get\+Rgb@{get\+Rgb}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb()}{getRgb()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a68a5615d256031e81e9a8b3687dad4b5}\label{colors_8h_a68a5615d256031e81e9a8b3687dad4b5}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb2@{get\+Rgb2}}
+\index{get\+Rgb2@{get\+Rgb2}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb2()}{getRgb2()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb2 (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a8c9ff8cdc10b75c208eddd8c1152df7b}\label{colors_8h_a8c9ff8cdc10b75c208eddd8c1152df7b}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb3@{get\+Rgb3}}
+\index{get\+Rgb3@{get\+Rgb3}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb3()}{getRgb3()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb3 (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a22fd94098c5f2c32426edeeccf2a5697}\label{colors_8h_a22fd94098c5f2c32426edeeccf2a5697}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb4@{get\+Rgb4}}
+\index{get\+Rgb4@{get\+Rgb4}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb4()}{getRgb4()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb4 (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a050195542b7d8359766590db52c46a71}\label{colors_8h_a050195542b7d8359766590db52c46a71}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb5@{get\+Rgb5}}
+\index{get\+Rgb5@{get\+Rgb5}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb5()}{getRgb5()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb5 (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a09197c4c630100ca49b7a60d74f669a4}\label{colors_8h_a09197c4c630100ca49b7a60d74f669a4}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb\+From\+Table@{get\+Rgb\+From\+Table}}
+\index{get\+Rgb\+From\+Table@{get\+Rgb\+From\+Table}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb\+From\+Table()}{getRgbFromTable()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb\+From\+Table (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a723cc7ea49a919d34f74dee1141ce65a}\label{colors_8h_a723cc7ea49a919d34f74dee1141ce65a}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb\+Smooth@{get\+Rgb\+Smooth}}
+\index{get\+Rgb\+Smooth@{get\+Rgb\+Smooth}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb\+Smooth()}{getRgbSmooth()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb\+Smooth (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a04fa67ccc64ee5e54b05be82899d1a10}\label{colors_8h_a04fa67ccc64ee5e54b05be82899d1a10}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb\+Smooth\+C\+P128@{get\+Rgb\+Smooth\+C\+P128}}
+\index{get\+Rgb\+Smooth\+C\+P128@{get\+Rgb\+Smooth\+C\+P128}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb\+Smooth\+C\+P128()}{getRgbSmoothCP128()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb\+Smooth\+C\+P128 (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+float128}]{cp,  }\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a84281c21d3d96fac752167e55588d8d7}\label{colors_8h_a84281c21d3d96fac752167e55588d8d7}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb\+Smooth\+C\+P\+D\+BL@{get\+Rgb\+Smooth\+C\+P\+D\+BL}}
+\index{get\+Rgb\+Smooth\+C\+P\+D\+BL@{get\+Rgb\+Smooth\+C\+P\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb\+Smooth\+C\+P\+D\+B\+L()}{getRgbSmoothCPDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb\+Smooth\+C\+P\+D\+BL (\begin{DoxyParamCaption}\item[{double}]{cp,  }\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a494893f562929c2ba3d86c329afe73ce}\label{colors_8h_a494893f562929c2ba3d86c329afe73ce}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb\+Smooth\+C\+P\+F\+LT@{get\+Rgb\+Smooth\+C\+P\+F\+LT}}
+\index{get\+Rgb\+Smooth\+C\+P\+F\+LT@{get\+Rgb\+Smooth\+C\+P\+F\+LT}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb\+Smooth\+C\+P\+F\+L\+T()}{getRgbSmoothCPFLT()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb\+Smooth\+C\+P\+F\+LT (\begin{DoxyParamCaption}\item[{float}]{cp,  }\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a02129065c3a9f026a7eb4d2d7d6fb29a}\label{colors_8h_a02129065c3a9f026a7eb4d2d7d6fb29a}} 
+\index{colors.\+h@{colors.\+h}!get\+Rgb\+Smooth\+C\+P\+L\+D\+BL@{get\+Rgb\+Smooth\+C\+P\+L\+D\+BL}}
+\index{get\+Rgb\+Smooth\+C\+P\+L\+D\+BL@{get\+Rgb\+Smooth\+C\+P\+L\+D\+BL}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{get\+Rgb\+Smooth\+C\+P\+L\+D\+B\+L()}{getRgbSmoothCPLDBL()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} get\+Rgb\+Smooth\+C\+P\+L\+D\+BL (\begin{DoxyParamCaption}\item[{long double}]{cp,  }\item[{int}]{count,  }\item[{int}]{Max\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a550950fc0a959ac9a524d3fc49fd6c42}\label{colors_8h_a550950fc0a959ac9a524d3fc49fd6c42}} 
+\index{colors.\+h@{colors.\+h}!name2\+Rgb@{name2\+Rgb}}
+\index{name2\+Rgb@{name2\+Rgb}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{name2\+Rgb()}{name2Rgb()}}
+{\footnotesize\ttfamily void name2\+Rgb (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$}]{dest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_ad8880c9b23fefb7463619c1af939f66c}\label{colors_8h_ad8880c9b23fefb7463619c1af939f66c}} 
+\index{colors.\+h@{colors.\+h}!raw2\+Rgb@{raw2\+Rgb}}
+\index{raw2\+Rgb@{raw2\+Rgb}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{raw2\+Rgb()}{raw2Rgb()}}
+{\footnotesize\ttfamily void raw2\+Rgb (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$}]{dest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_a2eef02e1944e3347670f1a9036b5824f}\label{colors_8h_a2eef02e1944e3347670f1a9036b5824f}} 
+\index{colors.\+h@{colors.\+h}!rgb2int@{rgb2int}}
+\index{rgb2int@{rgb2int}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{rgb2int()}{rgb2int()}}
+{\footnotesize\ttfamily int rgb2int (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{colors_8h_ab3cfea2895e91f6b68c9f529f7f9f058}\label{colors_8h_ab3cfea2895e91f6b68c9f529f7f9f058}} 
+\index{colors.\+h@{colors.\+h}!set\+Rgb@{set\+Rgb}}
+\index{set\+Rgb@{set\+Rgb}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{set\+Rgb()}{setRgb()}}
+{\footnotesize\ttfamily void set\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$}]{a,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$}]{b,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{colors_8h_ad272d0c60d35409d4207da06bcf17b1a}\label{colors_8h_ad272d0c60d35409d4207da06bcf17b1a}} 
+\index{colors.\+h@{colors.\+h}!colors@{colors}}
+\index{colors@{colors}!colors.\+h@{colors.\+h}}
+\subsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_array}{Array} colors}
+

@@ -10,40 +10,32 @@
 extern Array colors;
 
 typedef struct {
-    float Zx;
-    float Zy;
-    float Cx;
-    float Cy;
     float colorPoly;
     float Exps;
+    complex C;
+    complex Z;
     int n;
 } ColorFLT;
 
 typedef struct {
-    double Zx;
-    double Zy;
-    double Cx;
-    double Cy;
+    double complex Z;
+    double complex C;
     double colorPoly;
     double Exps;
     int n;
 } ColorDBL;
 
 typedef struct {
-    long double Zx;
-    long double Zy;
-    long double Cx;
-    long double Cy;
+    long double complex Z;
+    long double complex C;
     long double colorPoly;
     long double Exps;
     int n;
 } ColorLDBL;
 
 typedef struct {
-    __float128 Zx;
-    __float128 Zy;
-    __float128 Cx;
-    __float128 Cy;
+    __complex128 Z;
+    __complex128 C;
     __float128 colorPoly;
     __float128 Exps;
     int n;

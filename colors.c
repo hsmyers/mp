@@ -14,100 +14,92 @@ const double value = 0.75;
 const double rotation = 172.0;
 
 float getCColorFLT( ColorFLT c, Parameters P ) {
-    complex Z = c.Zx + c.Zy * I;
-    complex C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
-        Z = Z * Z + C;
+        c.Z = c.Z * c.Z + c.C;
         c.n++;
     }
     switch (P.color) {
         case 3:
-            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( c.Z ) / log( 2 ) );
         case 4:
-            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( c.Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( c.Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( c.Z ) ) );
         default:
             return 0.0;
     }
 }
 
 double getCColorDBL( ColorDBL c, Parameters P ) {
-    double complex Z = c.Zx + c.Zy * I;
-    double complex C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
-        Z = Z * Z + C;
+        c.Z = c.Z * c.Z + c.C;
         c.n++;
     }
     switch (P.color) {
         case 3:
-            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( c.Z ) / log( 2 ) );
         case 4:
-            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( c.Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( c.Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( c.Z ) ) );
         default:
             return 0.0;
     }
 }
 
 long double getCColorLDBL( ColorLDBL c, Parameters P ) {
-    long double complex Z = c.Zx + c.Zy * I;
-    long double complex C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
-        Z = Z * Z + C;
+        c.Z = c.Z * c.Z + c.C;
         c.n++;
     }
     switch (P.color) {
         case 3:
-            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( c.Z ) / log( 2 ) );
         case 4:
-            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( c.Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( c.Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( c.Z ) ) );
         default:
             return 0.0;
     }
 }
 
 __float128 getCColor128( Color128 c, Parameters P ) {
-    __complex128 Z = c.Zx + c.Zy * I;
-    __complex128 C = c.Cx + c.Cy * I;
     for ( int m = 0; m < P.tweak; m++ ) {
-        Z = Z * Z + C;
+        c.Z = c.Z * c.Z + c.C;
         c.n++;
     }
     switch (P.color) {
         case 3:
-            return c.n + 1 - ( log( 2 ) / cabs( Z ) / log( 2 ) );
+            return c.n + 1 - ( log( 2 ) / cabs( c.Z ) / log( 2 ) );
         case 4:
-            return c.n - ( log( log( cabs( Z ) ) ) ) / log( 2.0 );
+            return c.n - ( log( log( cabs( c.Z ) ) ) ) / log( 2.0 );
         case 5:
-            return 256.0 * log( 1.75 + c.n - log( log( cabs( Z ) ) ) ) / log( ( float )P.maxiter );
+            return 256.0 * log( 1.75 + c.n - log( log( cabs( c.Z ) ) ) ) / log( ( float )P.maxiter );
         case 6:
-            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 256.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 7:
-            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( Z ) ) ) ) / log2( ( float )P.maxiter );
+            return 512.0 * log2( 1.75 + c.n - log2( log2( cabs( c.Z ) ) ) ) / log2( ( float )P.maxiter );
         case 8:
-            return c.n + 1.5 - log2( log2( cabs( Z ) ) );
+            return c.n + 1.5 - log2( log2( cabs( c.Z ) ) );
         default:
             return 0.0;
     }
@@ -445,7 +437,6 @@ int getfColorFLT( Parameters g, ColorFLT c ) {
     Rgb r_amp = { 127, 127, 127 };
     Rgb r_base = { 0.01, 0.008, 0.005 };
     setRgb( &r_amp, &r_base, g );
-    complex Z = c.Zx + c.Zy * I;
 
     switch ( g.color ) {
         case 1:
@@ -475,15 +466,19 @@ int getfColorFLT( Parameters g, ColorFLT c ) {
             rcolor = getRgb5( c.n, g.maxiter );
             break;
         case 13:
+            for ( int m = 0; m < g.tweak ; m++ ) {
+                c.Z = c.Z * c.Z + c.C;
+                c.Exps += cabs( c.Z );
+            }
             rcolor = getRgbSmoothCPFLT( c.Exps, c.n, g.maxiter );
             break;
         case 14:
             if ( c.n < g.maxiter ) {
-                rcolor = HSVToRGB( GiveHSV( Z ) );
+                rcolor = HSVToRGB( GiveHSV( c.Z ) );
             }
             break;
         case 15:
-            rcolor = HSVToRGB( GiveHSV( Z ) );
+            rcolor = HSVToRGB( GiveHSV( c.Z ) );
             break;
         case 16:
             rcolor = getBersteinFLT( g, c, r_base, r_amp );
@@ -502,7 +497,6 @@ int getfColorDBL( Parameters g, ColorDBL c ) {
     Rgb r_amp = { 230, 32, 32 };
     Rgb r_base = { 0, 28, 61 };
     setRgb( &r_amp, &r_base, g );
-    double complex Z = c.Zx + c.Zy * I;
 
     switch ( g.color ) {
         case 1:
@@ -532,15 +526,19 @@ int getfColorDBL( Parameters g, ColorDBL c ) {
             rcolor = getRgb5( c.n, g.maxiter );
             break;
         case 13:
-            rcolor = getRgbSmoothCPDBL( c.Exps, c.n, g.maxiter );
+            for ( int m = 0; m < g.tweak ; m++ ) {
+                c.Z = c.Z * c.Z + c.C;
+                c.Exps += cabs( c.Z );
+            }
+            rcolor = getRgbSmoothCPFLT( c.Exps, c.n, g.maxiter );
             break;
         case 14:
             if ( c.n < g.maxiter ) {
-                rcolor = HSVToRGB( GiveHSV( Z ) );
+                rcolor = HSVToRGB( GiveHSV( c.Z ) );
             }
             break;
         case 15:
-            rcolor = HSVToRGB( GiveHSV( Z ) );
+            rcolor = HSVToRGB( GiveHSV( c.Z ) );
             break;
         case 16:
             rcolor = getBersteinDBL( g, c, r_base, r_amp );
@@ -559,7 +557,6 @@ int getfColorLDBL( Parameters g, ColorLDBL c ) {
     Rgb r_amp = { 0, 153, 153 };
     Rgb r_base = { 204, 0, 204 };
     setRgb( &r_amp, &r_base, g );
-    long double complex Z = c.Zx + c.Zy * I;
 
     switch ( g.color ) {
         case 1:
@@ -589,15 +586,19 @@ int getfColorLDBL( Parameters g, ColorLDBL c ) {
             rcolor = getRgb5( c.n, g.maxiter );
             break;
         case 13:
-            rcolor = getRgbSmoothCPLDBL( c.Exps, c.n, g.maxiter );
+            for ( int m = 0; m < g.tweak ; m++ ) {
+                c.Z = c.Z * c.Z + c.C;
+                c.Exps += cabs( c.Z );
+            }
+            rcolor = getRgbSmoothCPFLT( c.Exps, c.n, g.maxiter );
             break;
         case 14:
             if ( c.n < g.maxiter ) {
-                rcolor = HSVToRGB( GiveHSV( Z ) );
+                rcolor = HSVToRGB( GiveHSV( c.Z ) );
             }
             break;
         case 15:
-            rcolor = HSVToRGB( GiveHSV( Z ) );
+            rcolor = HSVToRGB( GiveHSV( c.Z ) );
             break;
         case 16:
             rcolor = getBersteinLDBL( g, c, r_base, r_amp );
@@ -616,7 +617,6 @@ int getfColor128( Parameters g, Color128 c ) {
     Rgb r_amp = { 0, 153, 153 };
     Rgb r_base = { 204, 0, 204 };
     setRgb( &r_amp, &r_base, g );
-    __complex128 Z = c.Zx + c.Zy * I;
 
     switch ( g.color ) {
         case 1:
@@ -646,15 +646,19 @@ int getfColor128( Parameters g, Color128 c ) {
             rcolor = getRgb5( c.n, g.maxiter );
             break;
         case 13:
-            rcolor = getRgbSmoothCP128( c.Exps, c.n, g.maxiter );
+            for ( int m = 0; m < g.tweak ; m++ ) {
+                c.Z = c.Z * c.Z + c.C;
+                c.Exps += cabs( c.Z );
+            }
+            rcolor = getRgbSmoothCPFLT( c.Exps, c.n, g.maxiter );
             break;
         case 14:
             if ( c.n < g.maxiter ) {
-                rcolor = HSVToRGB( GiveHSV( Z ) );
+                rcolor = HSVToRGB( GiveHSV( c.Z ) );
             }
             break;
         case 15:
-            rcolor = HSVToRGB( GiveHSV( Z ) );
+            rcolor = HSVToRGB( GiveHSV( c.Z ) );
             break;
         case 16:
             rcolor = getBerstein128( g, c, r_base, r_amp );

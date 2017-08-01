@@ -1,0 +1,171 @@
+\hypertarget{palette_8h}{}\section{palette.\+h File Reference}
+\label{palette_8h}\index{palette.\+h@{palette.\+h}}
+{\ttfamily \#include $<$complex.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}getopt.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{palette_8h_struct_rgb}{Rgb}
+\item 
+struct \hyperlink{palette_8h_struct_array}{Array}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{palette_8h_a76bc60de1645ee244d11a85ee2cfd3c7}{init\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a, size\+\_\+t initial\+Size)
+\begin{DoxyCompactList}\small\item\em Initialize Dynamic \hyperlink{palette_8h_struct_array}{Array}. \end{DoxyCompactList}\item 
+void \hyperlink{palette_8h_a023ea2bb8f8a24f034b63decb038d959}{insert\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a, \hyperlink{palette_8h_struct_rgb}{Rgb} element)
+\begin{DoxyCompactList}\small\item\em Add item to dynamic array. \end{DoxyCompactList}\item 
+void \hyperlink{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}{free\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Deallocate array. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_a4a2bf9070373aa94ba3e735670375c41}{get\+Colors} (char $\ast$palname)
+\begin{DoxyCompactList}\small\item\em Initialize palette from a palette file. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}{set\+Colors} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\begin{DoxyCompactList}\small\item\em Initialize palette from command line information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Data Structure Documentation}
+\index{Rgb@{Rgb}}\label{struct_rgb}
+\Hypertarget{palette_8h_struct_rgb}
+\subsubsection{struct Rgb}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{palette_8h_acab4ec8e0d55174258da75ee80f69bef}\label{palette_8h_acab4ec8e0d55174258da75ee80f69bef}} 
+unsigned char&
+b&
+\\
+\hline
+
+\mbox{\Hypertarget{palette_8h_a27a8958ecb91f5f98ee520129a396ce3}\label{palette_8h_a27a8958ecb91f5f98ee520129a396ce3}} 
+unsigned char&
+g&
+\\
+\hline
+
+\mbox{\Hypertarget{palette_8h_a3da778daa4ccbc628c478b21d6093df5}\label{palette_8h_a3da778daa4ccbc628c478b21d6093df5}} 
+unsigned char&
+r&
+\\
+\hline
+
+\end{DoxyFields}
+\index{Array@{Array}}\label{struct_array}
+\Hypertarget{palette_8h_struct_array}
+\subsubsection{struct Array}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{palette_8h_a1004bb52f35f927022e780a193612db1}\label{palette_8h_a1004bb52f35f927022e780a193612db1}} 
+\hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$&
+array&
+\\
+\hline
+
+\mbox{\Hypertarget{palette_8h_a13f67ab957f4fdd3443d7f62b2fd09ce}\label{palette_8h_a13f67ab957f4fdd3443d7f62b2fd09ce}} 
+size\_t&
+size&
+\\
+\hline
+
+\mbox{\Hypertarget{palette_8h_a6196b6388bc5b72dd2dea08e483a0c47}\label{palette_8h_a6196b6388bc5b72dd2dea08e483a0c47}} 
+size\_t&
+used&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}\label{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}} 
+\index{palette.\+h@{palette.\+h}!free\+Array@{free\+Array}}
+\index{free\+Array@{free\+Array}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{free\+Array()}{freeArray()}}
+{\footnotesize\ttfamily void free\+Array (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_array}{Array} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Deallocate array. 
+
+Free memory allocated for dynamic array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & A pointer to an array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{palette_8h_a4a2bf9070373aa94ba3e735670375c41}\label{palette_8h_a4a2bf9070373aa94ba3e735670375c41}} 
+\index{palette.\+h@{palette.\+h}!get\+Colors@{get\+Colors}}
+\index{get\+Colors@{get\+Colors}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{get\+Colors()}{getColors()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_array}{Array} get\+Colors (\begin{DoxyParamCaption}\item[{char $\ast$}]{palname }\end{DoxyParamCaption})}
+
+
+
+Initialize palette from a palette file. 
+
+Given the name of a palette file of \hyperlink{palette_8h_struct_rgb}{Rgb} triples, read and load a palette.
+
+
+\begin{DoxyParams}{Parameters}
+{\em palname} & Name of palette file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of array. A palette in this case. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{palette_8h_a76bc60de1645ee244d11a85ee2cfd3c7}\label{palette_8h_a76bc60de1645ee244d11a85ee2cfd3c7}} 
+\index{palette.\+h@{palette.\+h}!init\+Array@{init\+Array}}
+\index{init\+Array@{init\+Array}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{init\+Array()}{initArray()}}
+{\footnotesize\ttfamily void init\+Array (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_array}{Array} $\ast$}]{a,  }\item[{size\+\_\+t}]{initial\+Size }\end{DoxyParamCaption})}
+
+
+
+Initialize Dynamic \hyperlink{palette_8h_struct_array}{Array}. 
+
+This begins a chain of memory allocations for a given typedef/struct. In this instance, the type is \hyperlink{palette_8h_struct_rgb}{Rgb}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to an array. \\
+\hline
+{\em initial\+Size} & How many instances of item for inital allocation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{palette_8h_a023ea2bb8f8a24f034b63decb038d959}\label{palette_8h_a023ea2bb8f8a24f034b63decb038d959}} 
+\index{palette.\+h@{palette.\+h}!insert\+Array@{insert\+Array}}
+\index{insert\+Array@{insert\+Array}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{insert\+Array()}{insertArray()}}
+{\footnotesize\ttfamily void insert\+Array (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_array}{Array} $\ast$}]{a,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{element }\end{DoxyParamCaption})}
+
+
+
+Add item to dynamic array. 
+
+Either insert item into already allocated space or fetch more space and then insert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & pointer to an array. \\
+\hline
+{\em element} & Item to be inserted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}\label{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}} 
+\index{palette.\+h@{palette.\+h}!set\+Colors@{set\+Colors}}
+\index{set\+Colors@{set\+Colors}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{set\+Colors()}{setColors()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_array}{Array} set\+Colors (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
+
+
+
+Initialize palette from command line information. 
+
+Given start and finish colors, construct a palette accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to command line information typedef/struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of array. Palette in this case. 
+\end{DoxyReturn}

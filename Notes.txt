@@ -3,6 +3,10 @@
 %
 % Where:
 %
+% 🐛      means BUG,
+% ⬅      means left pointing arrow,
+% ➡      means right pointing arrow,
+% ➥      means reference arrow as in SEE➥
 % ?       means not sure,
 % !       means informational,
 % √ A251  means yes and done,
@@ -22,10 +26,47 @@
 [!] 003. 7z a nose1.7z nose1.jpg
 [!] 004. ctrl+f5, ctrl+t = insert_date with editplus format
 [!] 005. when locked out unload  malwarebytes—wait a while and restore…
+	[!] 01. Remember if mp is running you will get this error!
+	[] 02.
 [≈] 006. mode to specify start and stop colors in increment of maxiter?
     [×] 01. No. maxiter would be too large—for now 1k? 512? Some fraction of maxiter?
     [√] 02. Allow user to specify with palname == SET:128 and the like…
-    [≈] 03. Try switch to HSV for interpolation
+    [√] 03. Try switch to HSV for interpolation
     [] 04.
-[≈] 007 palette preview output? Based on magic palname?
-[] 008
+[≈] 007. palette preview output? Based on magic palname?
+[≈] 008. 🐛 BUG translation method is off; x axis for sure, possibly y axis
+	as well. Ongoing problem. SEE➥  #—011., #—012.
+[≈] 009. 🐛 BUG nMax is incorrect.
+	[≈] 01. mset returns Parameter fixes this… SEE➥ #—015.
+	[] 02.
+[√]	010. Fixed elapsed routines to paranoid\ level.
+[≈] 011. Test coord with MSet[02].JSON
+	[≈] 01. #ifdef between Axis and coord
+	[] 02.
+[≈] 012. 🐛 BUG mystery of black image for JSON 12, 13 and 14?
+	[!] 01. this with coord enabled.
+		[!] 1. no drift, went to completion.
+		[]2.
+	[≈] 02. try with axis enabled on JSON-14
+		[!] 1. drift is there but 14 went to completion.
+		[] 2.
+	[!] 03. drift gone until FLT128 invoked.
+		[!] 1. revised version with coord inline works w/14.
+		[] 2.
+	[] 04.
+[√] 013. add ㎳ to elapsed?
+[≈] 014. 🐛 BUG Where did lines from mand4 version of -r 10 go?
+	[!] 01. rabbit hole—lines are a function of Zx/Zy versus complex Z
+	[] 02.
+[√] 015. 🐛 BUG fix nMax == 0;
+	[√] 01. mand now returns Parameters.
+	[] 02.
+[≈] 016. 🐛 BUG mp -x -0.65 -y 0 -m 0.3636363636363636 -w 3840 -l 2160 -r 10 -t 3 -f test[00].10.jpg FAIL
+	[!] 01. Black image along with nMax == 0
+	[!] 02. mp -j MSet[00].JSON -r 10 -t 5 -f test[00].10.jpg works as expected
+	[!] 03. this during effort to recreate forces lines from over-iteration
+	[] 04.
+[≈] 017. Find way to offer both Zx/Zy and complex Z
+	[] 01.
+[] 018.
+

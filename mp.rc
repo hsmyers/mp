@@ -1,0 +1,25 @@
+1 ICON "mp.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,20
+PRODUCTVERSION  1,0,0,20
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904E4"
+    BEGIN
+      VALUE "CompanyName", "Silicon Dragons"
+      VALUE "FileDescription", "Fractal playpen and testbed"
+      VALUE "FileVersion", "1.0.0.20"
+      VALUE "InternalName", "mp"
+      VALUE "LegalCopyright", "Hugh S. Myers"
+      VALUE "OriginalFilename", "mp.exe"
+      VALUE "ProductName", "Mp"
+      VALUE "ProductVersion", "1.0.0.20"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+      VALUE "Translation", 0x409, 1252
+  END
+END
