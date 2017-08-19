@@ -64,141 +64,43 @@ $(function() {
 <div class="title">elapsed.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Routines to provide time information as mp executes.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="elapsed_8h_source.html">elapsed.h</a>&quot;</code><br />
+<code>#include &quot;elapsed.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="elapsed_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab32389e2446b15fde1fb910531d63373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elapsed_8c.html#ab32389e2446b15fde1fb910531d63373">elapsed</a> (int elapsedSeconds, long milleseconds)</td></tr>
+<tr class="memitem:ab32389e2446b15fde1fb910531d63373"><td class="memItemLeft" align="right" valign="top"><a id="ab32389e2446b15fde1fb910531d63373"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>elapsed</b> (int elapsedSeconds, long milleseconds)</td></tr>
 <tr class="separator:ab32389e2446b15fde1fb910531d63373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dec6ba085ce91733e9c4c7e6088a598"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elapsed_8c.html#a1dec6ba085ce91733e9c4c7e6088a598">timeval_subtract</a> (struct timeval *result, struct timeval *x, struct timeval *y)</td></tr>
+<tr class="memitem:a1dec6ba085ce91733e9c4c7e6088a598"><td class="memItemLeft" align="right" valign="top"><a id="a1dec6ba085ce91733e9c4c7e6088a598"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>timeval_subtract</b> (struct timeval *result, struct timeval *x, struct timeval *y)</td></tr>
 <tr class="separator:a1dec6ba085ce91733e9c4c7e6088a598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932f3f97704d67e443248c115395a4d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elapsed_8c.html#a932f3f97704d67e443248c115395a4d0">timeval_print</a> (struct timeval *tv)</td></tr>
+<tr class="memitem:a932f3f97704d67e443248c115395a4d0"><td class="memItemLeft" align="right" valign="top"><a id="a932f3f97704d67e443248c115395a4d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>timeval_print</b> (struct timeval *tv)</td></tr>
 <tr class="separator:a932f3f97704d67e443248c115395a4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96ba6646c82e8ca22e216573314dca7c"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elapsed_8c.html#a96ba6646c82e8ca22e216573314dca7c">format_timeval</a> (struct timeval *tv, char *buf, size_t sz)</td></tr>
+<tr class="memitem:a96ba6646c82e8ca22e216573314dca7c"><td class="memItemLeft" align="right" valign="top"><a id="a96ba6646c82e8ca22e216573314dca7c"></a>
+ssize_t&#160;</td><td class="memItemRight" valign="bottom"><b>format_timeval</b> (struct timeval *tv, char *buf, size_t sz)</td></tr>
 <tr class="separator:a96ba6646c82e8ca22e216573314dca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ab32389e2446b15fde1fb910531d63373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab32389e2446b15fde1fb910531d63373">&#9670;&nbsp;</a></span>elapsed()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Routines to provide time information as mp executes. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Mon Jul 24 16:09:35 2017</dd></dl>
+<p>Description</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void elapsed </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>elapsedSeconds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>milleseconds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a96ba6646c82e8ca22e216573314dca7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96ba6646c82e8ca22e216573314dca7c">&#9670;&nbsp;</a></span>format_timeval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ssize_t format_timeval </td>
-          <td>(</td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>tv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sz</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a932f3f97704d67e443248c115395a4d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a932f3f97704d67e443248c115395a4d0">&#9670;&nbsp;</a></span>timeval_print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void timeval_print </td>
-          <td>(</td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>tv</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1dec6ba085ce91733e9c4c7e6088a598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dec6ba085ce91733e9c4c7e6088a598">&#9670;&nbsp;</a></span>timeval_subtract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int timeval_subtract </td>
-          <td>(</td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timeval *&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p class="definition">Definition in file <a class="el" href="elapsed_8c_source.html">elapsed.c</a>.</p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

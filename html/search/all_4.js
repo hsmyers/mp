@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['hash',['hash',['../dictionary_8h.html#a8bb05f9fb18407dc44986ac02aeb0a31',1,'dictionary']]],
-  ['hsv',['HSV',['../struct_h_s_v.html',1,'']]]
+  ['elapsed_2ec',['elapsed.c',['../elapsed_8c.html',1,'']]],
+  ['error',['error',['../structerror.html',1,'']]],
+  ['escape',['escape',['../getopt_8h.html#ab2c8bc69657e088382736e4a0e11217d',1,'Parameters']]]
 ];

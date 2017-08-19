@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.4.15)  17 JUL 2017 08:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.7.24)  12 AUG 2017 07:45
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1036,114 +1036,6 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 ))
 (refman.aux
 
-LaTeX Warning: Label `struct_array_a1004bb52f35f927022e780a193612db1' multiply 
-defined.
-
-
-LaTeX Warning: Label `struct_array_a13f67ab957f4fdd3443d7f62b2fd09ce' multiply 
-defined.
-
-
-LaTeX Warning: Label `struct_array_a6196b6388bc5b72dd2dea08e483a0c47' multiply 
-defined.
-
-
-LaTeX Warning: Label `struct_axes_d_b_l_aca6c1fed110e22d0fe0a6cfcd3f4d93e' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_d_b_l_a11513e052101867dae5751ae717f8365' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_d_b_l_a44a84c7223681783283927b8877afede' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_d_b_l_ae8d972bf03fcc9b9b103c7ab039a7e15' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_d_b_l_afd77303b336f75e23687ed30d01124a9' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_d_b_l_aad750ce794560a6cb58da22a29969a2e' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t_a520e859aa39688e2997035ba5f24f515' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t_a8242fd328e74bfe8816229d8a3f596f2' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t_a19c4c1aa2322862315f36f5f3a285592' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t_ade85c4b4a4a8200eb4424c83bd7ace32' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t_a2e8c47bb0be78acec1f281c8dcac097e' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t128_acc15ccde617cb0f18df0b1e016a937a5' m
-ultiply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t128_a997c5dfe1f0ef1f7112aa4a866913599' m
-ultiply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t128_a24751b8ce05e8c5bc2c64610dd7dd642' m
-ultiply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t128_af1e253298b60a49e5f7a1dd052275468' m
-ultiply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t128_a9b177fb1f936271e4ec1045778e9e2ea' m
-ultiply defined.
-
-
-LaTeX Warning: Label `struct_axes_f_l_t128_a9c676c0a43582d9ea00d3018a0a4b151' m
-ultiply defined.
-
-
-LaTeX Warning: Label `struct_axes_l_d_b_l_ac115fcf200bdfa1962909809c5c8977f' mu
-ltiply defined.
-
-
-LaTeX Warning: Label `struct_axes_l_d_b_l_a1ae48fd4b64be2a22c19c50d572cefea' mu
-ltiply defined.
-
-
-LaTeX Warning: Label `struct_axes_l_d_b_l_ad46da7b8b982c14b58f175edc4c1183b' mu
-ltiply defined.
-
-
-LaTeX Warning: Label `struct_axes_l_d_b_l_afc9c7ac423766c37e2a1cb9cb0eb2fe3' mu
-ltiply defined.
-
-
-LaTeX Warning: Label `struct_axes_l_d_b_l_a3b8e7a88acc56b5173a005ff29b6834f' mu
-ltiply defined.
-
-
-LaTeX Warning: Label `struct_axes_l_d_b_l_a423f22c476736f8a1627063acbfc0426' mu
-ltiply defined.
-
-
 LaTeX Warning: Label `structc_j_s_o_n_a401b274c2da358dac5c23ab8b2c71f85' multip
 ly defined.
 
@@ -1176,6 +1068,210 @@ LaTeX Warning: Label `structc_j_s_o_n_ad43f8de2571e504c4c5ce0a36990e6e1' multip
 ly defined.
 
 
+LaTeX Warning: Label `struct_color128_a7d8d0e07afcc033267f5c6b8ee5460af' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_aad976108c20d5dac944813afb39e1b39' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a9c7a57c32aa6d05bac44b977d83261b2' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_ac7bd2873d9dcc9496c30762846e9357a' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_ad5c9016be1b1895979d83fb0cf6b59b5' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a3895ee8a70d847ed619c50b24c8302d1' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a75ba840a2e2fa86970dbbe43b2a6acff' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_acffc1997afccd231603ea5af55ddf900' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a1b9594bb49e14fb65892cb73b76cfdad' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a332d99cef1756df3cd4fa6623a97599b' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a7fc499c167fb236d20ad9b2e6052b4b3' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color128_a8f397bfacccdd7f7c4b62de261960426' multip
+ly defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a262fa54396ee6189934c95444b663e08' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a0036bac7853b4736d63df2c9ddd5415f' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a2a18d1e704fd3e7edd36e58aa1ad608e' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a846fc0a4774b9a47d7dcc197aac61775' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a0dd11fac7a3243fae5357a010549c79b' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_ae15fca56fd7556c23cbe7c527989d4fb' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a386d58a5189f753a7f74e3d7f250cf29' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a69a19813a90cb1464e4bc5ab26572e7d' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_afc3882aafb004e9426d0672e7c01edaf' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a6125ad69bdbe0f5e1d8e661c522ffe6f' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a295cfca80e80dc85e9ae1b13194a0287' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_d_b_l_a0a80ad80b28ffc36cded142c1a1329a0' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_ad9f2932b326bd90c655bce9b24424efb' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a9ac4dfc637230f01cc278625e4c08f63' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_af4d84f668f31ebdd414ddb19d7e42f8a' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a17d65d9420a8ed144559a9d3d591b680' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a1a49b8e86d11b8179e100d356198f186' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a142bf1562c32e79af417a8258e764514' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a43254e86f118bc92dd21f5a58013e7e4' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_aa4795f7bd4044069e9b534be7cceb117' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a70cc5d58d2522cdf732cf5d3756756f8' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_ab6416bbb2cc0ab236531be916e97bd66' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a644638d709023a61d56084c27e2f6f40' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_f_l_t_a533873f42823fa007535eccbcb1d95c1' mul
+tiply defined.
+
+
+LaTeX Warning: Label `struct_color_info_a1cd69aeba7e0a78c70e775a19a88eab5' mult
+iply defined.
+
+
+LaTeX Warning: Label `struct_color_info_ace286a57c75f465113f3fa68800eb0ff' mult
+iply defined.
+
+
+LaTeX Warning: Label `struct_color_info_a088bdf4ce19ae9cc8200062159164dc8' mult
+iply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a7ba2fec21e5a08b5f292d33ab9cf9a3c' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_ab83bc1e6d6d0590aa7b5a539cc66c3e2' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a9f083a843499dd55048426903ba90f6f' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_adc2ea68700059c1af12b0f49e19e6687' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_afe6063b806d79b291cba465a3db78fa2' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a1b70845f196a0f1d127570d8a926f1ce' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a075068bb3c5fa4e120df4f54a95f69bd' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a61908183c296dc562365e409376785ea' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a4b4b1a35d4396ec2dbbaad51f9ff4079' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a06eed3d8aea784c0ae037921b3018bdf' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a51a0c2cb239dcadc284963eb8a5ba423' m
+ultiply defined.
+
+
+LaTeX Warning: Label `struct_color_l_d_b_l_a6c3bbba3508128ad4c78842cfbe36789' m
+ultiply defined.
+
+
 LaTeX Warning: Label `structerror_a9b123855d5dd48e86de846588462b39f' multiply d
 efined.
 
@@ -1194,66 +1290,6 @@ defined.
 
 LaTeX Warning: Label `struct_h_s_v_aade636e6ce581e93de5374f0e5d77d7c' multiply 
 defined.
-
-
-LaTeX Warning: Label `struct_parameters_a37a1880a2aa4730679fc51040af3a976' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a77a4b596ca7a32175d60ff750748af21' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a9f486cabe8205f5c1ee65ecc885e4b86' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a0ec9c97da0f7373e9c2b4f898ff76e46' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_ab3ec51653a2131c0a7049e0a5e34e651' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a47505a58a58119e1de3adf8b84e8a33e' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a039d46f92783f0b6b7d2d1500fdbe0c8' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a23b676a85d6a74715ebf52d083b26d41' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_aa0985d56460f9fd14ab4696c0ddcd700' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a90f665266505361517c0b1af718b2d4a' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_ac52eab28b83153725ee22ba6700f848e' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a48e77fdf8acb086d2fdc2934ca2d10d3' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_af435d3291ff1a66552d9f3383c6a517c' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_a1962cf70d9f60c9b1b6d567a0152776b' mult
-iply defined.
-
-
-LaTeX Warning: Label `struct_parameters_ae8f341732b04b09c84f67f0439efb79d' mult
-iply defined.
 
 
 LaTeX Warning: Label `structparse__buffer_a52ee1184576baa3d5171059ab0e942de' mu
@@ -1304,16 +1340,16 @@ LaTeX Warning: Label `structprintbuffer_a3ed6f9d24d6591047680492a962dc7c9' mult
 iply defined.
 
 
-LaTeX Warning: Label `struct_rgb_acab4ec8e0d55174258da75ee80f69bef' multiply de
-fined.
+LaTeX Warning: Label `util_8h_DESCRIPTION' multiply defined.
 
 
-LaTeX Warning: Label `struct_rgb_a27a8958ecb91f5f98ee520129a396ce3' multiply de
-fined.
+LaTeX Warning: Label `util_8h_DESCRIPTION' multiply defined.
 
 
-LaTeX Warning: Label `struct_rgb_a3da778daa4ccbc628c478b21d6093df5' multiply de
-fined.
+LaTeX Warning: Label `util_8h_DESCRIPTION' multiply defined.
+
+
+LaTeX Warning: Label `util_8h_DESCRIPTION' multiply defined.
 
 )
 \openout1 = `refman.aux'.
@@ -1473,20 +1509,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 12.
+(Font)              scaled to size 6.29996pt on input line 9.
  [1
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 67.
+(Font)              scaled to size 6.29996pt on input line 66.
  [2] [3] [4]
-[5])
+[5] [6] [7])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [6] [7] [8
+ [8] [9] [10
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 138.
@@ -1514,16 +1550,26 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.99994pt on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 28.
+(Font)              scaled to size 6.29996pt on input line 32.
 
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 49.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [2]
+) [2]) [3] [4
+
+]
 Chapter 2.
+(todo.tex) [5] [6
+
+]
+Chapter 3.
+(bug.tex) [7] [8
+
+]
+Chapter 4.
 (annotated.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1531,39 +1577,34 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-) [3
-
-] [4
+) [9] [10
 
 ]
-Chapter 3.
+Chapter 5.
 (files.tex
 
-LaTeX Warning: Reference `c_j_s_o_n_8h' on page 5 undefined on input line 3.
+LaTeX Warning: Reference `c_j_s_o_n_8h' on page 11 undefined on input line 3.
 
 
-LaTeX Warning: Reference `colors_8h' on page 5 undefined on input line 4.
+LaTeX Warning: Reference `cnames_8h' on page 11 undefined on input line 5.
 
 
-LaTeX Warning: Reference `cspace_8h' on page 5 undefined on input line 5.
+LaTeX Warning: Reference `colors_8h' on page 11 undefined on input line 6.
 
 
-LaTeX Warning: Reference `elapsed_8h' on page 5 undefined on input line 8.
+LaTeX Warning: Reference `cspace_8h' on page 11 undefined on input line 7.
 
 
-LaTeX Warning: Reference `getopt_8h' on page 5 undefined on input line 9.
+LaTeX Warning: Reference `elapsed_8h' on page 11 undefined on input line 11.
 
 
-LaTeX Warning: Reference `palette_8h' on page 5 undefined on input line 12.
+LaTeX Warning: Reference `mp_8h' on page 11 undefined on input line 16.
 
-
-LaTeX Warning: Reference `util_8h' on page 5 undefined on input line 13.
-
-) [5] [6
+) [11] [12
 
 ]
-Chapter 4.
-(struct_array.tex
+Chapter 6.
+(structc_j_s_o_n.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1571,219 +1612,38 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 22.
-) (struct_axes_d_b_l.tex [7pdfTeX warning (ext4): destination with the same ide
-ntifier (name{struct_array_a1004bb52f35f927022e780a193612db1}) has been already
- used, duplicate ignored
+(Font)              scaled to size 7.19995pt on input line 37.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{structc_j
+_s_o_n_a401b274c2da358dac5c23ab8b2c71f85}) has been already used, duplicate ign
+ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.23 \end{DoxyCompactItemize}
-                             pdfTeX warning (ext4): destination with the same i
-dentifier (name{struct_array_a13f67ab957f4fdd3443d7f62b2fd09ce}) has been alrea
-dy used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.23 \end{DoxyCompactItemize}
-                             pdfTeX warning (ext4): destination with the same i
-dentifier (name{struct_array_a6196b6388bc5b72dd2dea08e483a0c47}) has been alrea
-dy used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.23 \end{DoxyCompactItemize}
-                             ]) (struct_axes_f_l_t.tex [8pdfTeX warning (ext4):
- destination with the same identifier (name{struct_axes_d_b_l_aca6c1fed110e22d0
-fe0a6cfcd3f4d93e}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.12 \mbox
-          {\Hypertarget{struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c}...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_axes_d
-_b_l_a11513e052101867dae5751ae717f8365}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.12 \mbox
-          {\Hypertarget{struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c}...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_axes_d
-_b_l_a44a84c7223681783283927b8877afede}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.12 \mbox
-          {\Hypertarget{struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c}...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_axes_d
-_b_l_ae8d972bf03fcc9b9b103c7ab039a7e15}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.12 \mbox
-          {\Hypertarget{struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c}...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_axes_d
-_b_l_afd77303b336f75e23687ed30d01124a9}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.12 \mbox
-          {\Hypertarget{struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c}...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_axes_d
-_b_l_aad750ce794560a6cb58da22a29969a2e}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.12 \mbox
-          {\Hypertarget{struct_axes_f_l_t_afb3a6ab5a64f5e82f2f04c500c068a9c}...
-] [9pdfTeX warning (ext4): destination with the same identifier (name{struct_ax
-es_f_l_t_a520e859aa39688e2997035ba5f24f515}) has been already used, duplicate i
-gnored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 mp.\+c\end{DoxyCompactItemize}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{struct_axes_f_l_t_a8242fd328e74bfe8816229d8a3f596f2}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 mp.\+c\end{DoxyCompactItemize}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{struct_axes_f_l_t_a19c4c1aa2322862315f36f5f3a285592}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 mp.\+c\end{DoxyCompactItemize}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{struct_axes_f_l_t_ade85c4b4a4a8200eb4424c83bd7ace32}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 mp.\+c\end{DoxyCompactItemize}
-                                   pdfTeX warning (ext4): destination with the 
-same identifier (name{struct_axes_f_l_t_a2e8c47bb0be78acec1f281c8dcac097e}) has
- been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 mp.\+c\end{DoxyCompactItemize}
-                                   ]) (struct_axes_f_l_t128.tex [10pdfTeX warni
-ng (ext4): destination with the same identifier (name{struct_axes_f_l_t_afb3a6a
-b5a64f5e82f2f04c500c068a9c}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.60 \subsubsection{\texorpdfstring{ymin}{ymin}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_f_l_t128_acc15ccde617cb0f18df0b1
-e016a937a5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.60 \subsubsection{\texorpdfstring{ymin}{ymin}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_f_l_t128_a997c5dfe1f0ef1f7112aa4
-a866913599}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.60 \subsubsection{\texorpdfstring{ymin}{ymin}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_f_l_t128_a24751b8ce05e8c5bc2c646
-10dd7dd642}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.60 \subsubsection{\texorpdfstring{ymin}{ymin}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_f_l_t128_af1e253298b60a49e5f7a1d
-d052275468}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.60 \subsubsection{\texorpdfstring{ymin}{ymin}}
-                                                ]) (struct_axes_l_d_b_l.tex
-[11pdfTeX warning (ext4): destination with the same identifier (name{struct_axe
-s_f_l_t128_a9b177fb1f936271e4ec1045778e9e2ea}) has been already used, duplicate
- ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection{\texorpdfstring{ymax}{ymax}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_f_l_t128_a9c676c0a43582d9ea00d30
-18a0a4b151}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection{\texorpdfstring{ymax}{ymax}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_l_d_b_l_ac115fcf200bdfa196290980
-9c5c8977f}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection{\texorpdfstring{ymax}{ymax}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_l_d_b_l_a1ae48fd4b64be2a22c19c50
-d572cefea}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection{\texorpdfstring{ymax}{ymax}}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{struct_axes_l_d_b_l_ad46da7b8b982c14b58f175e
-dc4c1183b}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection{\texorpdfstring{ymax}{ymax}}
-                                                ]pdfTeX warning (ext4): destina
-tion with the same identifier (name{struct_axes_l_d_b_l_a423f22c476736f8a162706
-3acbfc0426}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 ..._d_b_l_a423f22c476736f8a1627063acbfc0426}}
-                                                  ) (structc_j_s_o_n.tex
-[12pdfTeX warning (ext4): destination with the same identifier (name{struct_axe
-s_l_d_b_l_afc9c7ac423766c37e2a1cb9cb0eb2fe3}) has been already used, duplicate 
-ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection
-                   {\texorpdfstring{string}{string}}pdfTeX warning (ext4): dest
-ination with the same identifier (name{struct_axes_l_d_b_l_a3b8e7a88acc56b5173a
-005ff29b6834f}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection
-                   {\texorpdfstring{string}{string}}pdfTeX warning (ext4): dest
-ination with the same identifier (name{structc_j_s_o_n_a401b274c2da358dac5c23ab
-8b2c71f85}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.54 \subsubsection
-                   {\texorpdfstring{string}{string}}]pdfTeX warning (ext4): des
-tination with the same identifier (name{structc_j_s_o_n_ab13084c574681593b12f6e
-0a3db0dcfc}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 ..._s_o_n_ab13084c574681593b12f6e0a3db0dcfc}}
+l.63 ..._s_o_n_a4b21817d0fd2919901abadac73214e7f}}
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{structc_j_s_o_n_a4b21817d0fd2919901abadac7
-3214e7f}) has been already used, duplicate ignored
+ation with the same identifier (name{structc_j_s_o_n_ade862b880379b5e2a591f7326
+401fa8d}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 ..._s_o_n_a4b21817d0fd2919901abadac73214e7f}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{structc_j_s_o_n_a488a393f610347821fce8e985
+e79fc2f}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 ..._s_o_n_a4b21817d0fd2919901abadac73214e7f}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{structc_j_s_o_n_aa6b47e9a4b0e0a26f519b1a2b
+6739983}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 ..._s_o_n_a4b21817d0fd2919901abadac73214e7f}}
+                                                  ]pdfTeX warning (ext4): desti
+nation with the same identifier (name{structc_j_s_o_n_a4b21817d0fd2919901abadac
+73214e7f}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.63 ..._s_o_n_a4b21817d0fd2919901abadac73214e7f}}
@@ -1800,225 +1660,442 @@ ation with the same identifier (name{structc_j_s_o_n_ad43f8de2571e504c4c5ce0a36
                    \relax 
 l.75 ..._s_o_n_ad43f8de2571e504c4c5ce0a36990e6e1}}
                                                   )
-(structc_j_s_o_n___hooks.tex) (structerror.tex [13pdfTeX warning (ext4): destin
-ation with the same identifier (name{structc_j_s_o_n_ade862b880379b5e2a591f7326
-401fa8d}) has been already used, duplicate ignored
+(structc_j_s_o_n___hooks.tex) (struct_color128.tex [14pdfTeX warning (ext4): de
+stination with the same identifier (name{structc_j_s_o_n_ab13084c574681593b12f6
+e0a3db0dcfc}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 ...ucterror}{}\section{error Struct Reference}
+l.41 \end{DoxyCompactItemize}
+                             ] [15pdfTeX warning (ext4): destination with the s
+ame identifier (name{struct_color128_a7d8d0e07afcc033267f5c6b8ee5460af}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 ...lor128_acffc1997afccd231603ea5af55ddf900}}
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{structc_j_s_o_n_a488a393f610347821fce8e985
-e79fc2f}) has been already used, duplicate ignored
+ation with the same identifier (name{struct_color128_aad976108c20d5dac944813afb
+39e1b39}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 ...ucterror}{}\section{error Struct Reference}
+l.87 ...lor128_acffc1997afccd231603ea5af55ddf900}}
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{structc_j_s_o_n_aa6b47e9a4b0e0a26f519b1a2b
-6739983}) has been already used, duplicate ignored
+ation with the same identifier (name{struct_color128_a9c7a57c32aa6d05bac44b977d
+83261b2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 ...ucterror}{}\section{error Struct Reference}
-                                                  ]) (struct_h_s_v.tex [14pdfTe
-X warning (ext4): destination with the same identifier (name{structerror_a9b123
-855d5dd48e86de846588462b39f}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 ..._h_s_v_a246df45210c6b7c61056158d1596676d}}
+l.87 ...lor128_acffc1997afccd231603ea5af55ddf900}}
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{structerror_a24de70a4d517ab351d80c18582cad
-b66}) has been already used, duplicate ignored
+ation with the same identifier (name{struct_color128_ac7bd2873d9dcc9496c3076284
+6e9357a}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.24 ..._h_s_v_a246df45210c6b7c61056158d1596676d}}
-                                                  ]) (structinternal__hooks.tex
-) (struct_parameters.tex [15pdfTeX warning (ext4): destination with the same id
-entifier (name{struct_h_s_v_aa5298b83b6f6ad2da2f2921c3e3202e7}) has been alread
-y used, duplicate ignored
+l.87 ...lor128_acffc1997afccd231603ea5af55ddf900}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color128_ad5c9016be1b1895979d83fb0c
+f6b59b5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.33 \mbox
-          {\Hypertarget{struct_parameters_af435d3291ff1a66552d9f3383c6a517c}...
+l.87 ...lor128_acffc1997afccd231603ea5af55ddf900}}
+                                                  ]pdfTeX warning (ext4): desti
+nation with the same identifier (name{struct_color128_acffc1997afccd231603ea5af
+55ddf900}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 ...lor128_acffc1997afccd231603ea5af55ddf900}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color128_a1b9594bb49e14fb65892cb73b
+76cfdad}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 ...lor128_a1b9594bb49e14fb65892cb73b76cfdad}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color128_a332d99cef1756df3cd4fa6623
+a97599b}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 ...lor128_a332d99cef1756df3cd4fa6623a97599b}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color128_a7fc499c167fb236d20ad9b2e6
+052b4b3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 ...or128_a7fc499c167fb236d20ad9b2e6052b4b3}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color128_a8f397bfacccdd7f7c4b62de26
+1960426}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 ...or128_a8f397bfacccdd7f7c4b62de261960426}}
+                                                  ) (struct_color_d_b_l.tex
+[16pdfTeX warning (ext4): destination with the same identifier (name{struct_col
+or128_a3895ee8a70d847ed619c50b24c8302d1}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \mbox
+          {\Hypertarget{struct_color_d_b_l_a69a19813a90cb1464e4bc5ab26572e7d...
+pdfTeX warning (ext4): destination with the same identifier (name{struct_color1
+28_a75ba840a2e2fa86970dbbe43b2a6acff}) has been already used, duplicate ignored
+
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \mbox
+          {\Hypertarget{struct_color_d_b_l_a69a19813a90cb1464e4bc5ab26572e7d...
+] [17pdfTeX warning (ext4): destination with the same identifier (name{struct_c
+olor_d_b_l_a262fa54396ee6189934c95444b663e08}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_d_b_l_a0036bac7853b4736d63df2c9
+ddd5415f}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_d_b_l_a2a18d1e704fd3e7edd36e58a
+a1ad608e}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_d_b_l_a846fc0a4774b9a47d7dcc197
+aac61775}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                ]pdfTeX warning (ext4): destina
+tion with the same identifier (name{struct_color_d_b_l_a386d58a5189f753a7f74e3d
+7f250cf29}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 ..._d_b_l_a386d58a5189f753a7f74e3d7f250cf29}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_d_b_l_a69a19813a90cb1464e4bc5
+ab26572e7d}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 ..._d_b_l_a69a19813a90cb1464e4bc5ab26572e7d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_d_b_l_afc3882aafb004e9426d067
+2e7c01edaf}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 ..._d_b_l_afc3882aafb004e9426d0672e7c01edaf}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_d_b_l_a6125ad69bdbe0f5e1d8e66
+1c522ffe6f}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 ..._d_b_l_a6125ad69bdbe0f5e1d8e661c522ffe6f}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_d_b_l_a295cfca80e80dc85e9ae1b
+13194a0287}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 ...d_b_l_a295cfca80e80dc85e9ae1b13194a0287}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_d_b_l_a0a80ad80b28ffc36cded14
+2c1a1329a0}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 ...d_b_l_a0a80ad80b28ffc36cded142c1a1329a0}}
+                                                  ) (struct_color_f_l_t.tex
+[18pdfTeX warning (ext4): destination with the same identifier (name{struct_col
+or_d_b_l_a0dd11fac7a3243fae5357a010549c79b}) has been already used, duplicate i
+gnored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 \mbox
+         {\Hypertarget{struct_color_f_l_t_a644638d709023a61d56084c27e2f6f40}...
+pdfTeX warning (ext4): destination with the same identifier (name{struct_color_
+d_b_l_ae15fca56fd7556c23cbe7c527989d4fb}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 \mbox
+         {\Hypertarget{struct_color_f_l_t_a644638d709023a61d56084c27e2f6f40}...
+] [19pdfTeX warning (ext4): destination with the same identifier (name{struct_c
+olor_f_l_t_ad9f2932b326bd90c655bce9b24424efb}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_f_l_t_a9ac4dfc637230f01cc278625
+e4c08f63}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_f_l_t_af4d84f668f31ebdd414ddb19
+d7e42f8a}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_f_l_t_a17d65d9420a8ed144559a9d3
+d591b680}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.78 \subsubsection{\texorpdfstring{Exps}{Exps}}
+                                                ]pdfTeX warning (ext4): destina
+tion with the same identifier (name{struct_color_f_l_t_a43254e86f118bc92dd21f5a
+58013e7e4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 ..._f_l_t_a43254e86f118bc92dd21f5a58013e7e4}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_f_l_t_aa4795f7bd4044069e9b534
+be7cceb117}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 ..._f_l_t_aa4795f7bd4044069e9b534be7cceb117}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_f_l_t_a70cc5d58d2522cdf732cf5
+d3756756f8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 ..._f_l_t_a70cc5d58d2522cdf732cf5d3756756f8}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_f_l_t_ab6416bbb2cc0ab236531be
+916e97bd66}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 ..._f_l_t_ab6416bbb2cc0ab236531be916e97bd66}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_f_l_t_a644638d709023a61d56084
+c27e2f6f40}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 ...f_l_t_a644638d709023a61d56084c27e2f6f40}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_f_l_t_a533873f42823fa007535ec
+cbcb1d95c1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 ...f_l_t_a533873f42823fa007535eccbcb1d95c1}}
+                                                  ) (struct_color_info.tex
+[20pdfTeX warning (ext4): destination with the same identifier (name{struct_col
+or_f_l_t_a1a49b8e86d11b8179e100d356198f186}) has been already used, duplicate i
+gnored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 \mbox
+         {\Hypertarget{struct_color_info_a1cd69aeba7e0a78c70e775a19a88eab5}\...
+pdfTeX warning (ext4): destination with the same identifier (name{struct_color_
+f_l_t_a142bf1562c32e79af417a8258e764514}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 \mbox
+         {\Hypertarget{struct_color_info_a1cd69aeba7e0a78c70e775a19a88eab5}\...
+]) (struct_color_l_d_b_l.tex [21pdfTeX warning (ext4): destination with the sam
+e identifier (name{struct_color_info_a1cd69aeba7e0a78c70e775a19a88eab5}) has be
+en already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.48 \subsubsection
+                   {\texorpdfstring{C}{C}}pdfTeX warning (ext4): destination wi
+th the same identifier (name{struct_color_info_ace286a57c75f465113f3fa68800eb0f
+f}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.48 \subsubsection
+                   {\texorpdfstring{C}{C}}pdfTeX warning (ext4): destination wi
+th the same identifier (name{struct_color_info_a088bdf4ce19ae9cc8200062159164dc
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.48 \subsubsection
+                   {\texorpdfstring{C}{C}}] [22pdfTeX warning (ext4): destinati
+on with the same identifier (name{struct_color_l_d_b_l_a7ba2fec21e5a08b5f292d33
+ab9cf9a3c}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 ..._d_b_l_a61908183c296dc562365e409376785ea}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_ab83bc1e6d6d0590aa7b5
+a539cc66c3e2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 ..._d_b_l_a61908183c296dc562365e409376785ea}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_a9f083a843499dd550484
+26903ba90f6f}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 ..._d_b_l_a61908183c296dc562365e409376785ea}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_adc2ea68700059c1af12b
+0f49e19e6687}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 ..._d_b_l_a61908183c296dc562365e409376785ea}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_afe6063b806d79b291cba
+465a3db78fa2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.87 ..._d_b_l_a61908183c296dc562365e409376785ea}}
+                                                  ]pdfTeX warning (ext4): desti
+nation with the same identifier (name{struct_color_l_d_b_l_a61908183c296dc56236
+5e409376785ea}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 ..._d_b_l_a61908183c296dc562365e409376785ea}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_a4b4b1a35d4396ec2dbba
+ad51f9ff4079}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 ..._d_b_l_a4b4b1a35d4396ec2dbbaad51f9ff4079}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_a06eed3d8aea784c0ae03
+7921b3018bdf}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 ..._d_b_l_a06eed3d8aea784c0ae037921b3018bdf}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_a51a0c2cb239dcadc2849
+63eb8a5ba423}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 ...d_b_l_a51a0c2cb239dcadc284963eb8a5ba423}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_color_l_d_b_l_a6c3bbba3508128ad4c78
+842cfbe36789}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 ...d_b_l_a6c3bbba3508128ad4c78842cfbe36789}}
+                                                  ) (structerror.tex [23pdfTeX 
+warning (ext4): destination with the same identifier (name{struct_color_l_d_b_l
+_a1b70845f196a0f1d127570d8a926f1ce}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.18 \subsubsection
+                   {\texorpdfstring{json}{json}}pdfTeX warning (ext4): destinat
+ion with the same identifier (name{struct_color_l_d_b_l_a075068bb3c5fa4e120df4f
+54a95f69bd}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.18 \subsubsection
+                   {\texorpdfstring{json}{json}}]) (struct_h_s_v.tex [24pdfTeX 
+warning (ext4): destination with the same identifier (name{structerror_a9b12385
+5d5dd48e86de846588462b39f}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.38 T
+      he documentation for this struct was generated from the following file...
+pdfTeX warning (ext4): destination with the same identifier (name{structerror_a
+24de70a4d517ab351d80c18582cadb66}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.38 T
+      he documentation for this struct was generated from the following file...
 pdfTeX warning (ext4): destination with the same identifier (name{struct_h_s_v_
-a246df45210c6b7c61056158d1596676d}) has been already used, duplicate ignored
+aa5298b83b6f6ad2da2f2921c3e3202e7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.33 \mbox
-          {\Hypertarget{struct_parameters_af435d3291ff1a66552d9f3383c6a517c}...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_h_s_v_
-aade636e6ce581e93de5374f0e5d77d7c}) has been already used, duplicate ignored
+l.38 T
+      he documentation for this struct was generated from the following file...
+]) (structinternal__hooks.tex) (structparse__buffer.tex [25pdfTeX warning (ext4
+): destination with the same identifier (name{struct_h_s_v_a246df45210c6b7c6105
+6158d1596676d}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.33 \mbox
-          {\Hypertarget{struct_parameters_af435d3291ff1a66552d9f3383c6a517c}...
-] [16pdfTeX warning (ext4): destination with the same identifier (name{struct_p
-arameters_a37a1880a2aa4730679fc51040af3a976}) has been already used, duplicate 
+l.42 ...buffer_a036970e9335896d3cee8459eda9e2eb9}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{struct_h_s_v_aade636e6ce581e93de5374f0e5d7
+7d7c}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.42 ...buffer_a036970e9335896d3cee8459eda9e2eb9}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{structparse__buffer_a52ee1184576baa3d51710
+59ab0e942de}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.42 ...buffer_a036970e9335896d3cee8459eda9e2eb9}}
+                                                  ]pdfTeX warning (ext4): desti
+nation with the same identifier (name{structparse__buffer_a036970e9335896d3cee8
+459eda9e2eb9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 ...buffer_a036970e9335896d3cee8459eda9e2eb9}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{structparse__buffer_af727920073077579942a7
+9de519bb31a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 ...buffer_af727920073077579942a79de519bb31a}}
+                                                  ) (structprintbuffer.tex
+[26pdfTeX warning (ext4): destination with the same identifier (name{structpars
+e__buffer_af613c4ed7d73f76c60c50d1bcf4c67a0}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.93 ...ction{\texorpdfstring{diameter}{diameter}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_a77a4b596ca7a32175d60ff7
-50748af21}) has been already used, duplicate ignored
+l.45 \subsubsection
+                   {\texorpdfstring{format}{format}}pdfTeX warning (ext4): dest
+ination with the same identifier (name{structparse__buffer_a2c3e99b15da2935fc5d
+58124ffb4a894}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.93 ...ction{\texorpdfstring{diameter}{diameter}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_a9f486cabe8205f5c1ee65ec
-c885e4b86}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.93 ...ction{\texorpdfstring{diameter}{diameter}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_a0ec9c97da0f7373e9c2b4f8
-98ff76e46}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.93 ...ction{\texorpdfstring{diameter}{diameter}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_ab3ec51653a2131c0a7049e0
-a5e34e651}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.93 ...ction{\texorpdfstring{diameter}{diameter}}
-                                                  ]pdfTeX warning (ext4): desti
-nation with the same identifier (name{struct_parameters_a23b676a85d6a74715ebf52
-d083b26d41}) has been already used, duplicate ignored
+l.45 \subsubsection
+                   {\texorpdfstring{format}{format}}]pdfTeX warning (ext4): des
+tination with the same identifier (name{structprintbuffer_a43a8b3bcc644432f12f5
+aed5159d2520}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 ...meters_a23b676a85d6a74715ebf52d083b26d41}}
+l.48 ...buffer_a43a8b3bcc644432f12f5aed5159d2520}}
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_aa0985d56460f9fd14ab4696
-c0ddcd700}) has been already used, duplicate ignored
+ation with the same identifier (name{structprintbuffer_a1a679f8b6fe9b413fb3a872
+03b0f5bc8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 ...eters_aa0985d56460f9fd14ab4696c0ddcd700}}
+l.54 ...buffer_a1a679f8b6fe9b413fb3a87203b0f5bc8}}
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_a90f665266505361517c0b1a
-f718b2d4a}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.108 ...eters_a90f665266505361517c0b1af718b2d4a}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_ac52eab28b83153725ee22ba
-6700f848e}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 ...eters_ac52eab28b83153725ee22ba6700f848e}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_a48e77fdf8acb086d2fdc293
-4ca2d10d3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.120 ...eters_a48e77fdf8acb086d2fdc2934ca2d10d3}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_af435d3291ff1a66552d9f33
-83c6a517c}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.126 ...eters_af435d3291ff1a66552d9f3383c6a517c}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_a1962cf70d9f60c9b1b6d567
-a0152776b}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.132 ...eters_a1962cf70d9f60c9b1b6d567a0152776b}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{struct_parameters_ae8f341732b04b09c84f67f0
-439efb79d}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.138 ...eters_ae8f341732b04b09c84f67f0439efb79d}}
-                                                   [17pdfTeX warning (ext4): de
-stination with the same identifier (name{struct_parameters_a47505a58a58119e1de3
-adf8b84e8a33e}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.146 T
-       he documentation for this struct was generated from the following fil...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_parame
-ters_a039d46f92783f0b6b7d2d1500fdbe0c8}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.146 T
-       he documentation for this struct was generated from the following fil...
-]) (structparse__buffer.tex [18pdfTeX warning (ext4): destination with the same
- identifier (name{structparse__buffer_a52ee1184576baa3d5171059ab0e942de}) has b
-een already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.56 T
-      he documentation for this struct was generated from the following file...
-pdfTeX warning (ext4): destination with the same identifier (name{structparse__
-buffer_af613c4ed7d73f76c60c50d1bcf4c67a0}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.56 T
-      he documentation for this struct was generated from the following file...
-pdfTeX warning (ext4): destination with the same identifier (name{structparse__
-buffer_a2c3e99b15da2935fc5d58124ffb4a894}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.56 T
-      he documentation for this struct was generated from the following file...
-]) (structprintbuffer.tex [19pdfTeX warning (ext4): destination with the same i
-dentifier (name{structparse__buffer_a036970e9335896d3cee8459eda9e2eb9}) has bee
-n already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.57 \subsubsection
-                   {\texorpdfstring{length}{length}}pdfTeX warning (ext4): dest
-ination with the same identifier (name{structparse__buffer_af727920073077579942
-a79de519bb31a}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.57 \subsubsection
-                   {\texorpdfstring{length}{length}}pdfTeX warning (ext4): dest
-ination with the same identifier (name{structprintbuffer_a754f63618e91db99f7ab6
-cfc4e629013}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.57 \subsubsection
-                   {\texorpdfstring{length}{length}}pdfTeX warning (ext4): dest
-ination with the same identifier (name{structprintbuffer_aa7311b5da38ff8d173782
-4c611b48732}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.57 \subsubsection
-                   {\texorpdfstring{length}{length}}pdfTeX warning (ext4): dest
-ination with the same identifier (name{structprintbuffer_a75d3f480f5308e7f4afec
-f30e11277ef}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.57 \subsubsection
-                   {\texorpdfstring{length}{length}}]pdfTeX warning (ext4): des
-tination with the same identifier (name{structprintbuffer_aa2a7966b71dc3535e4e3
-789c33ec5368}) has been already used, duplicate ignored
+ation with the same identifier (name{structprintbuffer_aa2a7966b71dc3535e4e3789
+c33ec5368}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.60 ...buffer_aa2a7966b71dc3535e4e3789c33ec5368}}
@@ -2028,74 +2105,95 @@ a962dc7c9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.66 ...buffer_a3ed6f9d24d6591047680492a962dc7c9}}
-                                                  ) (struct_rgb.tex [20pdfTeX w
-arning (ext4): destination with the same identifier (name{structprintbuffer_a43
-a8b3bcc644432f12f5aed5159d2520}) has been already used, duplicate ignored
+                                                  ) [27pdfTeX warning (ext4): d
+estination with the same identifier (name{structprintbuffer_a754f63618e91db99f7
+ab6cfc4e629013}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.38 T
-      he documentation for this struct was generated from the following file...
-pdfTeX warning (ext4): destination with the same identifier (name{structprintbu
-ffer_a1a679f8b6fe9b413fb3a87203b0f5bc8}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.38 T
-      he documentation for this struct was generated from the following file...
-pdfTeX warning (ext4): destination with the same identifier (name{struct_rgb_ac
-ab4ec8e0d55174258da75ee80f69bef}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.38 T
-      he documentation for this struct was generated from the following file...
-]) [21pdfTeX warning (ext4): destination with the same identifier (name{struct_
-rgb_a27a8958ecb91f5f98ee520129a396ce3}) has been already used, duplicate ignore
-d
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.164 \chapter
+l.170 \chapter
               {File Documentation}pdfTeX warning (ext4): destination with the s
-ame identifier (name{struct_rgb_a3da778daa4ccbc628c478b21d6093df5}) has been al
-ready used, duplicate ignored
+ame identifier (name{structprintbuffer_aa7311b5da38ff8d1737824c611b48732}) has 
+been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.164 \chapter
-              {File Documentation}] [22
+l.170 \chapter
+              {File Documentation}pdfTeX warning (ext4): destination with the s
+ame identifier (name{structprintbuffer_a75d3f480f5308e7f4afecf30e11277ef}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.170 \chapter
+              {File Documentation}] [28
 
 ]
-Chapter 5.
-(dictionary_8c.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
+Chapter 7.
+(cnames_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 26.
+(Font)              scaled to size 8.09995pt on input line 25.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 26.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 25.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 26.
-[23]
-Underfull \hbox (badness 10000) detected at line 44
+(Font)              scaled to size 8.09995pt on input line 25.
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+[29]
+Underfull \hbox (badness 10000) detected at line 46
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 75.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 64.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) detected at line 79
+[][][]
+ []
 
- [24]
-Underfull \hbox (badness 10000) detected at line 86
+[30]
+Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
 
 
+Underfull \hbox (badness 10000) detected at line 121
+[][][]
+ []
+
+[31]
+Underfull \hbox (badness 10000) detected at line 143
+[][][]
+ []
+
+) (dictionary_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+[32]
+Underfull \hbox (badness 10000) detected at line 86
+[][][]
+ []
+
+[33]
 Underfull \hbox (badness 10000) detected at line 106
 [][][]
  []
@@ -2105,7 +2203,7 @@ Underfull \hbox (badness 10000) detected at line 128
 [][][]
  []
 
-[25]
+[34]
 Underfull \hbox (badness 10000) detected at line 146
 [][][]
  []
@@ -2116,15 +2214,11 @@ Underfull \hbox (badness 10000) detected at line 164
  []
 
 
-Overfull \vbox (24.27092pt too high) has occurred while \output is active []
-
-
-[26]
 Underfull \hbox (badness 10000) detected at line 186
 [][][]
  []
 
-
+[35]
 Underfull \hbox (badness 10000) detected at line 212
 [][][]
  []
@@ -2134,12 +2228,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-[27]
+[36]
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
-[28]
+[37]
 Underfull \hbox (badness 10000) detected at line 100
 [][][]
  []
@@ -2153,7 +2247,7 @@ Underfull \hbox (badness 10000) detected at line 120
 Overfull \vbox (27.38475pt too high) has occurred while \output is active []
 
 
-[29]
+[38]
 Underfull \hbox (badness 10000) detected at line 142
 [][][]
  []
@@ -2168,7 +2262,7 @@ Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
-[30]
+[39]
 Underfull \hbox (badness 10000) detected at line 200
 [][][]
  []
@@ -2178,37 +2272,93 @@ Underfull \hbox (badness 10000) detected at line 226
 [][][]
  []
 
-) (iniparser_8c.tex
+) (elapsed_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+) (getopt_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--20
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+) (getopt_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[31] [32]
+[42]
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{util_8h_DESCR
+IPTION}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 \hypertarget{util_8h_DESCRIPTION}{}
+                                        \subsection{D\+E\+S\+C\+R\+I\+P\+T\+...
+[43]) (iniparser_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+[44]
 Underfull \hbox (badness 10000) detected at line 80
 [][][]
  []
 
-
+[45]
 Underfull \hbox (badness 10000) detected at line 112
 [][][]
  []
 
-[33] [34]
+
 Underfull \hbox (badness 10000) detected at line 132
 [][][]
  []
 
-
+[46]
 Underfull \hbox (badness 10000) detected at line 154
 [][][]
  []
 
-[35]
+
 Underfull \hbox (badness 10000) detected at line 174
 [][][]
  []
 
-
+[47]
 Underfull \hbox (badness 10000) detected at line 192
 [][][]
  []
@@ -2218,57 +2368,57 @@ Underfull \hbox (badness 10000) detected at line 214
 [][][]
  []
 
-[36]
+[48]
 Underfull \hbox (badness 10000) detected at line 260
 [][][]
  []
 
-[37]
+
 Underfull \hbox (badness 10000) detected at line 282
 [][][]
  []
 
-
+[49]
 Underfull \hbox (badness 10000) detected at line 314
 [][][]
  []
 
-[38]
+
 Underfull \hbox (badness 10000) detected at line 336
 [][][]
  []
 
-
+[50]
 Underfull \hbox (badness 10000) detected at line 362
 [][][]
  []
 
-[39]
+
 Underfull \hbox (badness 10000) detected at line 388
 [][][]
  []
 
-
+[51]
 Underfull \hbox (badness 10000) detected at line 410
 [][][]
  []
 
-[40]
+
 Underfull \hbox (badness 10000) detected at line 432
 [][][]
  []
 
-
+[52]
 Underfull \hbox (badness 10000) detected at line 454
 [][][]
  []
 
-[41]
+
 Underfull \hbox (badness 10000) detected at line 472
 [][][]
  []
 
-
+[53]
 Underfull \hbox (badness 10000) detected at line 496
 [][][]
  []
@@ -2278,27 +2428,27 @@ Underfull \hbox (badness 10000) detected at line 516
 [][][]
  []
 
-) (iniparser_8h.tex [42]
+) (iniparser_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
 
-[43]
+[54]
 Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
 
-
+[55]
 Underfull \hbox (badness 10000) detected at line 81
 [][][]
  []
 
-[44]
+
 Underfull \hbox (badness 10000) detected at line 101
 [][][]
  []
 
-
+[56]
 Underfull \hbox (badness 10000) detected at line 123
 [][][]
  []
@@ -2308,37 +2458,41 @@ Underfull \hbox (badness 10000) detected at line 143
 [][][]
  []
 
-[45]
+
 Underfull \hbox (badness 10000) detected at line 161
 [][][]
  []
 
-
+[57]
 Underfull \hbox (badness 10000) detected at line 183
 [][][]
  []
 
-[46]
+[58]
 Underfull \hbox (badness 10000) detected at line 229
 [][][]
  []
 
-[47]
+
 Underfull \hbox (badness 10000) detected at line 251
 [][][]
  []
 
-
+[59]
 Underfull \hbox (badness 10000) detected at line 278
 [][][]
  []
 
-[48]
+
 Underfull \hbox (badness 10000) detected at line 308
 [][][]
  []
 
 
+Overfull \vbox (15.00638pt too high) has occurred while \output is active []
+
+
+[60]
 Underfull \hbox (badness 10000) detected at line 324
 [][][]
  []
@@ -2348,17 +2502,17 @@ Underfull \hbox (badness 10000) detected at line 346
 [][][]
  []
 
-[49]
+
 Underfull \hbox (badness 10000) detected at line 371
 [][][]
  []
 
-
+[61]
 Underfull \hbox (badness 10000) detected at line 397
 [][][]
  []
 
-[50]
+[62]
 Underfull \hbox (badness 10000) detected at line 423
 [][][]
  []
@@ -2368,45 +2522,208 @@ Underfull \hbox (badness 10000) detected at line 445
 [][][]
  []
 
-[51]
+
 Underfull \hbox (badness 10000) detected at line 467
 [][][]
  []
 
-
+[63]
 Underfull \hbox (badness 10000) detected at line 489
 [][][]
  []
 
-[52]
+
 Underfull \hbox (badness 10000) detected at line 507
 [][][]
  []
 
-
+[64]
 Underfull \hbox (badness 10000) detected at line 531
 [][][]
  []
 
-[53]
+
 Underfull \hbox (badness 10000) detected at line 566
 [][][]
  []
 
-) [54] (refman.ind [55
+) (palette_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+[65]
+Underfull \hbox (badness 10000) detected at line 51
+[][][]
+ []
 
 
+Underfull \hbox (badness 10000) detected at line 54
+[][][]
+ []
 
-] [56] [57] [58
+pdfTeX warning (ext4): destination with the same identifier (name{util_8h_DESCR
+IPTION}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \hypertarget{util_8h_DESCRIPTION}{}
+                                        \subsection{D\+E\+S\+C\+R\+I\+P\+T\+...
+[66]
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+[67]
+Underfull \hbox (badness 10000) detected at line 112
+[][][]
+ []
+
+[68]
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 173
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 180.
+[69]
+Underfull \hbox (badness 10000) detected at line 233
+[][][]
+ []
+
+[70]
+Underfull \hbox (badness 10000) detected at line 268
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 288
+[][][]
+ []
+
+[71]) (palette_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+[72]
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{util_8h_DESCR
+IPTION}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \hypertarget{util_8h_DESCRIPTION}{}
+                                        \subsection{D\+E\+S\+C\+R\+I\+P\+T\+...
+[73]
+Underfull \hbox (badness 10000) detected at line 128
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 159
+[][][]
+ []
+
+[74]
+Underfull \hbox (badness 10000) detected at line 200
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 220
+[][][]
+ []
+
+[75]
+Overfull \vbox (18.96039pt too high) has occurred while \output is active []
+
+
+[76]
+Underfull \hbox (badness 10000) detected at line 280
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 315
+[][][]
+ []
+
+[77]
+Underfull \hbox (badness 10000) detected at line 335
+[][][]
+ []
+
+) (util_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
+
+ []
+
+[78]
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+) (util_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+[79]
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 66
+[][][]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{util_8h_DESCR
+IPTION}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69 \hypertarget{util_8h_DESCRIPTION}{}
+                                        \subsection{D\+E\+S\+C\+R\+I\+P\+T\+...
+[80]
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+) [81] [82
+
+] (refman.ind [83
+
+
+] [84] [85] [86])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
  (refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 4D7DAA489B088933E93ABCB0432BB847;32388.
+(rerunfilecheck)             Checksum: 290E320DBFA44547531D18CE246D673D;43798.
 
 
 LaTeX Warning: There were undefined references.
@@ -2414,14 +2731,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
- 15742 strings out of 493333
- 233812 string characters out of 3139188
- 326809 words of memory out of 2000000
- 18501 multiletter control sequences out of 15000+200000
- 63847 words of font info for 83 fonts, out of 3000000 for 9000
+ 16336 strings out of 493333
+ 248980 string characters out of 3139188
+ 352947 words of memory out of 20000000
+ 18781 multiletter control sequences out of 15000+200000
+ 66021 words of font info for 85 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,16n,92p,1960b,630s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -2434,9 +2751,9 @@ Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 helvetic/uhvro8a.pfb>
-Output written on refman.pdf (68 pages, 458429 bytes).
+Output written on refman.pdf (98 pages, 653843 bytes).
 PDF statistics:
- 2015 PDF objects out of 2073 (max. 8388607)
- 477 named destinations out of 1000 (max. 500000)
- 1401 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3094 PDF objects out of 3580 (max. 8388607)
+ 773 named destinations out of 1000 (max. 500000)
+ 1921 words of extra memory for PDF output out of 10000 (max. 10000000)
 

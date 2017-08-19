@@ -1,5 +1,10 @@
 \hypertarget{elapsed_8c}{}\section{elapsed.\+c File Reference}
 \label{elapsed_8c}\index{elapsed.\+c@{elapsed.\+c}}
+
+
+Routines to provide time information as mp executes.  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$sys/time.\+h$>$}\newline
@@ -10,38 +15,30 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{elapsed_8c_ab32389e2446b15fde1fb910531d63373}{elapsed} (int elapsed\+Seconds, long milleseconds)
+\mbox{\Hypertarget{elapsed_8c_ab32389e2446b15fde1fb910531d63373}\label{elapsed_8c_ab32389e2446b15fde1fb910531d63373}} 
+void {\bfseries elapsed} (int elapsed\+Seconds, long milleseconds)
 \item 
-int \hyperlink{elapsed_8c_a1dec6ba085ce91733e9c4c7e6088a598}{timeval\+\_\+subtract} (struct timeval $\ast$result, struct timeval $\ast$x, struct timeval $\ast$y)
+\mbox{\Hypertarget{elapsed_8c_a1dec6ba085ce91733e9c4c7e6088a598}\label{elapsed_8c_a1dec6ba085ce91733e9c4c7e6088a598}} 
+int {\bfseries timeval\+\_\+subtract} (struct timeval $\ast$result, struct timeval $\ast$x, struct timeval $\ast$y)
 \item 
-void \hyperlink{elapsed_8c_a932f3f97704d67e443248c115395a4d0}{timeval\+\_\+print} (struct timeval $\ast$tv)
+\mbox{\Hypertarget{elapsed_8c_a932f3f97704d67e443248c115395a4d0}\label{elapsed_8c_a932f3f97704d67e443248c115395a4d0}} 
+void {\bfseries timeval\+\_\+print} (struct timeval $\ast$tv)
 \item 
-ssize\+\_\+t \hyperlink{elapsed_8c_a96ba6646c82e8ca22e216573314dca7c}{format\+\_\+timeval} (struct timeval $\ast$tv, char $\ast$buf, size\+\_\+t sz)
+\mbox{\Hypertarget{elapsed_8c_a96ba6646c82e8ca22e216573314dca7c}\label{elapsed_8c_a96ba6646c82e8ca22e216573314dca7c}} 
+ssize\+\_\+t {\bfseries format\+\_\+timeval} (struct timeval $\ast$tv, char $\ast$buf, size\+\_\+t sz)
 \end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{elapsed_8c_ab32389e2446b15fde1fb910531d63373}\label{elapsed_8c_ab32389e2446b15fde1fb910531d63373}} 
-\index{elapsed.\+c@{elapsed.\+c}!elapsed@{elapsed}}
-\index{elapsed@{elapsed}!elapsed.\+c@{elapsed.\+c}}
-\subsubsection{\texorpdfstring{elapsed()}{elapsed()}}
-{\footnotesize\ttfamily void elapsed (\begin{DoxyParamCaption}\item[{int}]{elapsed\+Seconds,  }\item[{long}]{milleseconds }\end{DoxyParamCaption})}
+\subsection{Detailed Description}
+Routines to provide time information as mp executes. 
 
-\mbox{\Hypertarget{elapsed_8c_a96ba6646c82e8ca22e216573314dca7c}\label{elapsed_8c_a96ba6646c82e8ca22e216573314dca7c}} 
-\index{elapsed.\+c@{elapsed.\+c}!format\+\_\+timeval@{format\+\_\+timeval}}
-\index{format\+\_\+timeval@{format\+\_\+timeval}!elapsed.\+c@{elapsed.\+c}}
-\subsubsection{\texorpdfstring{format\+\_\+timeval()}{format\_timeval()}}
-{\footnotesize\ttfamily ssize\+\_\+t format\+\_\+timeval (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{tv,  }\item[{char $\ast$}]{buf,  }\item[{size\+\_\+t}]{sz }\end{DoxyParamCaption})}
+\begin{DoxyAuthor}{Author}
+Hugh S. Myers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Mon Jul 24 16\+:09\+:35 2017
+\end{DoxyDate}
+Description
 
-\mbox{\Hypertarget{elapsed_8c_a932f3f97704d67e443248c115395a4d0}\label{elapsed_8c_a932f3f97704d67e443248c115395a4d0}} 
-\index{elapsed.\+c@{elapsed.\+c}!timeval\+\_\+print@{timeval\+\_\+print}}
-\index{timeval\+\_\+print@{timeval\+\_\+print}!elapsed.\+c@{elapsed.\+c}}
-\subsubsection{\texorpdfstring{timeval\+\_\+print()}{timeval\_print()}}
-{\footnotesize\ttfamily void timeval\+\_\+print (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{tv }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{elapsed_8c_a1dec6ba085ce91733e9c4c7e6088a598}\label{elapsed_8c_a1dec6ba085ce91733e9c4c7e6088a598}} 
-\index{elapsed.\+c@{elapsed.\+c}!timeval\+\_\+subtract@{timeval\+\_\+subtract}}
-\index{timeval\+\_\+subtract@{timeval\+\_\+subtract}!elapsed.\+c@{elapsed.\+c}}
-\subsubsection{\texorpdfstring{timeval\+\_\+subtract()}{timeval\_subtract()}}
-{\footnotesize\ttfamily int timeval\+\_\+subtract (\begin{DoxyParamCaption}\item[{struct timeval $\ast$}]{result,  }\item[{struct timeval $\ast$}]{x,  }\item[{struct timeval $\ast$}]{y }\end{DoxyParamCaption})}
-
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]No known bugs. \end{DoxyRefDesc}

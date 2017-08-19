@@ -1,38 +1,31 @@
-\subsubsection*{Intro}
+\subsection*{Intro}
 
 
 \begin{DoxyItemize}
-\item Succently, this is a fractal play pen.
+\item Succinctly, this is a fractal play pen.
 \item It is {\itshape not} a library.
-\item There is no $\ast$$\ast$\+\_\+\+A\+P\+I\+\_\+$\ast$$\ast$
+\item There is no {\bfseries A\+PI}.
+\begin{DoxyItemize}
+\item There are a lot of functions that might be of use
+\item They may even one day be documented
+\end{DoxyItemize}
 \item List its most useful/innovative/noteworthy features.
 \begin{DoxyItemize}
-\item feature one
-\item feature two
+\item Mandelbrot set calculated with reals only
+\item Mandelbrot set calculated with complex numbers
+\item Mandelbrot set calculated with the Distance Estimator Method
+\item Mandelbrot set calculated with the Continuous Potential Method
 \end{DoxyItemize}
 \item State its goals/what problem(s) it solves.
 \begin{DoxyItemize}
 \item Dust off my programming skills.
-\item As much as possible work with what\textquotesingle{}s out there…
-\item Continue working with $\ast$fractals$\ast$—probably the real point.
+\item As much as possible work with what\textquotesingle{}s out there{$\dots$}
+\item Continue working with {\itshape fractals} ---probably the real point.
 \end{DoxyItemize}
-\item Key concepts.
-\begin{DoxyItemize}
-\item concept one
-\item concept two
-\end{DoxyItemize}
-\item This is now and always will be {\itshape alpha}.
+\item This is now and always will be {\itshape {\bfseries alpha}}.
 \item Does not include badges.
-\end{DoxyItemize}
-
-\subsubsection*{Core Technical Concepts/\+Inspiration}
-
-
-\begin{DoxyItemize}
-\item Why does it exist?
-\item Frame your project for the potential user.
-\item Compare/contrast your project with other, similar projects so the user knows how it is different from those projects.
-\item Highlight the technical concepts that your project demonstrates or supports. Keep it very brief.
+\item No box tops either.
+\item Still not a library.
 \end{DoxyItemize}
 
 \subsubsection*{Getting Started/\+Requirements/\+Prerequisites/\+Dependencies}
@@ -40,33 +33,70 @@
 Include any essential instructions for\+:
 \begin{DoxyItemize}
 \item Getting it
+\begin{DoxyItemize}
+\item Engage the usual suspects; download or clone{$\dots$}
+\end{DoxyItemize}
 \item Installing It
-\item Configuring It
+\begin{DoxyItemize}
+\item Make sure you have a usable G\+CC
+\item I use msys2 on windows and that insures G\+CC 6.\+3.\+0
+\item you will need libs jpeg, gd and quadmath. openmp as well{$\dots$}
+\item compile using G\+CC;
+\item gcc -\/\+Wall -\/o mp -\/std=c99 -\/\+O3 -\/msse2 -\/march=native -\/fopenmp \hyperlink{palette_8c}{palette.\+c} \hyperlink{dictionary_8c}{dictionary.\+c} \hyperlink{iniparser_8c}{iniparser.\+c} \hyperlink{getopt_8c}{getopt.\+c} \hyperlink{cnames_8c}{cnames.\+c} \hyperlink{cspace_8c_source}{cspace.\+c} \hyperlink{colors_8c_source}{colors.\+c} \hyperlink{elapsed_8c}{elapsed.\+c} \hyperlink{util_8c}{util.\+c} \hyperlink{c_j_s_o_n_8c_source}{c\+J\+S\+O\+N.\+c} \hyperlink{mp_8c}{mp.\+c} -\/ljpeg -\/lgd -\/lquadmath
+\end{DoxyItemize}
 \item Running it
+\begin{DoxyItemize}
+\item try this\+: 
+\begin{DoxyCode}
+hsmyers\(\backslash\)@BIGIRON c:\(\backslash\)\(\backslash\)perldev\(\backslash\)\(\backslash\)Fractal Labels\(\backslash\)mp
+>mp -x -0.65 -y 0.0 -d 2.0 -i 500 -f test.jpg
+mp vr0.027
+FLT-diameter:2, dims: 3840x2160 test.jpg color=10, tweak=3 aa=(null)
+————————————————————————————————
+13:08:2017 15:48:45.770362㎳ MDT
+elapsed time 0:0:0:20:566000㎳
+13:08:2017 15:49:06.336362㎳ MDT
+maxiter = '500', nMax = '499'
+———————————————————————————————
+\end{DoxyCode}
+
+\end{DoxyItemize}
 \end{DoxyItemize}
 
-\#\#\# Mini-\/\+Manual… 
+\subsubsection*{Mini--Manual}
+
+
 \begin{DoxyCode}
-void help( char c, char *Program, char *Version, char *Date ) \{
     printf( "%s v%s dated %s\(\backslash\)n", Program, Version, Date );
     if ( c == 'h' || c == '?' ) \{
         printf( "\(\backslash\)n  Options:\(\backslash\)n\(\backslash\)n" );
-        printf( "  --x\_center    requires real as an argument   -x\(\backslash\)n" );
-        printf( "  --y\_center    requires real as an argument   -y\(\backslash\)n" );
-        printf( "  --magnify     requires real as an argument   -m\(\backslash\)n" );
-        printf( "  --diameter    requires real as an argument   -d\(\backslash\)n" );
-        printf( "  --iteration   requires number as an argument -i\(\backslash\)n" );
-        printf( "  --width       requires number as an argument -w\(\backslash\)n" );
-        printf( "  --height      requires number as an argument -l\(\backslash\)n" );
-        printf( "  --file        requires string as an argument -f\(\backslash\)n" );
-        printf( "  --palette     requires string as an argument -p\(\backslash\)n" );
-        printf( "  --next        argument is optional number    -n\(\backslash\)n" );
-        printf( "  --config      requires string as an argument -c\(\backslash\)n" );
-        printf( "  --color       requires number as an argument -r\(\backslash\)n" );
-        printf( "  --aa          requires string as an argument -a\(\backslash\)n" );
-        printf( "  --tweak       requires number as an argument -t\(\backslash\)n" );
-        printf( "  --version     no argument                    -v\(\backslash\)n" );
-        printf( "  --help        no argument                    -h\(\backslash\)n" );
+        printf( "  --aa           requires filename as an argument -a\(\backslash\)n" );
+        printf( "  --bourke       requires number as an argument -b\(\backslash\)n" );
+        printf( "  --color        requires number as an argument -r\(\backslash\)n" );
+        printf( "  --config       requires filename as an argument -c\(\backslash\)n" );
+        printf( "  --diameter     requires real as an argument   -d\(\backslash\)n" );
+        printf( "  --escape       requires real as an argument   -e\(\backslash\)n" );
+        printf( "  --file         requires filename as an argument -f\(\backslash\)n" );
+        printf( "  --height       requires number as an argument -l\(\backslash\)n" );
+        printf( "  --help         no argument                    -h\(\backslash\)n" );
+        printf( "  --iteration    requires number as an argument -i\(\backslash\)n" );
+        printf( "  --json         requires filename as an argument -j\(\backslash\)n" );
+        printf( "      may be prefixed with W: to write parameters\(\backslash\)n" );
+        printf( "  --kolor        requires RGB spec as an argument -k\(\backslash\)n" );
+        printf( "      allows up to %d RGB color specifications\(\backslash\)n", NAMES\_SIZE );
+        printf( "      which may be 'named' colors or braced \{..\}\(\backslash\)n" );
+        printf( "  --magnify      requires real as an argument   -m\(\backslash\)n" );
+        printf( "  --next         argument is optional number    -n\(\backslash\)n" );
+        printf( "  --old          requires number as argument    -o\(\backslash\)n" );
+        printf( "  --palette      requires filename as an argument -p\(\backslash\)n" );
+        printf( "  --semidiameter requires number as an argument -s\(\backslash\)n" );
+        printf( "      this is an alias for radius\(\backslash\)n" );
+        printf( "  --tweak        requires number as an argument -t\(\backslash\)n" );
+        printf( "  --ultra        requires string in quotes as an argument -u\(\backslash\)n");
+        printf( "  --version      no argument                    -v\(\backslash\)n" );
+        printf( "  --width        requires number as an argument -w\(\backslash\)n" );
+        printf( "  --x\_center     requires real as an argument   -x\(\backslash\)n" );
+        printf( "  --y\_center     requires real as an argument   -y\(\backslash\)n" );
         printf( "\(\backslash\)n  long options ('--' prefix) are incremental till unambiguous\(\backslash\)n" );
         printf( "  short options ('-' prefix) are exact\(\backslash\)n" );
         printf( "  Hideously enough, options with optional arguments,\(\backslash\)n" );
@@ -89,6 +119,7 @@ void help( char c, char *Program, char *Version, char *Date ) \{
 
 
 \begin{DoxyItemize}
+\item Improve documentation
 \item Next steps
 \item Features planned
 \item Known bugs (shortlist)

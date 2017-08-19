@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameters',['Parameters',['../struct_parameters.html',1,'']]],
+  ['parameters',['Parameters',['../getopt_8h.html#struct_parameters',1,'']]],
   ['parse_5fbuffer',['parse_buffer',['../structparse__buffer.html',1,'']]],
   ['printbuffer',['printbuffer',['../structprintbuffer.html',1,'']]]
 ];

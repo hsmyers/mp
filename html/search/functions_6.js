@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['help',['help',['../getopt_8c.html#a1e1475ed9b0ffb9f93a0f7abee676d6b',1,'help(char c, char *Program, char *Version, char *Date):&#160;getopt.c'],['../getopt_8h.html#a1e1475ed9b0ffb9f93a0f7abee676d6b',1,'help(char c, char *Program, char *Version, char *Date):&#160;getopt.c']]],
-  ['hsvtorgb',['HSVToRGB',['../cspace_8c.html#a764106923891226fd977568084d77538',1,'HSVToRGB(HSV hsv):&#160;cspace.c'],['../cspace_8h.html#a764106923891226fd977568084d77538',1,'HSVToRGB(HSV hsv):&#160;cspace.c']]]
+  ['main',['main',['../mp_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'mp.c']]],
+  ['msetcpmdbl',['MSetCPMDBL',['../mp_8c.html#a18a4cb4dc46fca47a93474cf2a242e95',1,'MSetCPMDBL(ColorDBL cp, int maxiter):&#160;mp.c'],['../mp_8h.html#a18a4cb4dc46fca47a93474cf2a242e95',1,'MSetCPMDBL(ColorDBL cp, int maxiter):&#160;mp.c']]],
+  ['msetcpmflt',['MSetCPMFLT',['../mp_8c.html#a795b661e93a34f5a13ed289c086417ce',1,'MSetCPMFLT(ColorFLT cp, int maxiter):&#160;mp.c'],['../mp_8h.html#a795b661e93a34f5a13ed289c086417ce',1,'MSetCPMFLT(ColorFLT cp, int maxiter):&#160;mp.c']]],
+  ['msetcpmflt128',['MSetCPMFLT128',['../mp_8c.html#af31802513cd0719da4aaa5602d6169d7',1,'MSetCPMFLT128(Color128 cp, int maxiter):&#160;mp.c'],['../mp_8h.html#af31802513cd0719da4aaa5602d6169d7',1,'MSetCPMFLT128(Color128 cp, int maxiter):&#160;mp.c']]],
+  ['msetcpmldbl',['MSetCPMLDBL',['../mp_8c.html#a87eb51be532c563346aa0f98b41f6ef9',1,'MSetCPMLDBL(ColorLDBL cp, int maxiter):&#160;mp.c'],['../mp_8h.html#a87eb51be532c563346aa0f98b41f6ef9',1,'MSetCPMLDBL(ColorLDBL cp, int maxiter):&#160;mp.c']]],
+  ['msetdbl',['MSetDBL',['../mp_8c.html#a034e460e2b1033d1cfef694553053db9',1,'MSetDBL(Parameters P):&#160;mp.c'],['../mp_8h.html#a992daccd3fbf8aa68779c2316ed4a268',1,'MSetDBL(Parameters g):&#160;mp.c']]],
+  ['msetflt',['MSetFLT',['../mp_8c.html#a3f9e95e9f968655b1131d3c108aed87b',1,'MSetFLT(Parameters P):&#160;mp.c'],['../mp_8h.html#a485118bbb1dbb184a0b5395917ceba87',1,'MSetFLT(Parameters g):&#160;mp.c']]],
+  ['msetflt128',['MSetFLT128',['../mp_8c.html#a441edd39cff30f76fc120d57d08fa0c9',1,'MSetFLT128(Parameters P):&#160;mp.c'],['../mp_8h.html#a130025cc49c561f4019cbcdfce700bb3',1,'MSetFLT128(Parameters g):&#160;mp.c']]],
+  ['msetldbl',['MSetLDBL',['../mp_8c.html#a194bda2f36ff02a5bc60f266285078d1',1,'MSetLDBL(Parameters P):&#160;mp.c'],['../mp_8h.html#aa98ea1b5899cf3842c7c208269388f83',1,'MSetLDBL(Parameters g):&#160;mp.c']]]
 ];

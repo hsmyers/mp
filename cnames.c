@@ -1,8 +1,20 @@
-//
-// cnames.c
-//
-// compile gcc -Wall -DCNAMES_TEST -o nam cnames.c
-//
+/**
+ **  @file cnames.c
+ **  @author Hugh S. Myers
+ **  @brief A collection of functions in aid of Rgb naming and value retrieval.
+ **  @date Fri Aug 11 06:49:25 2017
+ **
+ **  @section DESCRIPTION
+ **
+ **  The functions in this file allow fetching the names and values of a particular Rgb instance.
+ **  As collateral damage this provides tests for equality and its inverse.
+ **
+ **
+ **  @note gcc -Wall -DCNAMES_TEST -o nam cnames.c
+ **        gcc -ggdb -Wall -DCNAMES_TEST -o nam cnames.c
+ **
+ **  @bug No known bugs.
+ **/
 #define __USE_MINGW_ANSI_STDIO 1
 #include <stdio.h>
 #include <stdlib.h>
@@ -905,29 +917,67 @@ int main( int argc, char *argv[] ) {
 }
 #endif
 
+/**
+ * @brief Convert named Rgb to values.
+ * @details This routine does a simple linear look-up through the color_data table and transfers the RGB values upon success.
+ *
+ * @param s Color name.
+ * @param color Target Rgb.
+ *
+ * @return True for success, false for failure.
+ */
 bool str2Rgb( char *s, Rgb * color ) {
     bool found = false;
+    int n = 0;
+    char buffer[128] = { 0 };
 
-    for ( int n = 0; n < COLOR_NAMES_MAX; n++ ) {
-        if ( strcmp( color_data[n].name, s ) == 0 ) {
+    strncpy( buffer, s, strcspn( s, ":" ) );
+    while ( n < COLOR_NAMES_MAX ) {
+        if ( stricmp( color_data[n].name, buffer ) == 0 ) {
             color->r = color_data[n].rgb.r;
             color->g = color_data[n].rgb.g;
             color->b = color_data[n].rgb.b;
             found = true;
             break;
         }
+        n++;
     }
     return found;
 }
 
+/**
+ * @brief NE comparison for Rgb pair.
+ * @details This routine does a member comparison for the non-equality of two Rgb values.
+ *
+ * @param a First Rgb value.
+ * @param b Second Rgb value.
+ *
+ * @return Returns true for non-equality, false otherwise.
+ */
 bool RgbNE( Rgb a, Rgb b ) {
     return ( a.r != b.r && a.g != b.g && a.b != b.b );
 }
 
+/**
+ * @brief EQ comparison for Rgb pair.
+ * @details This routine does a member comparison for the equality of two Rgb values.
+ *
+ * @param a First Rgb value.
+ * @param b Second Rgb value.
+ *
+ * @return Returns true for equality, false otherwise.
+ */
 bool RgbEQ( Rgb a, Rgb b ) {
     return ( a.r == b.r && a.g == b.g && a.b == b.b );
 }
 
+/**
+ * @brief Find name of Rgb value.
+ * @details Simple linear look-up seeking the text name of a given Rgb value.
+ *
+ * @param color Rgb value to seek.
+ * @return Character pointer upon success, NULL otherwise.
+ */
 char *RgbName( Rgb color ) {
 
     for (int i = 0; i < COLOR_NAMES_MAX; ++i ) {

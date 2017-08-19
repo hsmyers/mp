@@ -1,214 +1,302 @@
 \hypertarget{getopt_8h}{}\section{getopt.\+h File Reference}
 \label{getopt_8h}\index{getopt.\+h@{getopt.\+h}}
+
+
+A collection of functions in aid of creating a parameter object to carry around.  
+
+
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$complex.\+h$>$}\newline
+{\ttfamily \#include $<$quadmath.\+h$>$}\newline
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{getopt_8h_struct_parameters}{Parameters}
+\begin{DoxyCompactList}\small\item\em Variable gathered for image calculation.  \hyperlink{getopt_8h_struct_parameters}{More...}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{getopt_8h_a8542958f1d1b4dcc461df791a8eaa377}{N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE}~16
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4e}{inner\+Loop} \{ \hyperlink{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ea5374e1234e4d55af346d6ae6263ad573}{C\+O\+M\+P\+L\+EX}, 
+\hyperlink{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ead35f0f7ef55a2437c16a373c4a9cbaec}{ZX}, 
+\hyperlink{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ea6621f2b69ace7114db712e24643ea55f}{D\+E\+MM}, 
+\hyperlink{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4eaf941e1e6643ef454ff82385509001190}{M\+S\+E\+T\+C\+PM}
+ \}\begin{DoxyCompactList}\small\item\em Choice values for inner loop calculation. \end{DoxyCompactList}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char $\ast$ \hyperlink{getopt_8h_ab7896aabf81eb0462c72d442118a2803}{getstr} (char $\ast$arg)
+\mbox{\Hypertarget{getopt_8h_ab7896aabf81eb0462c72d442118a2803}\label{getopt_8h_ab7896aabf81eb0462c72d442118a2803}} 
+char $\ast$ {\bfseries getstr} (char $\ast$arg)
 \item 
-int \hyperlink{getopt_8h_a717f63efc8d0d7c615ef90eb3b5c3d5f}{get\+Next} (char $\ast$path)
+\mbox{\Hypertarget{getopt_8h_a717f63efc8d0d7c615ef90eb3b5c3d5f}\label{getopt_8h_a717f63efc8d0d7c615ef90eb3b5c3d5f}} 
+int {\bfseries get\+Next} (char $\ast$path)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8h_a946521054a741a1e1f7bb9d08f102cf6}{from\+J\+S\+ON} (char $\ast$jsonfile, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8h_ad3dcd81eca85673a92d463ee7262fea7}\label{getopt_8h_ad3dcd81eca85673a92d463ee7262fea7}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries from\+J\+S\+ON} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8h_a3b982f6477a06e2a24a1d0398cad9b41}{get\+Parameters} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, char $\ast$\hyperlink{mp_8c_abc057f42fdaf5e63835a8272aefe278e}{Version}, char $\ast$\hyperlink{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}{Date})
+\mbox{\Hypertarget{getopt_8h_a3b982f6477a06e2a24a1d0398cad9b41}\label{getopt_8h_a3b982f6477a06e2a24a1d0398cad9b41}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries get\+Parameters} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, char $\ast$Version, char $\ast$Date)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8h_afce723c987c56ea21e0670e3f888ed8a}{raw\+Cl} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8h_afce723c987c56ea21e0670e3f888ed8a}\label{getopt_8h_afce723c987c56ea21e0670e3f888ed8a}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries raw\+Cl} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8h_a55011e31e0bfd7dbed9e76bdafae6d12}{parse\+\_\+ini\+\_\+file} (char $\ast$ini\+\_\+name, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8h_a55011e31e0bfd7dbed9e76bdafae6d12}\label{getopt_8h_a55011e31e0bfd7dbed9e76bdafae6d12}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries parse\+\_\+ini\+\_\+file} (char $\ast$ini\+\_\+name, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8h_a6598d0009ea17712adfc770ea90294a1}{zeroP} (void)
+\mbox{\Hypertarget{getopt_8h_a6598d0009ea17712adfc770ea90294a1}\label{getopt_8h_a6598d0009ea17712adfc770ea90294a1}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries zeroP} (void)
 \item 
-void \hyperlink{getopt_8h_a1e1475ed9b0ffb9f93a0f7abee676d6b}{help} (char c, char $\ast$Program, char $\ast$\hyperlink{mp_8c_abc057f42fdaf5e63835a8272aefe278e}{Version}, char $\ast$\hyperlink{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}{Date})
+\mbox{\Hypertarget{getopt_8h_a1e1475ed9b0ffb9f93a0f7abee676d6b}\label{getopt_8h_a1e1475ed9b0ffb9f93a0f7abee676d6b}} 
+void {\bfseries help} (char c, char $\ast$Program, char $\ast$Version, char $\ast$Date)
 \item 
-void \hyperlink{getopt_8h_a86c23c70cb3b6535916e1b1902586a82}{show\+Parameters} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8h_a89944bdde3773b96d6689e78e624c45f}\label{getopt_8h_a89944bdde3773b96d6689e78e624c45f}} 
+void {\bfseries show\+Parameters} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, char $\ast$s)
+\item 
+\mbox{\Hypertarget{getopt_8h_a44a891b90e57137987b26663b61aa90e}\label{getopt_8h_a44a891b90e57137987b26663b61aa90e}} 
+void {\bfseries to\+J\+S\+ON} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A collection of functions in aid of creating a parameter object to carry around. 
+
+\begin{DoxyAuthor}{Author}
+Hugh S. Myers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Tue Jul 25 11\+:49\+:07 2017
+\end{DoxyDate}
+\hypertarget{util_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{util_8h_DESCRIPTION}
+Function declarations. More importantly the typedef for \hyperlink{getopt_8h_struct_parameters}{Parameters}.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]No known bugs. \end{DoxyRefDesc}
 
 
 \subsection{Data Structure Documentation}
 \index{Parameters@{Parameters}}\label{struct_parameters}
 \Hypertarget{getopt_8h_struct_parameters}
 \subsubsection{struct Parameters}
+Variable gathered for image calculation. 
+
+There are three sources for this data. The first is command line processing. This is by way of short/long options via getopt\+\_\+long(). The command line may also be processed without options in fixed order. The second is the use of a configuration file that essentially sets the default values for the necessary parameters. The third method is parsing a J\+S\+ON file which contains the values for a particular fractal image. 
+
+Definition at line 34 of file getopt.\+h.
+
 \begin{DoxyFields}{Data Fields}
 \mbox{\Hypertarget{getopt_8h_a37a1880a2aa4730679fc51040af3a976}\label{getopt_8h_a37a1880a2aa4730679fc51040af3a976}} 
 char $\ast$&
 aa&
-\\
+-\/a anti-\/aliasing flag \\
 \hline
 
-\mbox{\Hypertarget{getopt_8h_a77a4b596ca7a32175d60ff750748af21}\label{getopt_8h_a77a4b596ca7a32175d60ff750748af21}} 
-long double&
+\mbox{\Hypertarget{getopt_8h_a3c0541404644e9fda44a0feba83b8e8f}\label{getopt_8h_a3c0541404644e9fda44a0feba83b8e8f}} 
+int&
+bourke&
+-\/b flag for bourke interpolation \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_af5465cee976d3b8674a62d46391880a4}\label{getopt_8h_af5465cee976d3b8674a62d46391880a4}} 
+\_\_complex128&
+center&
+centerX + centerY $\ast$ I \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_a7d50e1aaf072cf0ca9ef71109ac6e408}\label{getopt_8h_a7d50e1aaf072cf0ca9ef71109ac6e408}} 
+\_\_float128&
 centerX&
-\\
+-\/x ℜ R\+E\+AL part of complex center \\
 \hline
 
-\mbox{\Hypertarget{getopt_8h_a9f486cabe8205f5c1ee65ecc885e4b86}\label{getopt_8h_a9f486cabe8205f5c1ee65ecc885e4b86}} 
-long double&
+\mbox{\Hypertarget{getopt_8h_af356d9179ec59d2ef6b9b6ce581b9546}\label{getopt_8h_af356d9179ec59d2ef6b9b6ce581b9546}} 
+\_\_float128&
 centerY&
-\\
+-\/y ℑ I\+M\+AG part of complex center \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_a0ec9c97da0f7373e9c2b4f898ff76e46}\label{getopt_8h_a0ec9c97da0f7373e9c2b4f898ff76e46}} 
 int&
 color&
-\\
+-\/r key for -\/r; determines coloring \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_ab3ec51653a2131c0a7049e0a5e34e651}\label{getopt_8h_ab3ec51653a2131c0a7049e0a5e34e651}} 
 char $\ast$&
 config&
-\\
+-\/c configuration filename \\
 \hline
 
-\mbox{\Hypertarget{getopt_8h_a47505a58a58119e1de3adf8b84e8a33e}\label{getopt_8h_a47505a58a58119e1de3adf8b84e8a33e}} 
-int&
-cv&
-\\
-\hline
-
-\mbox{\Hypertarget{getopt_8h_a039d46f92783f0b6b7d2d1500fdbe0c8}\label{getopt_8h_a039d46f92783f0b6b7d2d1500fdbe0c8}} 
-long double&
+\mbox{\Hypertarget{getopt_8h_aea0ffc10a005fc3b1f27e4d950e599f2}\label{getopt_8h_aea0ffc10a005fc3b1f27e4d950e599f2}} 
+\_\_float128&
 diameter&
-\\
+-\/d diameter of image \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_ab2c8bc69657e088382736e4a0e11217d}\label{getopt_8h_ab2c8bc69657e088382736e4a0e11217d}} 
 float&
 escape&
-\\
+-\/e value to compare against for escape decision \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_a23b676a85d6a74715ebf52d083b26d41}\label{getopt_8h_a23b676a85d6a74715ebf52d083b26d41}} 
 char $\ast$&
 filename&
-\\
+-\/f image file name \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_aa0985d56460f9fd14ab4696c0ddcd700}\label{getopt_8h_aa0985d56460f9fd14ab4696c0ddcd700}} 
 int&
 height&
-\\
+-\/l image height in pixels \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_ac1b3e43ed978a823db4903079371aa92}\label{getopt_8h_ac1b3e43ed978a823db4903079371aa92}} 
+\_\_float128&
+height2&
+height / 2.\+0 \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_ae19686186ca51dd3c4bdd868e52dc04d}\label{getopt_8h_ae19686186ca51dd3c4bdd868e52dc04d}} 
 char $\ast$&
 json&
-\\
+=j J\+S\+ON filename \\
 \hline
 
-\mbox{\Hypertarget{getopt_8h_a90f665266505361517c0b1af718b2d4a}\label{getopt_8h_a90f665266505361517c0b1af718b2d4a}} 
-long double&
+\mbox{\Hypertarget{getopt_8h_ae15854f47c061f74ed7fcb4063f944b5}\label{getopt_8h_ae15854f47c061f74ed7fcb4063f944b5}} 
+\_\_float128&
 magnify&
-\\
+-\/m image magnification \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_ac52eab28b83153725ee22ba6700f848e}\label{getopt_8h_ac52eab28b83153725ee22ba6700f848e}} 
 int&
 maxiter&
-\\
+-\/i ƒ(\+Z) iteration cap \\
 \hline
 
-\mbox{\Hypertarget{getopt_8h_aa6e175e74be18fd5d3ed7c3cbece5adb}\label{getopt_8h_aa6e175e74be18fd5d3ed7c3cbece5adb}} 
+\mbox{\Hypertarget{getopt_8h_aa8a7e4001f3ae3e79f5a7f57f160751a}\label{getopt_8h_aa8a7e4001f3ae3e79f5a7f57f160751a}} 
 char $\ast$&
-names\mbox{[}2\mbox{]}&
-\\
+names\mbox{[}\hyperlink{getopt_8h_a8542958f1d1b4dcc461df791a8eaa377}{NAMES\_SIZE}\mbox{]}&
+-\/k Rgb/color name list \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_af32c7cefa9c4b491b98c6d13fbc3023d}\label{getopt_8h_af32c7cefa9c4b491b98c6d13fbc3023d}} 
 int&
 nargc&
-\\
+count of number of -\/k entries \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_a48e77fdf8acb086d2fdc2934ca2d10d3}\label{getopt_8h_a48e77fdf8acb086d2fdc2934ca2d10d3}} 
 int&
 next&
-\\
+-\/n seed for next mechanism \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_a2e909688b271cc9c2bdb3d0cc9c34269}\label{getopt_8h_a2e909688b271cc9c2bdb3d0cc9c34269}} 
 int&
 nMax&
-\\
+actual iteration count at escape \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_a187707cee33ba53f9c7f87012ddd38df}\label{getopt_8h_a187707cee33ba53f9c7f87012ddd38df}} 
+int&
+old&
+key for -\/o; determines calculation method \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_af435d3291ff1a66552d9f3383c6a517c}\label{getopt_8h_af435d3291ff1a66552d9f3383c6a517c}} 
 char $\ast$&
 palname&
-\\
+-\/p image palette filename \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_a15d6bf9a86cdcfd399105f6f07911808}\label{getopt_8h_a15d6bf9a86cdcfd399105f6f07911808}} 
+\_\_float128&
+radius&
+-\/s radius of image length from 0.\+0 to end of upper axis \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_a1962cf70d9f60c9b1b6d567a0152776b}\label{getopt_8h_a1962cf70d9f60c9b1b6d567a0152776b}} 
 int&
 tweak&
-\\
+-\/t limit for post iteration of ƒ(\+Z) \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_aa7da6a4c219fe87ee3f4c3faf2e92581}\label{getopt_8h_aa7da6a4c219fe87ee3f4c3faf2e92581}} 
+char $\ast$&
+ultra&
+-\/u takes Ultra Fractal formula in quotes \\
 \hline
 
 \mbox{\Hypertarget{getopt_8h_ae8f341732b04b09c84f67f0439efb79d}\label{getopt_8h_ae8f341732b04b09c84f67f0439efb79d}} 
 int&
 width&
-\\
+-\/w image width in pixels \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_aceaafab9aa18104153a528f1959a14aa}\label{getopt_8h_aceaafab9aa18104153a528f1959a14aa}} 
+\_\_float128&
+width2&
+width / 2.\+0 \\
+\hline
+
+\mbox{\Hypertarget{getopt_8h_a72e9d00d6d96b78c32776d8639b9dd74}\label{getopt_8h_a72e9d00d6d96b78c32776d8639b9dd74}} 
+int&
+writeJSON&
+flag for J\+S\+ON file output \\
 \hline
 
 \end{DoxyFields}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{getopt_8h_a946521054a741a1e1f7bb9d08f102cf6}\label{getopt_8h_a946521054a741a1e1f7bb9d08f102cf6}} 
-\index{getopt.\+h@{getopt.\+h}!from\+J\+S\+ON@{from\+J\+S\+ON}}
-\index{from\+J\+S\+ON@{from\+J\+S\+ON}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{from\+J\+S\+O\+N()}{fromJSON()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} from\+J\+S\+ON (\begin{DoxyParamCaption}\item[{char $\ast$}]{jsonfile,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{getopt_8h_a8542958f1d1b4dcc461df791a8eaa377}\label{getopt_8h_a8542958f1d1b4dcc461df791a8eaa377}} 
+\index{getopt.\+h@{getopt.\+h}!N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE@{N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE}}
+\index{N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE@{N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE}!getopt.\+h@{getopt.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE}{NAMES\_SIZE}}
+{\footnotesize\ttfamily \#define N\+A\+M\+E\+S\+\_\+\+S\+I\+ZE~16}
 
-\mbox{\Hypertarget{getopt_8h_a717f63efc8d0d7c615ef90eb3b5c3d5f}\label{getopt_8h_a717f63efc8d0d7c615ef90eb3b5c3d5f}} 
-\index{getopt.\+h@{getopt.\+h}!get\+Next@{get\+Next}}
-\index{get\+Next@{get\+Next}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{get\+Next()}{getNext()}}
-{\footnotesize\ttfamily int get\+Next (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+Defines the size of the -\/k stack 
 
-\mbox{\Hypertarget{getopt_8h_a3b982f6477a06e2a24a1d0398cad9b41}\label{getopt_8h_a3b982f6477a06e2a24a1d0398cad9b41}} 
-\index{getopt.\+h@{getopt.\+h}!get\+Parameters@{get\+Parameters}}
-\index{get\+Parameters@{get\+Parameters}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{get\+Parameters()}{getParameters()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} get\+Parameters (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$}]{Version,  }\item[{char $\ast$}]{Date }\end{DoxyParamCaption})}
+Definition at line 22 of file getopt.\+h.
 
-\mbox{\Hypertarget{getopt_8h_ab7896aabf81eb0462c72d442118a2803}\label{getopt_8h_ab7896aabf81eb0462c72d442118a2803}} 
-\index{getopt.\+h@{getopt.\+h}!getstr@{getstr}}
-\index{getstr@{getstr}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{getstr()}{getstr()}}
-{\footnotesize\ttfamily char$\ast$ getstr (\begin{DoxyParamCaption}\item[{char $\ast$}]{arg }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{getopt_8h_a1e1475ed9b0ffb9f93a0f7abee676d6b}\label{getopt_8h_a1e1475ed9b0ffb9f93a0f7abee676d6b}} 
-\index{getopt.\+h@{getopt.\+h}!help@{help}}
-\index{help@{help}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{help()}{help()}}
-{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{char $\ast$}]{Program,  }\item[{char $\ast$}]{Version,  }\item[{char $\ast$}]{Date }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{getopt_8h_a55011e31e0bfd7dbed9e76bdafae6d12}\label{getopt_8h_a55011e31e0bfd7dbed9e76bdafae6d12}} 
-\index{getopt.\+h@{getopt.\+h}!parse\+\_\+ini\+\_\+file@{parse\+\_\+ini\+\_\+file}}
-\index{parse\+\_\+ini\+\_\+file@{parse\+\_\+ini\+\_\+file}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{parse\+\_\+ini\+\_\+file()}{parse\_ini\_file()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} parse\+\_\+ini\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{ini\+\_\+name,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4e}\label{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4e}} 
+\index{getopt.\+h@{getopt.\+h}!inner\+Loop@{inner\+Loop}}
+\index{inner\+Loop@{inner\+Loop}!getopt.\+h@{getopt.\+h}}
+\subsubsection{\texorpdfstring{inner\+Loop}{innerLoop}}
+{\footnotesize\ttfamily enum \hyperlink{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4e}{inner\+Loop}}
 
-\mbox{\Hypertarget{getopt_8h_afce723c987c56ea21e0670e3f888ed8a}\label{getopt_8h_afce723c987c56ea21e0670e3f888ed8a}} 
-\index{getopt.\+h@{getopt.\+h}!raw\+Cl@{raw\+Cl}}
-\index{raw\+Cl@{raw\+Cl}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{raw\+Cl()}{rawCl()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} raw\+Cl (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{getopt_8h_a86c23c70cb3b6535916e1b1902586a82}\label{getopt_8h_a86c23c70cb3b6535916e1b1902586a82}} 
-\index{getopt.\+h@{getopt.\+h}!show\+Parameters@{show\+Parameters}}
-\index{show\+Parameters@{show\+Parameters}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{show\+Parameters()}{showParameters()}}
-{\footnotesize\ttfamily void show\+Parameters (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{getopt_8h_a6598d0009ea17712adfc770ea90294a1}\label{getopt_8h_a6598d0009ea17712adfc770ea90294a1}} 
-\index{getopt.\+h@{getopt.\+h}!zeroP@{zeroP}}
-\index{zeroP@{zeroP}!getopt.\+h@{getopt.\+h}}
-\subsubsection{\texorpdfstring{zero\+P()}{zeroP()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} zeroP (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+Choice values for inner loop calculation. 
+
+Currently 4 values in this list. C\+O\+M\+P\+L\+EX is the default method. ZX uses all real values, no complex variables. D\+E\+MM is the Distance Estimator Method for the Mandelbrot set. M\+S\+E\+T\+P\+OT is the Mandelbrot set via Continuous Potential Method. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+M\+P\+L\+EX@{C\+O\+M\+P\+L\+EX}!getopt.\+h@{getopt.\+h}}\index{getopt.\+h@{getopt.\+h}!C\+O\+M\+P\+L\+EX@{C\+O\+M\+P\+L\+EX}}}\mbox{\Hypertarget{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ea5374e1234e4d55af346d6ae6263ad573}\label{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ea5374e1234e4d55af346d6ae6263ad573}} 
+C\+O\+M\+P\+L\+EX&ƒ(\+Z) = Z$^\wedge$2 + C where Z,C are complex \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ZX@{ZX}!getopt.\+h@{getopt.\+h}}\index{getopt.\+h@{getopt.\+h}!ZX@{ZX}}}\mbox{\Hypertarget{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ead35f0f7ef55a2437c16a373c4a9cbaec}\label{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ead35f0f7ef55a2437c16a373c4a9cbaec}} 
+ZX&ƒ(\+Z) = as above using real ZX, ZY, CX, CY \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+MM@{D\+E\+MM}!getopt.\+h@{getopt.\+h}}\index{getopt.\+h@{getopt.\+h}!D\+E\+MM@{D\+E\+MM}}}\mbox{\Hypertarget{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ea6621f2b69ace7114db712e24643ea55f}\label{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4ea6621f2b69ace7114db712e24643ea55f}} 
+D\+E\+MM&Uses Distance estimation method \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+S\+E\+T\+C\+PM@{M\+S\+E\+T\+C\+PM}!getopt.\+h@{getopt.\+h}}\index{getopt.\+h@{getopt.\+h}!M\+S\+E\+T\+C\+PM@{M\+S\+E\+T\+C\+PM}}}\mbox{\Hypertarget{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4eaf941e1e6643ef454ff82385509001190}\label{getopt_8h_ab733b92e52488cd19ef8fe3db3d2aa4eaf941e1e6643ef454ff82385509001190}} 
+M\+S\+E\+T\+C\+PM&Uses Continuous Potential method \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 72 of file getopt.\+h.
 

@@ -91,6 +91,10 @@ N. Devillard
 
 This enum stores the status for each parsed line (internal use only). 
 
+Definition at line 25 of file iniparser.\+c.
+
+
+
 \subsection{Function Documentation}
 \mbox{\Hypertarget{iniparser_8c_a814d63aa1ab107e885f434ea00d6b16e}\label{iniparser_8c_a814d63aa1ab107e885f434ea00d6b16e}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+dump@{iniparser\+\_\+dump}}
@@ -112,7 +116,11 @@ Dump a dictionary to an opened file pointer.
 \begin{DoxyReturn}{Returns}
 void
 \end{DoxyReturn}
-This function prints out the contents of a dictionary, one element by line, onto the provided file pointer. It is OK to specify {\ttfamily stderr} or {\ttfamily stdout} as output files. This function is meant for debugging purposes mostly. \mbox{\Hypertarget{iniparser_8c_af3d206ad34f6b9eefe394896d68d140c}\label{iniparser_8c_af3d206ad34f6b9eefe394896d68d140c}} 
+This function prints out the contents of a dictionary, one element by line, onto the provided file pointer. It is OK to specify {\ttfamily stderr} or {\ttfamily stdout} as output files. This function is meant for debugging purposes mostly. 
+
+Definition at line 231 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_af3d206ad34f6b9eefe394896d68d140c}\label{iniparser_8c_af3d206ad34f6b9eefe394896d68d140c}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+dump\+\_\+ini@{iniparser\+\_\+dump\+\_\+ini}}
 \index{iniparser\+\_\+dump\+\_\+ini@{iniparser\+\_\+dump\+\_\+ini}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+dump\+\_\+ini()}{iniparser\_dump\_ini()}}
@@ -132,7 +140,11 @@ Save a dictionary to a loadable ini file.
 \begin{DoxyReturn}{Returns}
 void
 \end{DoxyReturn}
-This function dumps a given dictionary into a loadable ini file. It is Ok to specify {\ttfamily stderr} or {\ttfamily stdout} as output files. \mbox{\Hypertarget{iniparser_8c_a790111c03777a5377712b5ea78431637}\label{iniparser_8c_a790111c03777a5377712b5ea78431637}} 
+This function dumps a given dictionary into a loadable ini file. It is Ok to specify {\ttfamily stderr} or {\ttfamily stdout} as output files. 
+
+Definition at line 259 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a790111c03777a5377712b5ea78431637}\label{iniparser_8c_a790111c03777a5377712b5ea78431637}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+dumpsection\+\_\+ini@{iniparser\+\_\+dumpsection\+\_\+ini}}
 \index{iniparser\+\_\+dumpsection\+\_\+ini@{iniparser\+\_\+dumpsection\+\_\+ini}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+dumpsection\+\_\+ini()}{iniparser\_dumpsection\_ini()}}
@@ -154,7 +166,11 @@ Save a dictionary section to a loadable ini file.
 \begin{DoxyReturn}{Returns}
 void
 \end{DoxyReturn}
-This function dumps a given section of a given dictionary into a loadable ini file. It is Ok to specify {\ttfamily stderr} or {\ttfamily stdout} as output files. \mbox{\Hypertarget{iniparser_8c_acd872a1e8c56f23a79ab2f2f7a26a7ac}\label{iniparser_8c_acd872a1e8c56f23a79ab2f2f7a26a7ac}} 
+This function dumps a given section of a given dictionary into a loadable ini file. It is Ok to specify {\ttfamily stderr} or {\ttfamily stdout} as output files. 
+
+Definition at line 297 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_acd872a1e8c56f23a79ab2f2f7a26a7ac}\label{iniparser_8c_acd872a1e8c56f23a79ab2f2f7a26a7ac}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+find\+\_\+entry@{iniparser\+\_\+find\+\_\+entry}}
 \index{iniparser\+\_\+find\+\_\+entry@{iniparser\+\_\+find\+\_\+entry}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+find\+\_\+entry()}{iniparser\_find\_entry()}}
@@ -174,7 +190,11 @@ Finds out if a given entry exists in a dictionary.
 \begin{DoxyReturn}{Returns}
 integer 1 if entry exists, 0 otherwise
 \end{DoxyReturn}
-Finds out if a given entry exists in the dictionary. Since sections are stored as keys with N\+U\+LL associated values, this is the only way of querying for the presence of sections in a dictionary. \mbox{\Hypertarget{iniparser_8c_a90549ee518523921886b74454ff872eb}\label{iniparser_8c_a90549ee518523921886b74454ff872eb}} 
+Finds out if a given entry exists in the dictionary. Since sections are stored as keys with N\+U\+LL associated values, this is the only way of querying for the presence of sections in a dictionary. 
+
+Definition at line 604 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a90549ee518523921886b74454ff872eb}\label{iniparser_8c_a90549ee518523921886b74454ff872eb}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+freedict@{iniparser\+\_\+freedict}}
 \index{iniparser\+\_\+freedict@{iniparser\+\_\+freedict}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+freedict()}{iniparser\_freedict()}}
@@ -192,7 +212,11 @@ Free all memory associated to an ini dictionary.
 \begin{DoxyReturn}{Returns}
 void
 \end{DoxyReturn}
-Free all memory associated to an ini dictionary. It is mandatory to call this function before the dictionary object gets out of the current context. \mbox{\Hypertarget{iniparser_8c_afa30800883e2853074c038467f5fde2b}\label{iniparser_8c_afa30800883e2853074c038467f5fde2b}} 
+Free all memory associated to an ini dictionary. It is mandatory to call this function before the dictionary object gets out of the current context. 
+
+Definition at line 858 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_afa30800883e2853074c038467f5fde2b}\label{iniparser_8c_afa30800883e2853074c038467f5fde2b}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getboolean@{iniparser\+\_\+getboolean}}
 \index{iniparser\+\_\+getboolean@{iniparser\+\_\+getboolean}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getboolean()}{iniparser\_getboolean()}}
@@ -238,7 +262,11 @@ A false boolean is found if one of the following is matched\+:
 \item A string starting with \textquotesingle{}0\textquotesingle{}
 \end{DoxyItemize}
 
-The notfound value returned if no boolean is identified, does not necessarily have to be 0 or 1. \mbox{\Hypertarget{iniparser_8c_a18d3a09e99a0ac212010edc3f0365379}\label{iniparser_8c_a18d3a09e99a0ac212010edc3f0365379}} 
+The notfound value returned if no boolean is identified, does not necessarily have to be 0 or 1. 
+
+Definition at line 575 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a18d3a09e99a0ac212010edc3f0365379}\label{iniparser_8c_a18d3a09e99a0ac212010edc3f0365379}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getdouble@{iniparser\+\_\+getdouble}}
 \index{iniparser\+\_\+getdouble@{iniparser\+\_\+getdouble}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getdouble()}{iniparser\_getdouble()}}
@@ -260,7 +288,11 @@ Get the string associated to a key, convert to a double.
 \begin{DoxyReturn}{Returns}
 double
 \end{DoxyReturn}
-This function queries a dictionary for a key. A key as read from an ini file is given as \char`\"{}section\+:key\char`\"{}. If the key cannot be found, the notfound value is returned. \mbox{\Hypertarget{iniparser_8c_a97f70bc64c6e32b8f4df50f884400fd8}\label{iniparser_8c_a97f70bc64c6e32b8f4df50f884400fd8}} 
+This function queries a dictionary for a key. A key as read from an ini file is given as \char`\"{}section\+:key\char`\"{}. If the key cannot be found, the notfound value is returned. 
+
+Definition at line 510 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a97f70bc64c6e32b8f4df50f884400fd8}\label{iniparser_8c_a97f70bc64c6e32b8f4df50f884400fd8}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getint@{iniparser\+\_\+getint}}
 \index{iniparser\+\_\+getint@{iniparser\+\_\+getint}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getint()}{iniparser\_getint()}}
@@ -290,7 +322,11 @@ Supported values for integers include the usual C notation so decimal, octal (st
 
 Warning\+: the conversion may overflow in various ways. Conversion is totally outsourced to strtol(), see the associated man page for overflow handling.
 
-Credits\+: Thanks to A. Becker for suggesting strtol() \mbox{\Hypertarget{iniparser_8c_a5cf7b242d7207cd3217bb2b6c94f2119}\label{iniparser_8c_a5cf7b242d7207cd3217bb2b6c94f2119}} 
+Credits\+: Thanks to A. Becker for suggesting strtol() 
+
+Definition at line 492 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a5cf7b242d7207cd3217bb2b6c94f2119}\label{iniparser_8c_a5cf7b242d7207cd3217bb2b6c94f2119}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getlongdouble@{iniparser\+\_\+getlongdouble}}
 \index{iniparser\+\_\+getlongdouble@{iniparser\+\_\+getlongdouble}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getlongdouble()}{iniparser\_getlongdouble()}}
@@ -314,7 +350,11 @@ Get the string associated to a key, convert to a double.
 \begin{DoxyReturn}{Returns}
 long double
 \end{DoxyReturn}
-This function queries a dictionary for a key. A key as read from an ini file is given as \char`\"{}section\+:key\char`\"{}. If the key cannot be found, the notfound value is returned. \mbox{\Hypertarget{iniparser_8c_ada8cb75b68d3d7d175ac0bce75ca7fb5}\label{iniparser_8c_ada8cb75b68d3d7d175ac0bce75ca7fb5}} 
+This function queries a dictionary for a key. A key as read from an ini file is given as \char`\"{}section\+:key\char`\"{}. If the key cannot be found, the notfound value is returned. 
+
+Definition at line 532 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_ada8cb75b68d3d7d175ac0bce75ca7fb5}\label{iniparser_8c_ada8cb75b68d3d7d175ac0bce75ca7fb5}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getlongint@{iniparser\+\_\+getlongint}}
 \index{iniparser\+\_\+getlongint@{iniparser\+\_\+getlongint}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getlongint()}{iniparser\_getlongint()}}
@@ -344,7 +384,11 @@ Supported values for integers include the usual C notation so decimal, octal (st
 
 Warning\+: the conversion may overflow in various ways. Conversion is totally outsourced to strtol(), see the associated man page for overflow handling.
 
-Credits\+: Thanks to A. Becker for suggesting strtol() \mbox{\Hypertarget{iniparser_8c_ad2a00b86e48c9ce0a730e3f7057f541e}\label{iniparser_8c_ad2a00b86e48c9ce0a730e3f7057f541e}} 
+Credits\+: Thanks to A. Becker for suggesting strtol() 
+
+Definition at line 455 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_ad2a00b86e48c9ce0a730e3f7057f541e}\label{iniparser_8c_ad2a00b86e48c9ce0a730e3f7057f541e}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getnsec@{iniparser\+\_\+getnsec}}
 \index{iniparser\+\_\+getnsec@{iniparser\+\_\+getnsec}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getnsec()}{iniparser\_getnsec()}}
@@ -366,7 +410,11 @@ This function returns the number of sections found in a dictionary. The test to 
 
 This clearly fails in the case a section name contains a colon, but this should simply be avoided.
 
-This function returns -\/1 in case of error. \mbox{\Hypertarget{iniparser_8c_a3779307fb59f57451bab47f6a7240361}\label{iniparser_8c_a3779307fb59f57451bab47f6a7240361}} 
+This function returns -\/1 in case of error. 
+
+Definition at line 165 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a3779307fb59f57451bab47f6a7240361}\label{iniparser_8c_a3779307fb59f57451bab47f6a7240361}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getseckeys@{iniparser\+\_\+getseckeys}}
 \index{iniparser\+\_\+getseckeys@{iniparser\+\_\+getseckeys}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getseckeys()}{iniparser\_getseckeys()}}
@@ -390,7 +438,11 @@ The pointer passed as {\ttfamily keys} argument or N\+U\+LL in case of error
 \end{DoxyReturn}
 This function queries a dictionary and finds all keys in a given section. The keys argument should be an array of pointers which size has been determined by calling {\ttfamily iniparser\+\_\+getsecnkeys} function prior to this one.
 
-Each pointer in the returned char pointer-\/to-\/pointer is pointing to a string allocated in the dictionary; do not free or modify them. \mbox{\Hypertarget{iniparser_8c_abf0d2fa0fa9978b5458192396a0fba79}\label{iniparser_8c_abf0d2fa0fa9978b5458192396a0fba79}} 
+Each pointer in the returned char pointer-\/to-\/pointer is pointing to a string allocated in the dictionary; do not free or modify them. 
+
+Definition at line 373 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_abf0d2fa0fa9978b5458192396a0fba79}\label{iniparser_8c_abf0d2fa0fa9978b5458192396a0fba79}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getsecname@{iniparser\+\_\+getsecname}}
 \index{iniparser\+\_\+getsecname@{iniparser\+\_\+getsecname}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getsecname()}{iniparser\_getsecname()}}
@@ -412,7 +464,11 @@ Pointer to char string
 \end{DoxyReturn}
 This function locates the n-\/th section in a dictionary and returns its name as a pointer to a string statically allocated inside the dictionary. Do not free or modify the returned string!
 
-This function returns N\+U\+LL in case of error. \mbox{\Hypertarget{iniparser_8c_a3e50b16a71a4fbd2183bec0424699932}\label{iniparser_8c_a3e50b16a71a4fbd2183bec0424699932}} 
+This function returns N\+U\+LL in case of error. 
+
+Definition at line 196 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a3e50b16a71a4fbd2183bec0424699932}\label{iniparser_8c_a3e50b16a71a4fbd2183bec0424699932}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getsecnkeys@{iniparser\+\_\+getsecnkeys}}
 \index{iniparser\+\_\+getsecnkeys@{iniparser\+\_\+getsecnkeys}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+getsecnkeys()}{iniparser\_getsecnkeys()}}
@@ -432,6 +488,10 @@ Get the number of keys in a section of a dictionary.
 \begin{DoxyReturn}{Returns}
 Number of keys in section 
 \end{DoxyReturn}
+
+
+Definition at line 331 of file iniparser.\+c.
+
 \mbox{\Hypertarget{iniparser_8c_afa02a2ab6d21e751472f6a330ab7b815}\label{iniparser_8c_afa02a2ab6d21e751472f6a330ab7b815}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+getstring@{iniparser\+\_\+getstring}}
 \index{iniparser\+\_\+getstring@{iniparser\+\_\+getstring}!iniparser.\+c@{iniparser.\+c}}
@@ -454,7 +514,11 @@ Get the string associated to a key.
 \begin{DoxyReturn}{Returns}
 pointer to statically allocated character string
 \end{DoxyReturn}
-This function queries a dictionary for a key. A key as read from an ini file is given as \char`\"{}section\+:key\char`\"{}. If the key cannot be found, the pointer passed as \textquotesingle{}def\textquotesingle{} is returned. The returned char pointer is pointing to a string allocated in the dictionary, do not free or modify it. \mbox{\Hypertarget{iniparser_8c_ab0be559bfb769224b3f1b75e26242a67}\label{iniparser_8c_ab0be559bfb769224b3f1b75e26242a67}} 
+This function queries a dictionary for a key. A key as read from an ini file is given as \char`\"{}section\+:key\char`\"{}. If the key cannot be found, the pointer passed as \textquotesingle{}def\textquotesingle{} is returned. The returned char pointer is pointing to a string allocated in the dictionary, do not free or modify it. 
+
+Definition at line 414 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_ab0be559bfb769224b3f1b75e26242a67}\label{iniparser_8c_ab0be559bfb769224b3f1b75e26242a67}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+load@{iniparser\+\_\+load}}
 \index{iniparser\+\_\+load@{iniparser\+\_\+load}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+load()}{iniparser\_load()}}
@@ -474,7 +538,11 @@ Pointer to newly allocated dictionary
 \end{DoxyReturn}
 This is the parser for ini files. This function is called, providing the name of the file to be read. It returns a dictionary object that should not be accessed directly, but through accessor functions instead.
 
-The returned dictionary must be freed using \hyperlink{iniparser_8c_a90549ee518523921886b74454ff872eb}{iniparser\+\_\+freedict()}. \mbox{\Hypertarget{iniparser_8c_ad526324b54dbfe04d636360883f4f874}\label{iniparser_8c_ad526324b54dbfe04d636360883f4f874}} 
+The returned dictionary must be freed using \hyperlink{iniparser_8c_a90549ee518523921886b74454ff872eb}{iniparser\+\_\+freedict()}. 
+
+Definition at line 739 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_ad526324b54dbfe04d636360883f4f874}\label{iniparser_8c_ad526324b54dbfe04d636360883f4f874}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+set@{iniparser\+\_\+set}}
 \index{iniparser\+\_\+set@{iniparser\+\_\+set}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+set()}{iniparser\_set()}}
@@ -496,7 +564,11 @@ Set an entry in a dictionary.
 \begin{DoxyReturn}{Returns}
 int 0 if Ok, -\/1 otherwise.
 \end{DoxyReturn}
-If the given entry can be found in the dictionary, it is modified to contain the provided value. If it cannot be found, the entry is created. It is Ok to set val to N\+U\+LL. \mbox{\Hypertarget{iniparser_8c_a2ecced40f104f8d629748bb12c1f6b6b}\label{iniparser_8c_a2ecced40f104f8d629748bb12c1f6b6b}} 
+If the given entry can be found in the dictionary, it is modified to contain the provided value. If it cannot be found, the entry is created. It is Ok to set val to N\+U\+LL. 
+
+Definition at line 626 of file iniparser.\+c.
+
+\mbox{\Hypertarget{iniparser_8c_a2ecced40f104f8d629748bb12c1f6b6b}\label{iniparser_8c_a2ecced40f104f8d629748bb12c1f6b6b}} 
 \index{iniparser.\+c@{iniparser.\+c}!iniparser\+\_\+unset@{iniparser\+\_\+unset}}
 \index{iniparser\+\_\+unset@{iniparser\+\_\+unset}!iniparser.\+c@{iniparser.\+c}}
 \subsubsection{\texorpdfstring{iniparser\+\_\+unset()}{iniparser\_unset()}}
@@ -517,3 +589,6 @@ Delete an entry in a dictionary.
 void
 \end{DoxyReturn}
 If the given entry can be found, it is deleted from the dictionary. 
+
+Definition at line 642 of file iniparser.\+c.
+

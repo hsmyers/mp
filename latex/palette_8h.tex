@@ -1,5 +1,10 @@
 \hypertarget{palette_8h}{}\section{palette.\+h File Reference}
 \label{palette_8h}\index{palette.\+h@{palette.\+h}}
+
+
+A collection of functions in aid of palette instantiation, manipulation, and deletion.  
+
+
 {\ttfamily \#include $<$complex.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}getopt.\+h\char`\"{}}\newline
 \subsection*{Data Structures}
@@ -9,71 +14,167 @@ struct \hyperlink{palette_8h_struct_rgb}{Rgb}
 \item 
 struct \hyperlink{palette_8h_struct_array}{Array}
 \end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{palette_8h_a2e19e469e8ce6fcd710ce96047ba476b}\label{palette_8h_a2e19e469e8ce6fcd710ce96047ba476b}} 
+\#define {\bfseries P\+P\+M\+R\+E\+A\+D\+B\+U\+F\+L\+EN}~256
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_a660d798137815840926180ed31ced455}{build\+Colors} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\begin{DoxyCompactList}\small\item\em Build a palette from list of \hyperlink{palette_8h_struct_rgb}{Rgb} information. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_a9cb17de2d7f1fd0dc94f46a2eabfed4a}{from\+Start2\+Finish} (\hyperlink{palette_8h_struct_rgb}{Rgb} start, \hyperlink{palette_8h_struct_rgb}{Rgb} finish, int N)
+\begin{DoxyCompactList}\small\item\em Given a start \hyperlink{palette_8h_struct_rgb}{Rgb} value and a finish \hyperlink{palette_8h_struct_rgb}{Rgb} value, create a palette of N steps. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_a4a2bf9070373aa94ba3e735670375c41}{get\+Colors} (char $\ast$palname)
+\begin{DoxyCompactList}\small\item\em Initialize palette from a palette file. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_af963a7e10e0831386b18783d4e572602}{read\+Colors} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Read a palette file. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}{set\+Colors} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\begin{DoxyCompactList}\small\item\em Initialize palette from command line information. \end{DoxyCompactList}\item 
+\hyperlink{palette_8h_struct_rgb}{Rgb} \hyperlink{palette_8h_aa81442d65e676cadc4fd3d3a14ed659d}{parse\+R\+GB} (char $\ast$s, int $\ast$n)
+\begin{DoxyCompactList}\small\item\em Mini parser for -\/k option format. \end{DoxyCompactList}\item 
+void \hyperlink{palette_8h_a5945c40a9aa27f0face3200a49e78e07}{append\+Colors} (\hyperlink{palette_8h_struct_rgb}{Rgb} a, \hyperlink{palette_8h_struct_rgb}{Rgb} b, int interval, \hyperlink{palette_8h_struct_array}{Array} $\ast$color)
+\begin{DoxyCompactList}\small\item\em Append a range of colors to a palette. \end{DoxyCompactList}\item 
+void \hyperlink{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}{free\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Deallocate array. \end{DoxyCompactList}\item 
 void \hyperlink{palette_8h_a76bc60de1645ee244d11a85ee2cfd3c7}{init\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a, size\+\_\+t initial\+Size)
 \begin{DoxyCompactList}\small\item\em Initialize Dynamic \hyperlink{palette_8h_struct_array}{Array}. \end{DoxyCompactList}\item 
 void \hyperlink{palette_8h_a023ea2bb8f8a24f034b63decb038d959}{insert\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a, \hyperlink{palette_8h_struct_rgb}{Rgb} element)
 \begin{DoxyCompactList}\small\item\em Add item to dynamic array. \end{DoxyCompactList}\item 
-void \hyperlink{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}{free\+Array} (\hyperlink{palette_8h_struct_array}{Array} $\ast$a)
-\begin{DoxyCompactList}\small\item\em Deallocate array. \end{DoxyCompactList}\item 
-\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_a4a2bf9070373aa94ba3e735670375c41}{get\+Colors} (char $\ast$palname)
-\begin{DoxyCompactList}\small\item\em Initialize palette from a palette file. \end{DoxyCompactList}\item 
-\hyperlink{palette_8h_struct_array}{Array} \hyperlink{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}{set\+Colors} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
-\begin{DoxyCompactList}\small\item\em Initialize palette from command line information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{palette_8h_a6cf021d31ce48e794518f685093bad6a}{write\+Colors} (\hyperlink{palette_8h_struct_array}{Array} colors, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Write out an image of the palette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A collection of functions in aid of palette instantiation, manipulation, and deletion. 
+
+\begin{DoxyAuthor}{Author}
+Hugh S. Myers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sat Aug 12 07\+:32\+:49 2017
+\end{DoxyDate}
+\hypertarget{util_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{util_8h_DESCRIPTION}
+palettes (color arrays) are collections of \hyperlink{palette_8h_struct_rgb}{Rgb} values and the associated functions here are the ways the palettes are used.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000008}{Bug}]No known bugs. \end{DoxyRefDesc}
 
 
 \subsection{Data Structure Documentation}
 \index{Rgb@{Rgb}}\label{struct_rgb}
 \Hypertarget{palette_8h_struct_rgb}
 \subsubsection{struct Rgb}
+The R\+GB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors. Stored as unsigned char (numbers in the range 0 to 255), the range that a single 8-\/bit byte can offer. \href{https://en.wikipedia.org/wiki/RGB_color_model}{\tt See Wikipedia R\+GB article} 
+
+Definition at line 28 of file palette.\+h.
+
 \begin{DoxyFields}{Data Fields}
 \mbox{\Hypertarget{palette_8h_acab4ec8e0d55174258da75ee80f69bef}\label{palette_8h_acab4ec8e0d55174258da75ee80f69bef}} 
 unsigned char&
 b&
-\\
+B\+L\+UE color, range \mbox{[}0..255\mbox{]} \\
 \hline
 
 \mbox{\Hypertarget{palette_8h_a27a8958ecb91f5f98ee520129a396ce3}\label{palette_8h_a27a8958ecb91f5f98ee520129a396ce3}} 
 unsigned char&
 g&
-\\
+G\+R\+E\+EN color, range \mbox{[}0..255\mbox{]} \\
 \hline
 
 \mbox{\Hypertarget{palette_8h_a3da778daa4ccbc628c478b21d6093df5}\label{palette_8h_a3da778daa4ccbc628c478b21d6093df5}} 
 unsigned char&
 r&
-\\
+R\+ED color, range \mbox{[}0..255\mbox{]} \\
 \hline
 
 \end{DoxyFields}
 \index{Array@{Array}}\label{struct_array}
 \Hypertarget{palette_8h_struct_array}
 \subsubsection{struct Array}
+Dynamic array typedef and structure. 
+
+Definition at line 37 of file palette.\+h.
+
 \begin{DoxyFields}{Data Fields}
 \mbox{\Hypertarget{palette_8h_a1004bb52f35f927022e780a193612db1}\label{palette_8h_a1004bb52f35f927022e780a193612db1}} 
 \hyperlink{palette_8h_struct_rgb}{Rgb} $\ast$&
 array&
-\\
+Internal pointer to array content \\
 \hline
 
 \mbox{\Hypertarget{palette_8h_a13f67ab957f4fdd3443d7f62b2fd09ce}\label{palette_8h_a13f67ab957f4fdd3443d7f62b2fd09ce}} 
 size\_t&
 size&
-\\
+sizeof item stored $\ast$ allocated \\
 \hline
 
 \mbox{\Hypertarget{palette_8h_a6196b6388bc5b72dd2dea08e483a0c47}\label{palette_8h_a6196b6388bc5b72dd2dea08e483a0c47}} 
 size\_t&
 used&
-\\
+Count of items in array \\
 \hline
 
 \end{DoxyFields}
 
 
 \subsection{Function Documentation}
+\mbox{\Hypertarget{palette_8h_a5945c40a9aa27f0face3200a49e78e07}\label{palette_8h_a5945c40a9aa27f0face3200a49e78e07}} 
+\index{palette.\+h@{palette.\+h}!append\+Colors@{append\+Colors}}
+\index{append\+Colors@{append\+Colors}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{append\+Colors()}{appendColors()}}
+{\footnotesize\ttfamily void append\+Colors (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{start,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{finish,  }\item[{int}]{N,  }\item[{\hyperlink{palette_8h_struct_array}{Array} $\ast$}]{colors }\end{DoxyParamCaption})}
+
+
+
+Append a range of colors to a palette. 
+
+This function creates a range of colors between a pair of values, by stepping through \hyperlink{struct_h_s_v}{H\+SV} space and then converting each result to \hyperlink{palette_8h_struct_rgb}{Rgb}. The colors are created with a simple linear interpolation for each value.
+
+\begin{DoxyNote}{Note}
+The apparent off-\/by-\/one error where the index of values starts at 1 rather than at zero is intentional. It prevents doubling the end/start value that would otherwise occur.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em start} & First color in the sequence of \hyperlink{palette_8h_struct_rgb}{Rgb} values. \\
+\hline
+{\em finish} & Last color in the sequence of \hyperlink{palette_8h_struct_rgb}{Rgb} values. \\
+\hline
+{\em N} & number of steps in the interval between start and finish. \\
+\hline
+{\em colors} & existing dynamic array of colors to extend. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 345 of file palette.\+c.
+
+\mbox{\Hypertarget{palette_8h_a660d798137815840926180ed31ced455}\label{palette_8h_a660d798137815840926180ed31ced455}} 
+\index{palette.\+h@{palette.\+h}!build\+Colors@{build\+Colors}}
+\index{build\+Colors@{build\+Colors}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{build\+Colors()}{buildColors()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_array}{Array} build\+Colors (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
+
+
+
+Build a palette from list of \hyperlink{palette_8h_struct_rgb}{Rgb} information. 
+
+Handle multiple -\/k entries and construct a palette by parsing the entries. The palette consists of colors laid end to end with each color specified acting as the head and tail of a color segment. Start with first, interpolate for listed (or default) number of values. Next segment starts with previous closing color and proceeds in the same fashion to the next color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{getopt_8h_struct_parameters}{Parameters} file which contains stack of entries from the -\/k options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a dynamic palette array. 
+\end{DoxyReturn}
+
+
+Definition at line 275 of file palette.\+c.
+
 \mbox{\Hypertarget{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}\label{palette_8h_a5b01753b157ffa0f4143c2215a51a56a}} 
 \index{palette.\+h@{palette.\+h}!free\+Array@{free\+Array}}
 \index{free\+Array@{free\+Array}!palette.\+h@{palette.\+h}}
@@ -91,6 +192,38 @@ Free memory allocated for dynamic array.
 {\em a} & A pointer to an array. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 61 of file palette.\+c.
+
+\mbox{\Hypertarget{palette_8h_a9cb17de2d7f1fd0dc94f46a2eabfed4a}\label{palette_8h_a9cb17de2d7f1fd0dc94f46a2eabfed4a}} 
+\index{palette.\+h@{palette.\+h}!from\+Start2\+Finish@{from\+Start2\+Finish}}
+\index{from\+Start2\+Finish@{from\+Start2\+Finish}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{from\+Start2\+Finish()}{fromStart2Finish()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_array}{Array} from\+Start2\+Finish (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{start,  }\item[{\hyperlink{palette_8h_struct_rgb}{Rgb}}]{finish,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Given a start \hyperlink{palette_8h_struct_rgb}{Rgb} value and a finish \hyperlink{palette_8h_struct_rgb}{Rgb} value, create a palette of N steps. 
+
+Convert the given bracketing colors to \hyperlink{struct_h_s_v}{H\+SV} space and linearly interpolate between them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & First or starting \hyperlink{palette_8h_struct_rgb}{Rgb} color. \\
+\hline
+{\em finish} & Second or finishing \hyperlink{palette_8h_struct_rgb}{Rgb} color. \\
+\hline
+{\em N} & Number of color values between start and finish ( inclusive ). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an array of \hyperlink{palette_8h_struct_rgb}{Rgb} values, i.\+e. a palette. 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file palette.\+c.
+
 \mbox{\Hypertarget{palette_8h_a4a2bf9070373aa94ba3e735670375c41}\label{palette_8h_a4a2bf9070373aa94ba3e735670375c41}} 
 \index{palette.\+h@{palette.\+h}!get\+Colors@{get\+Colors}}
 \index{get\+Colors@{get\+Colors}!palette.\+h@{palette.\+h}}
@@ -101,7 +234,7 @@ Free memory allocated for dynamic array.
 
 Initialize palette from a palette file. 
 
-Given the name of a palette file of \hyperlink{palette_8h_struct_rgb}{Rgb} triples, read and load a palette.
+Given the name of a palette file of \hyperlink{palette_8h_struct_rgb}{Rgb} triples read, create, and load a palette.
 
 
 \begin{DoxyParams}{Parameters}
@@ -109,8 +242,12 @@ Given the name of a palette file of \hyperlink{palette_8h_struct_rgb}{Rgb} tripl
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns an instance of array. A palette in this case. 
+Returns an instance of dynamic array. Palette in this case. 
 \end{DoxyReturn}
+
+
+Definition at line 74 of file palette.\+c.
+
 \mbox{\Hypertarget{palette_8h_a76bc60de1645ee244d11a85ee2cfd3c7}\label{palette_8h_a76bc60de1645ee244d11a85ee2cfd3c7}} 
 \index{palette.\+h@{palette.\+h}!init\+Array@{init\+Array}}
 \index{init\+Array@{init\+Array}!palette.\+h@{palette.\+h}}
@@ -127,9 +264,13 @@ This begins a chain of memory allocations for a given typedef/struct. In this in
 \begin{DoxyParams}{Parameters}
 {\em A} & pointer to an array. \\
 \hline
-{\em initial\+Size} & How many instances of item for inital allocation \\
+{\em initial\+Size} & How many instances of item for initial allocation \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 34 of file palette.\+c.
+
 \mbox{\Hypertarget{palette_8h_a023ea2bb8f8a24f034b63decb038d959}\label{palette_8h_a023ea2bb8f8a24f034b63decb038d959}} 
 \index{palette.\+h@{palette.\+h}!insert\+Array@{insert\+Array}}
 \index{insert\+Array@{insert\+Array}!palette.\+h@{palette.\+h}}
@@ -149,6 +290,75 @@ Either insert item into already allocated space or fetch more space and then ins
 {\em element} & Item to be inserted. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 47 of file palette.\+c.
+
+\mbox{\Hypertarget{palette_8h_aa81442d65e676cadc4fd3d3a14ed659d}\label{palette_8h_aa81442d65e676cadc4fd3d3a14ed659d}} 
+\index{palette.\+h@{palette.\+h}!parse\+R\+GB@{parse\+R\+GB}}
+\index{parse\+R\+GB@{parse\+R\+GB}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{parse\+R\+G\+B()}{parseRGB()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_rgb}{Rgb} parse\+R\+GB (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{int $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Mini parser for -\/k option format. 
+
+-\/k or --kolor allows \hyperlink{palette_8h_struct_rgb}{Rgb} references in tow forms with an optional step indicator allowed in either case. If the reference begins with a \textquotesingle{}\{\textquotesingle{} it is assumed to be an actual \hyperlink{palette_8h_struct_rgb}{Rgb} triplet and the the 3 values are scanned and parsed accordingly. If not a curly brace, then the assumption becomes that the entry is a named reference and a color name lookup is performed. Then the parser determines if a colon is present and if so, the numeric value is parsed and returned by setting the int pointer \textquotesingle{}n\textquotesingle{} to the retrieved value. It defaults to 128. Finally the routine returns a palette.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/k value. \\
+\hline
+{\em n} & pointer to an integer which receives the interval or step value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an \hyperlink{palette_8h_struct_rgb}{Rgb} triplet and sets the pointer to the interval. 
+\end{DoxyReturn}
+
+
+Definition at line 313 of file palette.\+c.
+
+\mbox{\Hypertarget{palette_8h_af963a7e10e0831386b18783d4e572602}\label{palette_8h_af963a7e10e0831386b18783d4e572602}} 
+\index{palette.\+h@{palette.\+h}!read\+Colors@{read\+Colors}}
+\index{read\+Colors@{read\+Colors}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{read\+Colors()}{readColors()}}
+{\footnotesize\ttfamily \hyperlink{palette_8h_struct_array}{Array} read\+Colors (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Read a palette file. 
+
+Read a palette file and create a palette, using the first line.
+
+P\+PM File Format
+
+
+\begin{DoxyEnumerate}
+\item A \char`\"{}magic number\char`\"{} for identifying the file type. A ppm image\textquotesingle{}s magic number is the two characters \char`\"{}\+P6\char`\"{}.
+\item Whitespace (blanks, T\+A\+Bs, C\+Rs, L\+Fs).
+\item A width, formatted as A\+S\+C\+II characters in decimal.
+\item Whitespace.
+\item A height, again in A\+S\+C\+II decimal.
+\item Whitespace.
+\item The maximum color value (Maxval), again in A\+S\+C\+II decimal. Must be less than 65536 and more than zero.
+\item A single whitespace character (usually a newline).
+\item A raster of Height rows, in order from top to bottom. Each row consists of Width pixels, in order from left to right. Each pixel is a triplet of red, green, and blue samples, in that order. Each sample is represented in pure binary by either 1 or 2 bytes. If the Maxval is less than 256, it is 1 byte. Otherwise, it is 2 bytes. The most significant byte is first.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a dynamic palette array. 
+\end{DoxyReturn}
+
+
+Definition at line 204 of file palette.\+c.
+
 \mbox{\Hypertarget{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}\label{palette_8h_ae2b088dd21fcfa9cbc9e2b0b92c71558}} 
 \index{palette.\+h@{palette.\+h}!set\+Colors@{set\+Colors}}
 \index{set\+Colors@{set\+Colors}!palette.\+h@{palette.\+h}}
@@ -167,5 +377,32 @@ Given start and finish colors, construct a palette accordingly.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Returns an instance of array. Palette in this case. 
+Returns an instance of dynamic array. Palette in this case. 
 \end{DoxyReturn}
+
+
+Definition at line 107 of file palette.\+c.
+
+\mbox{\Hypertarget{palette_8h_a6cf021d31ce48e794518f685093bad6a}\label{palette_8h_a6cf021d31ce48e794518f685093bad6a}} 
+\index{palette.\+h@{palette.\+h}!write\+Colors@{write\+Colors}}
+\index{write\+Colors@{write\+Colors}!palette.\+h@{palette.\+h}}
+\subsubsection{\texorpdfstring{write\+Colors()}{writeColors()}}
+{\footnotesize\ttfamily void write\+Colors (\begin{DoxyParamCaption}\item[{\hyperlink{palette_8h_struct_array}{Array}}]{colors,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Write out an image of the palette. 
+
+Given a filename create a .ppm image file, displaying the chosen palette.
+
+
+\begin{DoxyParams}{Parameters}
+{\em colors} & Palate to use. \\
+\hline
+{\em filename} & Name of file to create and write to, \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 161 of file palette.\+c.
+

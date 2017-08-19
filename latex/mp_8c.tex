@@ -1,81 +1,177 @@
 \hypertarget{mp_8c}{}\section{mp.\+c File Reference}
 \label{mp_8c}\index{mp.\+c@{mp.\+c}}
-{\ttfamily \#include $<$stdio.\+h$>$}\newline
-{\ttfamily \#include $<$stdlib.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}palette.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}colors.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}getopt.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
+
+
+This is the primary source file for mp.\+exe.  
+
+
 {\ttfamily \#include \char`\"{}mp.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}elapsed.\+h\char`\"{}}\newline
-\subsection*{Macros}
-\begin{DoxyCompactItemize}
-\item 
-\#define \hyperlink{mp_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}~1
-\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{mp_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
-\item 
-void \hyperlink{mp_8c_aa841253987f8fbc49d38a49a3c6918dc}{mset\+F\+LT} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g)
-\item 
-void \hyperlink{mp_8c_a19f448efc51ed8ce1d43fbfebd1db7b6}{mset\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g)
-\item 
-void \hyperlink{mp_8c_a0f055ba9de4e60ff7af3a5e80f191908}{mset\+L\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g)
-\item 
-void \hyperlink{mp_8c_a39b42ddcada14221f1c14ddc23335830}{mset\+F\+L\+T128} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g)
-\item 
-\hyperlink{mp_8h_struct_axes_f_l_t}{Axes\+F\+LT} \hyperlink{mp_8c_aef8b01c80ffc5c987e102a2a6af5be64}{ct\+\_\+gain\+\_\+axes\+F\+LT} (float real, float imag, float diameter, int height, int width)
-\item 
-\hyperlink{mp_8h_struct_axes_d_b_l}{Axes\+D\+BL} \hyperlink{mp_8c_ac7c5e8f5759623d9422c61eea8cb6bc6}{ct\+\_\+gain\+\_\+axes\+D\+BL} (double real, double imag, double diameter, int height, int width)
-\item 
-\hyperlink{mp_8h_struct_axes_l_d_b_l}{Axes\+L\+D\+BL} \hyperlink{mp_8c_a8a2fd7c32c2ff76bbf8b9b9cd661928d}{ct\+\_\+gain\+\_\+axes\+L\+D\+BL} (long double real, long double imag, long double diameter, int height, int width)
-\item 
-\hyperlink{mp_8h_struct_axes_f_l_t128}{Axes\+F\+L\+T128} \hyperlink{mp_8c_aea9ece4865183def6db92c5f18c6312b}{ct\+\_\+gain\+\_\+axes\+F\+L\+T128} (\+\_\+\+\_\+float128 real, \+\_\+\+\_\+float128 imag, \+\_\+\+\_\+float128 diameter, int height, int width)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{mp_8c_a0ddf1224851353fc92bfbff6f499fa97}{main()} for mp.\+exe \end{DoxyCompactList}\item 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{mp_8c_a3f9e95e9f968655b1131d3c108aed87b}{M\+Set\+F\+LT} (\hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\begin{DoxyCompactList}\small\item\em Mandelbrot Set using float. \end{DoxyCompactList}\item 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{mp_8c_a034e460e2b1033d1cfef694553053db9}{M\+Set\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\begin{DoxyCompactList}\small\item\em Mandelbrot Set using double. \end{DoxyCompactList}\item 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{mp_8c_a194bda2f36ff02a5bc60f266285078d1}{M\+Set\+L\+D\+BL} (\hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\begin{DoxyCompactList}\small\item\em Mandelbrot Set using long double. \end{DoxyCompactList}\item 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{mp_8c_a441edd39cff30f76fc120d57d08fa0c9}{M\+Set\+F\+L\+T128} (\hyperlink{getopt_8h_struct_parameters}{Parameters} P)
+\begin{DoxyCompactList}\small\item\em Mandelbrot Set using \+\_\+\+\_\+float128. \end{DoxyCompactList}\item 
+\hyperlink{struct_color_f_l_t}{Color\+F\+LT} \hyperlink{mp_8c_a18cdd78672ee1a523153bc0942d991a3}{Give\+Distance\+F\+LT} (\hyperlink{struct_color_f_l_t}{Color\+F\+LT} cp, int i\+Max)
+\begin{DoxyCompactList}\small\item\em Float implementation of D\+E\+MM. \end{DoxyCompactList}\item 
+\hyperlink{struct_color_d_b_l}{Color\+D\+BL} \hyperlink{mp_8c_a4004850ccef21f42e497c0a3de7cc07d}{Give\+Distance\+D\+BL} (\hyperlink{struct_color_d_b_l}{Color\+D\+BL} cp, int i\+Max)
+\begin{DoxyCompactList}\small\item\em Double implementation of D\+E\+MM. \end{DoxyCompactList}\item 
+\hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} \hyperlink{mp_8c_a631ba1071f27ae2f112a553f1b03bc21}{Give\+Distance\+L\+D\+BL} (\hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} cp, int i\+Max)
+\begin{DoxyCompactList}\small\item\em Long double implementation of D\+E\+MM. \end{DoxyCompactList}\item 
+\hyperlink{struct_color128}{Color128} \hyperlink{mp_8c_a6f78f72d8c2480810741cfe4256d8204}{Give\+Distance\+F\+L\+T128} (\hyperlink{struct_color128}{Color128} cp, int i\+Max)
+\begin{DoxyCompactList}\small\item\em \+\_\+\+\_\+float128 implementation of D\+E\+MM \end{DoxyCompactList}\item 
+\hyperlink{struct_color_f_l_t}{Color\+F\+LT} \hyperlink{mp_8c_a795b661e93a34f5a13ed289c086417ce}{M\+Set\+C\+P\+M\+F\+LT} (\hyperlink{struct_color_f_l_t}{Color\+F\+LT} cp, int maxiter)
+\begin{DoxyCompactList}\small\item\em Float implementation of M\+S\+E\+T\+C\+PM. \end{DoxyCompactList}\item 
+\hyperlink{struct_color_d_b_l}{Color\+D\+BL} \hyperlink{mp_8c_a18a4cb4dc46fca47a93474cf2a242e95}{M\+Set\+C\+P\+M\+D\+BL} (\hyperlink{struct_color_d_b_l}{Color\+D\+BL} cp, int maxiter)
+\begin{DoxyCompactList}\small\item\em Double implementation of M\+S\+E\+T\+C\+PM. \end{DoxyCompactList}\item 
+\hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} \hyperlink{mp_8c_a87eb51be532c563346aa0f98b41f6ef9}{M\+Set\+C\+P\+M\+L\+D\+BL} (\hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} cp, int maxiter)
+\begin{DoxyCompactList}\small\item\em Long double implementation of M\+S\+E\+T\+C\+PM. \end{DoxyCompactList}\item 
+\hyperlink{struct_color128}{Color128} \hyperlink{mp_8c_af31802513cd0719da4aaa5602d6169d7}{M\+Set\+C\+P\+M\+F\+L\+T128} (\hyperlink{struct_color128}{Color128} cp, int maxiter)
+\begin{DoxyCompactList}\small\item\em \+\_\+\+\_\+float128 implementation of M\+S\+E\+T\+C\+PM \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-char $\ast$ \hyperlink{mp_8c_abc057f42fdaf5e63835a8272aefe278e}{Version} = \char`\"{}0.\+019\char`\"{}
+\mbox{\Hypertarget{mp_8c_abc057f42fdaf5e63835a8272aefe278e}\label{mp_8c_abc057f42fdaf5e63835a8272aefe278e}} 
+char $\ast$ {\bfseries Version} = \char`\"{}0.\+029\char`\"{}
 \item 
-char $\ast$ \hyperlink{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}{Date} = \char`\"{}Sun Jul 23 20\+:30\+:05 2017\char`\"{}
+\mbox{\Hypertarget{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}\label{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}} 
+char $\ast$ {\bfseries Date} = \char`\"{}Sun Aug 13 20\+:42\+:04 2017\char`\"{}
 \end{DoxyCompactItemize}
 
 
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{mp_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}\label{mp_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}} 
-\index{mp.\+c@{mp.\+c}!\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO@{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}}
-\index{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO@{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}{\_\_USE\_MINGW\_ANSI\_STDIO}}
-{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO~1}
+\subsection{Detailed Description}
+This is the primary source file for mp.\+exe. 
 
+\begin{DoxyAuthor}{Author}
+Hugh S. Myers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Mon Aug 14 10\+:25\+:06 2017
+\end{DoxyDate}
+\hypertarget{util_8h_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{util_8h_DESCRIPTION}
+This is both the location of \hyperlink{mp_8c_a0ddf1224851353fc92bfbff6f499fa97}{main()} as well as the central file for the executable. Mp.\+exe is an Open\+MP Mandelbrot image generator. It is designed to be open ended as well as an on-\/going test bed. As such not everything may work. You\textquotesingle{}ve been warned. Best indicator of something wrong is an image that is all black. I suppose in keeping with the windows platform, the image should be all blue, but it is what it is.
+
+\begin{DoxyNote}{Note}
+compile\+: gcc -\/\+Wall -\/o mp -\/std=c99 -\/\+O3 -\/msse2 -\/march=native -\/fopenmp \hyperlink{cnames_8c}{cnames.\+c} \hyperlink{cspace_8c_source}{cspace.\+c} \hyperlink{colors_8c_source}{colors.\+c} \hyperlink{elapsed_8c}{elapsed.\+c} \hyperlink{util_8c}{util.\+c} \hyperlink{c_j_s_o_n_8c_source}{c\+J\+S\+O\+N.\+c} \hyperlink{mp_8c}{mp.\+c} -\/ljpeg -\/lgd~\newline
+ gcc -\/ggdb -\/\+Wall -\/o mp -\/std=c99 -\/msse2 -\/march=native -\/fopenmp \hyperlink{cnames_8c}{cnames.\+c} \hyperlink{cspace_8c_source}{cspace.\+c} \hyperlink{colors_8c_source}{colors.\+c} \hyperlink{elapsed_8c}{elapsed.\+c} \hyperlink{util_8c}{util.\+c} \hyperlink{c_j_s_o_n_8c_source}{c\+J\+S\+O\+N.\+c} \hyperlink{mp_8c}{mp.\+c} -\/ljpeg -\/lgd~\newline
+ debug\+: gdb -\/args …~\newline
+
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000005}{Bug}]No known bugs. \end{DoxyRefDesc}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{mp_8c_ac7c5e8f5759623d9422c61eea8cb6bc6}\label{mp_8c_ac7c5e8f5759623d9422c61eea8cb6bc6}} 
-\index{mp.\+c@{mp.\+c}!ct\+\_\+gain\+\_\+axes\+D\+BL@{ct\+\_\+gain\+\_\+axes\+D\+BL}}
-\index{ct\+\_\+gain\+\_\+axes\+D\+BL@{ct\+\_\+gain\+\_\+axes\+D\+BL}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{ct\+\_\+gain\+\_\+axes\+D\+B\+L()}{ct\_gain\_axesDBL()}}
-{\footnotesize\ttfamily \hyperlink{mp_8h_struct_axes_d_b_l}{Axes\+D\+BL} ct\+\_\+gain\+\_\+axes\+D\+BL (\begin{DoxyParamCaption}\item[{double}]{real,  }\item[{double}]{imag,  }\item[{double}]{diameter,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{mp_8c_a4004850ccef21f42e497c0a3de7cc07d}\label{mp_8c_a4004850ccef21f42e497c0a3de7cc07d}} 
+\index{mp.\+c@{mp.\+c}!Give\+Distance\+D\+BL@{Give\+Distance\+D\+BL}}
+\index{Give\+Distance\+D\+BL@{Give\+Distance\+D\+BL}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{Give\+Distance\+D\+B\+L()}{GiveDistanceDBL()}}
+{\footnotesize\ttfamily \hyperlink{struct_color_d_b_l}{Color\+D\+BL} Give\+Distance\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color_d_b_l}{Color\+D\+BL}}]{cp,  }\item[{int}]{i\+Max }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mp_8c_aef8b01c80ffc5c987e102a2a6af5be64}\label{mp_8c_aef8b01c80ffc5c987e102a2a6af5be64}} 
-\index{mp.\+c@{mp.\+c}!ct\+\_\+gain\+\_\+axes\+F\+LT@{ct\+\_\+gain\+\_\+axes\+F\+LT}}
-\index{ct\+\_\+gain\+\_\+axes\+F\+LT@{ct\+\_\+gain\+\_\+axes\+F\+LT}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{ct\+\_\+gain\+\_\+axes\+F\+L\+T()}{ct\_gain\_axesFLT()}}
-{\footnotesize\ttfamily \hyperlink{mp_8h_struct_axes_f_l_t}{Axes\+F\+LT} ct\+\_\+gain\+\_\+axes\+F\+LT (\begin{DoxyParamCaption}\item[{float}]{real,  }\item[{float}]{imag,  }\item[{float}]{diameter,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mp_8c_aea9ece4865183def6db92c5f18c6312b}\label{mp_8c_aea9ece4865183def6db92c5f18c6312b}} 
-\index{mp.\+c@{mp.\+c}!ct\+\_\+gain\+\_\+axes\+F\+L\+T128@{ct\+\_\+gain\+\_\+axes\+F\+L\+T128}}
-\index{ct\+\_\+gain\+\_\+axes\+F\+L\+T128@{ct\+\_\+gain\+\_\+axes\+F\+L\+T128}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{ct\+\_\+gain\+\_\+axes\+F\+L\+T128()}{ct\_gain\_axesFLT128()}}
-{\footnotesize\ttfamily \hyperlink{mp_8h_struct_axes_f_l_t128}{Axes\+F\+L\+T128} ct\+\_\+gain\+\_\+axes\+F\+L\+T128 (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+float128}]{real,  }\item[{\+\_\+\+\_\+float128}]{imag,  }\item[{\+\_\+\+\_\+float128}]{diameter,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mp_8c_a8a2fd7c32c2ff76bbf8b9b9cd661928d}\label{mp_8c_a8a2fd7c32c2ff76bbf8b9b9cd661928d}} 
-\index{mp.\+c@{mp.\+c}!ct\+\_\+gain\+\_\+axes\+L\+D\+BL@{ct\+\_\+gain\+\_\+axes\+L\+D\+BL}}
-\index{ct\+\_\+gain\+\_\+axes\+L\+D\+BL@{ct\+\_\+gain\+\_\+axes\+L\+D\+BL}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{ct\+\_\+gain\+\_\+axes\+L\+D\+B\+L()}{ct\_gain\_axesLDBL()}}
-{\footnotesize\ttfamily \hyperlink{mp_8h_struct_axes_l_d_b_l}{Axes\+L\+D\+BL} ct\+\_\+gain\+\_\+axes\+L\+D\+BL (\begin{DoxyParamCaption}\item[{long double}]{real,  }\item[{long double}]{imag,  }\item[{long double}]{diameter,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+Double implementation of D\+E\+MM. 
+
+This is the Distance Estimator Method for the Mandelbrot set. It is coded using all double variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color_d_b_l}{Color\+D\+BL} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color_d_b_l}{Color\+D\+BL} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 476 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a18cdd78672ee1a523153bc0942d991a3}\label{mp_8c_a18cdd78672ee1a523153bc0942d991a3}} 
+\index{mp.\+c@{mp.\+c}!Give\+Distance\+F\+LT@{Give\+Distance\+F\+LT}}
+\index{Give\+Distance\+F\+LT@{Give\+Distance\+F\+LT}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{Give\+Distance\+F\+L\+T()}{GiveDistanceFLT()}}
+{\footnotesize\ttfamily \hyperlink{struct_color_f_l_t}{Color\+F\+LT} Give\+Distance\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color_f_l_t}{Color\+F\+LT}}]{cp,  }\item[{int}]{i\+Max }\end{DoxyParamCaption})}
+
+
+
+Float implementation of D\+E\+MM. 
+
+This is the Distance Estimator Method for the Mandelbrot set. It is coded using all float variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color_f_l_t}{Color\+F\+LT} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color_f_l_t}{Color\+F\+LT} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 417 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a6f78f72d8c2480810741cfe4256d8204}\label{mp_8c_a6f78f72d8c2480810741cfe4256d8204}} 
+\index{mp.\+c@{mp.\+c}!Give\+Distance\+F\+L\+T128@{Give\+Distance\+F\+L\+T128}}
+\index{Give\+Distance\+F\+L\+T128@{Give\+Distance\+F\+L\+T128}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{Give\+Distance\+F\+L\+T128()}{GiveDistanceFLT128()}}
+{\footnotesize\ttfamily \hyperlink{struct_color128}{Color128} Give\+Distance\+F\+L\+T128 (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color128}{Color128}}]{cp,  }\item[{int}]{i\+Max }\end{DoxyParamCaption})}
+
+
+
+\+\_\+\+\_\+float128 implementation of D\+E\+MM 
+
+This is the Distance Estimator Method for the Mandelbrot set. It is coded using all \+\_\+\+\_\+float128 variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color128}{Color128} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color128}{Color128} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 593 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a631ba1071f27ae2f112a553f1b03bc21}\label{mp_8c_a631ba1071f27ae2f112a553f1b03bc21}} 
+\index{mp.\+c@{mp.\+c}!Give\+Distance\+L\+D\+BL@{Give\+Distance\+L\+D\+BL}}
+\index{Give\+Distance\+L\+D\+BL@{Give\+Distance\+L\+D\+BL}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{Give\+Distance\+L\+D\+B\+L()}{GiveDistanceLDBL()}}
+{\footnotesize\ttfamily \hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} Give\+Distance\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL}}]{cp,  }\item[{int}]{i\+Max }\end{DoxyParamCaption})}
+
+
+
+Long double implementation of D\+E\+MM. 
+
+This is the Distance Estimator Method for the Mandelbrot set. It is coded using all long double variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 535 of file mp.\+c.
 
 \mbox{\Hypertarget{mp_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{mp_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
 \index{mp.\+c@{mp.\+c}!main@{main}}
@@ -83,42 +179,223 @@ char $\ast$ \hyperlink{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}{Date} = \char`\"
 \subsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mp_8c_a19f448efc51ed8ce1d43fbfebd1db7b6}\label{mp_8c_a19f448efc51ed8ce1d43fbfebd1db7b6}} 
-\index{mp.\+c@{mp.\+c}!mset\+D\+BL@{mset\+D\+BL}}
-\index{mset\+D\+BL@{mset\+D\+BL}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{mset\+D\+B\+L()}{msetDBL()}}
-{\footnotesize\ttfamily void mset\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{mp_8c_aa841253987f8fbc49d38a49a3c6918dc}\label{mp_8c_aa841253987f8fbc49d38a49a3c6918dc}} 
-\index{mp.\+c@{mp.\+c}!mset\+F\+LT@{mset\+F\+LT}}
-\index{mset\+F\+LT@{mset\+F\+LT}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{mset\+F\+L\+T()}{msetFLT()}}
-{\footnotesize\ttfamily void mset\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{mp_8c_a39b42ddcada14221f1c14ddc23335830}\label{mp_8c_a39b42ddcada14221f1c14ddc23335830}} 
-\index{mp.\+c@{mp.\+c}!mset\+F\+L\+T128@{mset\+F\+L\+T128}}
-\index{mset\+F\+L\+T128@{mset\+F\+L\+T128}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{mset\+F\+L\+T128()}{msetFLT128()}}
-{\footnotesize\ttfamily void mset\+F\+L\+T128 (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{mp_8c_a0f055ba9de4e60ff7af3a5e80f191908}\label{mp_8c_a0f055ba9de4e60ff7af3a5e80f191908}} 
-\index{mp.\+c@{mp.\+c}!mset\+L\+D\+BL@{mset\+L\+D\+BL}}
-\index{mset\+L\+D\+BL@{mset\+L\+D\+BL}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{mset\+L\+D\+B\+L()}{msetLDBL()}}
-{\footnotesize\ttfamily void mset\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g }\end{DoxyParamCaption})}
 
 
+\hyperlink{mp_8c_a0ddf1224851353fc92bfbff6f499fa97}{main()} for mp.\+exe 
 
-\subsection{Variable Documentation}
-\mbox{\Hypertarget{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}\label{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}} 
-\index{mp.\+c@{mp.\+c}!Date@{Date}}
-\index{Date@{Date}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{Date}{Date}}
-{\footnotesize\ttfamily char$\ast$ Date = \char`\"{}Sun Jul 23 20\+:30\+:05 2017\char`\"{}}
+Primary routine for the executable. Acts as information collection point and function dispatcher.
 
-\mbox{\Hypertarget{mp_8c_abc057f42fdaf5e63835a8272aefe278e}\label{mp_8c_abc057f42fdaf5e63835a8272aefe278e}} 
-\index{mp.\+c@{mp.\+c}!Version@{Version}}
-\index{Version@{Version}!mp.\+c@{mp.\+c}}
-\subsubsection{\texorpdfstring{Version}{Version}}
-{\footnotesize\ttfamily char$\ast$ Version = \char`\"{}0.\+019\char`\"{}}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Command line argument count. \\
+\hline
+{\em argv} & Command line argument list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS or E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+RE depending. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a18a4cb4dc46fca47a93474cf2a242e95}\label{mp_8c_a18a4cb4dc46fca47a93474cf2a242e95}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+C\+P\+M\+D\+BL@{M\+Set\+C\+P\+M\+D\+BL}}
+\index{M\+Set\+C\+P\+M\+D\+BL@{M\+Set\+C\+P\+M\+D\+BL}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+C\+P\+M\+D\+B\+L()}{MSetCPMDBL()}}
+{\footnotesize\ttfamily \hyperlink{struct_color_d_b_l}{Color\+D\+BL} M\+Set\+C\+P\+M\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color_d_b_l}{Color\+D\+BL}}]{cp,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+
+
+Double implementation of M\+S\+E\+T\+C\+PM. 
+
+This is the Continuous Potential Method. It is coded using all double variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color_d_b_l}{Color\+D\+BL} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color_d_b_l}{Color\+D\+BL} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 684 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a795b661e93a34f5a13ed289c086417ce}\label{mp_8c_a795b661e93a34f5a13ed289c086417ce}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+C\+P\+M\+F\+LT@{M\+Set\+C\+P\+M\+F\+LT}}
+\index{M\+Set\+C\+P\+M\+F\+LT@{M\+Set\+C\+P\+M\+F\+LT}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+C\+P\+M\+F\+L\+T()}{MSetCPMFLT()}}
+{\footnotesize\ttfamily \hyperlink{struct_color_f_l_t}{Color\+F\+LT} M\+Set\+C\+P\+M\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color_f_l_t}{Color\+F\+LT}}]{cp,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+
+
+Float implementation of M\+S\+E\+T\+C\+PM. 
+
+This is the Continuous Potential Method. It is coded using all float variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color_f_l_t}{Color\+F\+LT} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color_f_l_t}{Color\+F\+LT} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 649 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_af31802513cd0719da4aaa5602d6169d7}\label{mp_8c_af31802513cd0719da4aaa5602d6169d7}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+C\+P\+M\+F\+L\+T128@{M\+Set\+C\+P\+M\+F\+L\+T128}}
+\index{M\+Set\+C\+P\+M\+F\+L\+T128@{M\+Set\+C\+P\+M\+F\+L\+T128}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+C\+P\+M\+F\+L\+T128()}{MSetCPMFLT128()}}
+{\footnotesize\ttfamily \hyperlink{struct_color128}{Color128} M\+Set\+C\+P\+M\+F\+L\+T128 (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color128}{Color128}}]{cp,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+
+
+\+\_\+\+\_\+float128 implementation of M\+S\+E\+T\+C\+PM 
+
+This is the Continuous Potential Method. It is coded using all \+\_\+\+\_\+float128 variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color128}{Color128} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color128}{Color128} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 748 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a87eb51be532c563346aa0f98b41f6ef9}\label{mp_8c_a87eb51be532c563346aa0f98b41f6ef9}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+C\+P\+M\+L\+D\+BL@{M\+Set\+C\+P\+M\+L\+D\+BL}}
+\index{M\+Set\+C\+P\+M\+L\+D\+BL@{M\+Set\+C\+P\+M\+L\+D\+BL}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+C\+P\+M\+L\+D\+B\+L()}{MSetCPMLDBL()}}
+{\footnotesize\ttfamily \hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} M\+Set\+C\+P\+M\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL}}]{cp,  }\item[{int}]{maxiter }\end{DoxyParamCaption})}
+
+
+
+Long double implementation of M\+S\+E\+T\+C\+PM. 
+
+This is the Continuous Potential Method. It is coded using all long double variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & An instance of the \hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} structure holding needed information. \\
+\hline
+{\em i\+Max} & The maximum iteration count.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same instance of \hyperlink{struct_color_l_d_b_l}{Color\+L\+D\+BL} the function was called with. 
+\end{DoxyReturn}
+
+
+Definition at line 716 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a034e460e2b1033d1cfef694553053db9}\label{mp_8c_a034e460e2b1033d1cfef694553053db9}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+D\+BL@{M\+Set\+D\+BL}}
+\index{M\+Set\+D\+BL@{M\+Set\+D\+BL}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+D\+B\+L()}{MSetDBL()}}
+{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} M\+Set\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+
+
+Mandelbrot Set using double. 
+
+Function to compute the Mandelbrot Set using double variables. This derives an image g.\+width × g.\+height, centered at g.\+center from g.\+centerX and g.\+centerY. The complex width is g.\+diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, C\+O\+M\+P\+L\+EX, meaning calculate with complex variables, D\+E\+MM, meaning use the Distance Estimator Method for Mandelbrot set and M\+S\+E\+T\+C\+PM, meaning use the Continuous Potential Method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \hyperlink{getopt_8h_struct_parameters}{Parameters} structure, a collection of configuration information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{getopt_8h_struct_parameters}{Parameters} structure g, as modified by the function. 
+\end{DoxyReturn}
+
+
+Definition at line 198 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a3f9e95e9f968655b1131d3c108aed87b}\label{mp_8c_a3f9e95e9f968655b1131d3c108aed87b}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+F\+LT@{M\+Set\+F\+LT}}
+\index{M\+Set\+F\+LT@{M\+Set\+F\+LT}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+F\+L\+T()}{MSetFLT()}}
+{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} M\+Set\+F\+LT (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+
+
+Mandelbrot Set using float. 
+
+Function to compute the Mandelbrot Set using float variables. This derives an image g.\+width × g.\+height, centered at g.\+center from g.\+centerX and g.\+centerY. The complex width is g.\+diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, C\+O\+M\+P\+L\+EX, meaning calculate with complex variables, D\+E\+MM, meaning use the Distance Estimator Method for Mandelbrot set and M\+S\+E\+T\+C\+PM, meaning use the Continuous Potential Method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \hyperlink{getopt_8h_struct_parameters}{Parameters} structure, a collection of configuration information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{getopt_8h_struct_parameters}{Parameters} structure g, as modified by the function. 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a441edd39cff30f76fc120d57d08fa0c9}\label{mp_8c_a441edd39cff30f76fc120d57d08fa0c9}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+F\+L\+T128@{M\+Set\+F\+L\+T128}}
+\index{M\+Set\+F\+L\+T128@{M\+Set\+F\+L\+T128}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+F\+L\+T128()}{MSetFLT128()}}
+{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} M\+Set\+F\+L\+T128 (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+
+
+Mandelbrot Set using \+\_\+\+\_\+float128. 
+
+Function to compute the Mandelbrot Set using \+\_\+\+\_\+float128 variables. This derives an image g.\+width × g.\+height, centered at g.\+center from g.\+centerX and g.\+centerY. The complex width is g.\+diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, C\+O\+M\+P\+L\+EX, meaning calculate with complex variables, D\+E\+MM, meaning use the Distance Estimator Method for Mandelbrot set and M\+S\+E\+T\+C\+PM, meaning use the Continuous Potential Method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \hyperlink{getopt_8h_struct_parameters}{Parameters} structure, a collection of configuration information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{getopt_8h_struct_parameters}{Parameters} structure g, as modified by the function. 
+\end{DoxyReturn}
+
+
+Definition at line 346 of file mp.\+c.
+
+\mbox{\Hypertarget{mp_8c_a194bda2f36ff02a5bc60f266285078d1}\label{mp_8c_a194bda2f36ff02a5bc60f266285078d1}} 
+\index{mp.\+c@{mp.\+c}!M\+Set\+L\+D\+BL@{M\+Set\+L\+D\+BL}}
+\index{M\+Set\+L\+D\+BL@{M\+Set\+L\+D\+BL}!mp.\+c@{mp.\+c}}
+\subsubsection{\texorpdfstring{M\+Set\+L\+D\+B\+L()}{MSetLDBL()}}
+{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} M\+Set\+L\+D\+BL (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{P }\end{DoxyParamCaption})}
+
+
+
+Mandelbrot Set using long double. 
+
+Function to compute the Mandelbrot Set using long double variables. This derives an image g.\+width × g.\+height, centered at g.\+center from g.\+centerX and g.\+centerY. The complex width is g.\+diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, C\+O\+M\+P\+L\+EX, meaning calculate with complex variables, D\+E\+MM, meaning use the Distance Estimator Method for Mandelbrot set and M\+S\+E\+T\+C\+PM, meaning use the Continuous Potential Method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \hyperlink{getopt_8h_struct_parameters}{Parameters} structure, a collection of configuration information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{getopt_8h_struct_parameters}{Parameters} structure g, as modified by the function. 
+\end{DoxyReturn}
+
+
+Definition at line 272 of file mp.\+c.
 

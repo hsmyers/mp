@@ -53,19 +53,31 @@ N. Devillard This module implements a simple dictionary object, i.\+e. a list of
 \subsubsection{\texorpdfstring{D\+I\+C\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+EY}{DICT\_INVALID\_KEY}}
 {\footnotesize\ttfamily \#define D\+I\+C\+T\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+EY~((char$\ast$)-\/1)}
 
-Invalid key token \mbox{\Hypertarget{dictionary_8c_aaf4ab97b3163920286cb932a3faedf86}\label{dictionary_8c_aaf4ab97b3163920286cb932a3faedf86}} 
+Invalid key token 
+
+Definition at line 30 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_aaf4ab97b3163920286cb932a3faedf86}\label{dictionary_8c_aaf4ab97b3163920286cb932a3faedf86}} 
 \index{dictionary.\+c@{dictionary.\+c}!D\+I\+C\+T\+M\+I\+N\+SZ@{D\+I\+C\+T\+M\+I\+N\+SZ}}
 \index{D\+I\+C\+T\+M\+I\+N\+SZ@{D\+I\+C\+T\+M\+I\+N\+SZ}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{D\+I\+C\+T\+M\+I\+N\+SZ}{DICTMINSZ}}
 {\footnotesize\ttfamily \#define D\+I\+C\+T\+M\+I\+N\+SZ~128}
 
-Minimal allocated number of entries in a dictionary \mbox{\Hypertarget{dictionary_8c_a071228a4e1c69ac2eec59e9c1385185a}\label{dictionary_8c_a071228a4e1c69ac2eec59e9c1385185a}} 
+Minimal allocated number of entries in a dictionary 
+
+Definition at line 27 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_a071228a4e1c69ac2eec59e9c1385185a}\label{dictionary_8c_a071228a4e1c69ac2eec59e9c1385185a}} 
 \index{dictionary.\+c@{dictionary.\+c}!M\+A\+X\+V\+A\+L\+SZ@{M\+A\+X\+V\+A\+L\+SZ}}
 \index{M\+A\+X\+V\+A\+L\+SZ@{M\+A\+X\+V\+A\+L\+SZ}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{M\+A\+X\+V\+A\+L\+SZ}{MAXVALSZ}}
 {\footnotesize\ttfamily \#define M\+A\+X\+V\+A\+L\+SZ~1024}
 
 Maximum value size for integers and doubles. 
+
+Definition at line 24 of file dictionary.\+c.
+
+
 
 \subsection{Function Documentation}
 \mbox{\Hypertarget{dictionary_8c_a11b19a39bef9cf05b19adb01ced4fae5}\label{dictionary_8c_a11b19a39bef9cf05b19adb01ced4fae5}} 
@@ -86,7 +98,11 @@ Delete a dictionary object.
 \begin{DoxyReturn}{Returns}
 void
 \end{DoxyReturn}
-Deallocate a dictionary object and all memory associated to it. \mbox{\Hypertarget{dictionary_8c_ae8d5fc632d7846a6f9f4c8a3ef79d0ce}\label{dictionary_8c_ae8d5fc632d7846a6f9f4c8a3ef79d0ce}} 
+Deallocate a dictionary object and all memory associated to it. 
+
+Definition at line 177 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_ae8d5fc632d7846a6f9f4c8a3ef79d0ce}\label{dictionary_8c_ae8d5fc632d7846a6f9f4c8a3ef79d0ce}} 
 \index{dictionary.\+c@{dictionary.\+c}!dictionary\+\_\+dump@{dictionary\+\_\+dump}}
 \index{dictionary\+\_\+dump@{dictionary\+\_\+dump}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{dictionary\+\_\+dump()}{dictionary\_dump()}}
@@ -106,7 +122,11 @@ Dump a dictionary to an opened file pointer.
 \begin{DoxyReturn}{Returns}
 void
 \end{DoxyReturn}
-Dumps a dictionary onto an opened file pointer. Key pairs are printed out as {\ttfamily }\mbox{[}Key\mbox{]}=\mbox{[}Value\mbox{]}, one per line. It is Ok to provide stdout or stderr as output file pointers. \mbox{\Hypertarget{dictionary_8c_a8691664a012a1c689bd46b6b4477ea68}\label{dictionary_8c_a8691664a012a1c689bd46b6b4477ea68}} 
+Dumps a dictionary onto an opened file pointer. Key pairs are printed out as {\ttfamily }\mbox{[}Key\mbox{]}=\mbox{[}Value\mbox{]}, one per line. It is Ok to provide stdout or stderr as output file pointers. 
+
+Definition at line 363 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_a8691664a012a1c689bd46b6b4477ea68}\label{dictionary_8c_a8691664a012a1c689bd46b6b4477ea68}} 
 \index{dictionary.\+c@{dictionary.\+c}!dictionary\+\_\+get@{dictionary\+\_\+get}}
 \index{dictionary\+\_\+get@{dictionary\+\_\+get}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{dictionary\+\_\+get()}{dictionary\_get()}}
@@ -128,7 +148,11 @@ Get a value from a dictionary.
 \begin{DoxyReturn}{Returns}
 1 pointer to internally allocated character string.
 \end{DoxyReturn}
-This function locates a key in a dictionary and returns a pointer to its value, or the passed \textquotesingle{}def\textquotesingle{} pointer if no such key can be found in dictionary. The returned character pointer points to data internal to the dictionary object, you should not try to free it or modify it. \mbox{\Hypertarget{dictionary_8c_a7c1ef0a729e668d1e8d6a7e774feaf2e}\label{dictionary_8c_a7c1ef0a729e668d1e8d6a7e774feaf2e}} 
+This function locates a key in a dictionary and returns a pointer to its value, or the passed \textquotesingle{}def\textquotesingle{} pointer if no such key can be found in dictionary. The returned character pointer points to data internal to the dictionary object, you should not try to free it or modify it. 
+
+Definition at line 209 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_a7c1ef0a729e668d1e8d6a7e774feaf2e}\label{dictionary_8c_a7c1ef0a729e668d1e8d6a7e774feaf2e}} 
 \index{dictionary.\+c@{dictionary.\+c}!dictionary\+\_\+hash@{dictionary\+\_\+hash}}
 \index{dictionary\+\_\+hash@{dictionary\+\_\+hash}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{dictionary\+\_\+hash()}{dictionary\_hash()}}
@@ -146,7 +170,11 @@ Compute the hash key for a string.
 \begin{DoxyReturn}{Returns}
 1 unsigned int on at least 32 bits.
 \end{DoxyReturn}
-This hash function has been taken from an Article in Dr Dobbs Journal. This is normally a collision-\/free function, distributing keys evenly. The key is stored anyway in the struct so that collision can be avoided by comparing the key itself in last resort. \mbox{\Hypertarget{dictionary_8c_afd6e7e396a9b18f8e610b1236261f6dd}\label{dictionary_8c_afd6e7e396a9b18f8e610b1236261f6dd}} 
+This hash function has been taken from an Article in Dr Dobbs Journal. This is normally a collision-\/free function, distributing keys evenly. The key is stored anyway in the struct so that collision can be avoided by comparing the key itself in last resort. 
+
+Definition at line 118 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_afd6e7e396a9b18f8e610b1236261f6dd}\label{dictionary_8c_afd6e7e396a9b18f8e610b1236261f6dd}} 
 \index{dictionary.\+c@{dictionary.\+c}!dictionary\+\_\+new@{dictionary\+\_\+new}}
 \index{dictionary\+\_\+new@{dictionary\+\_\+new}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{dictionary\+\_\+new()}{dictionary\_new()}}
@@ -164,7 +192,11 @@ Create a new dictionary object.
 \begin{DoxyReturn}{Returns}
 1 newly allocated dictionary objet.
 \end{DoxyReturn}
-This function allocates a new dictionary object of given size and returns it. If you do not know in advance (roughly) the number of entries in the dictionary, give size=0. \mbox{\Hypertarget{dictionary_8c_aca582586180a1cd058017e337250848d}\label{dictionary_8c_aca582586180a1cd058017e337250848d}} 
+This function allocates a new dictionary object of given size and returns it. If you do not know in advance (roughly) the number of entries in the dictionary, give size=0. 
+
+Definition at line 150 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_aca582586180a1cd058017e337250848d}\label{dictionary_8c_aca582586180a1cd058017e337250848d}} 
 \index{dictionary.\+c@{dictionary.\+c}!dictionary\+\_\+set@{dictionary\+\_\+set}}
 \index{dictionary\+\_\+set@{dictionary\+\_\+set}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{dictionary\+\_\+set()}{dictionary\_set()}}
@@ -192,7 +224,11 @@ It is Ok to provide a N\+U\+LL value for val, but N\+U\+LL values for the dictio
 
 Notice that if you dictionary\+\_\+set a variable to N\+U\+LL, a call to dictionary\+\_\+get will return a N\+U\+LL value\+: the variable will be found, and its value (N\+U\+LL) is returned. In other words, setting the variable content to N\+U\+LL is equivalent to deleting the variable from the dictionary. It is not possible (in this implementation) to have a key in the dictionary without value.
 
-This function returns non-\/zero in case of failure. \mbox{\Hypertarget{dictionary_8c_a27f0752948d52ccd2568dae22f5db2bc}\label{dictionary_8c_a27f0752948d52ccd2568dae22f5db2bc}} 
+This function returns non-\/zero in case of failure. 
+
+Definition at line 255 of file dictionary.\+c.
+
+\mbox{\Hypertarget{dictionary_8c_a27f0752948d52ccd2568dae22f5db2bc}\label{dictionary_8c_a27f0752948d52ccd2568dae22f5db2bc}} 
 \index{dictionary.\+c@{dictionary.\+c}!dictionary\+\_\+unset@{dictionary\+\_\+unset}}
 \index{dictionary\+\_\+unset@{dictionary\+\_\+unset}!dictionary.\+c@{dictionary.\+c}}
 \subsubsection{\texorpdfstring{dictionary\+\_\+unset()}{dictionary\_unset()}}
@@ -213,3 +249,6 @@ Delete a key in a dictionary.
 void
 \end{DoxyReturn}
 This function deletes a key in a dictionary. Nothing is done if the key cannot be found. 
+
+Definition at line 314 of file dictionary.\+c.
+

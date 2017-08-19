@@ -9,6 +9,7 @@
 % ➥      means reference arrow as in SEE➥
 % ?       means not sure,
 % !       means informational,
+% ƒ A159  means function as in ƒ(Z)
 % √ A251  means yes and done,
 % ≈ A247  means partial,
 % α A224  means alpha state,
@@ -20,30 +21,38 @@
 % ½ A0189 means 1/2 done,
 % ¾ A0190 means 3/4 done,
 % × A0215 means no,
+% — A0151 means mdash
+% – A0150 means ndash
 %
 [!] 001. initial entry for mp fractal development program
 [!] 002. git config --global core.editor "name of editor"
 [!] 003. 7z a nose1.7z nose1.jpg
 [!] 004. ctrl+f5, ctrl+t = insert_date with editplus format
-[!] 005. when locked out unload  malwarebytes—wait a while and restore…
+[!] 005. when locked out unload  Malwarebytes—wait a while and restore…
 	[!] 01. Remember if mp is running you will get this error!
-	[] 02.
-[≈] 006. mode to specify start and stop colors in increment of maxiter?
+	[!] 02. File should be released as soon as Malwarebytes is dead.
+	[!] 03. Reload Malwarebytes as soon as possible after compile.
+	[] 04.
+[√] 006. mode to specify start and stop colors in increment of maxiter?
     [×] 01. No. maxiter would be too large—for now 1k? 512? Some fraction of maxiter?
     [√] 02. Allow user to specify with palname == SET:128 and the like…
+    	[√] 1. {..} or name, ':' interval size as specification using repeat -k.
+    	[] 2.
     [√] 03. Try switch to HSV for interpolation
     [] 04.
-[≈] 007. palette preview output? Based on magic palname?
-[≈] 008. 🐛 BUG translation method is off; x axis for sure, possibly y axis
+[√] 007. palette preview output? Based on magic palname?
+	[√] 01. writeColors() allows viewing of palette as .ppm image file.
+	[] 02.
+[≈] 008. 🐛 BUG, translation method is off; x axis for sure, possibly y axis
 	as well. Ongoing problem. SEE➥  #—011., #—012.
-[≈] 009. 🐛 BUG nMax is incorrect.
-	[≈] 01. mset returns Parameter fixes this… SEE➥ #—015.
+[√] 009. 🐛 BUG, nMax is incorrect.
+	[√] 01. mset returns Parameter fixes this… SEE➥ #—015.
 	[] 02.
 [√]	010. Fixed elapsed routines to paranoid\ level.
 [≈] 011. Test coord with MSet[02].JSON
 	[≈] 01. #ifdef between Axis and coord
 	[] 02.
-[≈] 012. 🐛 BUG mystery of black image for JSON 12, 13 and 14?
+[≈] 012. 🐛 BUG, mystery of black image for JSON 12, 13 and 14?
 	[!] 01. this with coord enabled.
 		[!] 1. no drift, went to completion.
 		[]2.
@@ -55,18 +64,75 @@
 		[] 2.
 	[] 04.
 [√] 013. add ㎳ to elapsed?
-[≈] 014. 🐛 BUG Where did lines from mand4 version of -r 10 go?
+[√] 014. 🐛 BUG, Where did lines from mand4 version of -r 10 go?
 	[!] 01. rabbit hole—lines are a function of Zx/Zy versus complex Z
-	[] 02.
-[√] 015. 🐛 BUG fix nMax == 0;
+	[√] 02. difference is in how the Z code performs versus the Zx code.
+	[] 03.
+[√] 015. 🐛 BUG, fix nMax == 0;
 	[√] 01. mand now returns Parameters.
 	[] 02.
-[≈] 016. 🐛 BUG mp -x -0.65 -y 0 -m 0.3636363636363636 -w 3840 -l 2160 -r 10 -t 3 -f test[00].10.jpg FAIL
+[≈] 016. 🐛 BUG mp, -x -0.65 -y 0 -m 0.3636363636363636 -w 3840 -l 2160 -r 10 -t 3 -f test[00].10.jpg FAIL
 	[!] 01. Black image along with nMax == 0
 	[!] 02. mp -j MSet[00].JSON -r 10 -t 5 -f test[00].10.jpg works as expected
 	[!] 03. this during effort to recreate forces lines from over-iteration
 	[] 04.
-[≈] 017. Find way to offer both Zx/Zy and complex Z
+[√] 017. Find way to offer both Zx/Zy and complex Z
+	[√] 01. Add -o for old parameter to indicate Zx/Zy, complex Z is default
+	[√] 02. simple check for g.o, and inclusion of additional vars in color list (badly named…)
+	[√] 03. Parse -o by name as well as number.
+	[] 04.
+[≈] 018. Add additional interpolation from Paul Bourke code…
+	[√] 01. Add -b for bourke parameter to indicate interpolation
+	[] 02.
+[√] 019. take apart code from demm.c and implement distance estimator method along with Zx/Zy and complex Z
+	[√] 01. mandel7.c working testbed for DEM/M approach. Also has working GiveRainbowColor.
+	[√] 02. -o now becomes choice between three methods.
+	[√] 03. Take apart current DEMM code and add result to if/elseif chain with color separation
+	[] 04.
+[√] 020. Add W:JSONfilename option to -j
+[√] 021. Add MSetPot/CPM to methods.
+	[√] 01. Possible 🐛 BUG. Shape looks nothing like the MSet.
+		[√] 1. typo found and corrected, temp assignment was a transposition
+		[] 2.
+	[] 02.
+[≈] 022. 🐛 BUG, -r 13 is broken in DEMM and MSETPOT
+	[!] 01. Symptom is typical black screen image.
+	[√] 02. Caused by Exps overflow.
+	[×] 03. Formula reworked, but still a problem. Temporary fix is to disallow combination.
+	[] 04.
+[×] 023. Experiment with union of int and Rgb to convert from Rgb to int for writing to
+		 screen. Start with rgb2int.
+	[×] 01. Doesn't work for whatever reason.
+	[] 02.
+[√] 024. Parse name stack to small palette file. Develop routine to build actual palette from that.
+   [≈] 01. SEE➥ #—018.
+   [√] 02. Added buildColors(), parseRGB() and appendColors() to handle p.names/p.argc.
+   [√] 03. 🐛 BUG in str2Rgb(), you can't break an if inside a for! AT&T classic bug!
+   [√] 04. 🐛 BUG in writeColors, for palette size use colors.used, not colors.size.
+   [] 05.
+[√] 025. Add write palette routine. 100 high by length of palette wide.
+	[√] 01. writeColors( color );
+	[√] 02. given readColors() palette file becomes tradeable.
+	[] 03.
+[≈] 026. Work on making function names consistent. str2Rgb ➡ str2RGB.
+[!] 027. /**+return to document functions/routines… #DOXYGEN
+[!] 028. /**f+tab to document file… #DOXYGEN
+[!] 029. ctrl+shift+i to display snippets with tab keys… #DOXYGEN
+[!] 030. Doxygen snippets: SEE➥ #—027., #—028.
+	[!] 01. /**+tab function header #DOXYGEN
+	[!] 02. /**l+tab line annotation #DOXYGEN
+	[!] 03. /**t+tab typedef header #DOXYGEN
+	[!] 04. /**d+tab define header #DOXYGEN
+	[] 05.
+[√] 031. 🐛 BUG -m is broken in mp vr0.027
+	[√] 01. forgot to update .radius along with .diameter
+		[!] 1. problem from magn conversion
+		[] 2.
+	[≈] 02. now experimenting with conversion of magnification to diameter
+		[≈] 1. trying p.diameter = 1.0 / ( p.magnify / 3.0 ); seems close but still problems at depth
+		[] 2.
+	[] 03.
+[≈] 032. Change MSetPot to MSetCPM and MSETPOT to MSETCPM
 	[] 01.
-[] 018.
+[] 033.
 

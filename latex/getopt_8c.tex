@@ -2,7 +2,7 @@
 \label{getopt_8c}\index{getopt.\+c@{getopt.\+c}}
 
 
-A collection of functions in aid of R\+GB palettes.  
+Implementation of getopt\+\_\+long for mp.  
 
 
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
@@ -12,6 +12,7 @@ A collection of functions in aid of R\+GB palettes.
 {\ttfamily \#include $<$sys/types.\+h$>$}\newline
 {\ttfamily \#include $<$dirent.\+h$>$}\newline
 {\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$quadmath.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}iniparser.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}c\+J\+S\+O\+N.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\newline
@@ -19,33 +20,46 @@ A collection of functions in aid of R\+GB palettes.
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{getopt_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}~1
+\mbox{\Hypertarget{getopt_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}\label{getopt_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}} 
+\#define {\bfseries \+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}~1
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8c_a3b982f6477a06e2a24a1d0398cad9b41}{get\+Parameters} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, char $\ast$\hyperlink{mp_8c_abc057f42fdaf5e63835a8272aefe278e}{Version}, char $\ast$\hyperlink{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}{Date})
+\mbox{\Hypertarget{getopt_8c_a3b982f6477a06e2a24a1d0398cad9b41}\label{getopt_8c_a3b982f6477a06e2a24a1d0398cad9b41}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries get\+Parameters} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, char $\ast$Version, char $\ast$Date)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8c_a946521054a741a1e1f7bb9d08f102cf6}{from\+J\+S\+ON} (char $\ast$jsonfile, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8c_ad3dcd81eca85673a92d463ee7262fea7}\label{getopt_8c_ad3dcd81eca85673a92d463ee7262fea7}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries from\+J\+S\+ON} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8c_afce723c987c56ea21e0670e3f888ed8a}{raw\+Cl} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8c_a44a891b90e57137987b26663b61aa90e}\label{getopt_8c_a44a891b90e57137987b26663b61aa90e}} 
+void {\bfseries to\+J\+S\+ON} (\hyperlink{getopt_8h_struct_parameters}{Parameters} g)
 \item 
-void \hyperlink{getopt_8c_a1e1475ed9b0ffb9f93a0f7abee676d6b}{help} (char c, char $\ast$Program, char $\ast$\hyperlink{mp_8c_abc057f42fdaf5e63835a8272aefe278e}{Version}, char $\ast$\hyperlink{mp_8c_a7de65d169fd5f5b40b1a5a1b70c33fd7}{Date})
+\mbox{\Hypertarget{getopt_8c_afce723c987c56ea21e0670e3f888ed8a}\label{getopt_8c_afce723c987c56ea21e0670e3f888ed8a}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries raw\+Cl} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{getopt_8h_struct_parameters}{Parameters} p)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8c_a9eaf01167078a337a57f4f997bcdbd98}{parse\+\_\+ini\+\_\+file} (char $\ast$ini\+\_\+name, \hyperlink{getopt_8h_struct_parameters}{Parameters} g)
+\mbox{\Hypertarget{getopt_8c_a1e1475ed9b0ffb9f93a0f7abee676d6b}\label{getopt_8c_a1e1475ed9b0ffb9f93a0f7abee676d6b}} 
+void {\bfseries help} (char c, char $\ast$Program, char $\ast$Version, char $\ast$Date)
 \item 
-int \hyperlink{getopt_8c_a717f63efc8d0d7c615ef90eb3b5c3d5f}{get\+Next} (char $\ast$path)
+\mbox{\Hypertarget{getopt_8c_a9eaf01167078a337a57f4f997bcdbd98}\label{getopt_8c_a9eaf01167078a337a57f4f997bcdbd98}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries parse\+\_\+ini\+\_\+file} (char $\ast$ini\+\_\+name, \hyperlink{getopt_8h_struct_parameters}{Parameters} g)
 \item 
-char $\ast$ \hyperlink{getopt_8c_ab7896aabf81eb0462c72d442118a2803}{getstr} (char $\ast$arg)
+\mbox{\Hypertarget{getopt_8c_a717f63efc8d0d7c615ef90eb3b5c3d5f}\label{getopt_8c_a717f63efc8d0d7c615ef90eb3b5c3d5f}} 
+int {\bfseries get\+Next} (char $\ast$path)
 \item 
-void \hyperlink{getopt_8c_a86c23c70cb3b6535916e1b1902586a82}{show\+Parameters} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p)
+\mbox{\Hypertarget{getopt_8c_ab7896aabf81eb0462c72d442118a2803}\label{getopt_8c_ab7896aabf81eb0462c72d442118a2803}} 
+char $\ast$ {\bfseries getstr} (char $\ast$arg)
 \item 
-\hyperlink{getopt_8h_struct_parameters}{Parameters} \hyperlink{getopt_8c_a6598d0009ea17712adfc770ea90294a1}{zeroP} (void)
+\mbox{\Hypertarget{getopt_8c_a89944bdde3773b96d6689e78e624c45f}\label{getopt_8c_a89944bdde3773b96d6689e78e624c45f}} 
+void {\bfseries show\+Parameters} (\hyperlink{getopt_8h_struct_parameters}{Parameters} p, char $\ast$s)
+\item 
+\mbox{\Hypertarget{getopt_8c_a6598d0009ea17712adfc770ea90294a1}\label{getopt_8c_a6598d0009ea17712adfc770ea90294a1}} 
+\hyperlink{getopt_8h_struct_parameters}{Parameters} {\bfseries zeroP} (void)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A collection of functions in aid of R\+GB palettes. 
+Implementation of getopt\+\_\+long for mp. 
 
 \begin{DoxyAuthor}{Author}
 Hugh S. Myers 
@@ -56,73 +70,9 @@ Mon Jul 24 15\+:05\+:30 2017
 These functions allow mp to garner information from a variety of sources. From the command line, both with and without the traditional dashes, as well as from an \textquotesingle{}ini\textquotesingle{} or configuration file. Sufficient information can be gathered from .J\+S\+ON files as well,
 
 \begin{DoxyNote}{Note}
-gcc -\/\+Wall -\/\+D\+G\+E\+T\+O\+P\+T\+\_\+\+T\+E\+ST \hyperlink{cnames_8c}{cnames.\+c} \hyperlink{c_j_s_o_n_8c}{c\+J\+S\+O\+N.\+c} \hyperlink{getopt_8c}{getopt.\+c} \hyperlink{dictionary_8c}{dictionary.\+c} \hyperlink{iniparser_8c}{iniparser.\+c} -\/o getopt
+gcc -\/\+Wall -\/\+D\+G\+E\+T\+O\+P\+T\+\_\+\+T\+E\+ST \hyperlink{cnames_8c}{cnames.\+c} \hyperlink{c_j_s_o_n_8c_source}{c\+J\+S\+O\+N.\+c} \hyperlink{getopt_8c}{getopt.\+c} \hyperlink{dictionary_8c}{dictionary.\+c} \hyperlink{iniparser_8c}{iniparser.\+c} \hyperlink{util_8c}{util.\+c} -\/o getopt -\/lquadmath~\newline
+ gcc -\/ggdb -\/\+Wall -\/\+D\+G\+E\+T\+O\+P\+T\+\_\+\+T\+E\+ST \hyperlink{cnames_8c}{cnames.\+c} \hyperlink{c_j_s_o_n_8c_source}{c\+J\+S\+O\+N.\+c} \hyperlink{getopt_8c}{getopt.\+c} \hyperlink{dictionary_8c}{dictionary.\+c} \hyperlink{iniparser_8c}{iniparser.\+c} \hyperlink{util_8c}{util.\+c} -\/o getopt -\/lquadmath~\newline
+
 \end{DoxyNote}
 \begin{DoxyRefDesc}{Bug}
-\item[\hyperlink{bug__bug000001}{Bug}]No known bugs. \end{DoxyRefDesc}
-
-
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{getopt_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}\label{getopt_8c_a5774a453e5fe094a9d4ece0cfd20ab5b}} 
-\index{getopt.\+c@{getopt.\+c}!\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO@{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}}
-\index{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO@{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO}{\_\_USE\_MINGW\_ANSI\_STDIO}}
-{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+U\+S\+E\+\_\+\+M\+I\+N\+G\+W\+\_\+\+A\+N\+S\+I\+\_\+\+S\+T\+D\+IO~1}
-
-
-
-\subsection{Function Documentation}
-\mbox{\Hypertarget{getopt_8c_a946521054a741a1e1f7bb9d08f102cf6}\label{getopt_8c_a946521054a741a1e1f7bb9d08f102cf6}} 
-\index{getopt.\+c@{getopt.\+c}!from\+J\+S\+ON@{from\+J\+S\+ON}}
-\index{from\+J\+S\+ON@{from\+J\+S\+ON}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{from\+J\+S\+O\+N()}{fromJSON()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} from\+J\+S\+ON (\begin{DoxyParamCaption}\item[{char $\ast$}]{jsonfile,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_a717f63efc8d0d7c615ef90eb3b5c3d5f}\label{getopt_8c_a717f63efc8d0d7c615ef90eb3b5c3d5f}} 
-\index{getopt.\+c@{getopt.\+c}!get\+Next@{get\+Next}}
-\index{get\+Next@{get\+Next}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{get\+Next()}{getNext()}}
-{\footnotesize\ttfamily int get\+Next (\begin{DoxyParamCaption}\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_a3b982f6477a06e2a24a1d0398cad9b41}\label{getopt_8c_a3b982f6477a06e2a24a1d0398cad9b41}} 
-\index{getopt.\+c@{getopt.\+c}!get\+Parameters@{get\+Parameters}}
-\index{get\+Parameters@{get\+Parameters}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{get\+Parameters()}{getParameters()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} get\+Parameters (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$}]{Version,  }\item[{char $\ast$}]{Date }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_ab7896aabf81eb0462c72d442118a2803}\label{getopt_8c_ab7896aabf81eb0462c72d442118a2803}} 
-\index{getopt.\+c@{getopt.\+c}!getstr@{getstr}}
-\index{getstr@{getstr}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{getstr()}{getstr()}}
-{\footnotesize\ttfamily char$\ast$ getstr (\begin{DoxyParamCaption}\item[{char $\ast$}]{arg }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_a1e1475ed9b0ffb9f93a0f7abee676d6b}\label{getopt_8c_a1e1475ed9b0ffb9f93a0f7abee676d6b}} 
-\index{getopt.\+c@{getopt.\+c}!help@{help}}
-\index{help@{help}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{help()}{help()}}
-{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{char $\ast$}]{Program,  }\item[{char $\ast$}]{Version,  }\item[{char $\ast$}]{Date }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_a9eaf01167078a337a57f4f997bcdbd98}\label{getopt_8c_a9eaf01167078a337a57f4f997bcdbd98}} 
-\index{getopt.\+c@{getopt.\+c}!parse\+\_\+ini\+\_\+file@{parse\+\_\+ini\+\_\+file}}
-\index{parse\+\_\+ini\+\_\+file@{parse\+\_\+ini\+\_\+file}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{parse\+\_\+ini\+\_\+file()}{parse\_ini\_file()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} parse\+\_\+ini\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{ini\+\_\+name,  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{g }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_afce723c987c56ea21e0670e3f888ed8a}\label{getopt_8c_afce723c987c56ea21e0670e3f888ed8a}} 
-\index{getopt.\+c@{getopt.\+c}!raw\+Cl@{raw\+Cl}}
-\index{raw\+Cl@{raw\+Cl}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{raw\+Cl()}{rawCl()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} raw\+Cl (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_a86c23c70cb3b6535916e1b1902586a82}\label{getopt_8c_a86c23c70cb3b6535916e1b1902586a82}} 
-\index{getopt.\+c@{getopt.\+c}!show\+Parameters@{show\+Parameters}}
-\index{show\+Parameters@{show\+Parameters}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{show\+Parameters()}{showParameters()}}
-{\footnotesize\ttfamily void show\+Parameters (\begin{DoxyParamCaption}\item[{\hyperlink{getopt_8h_struct_parameters}{Parameters}}]{p }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{getopt_8c_a6598d0009ea17712adfc770ea90294a1}\label{getopt_8c_a6598d0009ea17712adfc770ea90294a1}} 
-\index{getopt.\+c@{getopt.\+c}!zeroP@{zeroP}}
-\index{zeroP@{zeroP}!getopt.\+c@{getopt.\+c}}
-\subsubsection{\texorpdfstring{zero\+P()}{zeroP()}}
-{\footnotesize\ttfamily \hyperlink{getopt_8h_struct_parameters}{Parameters} zeroP (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
-
+\item[\hyperlink{bug__bug000003}{Bug}]No known bugs. \end{DoxyRefDesc}

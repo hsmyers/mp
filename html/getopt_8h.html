@@ -60,42 +60,87 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">getopt.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A collection of functions in aid of creating a parameter object to carry around.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;complex.h&gt;</code><br />
+<code>#include &lt;quadmath.h&gt;</code><br />
 </div>
 <p><a href="getopt_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:struct_parameters"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a></td></tr>
+<tr class="memdesc:struct_parameters"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable gathered for image calculation.  <a href="getopt_8h.html#struct_parameters">More...</a><br /></td></tr>
 <tr class="separator:struct_parameters"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8542958f1d1b4dcc461df791a8eaa377"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a8542958f1d1b4dcc461df791a8eaa377">NAMES_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a8542958f1d1b4dcc461df791a8eaa377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab733b92e52488cd19ef8fe3db3d2aa4e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4e">innerLoop</a> { <a class="el" href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4ea5374e1234e4d55af346d6ae6263ad573">COMPLEX</a>, 
+<a class="el" href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4ead35f0f7ef55a2437c16a373c4a9cbaec">ZX</a>, 
+<a class="el" href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4ea6621f2b69ace7114db712e24643ea55f">DEMM</a>, 
+<a class="el" href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4eaf941e1e6643ef454ff82385509001190">MSETCPM</a>
+ }<tr class="memdesc:ab733b92e52488cd19ef8fe3db3d2aa4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choice values for inner loop calculation.  <a href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4e">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ab733b92e52488cd19ef8fe3db3d2aa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab7896aabf81eb0462c72d442118a2803"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#ab7896aabf81eb0462c72d442118a2803">getstr</a> (char *arg)</td></tr>
+<tr class="memitem:ab7896aabf81eb0462c72d442118a2803"><td class="memItemLeft" align="right" valign="top"><a id="ab7896aabf81eb0462c72d442118a2803"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>getstr</b> (char *arg)</td></tr>
 <tr class="separator:ab7896aabf81eb0462c72d442118a2803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717f63efc8d0d7c615ef90eb3b5c3d5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a717f63efc8d0d7c615ef90eb3b5c3d5f">getNext</a> (char *path)</td></tr>
+<tr class="memitem:a717f63efc8d0d7c615ef90eb3b5c3d5f"><td class="memItemLeft" align="right" valign="top"><a id="a717f63efc8d0d7c615ef90eb3b5c3d5f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getNext</b> (char *path)</td></tr>
 <tr class="separator:a717f63efc8d0d7c615ef90eb3b5c3d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a946521054a741a1e1f7bb9d08f102cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a946521054a741a1e1f7bb9d08f102cf6">fromJSON</a> (char *jsonfile, <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
-<tr class="separator:a946521054a741a1e1f7bb9d08f102cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b982f6477a06e2a24a1d0398cad9b41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a3b982f6477a06e2a24a1d0398cad9b41">getParameters</a> (int argc, char *argv[], char *<a class="el" href="mp_8c.html#abc057f42fdaf5e63835a8272aefe278e">Version</a>, char *<a class="el" href="mp_8c.html#a7de65d169fd5f5b40b1a5a1b70c33fd7">Date</a>)</td></tr>
+<tr class="memitem:ad3dcd81eca85673a92d463ee7262fea7"><td class="memItemLeft" align="right" valign="top"><a id="ad3dcd81eca85673a92d463ee7262fea7"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fromJSON</b> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="separator:ad3dcd81eca85673a92d463ee7262fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b982f6477a06e2a24a1d0398cad9b41"><td class="memItemLeft" align="right" valign="top"><a id="a3b982f6477a06e2a24a1d0398cad9b41"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getParameters</b> (int argc, char *argv[], char *Version, char *Date)</td></tr>
 <tr class="separator:a3b982f6477a06e2a24a1d0398cad9b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce723c987c56ea21e0670e3f888ed8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#afce723c987c56ea21e0670e3f888ed8a">rawCl</a> (int argc, char *argv[], <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="memitem:afce723c987c56ea21e0670e3f888ed8a"><td class="memItemLeft" align="right" valign="top"><a id="afce723c987c56ea21e0670e3f888ed8a"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rawCl</b> (int argc, char *argv[], <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
 <tr class="separator:afce723c987c56ea21e0670e3f888ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55011e31e0bfd7dbed9e76bdafae6d12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a55011e31e0bfd7dbed9e76bdafae6d12">parse_ini_file</a> (char *ini_name, <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="memitem:a55011e31e0bfd7dbed9e76bdafae6d12"><td class="memItemLeft" align="right" valign="top"><a id="a55011e31e0bfd7dbed9e76bdafae6d12"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parse_ini_file</b> (char *ini_name, <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
 <tr class="separator:a55011e31e0bfd7dbed9e76bdafae6d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6598d0009ea17712adfc770ea90294a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a6598d0009ea17712adfc770ea90294a1">zeroP</a> (void)</td></tr>
+<tr class="memitem:a6598d0009ea17712adfc770ea90294a1"><td class="memItemLeft" align="right" valign="top"><a id="a6598d0009ea17712adfc770ea90294a1"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zeroP</b> (void)</td></tr>
 <tr class="separator:a6598d0009ea17712adfc770ea90294a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1475ed9b0ffb9f93a0f7abee676d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a1e1475ed9b0ffb9f93a0f7abee676d6b">help</a> (char c, char *Program, char *<a class="el" href="mp_8c.html#abc057f42fdaf5e63835a8272aefe278e">Version</a>, char *<a class="el" href="mp_8c.html#a7de65d169fd5f5b40b1a5a1b70c33fd7">Date</a>)</td></tr>
+<tr class="memitem:a1e1475ed9b0ffb9f93a0f7abee676d6b"><td class="memItemLeft" align="right" valign="top"><a id="a1e1475ed9b0ffb9f93a0f7abee676d6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>help</b> (char c, char *Program, char *Version, char *Date)</td></tr>
 <tr class="separator:a1e1475ed9b0ffb9f93a0f7abee676d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c23c70cb3b6535916e1b1902586a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8h.html#a86c23c70cb3b6535916e1b1902586a82">showParameters</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
-<tr class="separator:a86c23c70cb3b6535916e1b1902586a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89944bdde3773b96d6689e78e624c45f"><td class="memItemLeft" align="right" valign="top"><a id="a89944bdde3773b96d6689e78e624c45f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showParameters</b> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p, char *s)</td></tr>
+<tr class="separator:a89944bdde3773b96d6689e78e624c45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a891b90e57137987b26663b61aa90e"><td class="memItemLeft" align="right" valign="top"><a id="a44a891b90e57137987b26663b61aa90e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toJSON</b> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="separator:a44a891b90e57137987b26663b61aa90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection of functions in aid of creating a parameter object to carry around. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Tue Jul 25 11:49:07 2017</dd></dl>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>Function declarations. More importantly the typedef for <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a>.</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000004">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="getopt_8h_source.html">getopt.h</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="struct_parameters" id="struct_parameters"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#struct_parameters">&#9670;&nbsp;</a></span>Parameters</h2>
 
@@ -107,372 +152,250 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
+<div class="textblock"><p>Variable gathered for image calculation. </p>
+<p>There are three sources for this data. The first is command line processing. This is by way of short/long options via getopt_long(). The command line may also be processed without options in fixed order. The second is the use of a configuration file that essentially sets the default values for the necessary parameters. The third method is parsing a JSON file which contains the values for a particular fractal image. </p>
+
+<p class="definition">Definition at line <a class="el" href="getopt_8h_source.html#l00034">34</a> of file <a class="el" href="getopt_8h_source.html">getopt.h</a>.</p>
+</div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a id="a37a1880a2aa4730679fc51040af3a976"></a>char *</td>
 <td class="fieldname">
 aa</td>
 <td class="fielddoc">
+<p>-a anti-aliasing flag </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a77a4b596ca7a32175d60ff750748af21"></a>long double</td>
+<a id="a3c0541404644e9fda44a0feba83b8e8f"></a>int</td>
+<td class="fieldname">
+bourke</td>
+<td class="fielddoc">
+<p>-b flag for bourke interpolation </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af5465cee976d3b8674a62d46391880a4"></a>__complex128</td>
+<td class="fieldname">
+center</td>
+<td class="fielddoc">
+<p>centerX + centerY * I </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7d50e1aaf072cf0ca9ef71109ac6e408"></a>__float128</td>
 <td class="fieldname">
 centerX</td>
 <td class="fielddoc">
+<p>-x ℜ REAL part of complex center </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a9f486cabe8205f5c1ee65ecc885e4b86"></a>long double</td>
+<a id="af356d9179ec59d2ef6b9b6ce581b9546"></a>__float128</td>
 <td class="fieldname">
 centerY</td>
 <td class="fielddoc">
+<p>-y ℑ IMAG part of complex center </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a0ec9c97da0f7373e9c2b4f898ff76e46"></a>int</td>
 <td class="fieldname">
 color</td>
 <td class="fielddoc">
+<p>-r key for -r; determines coloring </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ab3ec51653a2131c0a7049e0a5e34e651"></a>char *</td>
 <td class="fieldname">
 config</td>
 <td class="fielddoc">
+<p>-c configuration filename </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a47505a58a58119e1de3adf8b84e8a33e"></a>int</td>
-<td class="fieldname">
-cv</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a039d46f92783f0b6b7d2d1500fdbe0c8"></a>long double</td>
+<a id="aea0ffc10a005fc3b1f27e4d950e599f2"></a>__float128</td>
 <td class="fieldname">
 diameter</td>
 <td class="fielddoc">
+<p>-d diameter of image </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ab2c8bc69657e088382736e4a0e11217d"></a>float</td>
 <td class="fieldname">
 escape</td>
 <td class="fielddoc">
+<p>-e value to compare against for escape decision </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a23b676a85d6a74715ebf52d083b26d41"></a>char *</td>
 <td class="fieldname">
 filename</td>
 <td class="fielddoc">
+<p>-f image file name </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="aa0985d56460f9fd14ab4696c0ddcd700"></a>int</td>
 <td class="fieldname">
 height</td>
 <td class="fielddoc">
+<p>-l image height in pixels </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac1b3e43ed978a823db4903079371aa92"></a>__float128</td>
+<td class="fieldname">
+height2</td>
+<td class="fielddoc">
+<p>height / 2.0 </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ae19686186ca51dd3c4bdd868e52dc04d"></a>char *</td>
 <td class="fieldname">
 json</td>
 <td class="fielddoc">
+<p>=j JSON filename </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a90f665266505361517c0b1af718b2d4a"></a>long double</td>
+<a id="ae15854f47c061f74ed7fcb4063f944b5"></a>__float128</td>
 <td class="fieldname">
 magnify</td>
 <td class="fielddoc">
+<p>-m image magnification </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ac52eab28b83153725ee22ba6700f848e"></a>int</td>
 <td class="fieldname">
 maxiter</td>
 <td class="fielddoc">
+<p>-i ƒ(Z) iteration cap </p>
 </td></tr>
 <tr><td class="fieldtype">
-<a id="aa6e175e74be18fd5d3ed7c3cbece5adb"></a>char *</td>
+<a id="aa8a7e4001f3ae3e79f5a7f57f160751a"></a>char *</td>
 <td class="fieldname">
-names[2]</td>
+names[<a class="el" href="getopt_8h.html#a8542958f1d1b4dcc461df791a8eaa377">NAMES_SIZE</a>]</td>
 <td class="fielddoc">
+<p>-k Rgb/color name list </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="af32c7cefa9c4b491b98c6d13fbc3023d"></a>int</td>
 <td class="fieldname">
 nargc</td>
 <td class="fielddoc">
+<p>count of number of -k entries </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a48e77fdf8acb086d2fdc2934ca2d10d3"></a>int</td>
 <td class="fieldname">
 next</td>
 <td class="fielddoc">
+<p>-n seed for next mechanism </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a2e909688b271cc9c2bdb3d0cc9c34269"></a>int</td>
 <td class="fieldname">
 nMax</td>
 <td class="fielddoc">
+<p>actual iteration count at escape </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a187707cee33ba53f9c7f87012ddd38df"></a>int</td>
+<td class="fieldname">
+old</td>
+<td class="fielddoc">
+<p>key for -o; determines calculation method </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="af435d3291ff1a66552d9f3383c6a517c"></a>char *</td>
 <td class="fieldname">
 palname</td>
 <td class="fielddoc">
+<p>-p image palette filename </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a15d6bf9a86cdcfd399105f6f07911808"></a>__float128</td>
+<td class="fieldname">
+radius</td>
+<td class="fielddoc">
+<p>-s radius of image length from 0.0 to end of upper axis </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a1962cf70d9f60c9b1b6d567a0152776b"></a>int</td>
 <td class="fieldname">
 tweak</td>
 <td class="fielddoc">
+<p>-t limit for post iteration of ƒ(Z) </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa7da6a4c219fe87ee3f4c3faf2e92581"></a>char *</td>
+<td class="fieldname">
+ultra</td>
+<td class="fielddoc">
+<p>-u takes Ultra Fractal formula in quotes </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="ae8f341732b04b09c84f67f0439efb79d"></a>int</td>
 <td class="fieldname">
 width</td>
 <td class="fielddoc">
+<p>-w image width in pixels </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aceaafab9aa18104153a528f1959a14aa"></a>__float128</td>
+<td class="fieldname">
+width2</td>
+<td class="fielddoc">
+<p>width / 2.0 </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a72e9d00d6d96b78c32776d8639b9dd74"></a>int</td>
+<td class="fieldname">
+writeJSON</td>
+<td class="fielddoc">
+<p>flag for JSON file output </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a946521054a741a1e1f7bb9d08f102cf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a946521054a741a1e1f7bb9d08f102cf6">&#9670;&nbsp;</a></span>fromJSON()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8542958f1d1b4dcc461df791a8eaa377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8542958f1d1b4dcc461df791a8eaa377">&#9670;&nbsp;</a></span>NAMES_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> fromJSON </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>jsonfile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define NAMES_SIZE&#160;&#160;&#160;16</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Defines the size of the -k stack </p>
+
+<p class="definition">Definition at line <a class="el" href="getopt_8h_source.html#l00022">22</a> of file <a class="el" href="getopt_8h_source.html">getopt.h</a>.</p>
 
 </div>
 </div>
-<a id="a717f63efc8d0d7c615ef90eb3b5c3d5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717f63efc8d0d7c615ef90eb3b5c3d5f">&#9670;&nbsp;</a></span>getNext()</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ab733b92e52488cd19ef8fe3db3d2aa4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab733b92e52488cd19ef8fe3db3d2aa4e">&#9670;&nbsp;</a></span>innerLoop</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getNext </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4e">innerLoop</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a3b982f6477a06e2a24a1d0398cad9b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b982f6477a06e2a24a1d0398cad9b41">&#9670;&nbsp;</a></span>getParameters()</h2>
+<p>Choice values for inner loop calculation. </p>
+<p>Currently 4 values in this list. COMPLEX is the default method. ZX uses all real values, no complex variables. DEMM is the Distance Estimator Method for the Mandelbrot set. MSETPOT is the Mandelbrot set via Continuous Potential Method. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab733b92e52488cd19ef8fe3db3d2aa4ea5374e1234e4d55af346d6ae6263ad573"></a>COMPLEX&#160;</td><td class="fielddoc"><p>ƒ(Z) = Z^2 + C where Z,C are complex </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab733b92e52488cd19ef8fe3db3d2aa4ead35f0f7ef55a2437c16a373c4a9cbaec"></a>ZX&#160;</td><td class="fielddoc"><p>ƒ(Z) = as above using real ZX, ZY, CX, CY </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab733b92e52488cd19ef8fe3db3d2aa4ea6621f2b69ace7114db712e24643ea55f"></a>DEMM&#160;</td><td class="fielddoc"><p>Uses Distance estimation method </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab733b92e52488cd19ef8fe3db3d2aa4eaf941e1e6643ef454ff82385509001190"></a>MSETCPM&#160;</td><td class="fielddoc"><p>Uses Continuous Potential method </p>
+</td></tr>
+</table>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> getParameters </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Date</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab7896aabf81eb0462c72d442118a2803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7896aabf81eb0462c72d442118a2803">&#9670;&nbsp;</a></span>getstr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* getstr </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e1475ed9b0ffb9f93a0f7abee676d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e1475ed9b0ffb9f93a0f7abee676d6b">&#9670;&nbsp;</a></span>help()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void help </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Program</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Date</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55011e31e0bfd7dbed9e76bdafae6d12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55011e31e0bfd7dbed9e76bdafae6d12">&#9670;&nbsp;</a></span>parse_ini_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> parse_ini_file </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>ini_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afce723c987c56ea21e0670e3f888ed8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce723c987c56ea21e0670e3f888ed8a">&#9670;&nbsp;</a></span>rawCl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> rawCl </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a86c23c70cb3b6535916e1b1902586a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c23c70cb3b6535916e1b1902586a82">&#9670;&nbsp;</a></span>showParameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void showParameters </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6598d0009ea17712adfc770ea90294a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6598d0009ea17712adfc770ea90294a1">&#9670;&nbsp;</a></span>zeroP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> zeroP </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="getopt_8h_source.html#l00072">72</a> of file <a class="el" href="getopt_8h_source.html">getopt.h</a>.</p>
 
 </div>
 </div>

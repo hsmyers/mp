@@ -66,53 +66,58 @@ $(function() {
 <div class="title">cnames.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A collection of functions in aid of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> naming and value retrieval.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="palette_8h_source.html">palette.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cnames_8h_source.html">cnames.h</a>&quot;</code><br />
+<code>#include &quot;cnames.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="getopt_8h_source.html">getopt.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="cnames_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#a5774a453e5fe094a9d4ece0cfd20ab5b">__USE_MINGW_ANSI_STDIO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memItemLeft" align="right" valign="top"><a id="a5774a453e5fe094a9d4ece0cfd20ab5b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__USE_MINGW_ANSI_STDIO</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a589e6078c3e9df6226d02d47c14b5ede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#a589e6078c3e9df6226d02d47c14b5ede">str2Rgb</a> (char *s, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> *color)</td></tr>
+<tr class="memdesc:a589e6078c3e9df6226d02d47c14b5ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert named <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> to values.  <a href="#a589e6078c3e9df6226d02d47c14b5ede">More...</a><br /></td></tr>
 <tr class="separator:a589e6078c3e9df6226d02d47c14b5ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7856b943e4cf4b93a8df9d2b46f2181"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#ad7856b943e4cf4b93a8df9d2b46f2181">RgbNE</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> a, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> <a class="el" href="c_j_s_o_n_8h.html#a1a175e87536301df98c805ac0636ad7c">b</a>)</td></tr>
+<tr class="memitem:ad7856b943e4cf4b93a8df9d2b46f2181"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#ad7856b943e4cf4b93a8df9d2b46f2181">RgbNE</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> a, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> b)</td></tr>
+<tr class="memdesc:ad7856b943e4cf4b93a8df9d2b46f2181"><td class="mdescLeft">&#160;</td><td class="mdescRight">NE comparison for <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> pair.  <a href="#ad7856b943e4cf4b93a8df9d2b46f2181">More...</a><br /></td></tr>
 <tr class="separator:ad7856b943e4cf4b93a8df9d2b46f2181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea439cc159446e6f63072a4459ff2bd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#aea439cc159446e6f63072a4459ff2bd6">RgbEQ</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> a, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> <a class="el" href="c_j_s_o_n_8h.html#a1a175e87536301df98c805ac0636ad7c">b</a>)</td></tr>
+<tr class="memitem:aea439cc159446e6f63072a4459ff2bd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#aea439cc159446e6f63072a4459ff2bd6">RgbEQ</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> a, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> b)</td></tr>
+<tr class="memdesc:aea439cc159446e6f63072a4459ff2bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">EQ comparison for <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> pair.  <a href="#aea439cc159446e6f63072a4459ff2bd6">More...</a><br /></td></tr>
 <tr class="separator:aea439cc159446e6f63072a4459ff2bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13859f311d3fa7ead9a6963bcc8e07a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#ab13859f311d3fa7ead9a6963bcc8e07a">RgbName</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> color)</td></tr>
+<tr class="memdesc:ab13859f311d3fa7ead9a6963bcc8e07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find name of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value.  <a href="#ab13859f311d3fa7ead9a6963bcc8e07a">More...</a><br /></td></tr>
 <tr class="separator:ab13859f311d3fa7ead9a6963bcc8e07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af92aa8a3abb3917d827cb0e0a8871b59"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="cnames_8h.html#struct_color_info">ColorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cnames_8c.html#af92aa8a3abb3917d827cb0e0a8871b59">color_data</a> [<a class="el" href="cnames_8h.html#aa6e36259414b526d759bcb895008e333">COLOR_NAMES_MAX</a>]</td></tr>
+<tr class="memitem:af92aa8a3abb3917d827cb0e0a8871b59"><td class="memItemLeft" align="right" valign="top"><a id="af92aa8a3abb3917d827cb0e0a8871b59"></a>
+const <a class="el" href="struct_color_info.html">ColorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color_data</b> [COLOR_NAMES_MAX]</td></tr>
 <tr class="separator:af92aa8a3abb3917d827cb0e0a8871b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5774a453e5fe094a9d4ece0cfd20ab5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5774a453e5fe094a9d4ece0cfd20ab5b">&#9670;&nbsp;</a></span>__USE_MINGW_ANSI_STDIO</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection of functions in aid of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> naming and value retrieval. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Fri Aug 11 06:49:25 2017</dd></dl>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>The functions in this file allow fetching the names and values of a particular <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> instance. As collateral damage this provides tests for equality and its inverse.</p>
+<dl class="section note"><dt>Note</dt><dd>gcc -Wall -DCNAMES_TEST -o nam <a class="el" href="cnames_8c.html" title="A collection of functions in aid of Rgb naming and value retrieval. ">cnames.c</a> gcc -ggdb -Wall -DCNAMES_TEST -o nam <a class="el" href="cnames_8c.html" title="A collection of functions in aid of Rgb naming and value retrieval. ">cnames.c</a></dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __USE_MINGW_ANSI_STDIO&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+<p class="definition">Definition in file <a class="el" href="cnames_8c_source.html">cnames.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="aea439cc159446e6f63072a4459ff2bd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea439cc159446e6f63072a4459ff2bd6">&#9670;&nbsp;</a></span>RgbEQ()</h2>
 
@@ -139,6 +144,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>EQ comparison for <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> pair. </p>
+<p>This routine does a member comparison for the equality of two <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value. </td></tr>
+    <tr><td class="paramname">b</td><td>Second <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true for equality, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="cnames_8c_source.html#l00970">970</a> of file <a class="el" href="cnames_8c_source.html">cnames.c</a>.</p>
+
 </div>
 </div>
 <a id="ab13859f311d3fa7ead9a6963bcc8e07a"></a>
@@ -156,6 +174,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Find name of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value. </p>
+<p>Simple linear look-up seeking the text name of a given <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td><a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value to seek. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Character pointer upon success, NULL otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="cnames_8c_source.html#l00981">981</a> of file <a class="el" href="cnames_8c_source.html">cnames.c</a>.</p>
 
 </div>
 </div>
@@ -185,6 +215,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>NE comparison for <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> pair. </p>
+<p>This routine does a member comparison for the non-equality of two <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>First <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value. </td></tr>
+    <tr><td class="paramname">b</td><td>Second <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true for non-equality, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="cnames_8c_source.html#l00957">957</a> of file <a class="el" href="cnames_8c_source.html">cnames.c</a>.</p>
+
 </div>
 </div>
 <a id="a589e6078c3e9df6226d02d47c14b5ede"></a>
@@ -213,20 +256,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="af92aa8a3abb3917d827cb0e0a8871b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af92aa8a3abb3917d827cb0e0a8871b59">&#9670;&nbsp;</a></span>color_data</h2>
+<p>Convert named <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> to values. </p>
+<p>This routine does a simple linear look-up through the color_data table and transfers the RGB values upon success.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Color name. </td></tr>
+    <tr><td class="paramname">color</td><td>Target <a class="el" href="palette_8h.html#struct_rgb">Rgb</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True for success, false for failure. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="cnames_8h.html#struct_color_info">ColorInfo</a> color_data[<a class="el" href="cnames_8h.html#aa6e36259414b526d759bcb895008e333">COLOR_NAMES_MAX</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="cnames_8c_source.html#l00929">929</a> of file <a class="el" href="cnames_8c_source.html">cnames.c</a>.</p>
 
 </div>
 </div>

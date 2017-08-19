@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['offset',['offset',['../c_j_s_o_n_8c.html#af727920073077579942a79de519bb31a',1,'parse_buffer::offset()'],['../c_j_s_o_n_8c.html#a3ed6f9d24d6591047680492a962dc7c9',1,'printbuffer::offset()']]]
+  ['r',['r',['../palette_8h.html#a3da778daa4ccbc628c478b21d6093df5',1,'Rgb']]],
+  ['radius',['radius',['../getopt_8h.html#a15d6bf9a86cdcfd399105f6f07911808',1,'Parameters']]]
 ];

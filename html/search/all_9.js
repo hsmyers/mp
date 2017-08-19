@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['project_20mp',['Project Mp',['../md_readme.html',1,'']]],
-  ['parameters',['Parameters',['../struct_parameters.html',1,'']]],
-  ['parse_5fbuffer',['parse_buffer',['../structparse__buffer.html',1,'']]],
-  ['printbuffer',['printbuffer',['../structprintbuffer.html',1,'']]]
+  ['json',['json',['../getopt_8h.html#ae19686186ca51dd3c4bdd868e52dc04d',1,'Parameters']]]
 ];

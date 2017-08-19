@@ -66,7 +66,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A collection of functions in aid of RGB palettes.  
+<p>Implementation of getopt_long for mp.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
@@ -75,303 +75,65 @@ $(function() {
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;dirent.h&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;quadmath.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="iniparser_8h_source.html">iniparser.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="c_j_s_o_n_8h_source.html">cJSON.h</a>&quot;</code><br />
+<code>#include &quot;cJSON.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cnames_8h_source.html">cnames.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+<code>#include &quot;cnames.h&quot;</code><br />
+</div>
+<p><a href="getopt_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a5774a453e5fe094a9d4ece0cfd20ab5b">__USE_MINGW_ANSI_STDIO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memItemLeft" align="right" valign="top"><a id="a5774a453e5fe094a9d4ece0cfd20ab5b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__USE_MINGW_ANSI_STDIO</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3b982f6477a06e2a24a1d0398cad9b41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a3b982f6477a06e2a24a1d0398cad9b41">getParameters</a> (int argc, char *argv[], char *<a class="el" href="mp_8c.html#abc057f42fdaf5e63835a8272aefe278e">Version</a>, char *<a class="el" href="mp_8c.html#a7de65d169fd5f5b40b1a5a1b70c33fd7">Date</a>)</td></tr>
+<tr class="memitem:a3b982f6477a06e2a24a1d0398cad9b41"><td class="memItemLeft" align="right" valign="top"><a id="a3b982f6477a06e2a24a1d0398cad9b41"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getParameters</b> (int argc, char *argv[], char *Version, char *Date)</td></tr>
 <tr class="separator:a3b982f6477a06e2a24a1d0398cad9b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a946521054a741a1e1f7bb9d08f102cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a946521054a741a1e1f7bb9d08f102cf6">fromJSON</a> (char *jsonfile, <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
-<tr class="separator:a946521054a741a1e1f7bb9d08f102cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce723c987c56ea21e0670e3f888ed8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#afce723c987c56ea21e0670e3f888ed8a">rawCl</a> (int argc, char *argv[], <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="memitem:ad3dcd81eca85673a92d463ee7262fea7"><td class="memItemLeft" align="right" valign="top"><a id="ad3dcd81eca85673a92d463ee7262fea7"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fromJSON</b> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="separator:ad3dcd81eca85673a92d463ee7262fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a891b90e57137987b26663b61aa90e"><td class="memItemLeft" align="right" valign="top"><a id="a44a891b90e57137987b26663b61aa90e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toJSON</b> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="separator:a44a891b90e57137987b26663b61aa90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce723c987c56ea21e0670e3f888ed8a"><td class="memItemLeft" align="right" valign="top"><a id="afce723c987c56ea21e0670e3f888ed8a"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rawCl</b> (int argc, char *argv[], <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
 <tr class="separator:afce723c987c56ea21e0670e3f888ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1475ed9b0ffb9f93a0f7abee676d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a1e1475ed9b0ffb9f93a0f7abee676d6b">help</a> (char c, char *Program, char *<a class="el" href="mp_8c.html#abc057f42fdaf5e63835a8272aefe278e">Version</a>, char *<a class="el" href="mp_8c.html#a7de65d169fd5f5b40b1a5a1b70c33fd7">Date</a>)</td></tr>
+<tr class="memitem:a1e1475ed9b0ffb9f93a0f7abee676d6b"><td class="memItemLeft" align="right" valign="top"><a id="a1e1475ed9b0ffb9f93a0f7abee676d6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>help</b> (char c, char *Program, char *Version, char *Date)</td></tr>
 <tr class="separator:a1e1475ed9b0ffb9f93a0f7abee676d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eaf01167078a337a57f4f997bcdbd98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a9eaf01167078a337a57f4f997bcdbd98">parse_ini_file</a> (char *ini_name, <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="memitem:a9eaf01167078a337a57f4f997bcdbd98"><td class="memItemLeft" align="right" valign="top"><a id="a9eaf01167078a337a57f4f997bcdbd98"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parse_ini_file</b> (char *ini_name, <a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
 <tr class="separator:a9eaf01167078a337a57f4f997bcdbd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717f63efc8d0d7c615ef90eb3b5c3d5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a717f63efc8d0d7c615ef90eb3b5c3d5f">getNext</a> (char *path)</td></tr>
+<tr class="memitem:a717f63efc8d0d7c615ef90eb3b5c3d5f"><td class="memItemLeft" align="right" valign="top"><a id="a717f63efc8d0d7c615ef90eb3b5c3d5f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getNext</b> (char *path)</td></tr>
 <tr class="separator:a717f63efc8d0d7c615ef90eb3b5c3d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7896aabf81eb0462c72d442118a2803"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#ab7896aabf81eb0462c72d442118a2803">getstr</a> (char *arg)</td></tr>
+<tr class="memitem:ab7896aabf81eb0462c72d442118a2803"><td class="memItemLeft" align="right" valign="top"><a id="ab7896aabf81eb0462c72d442118a2803"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>getstr</b> (char *arg)</td></tr>
 <tr class="separator:ab7896aabf81eb0462c72d442118a2803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c23c70cb3b6535916e1b1902586a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a86c23c70cb3b6535916e1b1902586a82">showParameters</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
-<tr class="separator:a86c23c70cb3b6535916e1b1902586a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6598d0009ea17712adfc770ea90294a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="getopt_8c.html#a6598d0009ea17712adfc770ea90294a1">zeroP</a> (void)</td></tr>
+<tr class="memitem:a89944bdde3773b96d6689e78e624c45f"><td class="memItemLeft" align="right" valign="top"><a id="a89944bdde3773b96d6689e78e624c45f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showParameters</b> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p, char *s)</td></tr>
+<tr class="separator:a89944bdde3773b96d6689e78e624c45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6598d0009ea17712adfc770ea90294a1"><td class="memItemLeft" align="right" valign="top"><a id="a6598d0009ea17712adfc770ea90294a1"></a>
+<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zeroP</b> (void)</td></tr>
 <tr class="separator:a6598d0009ea17712adfc770ea90294a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A collection of functions in aid of RGB palettes. </p>
+<div class="textblock"><p>Implementation of getopt_long for mp. </p>
 <dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Mon Jul 24 15:05:30 2017</dd></dl>
 <p>These functions allow mp to garner information from a variety of sources. From the command line, both with and without the traditional dashes, as well as from an 'ini' or configuration file. Sufficient information can be gathered from .JSON files as well,</p>
-<dl class="section note"><dt>Note</dt><dd>gcc -Wall -DGETOPT_TEST <a class="el" href="cnames_8c.html">cnames.c</a> <a class="el" href="c_j_s_o_n_8c.html">cJSON.c</a> <a class="el" href="getopt_8c.html" title="A collection of functions in aid of RGB palettes. ">getopt.c</a> <a class="el" href="dictionary_8c.html" title="Implements a dictionary for string variables. ">dictionary.c</a> <a class="el" href="iniparser_8c.html" title="Parser for ini files. ">iniparser.c</a> -o getopt</dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5774a453e5fe094a9d4ece0cfd20ab5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5774a453e5fe094a9d4ece0cfd20ab5b">&#9670;&nbsp;</a></span>__USE_MINGW_ANSI_STDIO</h2>
+<dl class="section note"><dt>Note</dt><dd>gcc -Wall -DGETOPT_TEST <a class="el" href="cnames_8c.html" title="A collection of functions in aid of Rgb naming and value retrieval. ">cnames.c</a> <a class="el" href="c_j_s_o_n_8c_source.html">cJSON.c</a> <a class="el" href="getopt_8c.html" title="Implementation of getopt_long for mp. ">getopt.c</a> <a class="el" href="dictionary_8c.html" title="Implements a dictionary for string variables. ">dictionary.c</a> <a class="el" href="iniparser_8c.html" title="Parser for ini files. ">iniparser.c</a> <a class="el" href="util_8c.html" title="A collection of functions in aid of support for mp. ">util.c</a> -o getopt -lquadmath<br />
+ gcc -ggdb -Wall -DGETOPT_TEST <a class="el" href="cnames_8c.html" title="A collection of functions in aid of Rgb naming and value retrieval. ">cnames.c</a> <a class="el" href="c_j_s_o_n_8c_source.html">cJSON.c</a> <a class="el" href="getopt_8c.html" title="Implementation of getopt_long for mp. ">getopt.c</a> <a class="el" href="dictionary_8c.html" title="Implements a dictionary for string variables. ">dictionary.c</a> <a class="el" href="iniparser_8c.html" title="Parser for ini files. ">iniparser.c</a> <a class="el" href="util_8c.html" title="A collection of functions in aid of support for mp. ">util.c</a> -o getopt -lquadmath<br />
+</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000003">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __USE_MINGW_ANSI_STDIO&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a946521054a741a1e1f7bb9d08f102cf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a946521054a741a1e1f7bb9d08f102cf6">&#9670;&nbsp;</a></span>fromJSON()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> fromJSON </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>jsonfile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a717f63efc8d0d7c615ef90eb3b5c3d5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717f63efc8d0d7c615ef90eb3b5c3d5f">&#9670;&nbsp;</a></span>getNext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int getNext </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b982f6477a06e2a24a1d0398cad9b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b982f6477a06e2a24a1d0398cad9b41">&#9670;&nbsp;</a></span>getParameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> getParameters </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Date</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab7896aabf81eb0462c72d442118a2803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7896aabf81eb0462c72d442118a2803">&#9670;&nbsp;</a></span>getstr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* getstr </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e1475ed9b0ffb9f93a0f7abee676d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e1475ed9b0ffb9f93a0f7abee676d6b">&#9670;&nbsp;</a></span>help()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void help </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Program</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>Date</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9eaf01167078a337a57f4f997bcdbd98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eaf01167078a337a57f4f997bcdbd98">&#9670;&nbsp;</a></span>parse_ini_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> parse_ini_file </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>ini_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afce723c987c56ea21e0670e3f888ed8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce723c987c56ea21e0670e3f888ed8a">&#9670;&nbsp;</a></span>rawCl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> rawCl </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a86c23c70cb3b6535916e1b1902586a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c23c70cb3b6535916e1b1902586a82">&#9670;&nbsp;</a></span>showParameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void showParameters </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6598d0009ea17712adfc770ea90294a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6598d0009ea17712adfc770ea90294a1">&#9670;&nbsp;</a></span>zeroP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> zeroP </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p class="definition">Definition in file <a class="el" href="getopt_8c_source.html">getopt.c</a>.</p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

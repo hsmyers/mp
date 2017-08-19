@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dbl',['DBL',['../util_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b7ad27665e918c9b35318101379529',1,'util.h']]]
+  ['demm',['DEMM',['../getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4ea6621f2b69ace7114db712e24643ea55f',1,'getopt.h']]]
 ];

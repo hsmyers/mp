@@ -1,5 +1,10 @@
 \hypertarget{util_8c}{}\section{util.\+c File Reference}
 \label{util_8c}\index{util.\+c@{util.\+c}}
+
+
+A collection of functions in aid of support for mp.  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
@@ -12,61 +17,72 @@
 \begin{DoxyCompactItemize}
 \item 
 char $\ast$ \hyperlink{util_8c_a1b25cdaf77c824997cc56eb3a4593e6e}{get\+Cl} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Assemble the command-\/line as a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{util_8c_a11a9bd674e096fc80f9a828e26a2397c}\label{util_8c_a11a9bd674e096fc80f9a828e26a2397c}} 
+char $\ast$ {\bfseries Read\+File} (char $\ast$filename)
 \item 
-char $\ast$ \hyperlink{util_8c_a11a9bd674e096fc80f9a828e26a2397c}{Read\+File} (char $\ast$filename)
+\mbox{\Hypertarget{util_8c_aecf66ad96a12d1c1182cf9c3d0bcc658}\label{util_8c_aecf66ad96a12d1c1182cf9c3d0bcc658}} 
+double {\bfseries scale\+Width} (double d, int N, double E)
 \item 
-double \hyperlink{util_8c_aecf66ad96a12d1c1182cf9c3d0bcc658}{scale\+Width} (double d, int N, double E)
+\mbox{\Hypertarget{util_8c_a2b5d458faf1411991315b18a1cadb186}\label{util_8c_a2b5d458faf1411991315b18a1cadb186}} 
+int {\bfseries best\+Guess} (double diameter, int W)
 \item 
-int \hyperlink{util_8c_a2b5d458faf1411991315b18a1cadb186}{best\+Guess} (double diameter, int W)
+\mbox{\Hypertarget{util_8c_a6a544c95555f3b6fe9df537f915772ba}\label{util_8c_a6a544c95555f3b6fe9df537f915772ba}} 
+char $\ast$ {\bfseries guess\+Str} (int g)
 \item 
-char $\ast$ \hyperlink{util_8c_a6a544c95555f3b6fe9df537f915772ba}{guess\+Str} (int g)
+\mbox{\Hypertarget{util_8c_a8742ba0429f6355220c5cea0d64aefe3}\label{util_8c_a8742ba0429f6355220c5cea0d64aefe3}} 
+void {\bfseries str2abbr} (char $\ast$abbr, size\+\_\+t size, const char $\ast$s)
 \item 
-void \hyperlink{util_8c_a8742ba0429f6355220c5cea0d64aefe3}{str2abbr} (char $\ast$abbr, size\+\_\+t size, const char $\ast$s)
+\mbox{\Hypertarget{util_8c_afd8eb7be8de6cd9479e2b5c737a7b114}\label{util_8c_afd8eb7be8de6cd9479e2b5c737a7b114}} 
+\+\_\+\+\_\+float128 {\bfseries fabsq} (\+\_\+\+\_\+float128 x)
 \item 
-\+\_\+\+\_\+float128 \hyperlink{util_8c_afd8eb7be8de6cd9479e2b5c737a7b114}{fabsq} (\+\_\+\+\_\+float128 x)
+\mbox{\Hypertarget{util_8c_aba446f8a322fb49f78eedb821194b491}\label{util_8c_aba446f8a322fb49f78eedb821194b491}} 
+int {\bfseries count\+Char} (const char $\ast$s, const char c)
+\item 
+\mbox{\Hypertarget{util_8c_a0b35b1883d4fd3a19c230997b182e55e}\label{util_8c_a0b35b1883d4fd3a19c230997b182e55e}} 
+void {\bfseries signon} (const char $\ast$prog, const char $\ast$Version)
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+A collection of functions in aid of support for mp. 
+
+\begin{DoxyAuthor}{Author}
+Hugh S. Myers 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Mon Jul 24 17\+:01\+:02 2017
+\end{DoxyDate}
+General catch-\/all of routines needed but not complicated enough for their own file.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000009}{Bug}]No known bugs. \end{DoxyRefDesc}
+
+
 \subsection{Function Documentation}
-\mbox{\Hypertarget{util_8c_a2b5d458faf1411991315b18a1cadb186}\label{util_8c_a2b5d458faf1411991315b18a1cadb186}} 
-\index{util.\+c@{util.\+c}!best\+Guess@{best\+Guess}}
-\index{best\+Guess@{best\+Guess}!util.\+c@{util.\+c}}
-\subsubsection{\texorpdfstring{best\+Guess()}{bestGuess()}}
-{\footnotesize\ttfamily int best\+Guess (\begin{DoxyParamCaption}\item[{double}]{diameter,  }\item[{int}]{W }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{util_8c_afd8eb7be8de6cd9479e2b5c737a7b114}\label{util_8c_afd8eb7be8de6cd9479e2b5c737a7b114}} 
-\index{util.\+c@{util.\+c}!fabsq@{fabsq}}
-\index{fabsq@{fabsq}!util.\+c@{util.\+c}}
-\subsubsection{\texorpdfstring{fabsq()}{fabsq()}}
-{\footnotesize\ttfamily \+\_\+\+\_\+float128 fabsq (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+float128}]{x }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{util_8c_a1b25cdaf77c824997cc56eb3a4593e6e}\label{util_8c_a1b25cdaf77c824997cc56eb3a4593e6e}} 
 \index{util.\+c@{util.\+c}!get\+Cl@{get\+Cl}}
 \index{get\+Cl@{get\+Cl}!util.\+c@{util.\+c}}
 \subsubsection{\texorpdfstring{get\+Cl()}{getCl()}}
 {\footnotesize\ttfamily char$\ast$ get\+Cl (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{util_8c_a6a544c95555f3b6fe9df537f915772ba}\label{util_8c_a6a544c95555f3b6fe9df537f915772ba}} 
-\index{util.\+c@{util.\+c}!guess\+Str@{guess\+Str}}
-\index{guess\+Str@{guess\+Str}!util.\+c@{util.\+c}}
-\subsubsection{\texorpdfstring{guess\+Str()}{guessStr()}}
-{\footnotesize\ttfamily char$\ast$ guess\+Str (\begin{DoxyParamCaption}\item[{int}]{g }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{util_8c_a11a9bd674e096fc80f9a828e26a2397c}\label{util_8c_a11a9bd674e096fc80f9a828e26a2397c}} 
-\index{util.\+c@{util.\+c}!Read\+File@{Read\+File}}
-\index{Read\+File@{Read\+File}!util.\+c@{util.\+c}}
-\subsubsection{\texorpdfstring{Read\+File()}{ReadFile()}}
-{\footnotesize\ttfamily char$\ast$ Read\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{util_8c_aecf66ad96a12d1c1182cf9c3d0bcc658}\label{util_8c_aecf66ad96a12d1c1182cf9c3d0bcc658}} 
-\index{util.\+c@{util.\+c}!scale\+Width@{scale\+Width}}
-\index{scale\+Width@{scale\+Width}!util.\+c@{util.\+c}}
-\subsubsection{\texorpdfstring{scale\+Width()}{scaleWidth()}}
-{\footnotesize\ttfamily double scale\+Width (\begin{DoxyParamCaption}\item[{double}]{d,  }\item[{int}]{N,  }\item[{double}]{E }\end{DoxyParamCaption})}
+Assemble the command-\/line as a string. 
 
-\mbox{\Hypertarget{util_8c_a8742ba0429f6355220c5cea0d64aefe3}\label{util_8c_a8742ba0429f6355220c5cea0d64aefe3}} 
-\index{util.\+c@{util.\+c}!str2abbr@{str2abbr}}
-\index{str2abbr@{str2abbr}!util.\+c@{util.\+c}}
-\subsubsection{\texorpdfstring{str2abbr()}{str2abbr()}}
-{\footnotesize\ttfamily void str2abbr (\begin{DoxyParamCaption}\item[{char $\ast$}]{abbr,  }\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+Reconstruct the command-\/line from argc and argv.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Argument count. \\
+\hline
+{\em argv} & Command-\/line substrings array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An image of the original command-\/line as a pointer to a static buffer. 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file util.\+c.
 

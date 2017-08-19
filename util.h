@@ -10,8 +10,8 @@
  **
  **  @bug No known bugs.
  **/
-#ifndef UTIL_H_   /* Include guard */
-#define UTIL_H_
+#ifndef _UTIL_H   /* Include guard */
+#define _UTIL_H
 #include <math.h>
 #include <complex.h>
 
@@ -29,12 +29,15 @@ enum {
 };
 
 __float128 fabsq( __float128 x );
+char **CommandLineToArgvA( char *lpCmdline, int *numargs );
 char *getCl( int argc, char *argv[] );
 char *guessStr( int g );
 char *ReadFile( char *filename );
+char *strgets( char **ptr );
 double scaleWidth( double d, int N, double E );
 int bestGuess( double diameter, int W );
 int countChar( const char *s, const char c );
+void signon( const char *prog, const char *Version );
 void str2abbr( char *abbr, size_t size, const char *s );
 
-#endif // UTIL_H_
+#endif // _UTIL_H

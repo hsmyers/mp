@@ -59,106 +59,102 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mp.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="palette_8h_source.html">palette.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="colors_8h_source.html">colors.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="getopt_8h_source.html">getopt.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mp_8h_source.html">mp.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="elapsed_8h_source.html">elapsed.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a5774a453e5fe094a9d4ece0cfd20ab5b">__USE_MINGW_ANSI_STDIO</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+
+<p>This is the primary source file for mp.exe.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="mp_8h_source.html">mp.h</a>&quot;</code><br />
+</div>
+<p><a href="mp_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="mp_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main() for mp.exe ">main()</a> for mp.exe  <a href="#a0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa841253987f8fbc49d38a49a3c6918dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#aa841253987f8fbc49d38a49a3c6918dc">msetFLT</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:aa841253987f8fbc49d38a49a3c6918dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f448efc51ed8ce1d43fbfebd1db7b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a19f448efc51ed8ce1d43fbfebd1db7b6">msetDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:a19f448efc51ed8ce1d43fbfebd1db7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f055ba9de4e60ff7af3a5e80f191908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a0f055ba9de4e60ff7af3a5e80f191908">msetLDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:a0f055ba9de4e60ff7af3a5e80f191908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b42ddcada14221f1c14ddc23335830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a39b42ddcada14221f1c14ddc23335830">msetFLT128</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:a39b42ddcada14221f1c14ddc23335830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8b01c80ffc5c987e102a2a6af5be64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_f_l_t">AxesFLT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#aef8b01c80ffc5c987e102a2a6af5be64">ct_gain_axesFLT</a> (float real, float imag, float diameter, int height, int width)</td></tr>
-<tr class="separator:aef8b01c80ffc5c987e102a2a6af5be64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c5e8f5759623d9422c61eea8cb6bc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_d_b_l">AxesDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#ac7c5e8f5759623d9422c61eea8cb6bc6">ct_gain_axesDBL</a> (double real, double imag, double diameter, int height, int width)</td></tr>
-<tr class="separator:ac7c5e8f5759623d9422c61eea8cb6bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2fd7c32c2ff76bbf8b9b9cd661928d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_l_d_b_l">AxesLDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a8a2fd7c32c2ff76bbf8b9b9cd661928d">ct_gain_axesLDBL</a> (long double real, long double imag, long double diameter, int height, int width)</td></tr>
-<tr class="separator:a8a2fd7c32c2ff76bbf8b9b9cd661928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea9ece4865183def6db92c5f18c6312b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_f_l_t128">AxesFLT128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#aea9ece4865183def6db92c5f18c6312b">ct_gain_axesFLT128</a> (__float128 real, __float128 imag, __float128 diameter, int height, int width)</td></tr>
-<tr class="separator:aea9ece4865183def6db92c5f18c6312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9e95e9f968655b1131d3c108aed87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a3f9e95e9f968655b1131d3c108aed87b">MSetFLT</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> P)</td></tr>
+<tr class="memdesc:a3f9e95e9f968655b1131d3c108aed87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using float.  <a href="#a3f9e95e9f968655b1131d3c108aed87b">More...</a><br /></td></tr>
+<tr class="separator:a3f9e95e9f968655b1131d3c108aed87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034e460e2b1033d1cfef694553053db9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a034e460e2b1033d1cfef694553053db9">MSetDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> P)</td></tr>
+<tr class="memdesc:a034e460e2b1033d1cfef694553053db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using double.  <a href="#a034e460e2b1033d1cfef694553053db9">More...</a><br /></td></tr>
+<tr class="separator:a034e460e2b1033d1cfef694553053db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194bda2f36ff02a5bc60f266285078d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a194bda2f36ff02a5bc60f266285078d1">MSetLDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> P)</td></tr>
+<tr class="memdesc:a194bda2f36ff02a5bc60f266285078d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using long double.  <a href="#a194bda2f36ff02a5bc60f266285078d1">More...</a><br /></td></tr>
+<tr class="separator:a194bda2f36ff02a5bc60f266285078d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441edd39cff30f76fc120d57d08fa0c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a441edd39cff30f76fc120d57d08fa0c9">MSetFLT128</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> P)</td></tr>
+<tr class="memdesc:a441edd39cff30f76fc120d57d08fa0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using __float128.  <a href="#a441edd39cff30f76fc120d57d08fa0c9">More...</a><br /></td></tr>
+<tr class="separator:a441edd39cff30f76fc120d57d08fa0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cdd78672ee1a523153bc0942d991a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a18cdd78672ee1a523153bc0942d991a3">GiveDistanceFLT</a> (<a class="el" href="struct_color_f_l_t.html">ColorFLT</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a18cdd78672ee1a523153bc0942d991a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Float implementation of DEMM.  <a href="#a18cdd78672ee1a523153bc0942d991a3">More...</a><br /></td></tr>
+<tr class="separator:a18cdd78672ee1a523153bc0942d991a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4004850ccef21f42e497c0a3de7cc07d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a4004850ccef21f42e497c0a3de7cc07d">GiveDistanceDBL</a> (<a class="el" href="struct_color_d_b_l.html">ColorDBL</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a4004850ccef21f42e497c0a3de7cc07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double implementation of DEMM.  <a href="#a4004850ccef21f42e497c0a3de7cc07d">More...</a><br /></td></tr>
+<tr class="separator:a4004850ccef21f42e497c0a3de7cc07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631ba1071f27ae2f112a553f1b03bc21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a631ba1071f27ae2f112a553f1b03bc21">GiveDistanceLDBL</a> (<a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a631ba1071f27ae2f112a553f1b03bc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Long double implementation of DEMM.  <a href="#a631ba1071f27ae2f112a553f1b03bc21">More...</a><br /></td></tr>
+<tr class="separator:a631ba1071f27ae2f112a553f1b03bc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f78f72d8c2480810741cfe4256d8204"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color128.html">Color128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a6f78f72d8c2480810741cfe4256d8204">GiveDistanceFLT128</a> (<a class="el" href="struct_color128.html">Color128</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a6f78f72d8c2480810741cfe4256d8204"><td class="mdescLeft">&#160;</td><td class="mdescRight">__float128 implementation of DEMM  <a href="#a6f78f72d8c2480810741cfe4256d8204">More...</a><br /></td></tr>
+<tr class="separator:a6f78f72d8c2480810741cfe4256d8204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795b661e93a34f5a13ed289c086417ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a795b661e93a34f5a13ed289c086417ce">MSetCPMFLT</a> (<a class="el" href="struct_color_f_l_t.html">ColorFLT</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:a795b661e93a34f5a13ed289c086417ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Float implementation of MSETCPM.  <a href="#a795b661e93a34f5a13ed289c086417ce">More...</a><br /></td></tr>
+<tr class="separator:a795b661e93a34f5a13ed289c086417ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a4cb4dc46fca47a93474cf2a242e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a18a4cb4dc46fca47a93474cf2a242e95">MSetCPMDBL</a> (<a class="el" href="struct_color_d_b_l.html">ColorDBL</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:a18a4cb4dc46fca47a93474cf2a242e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double implementation of MSETCPM.  <a href="#a18a4cb4dc46fca47a93474cf2a242e95">More...</a><br /></td></tr>
+<tr class="separator:a18a4cb4dc46fca47a93474cf2a242e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87eb51be532c563346aa0f98b41f6ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a87eb51be532c563346aa0f98b41f6ef9">MSetCPMLDBL</a> (<a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:a87eb51be532c563346aa0f98b41f6ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Long double implementation of MSETCPM.  <a href="#a87eb51be532c563346aa0f98b41f6ef9">More...</a><br /></td></tr>
+<tr class="separator:a87eb51be532c563346aa0f98b41f6ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31802513cd0719da4aaa5602d6169d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color128.html">Color128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#af31802513cd0719da4aaa5602d6169d7">MSetCPMFLT128</a> (<a class="el" href="struct_color128.html">Color128</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:af31802513cd0719da4aaa5602d6169d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">__float128 implementation of MSETCPM  <a href="#af31802513cd0719da4aaa5602d6169d7">More...</a><br /></td></tr>
+<tr class="separator:af31802513cd0719da4aaa5602d6169d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abc057f42fdaf5e63835a8272aefe278e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#abc057f42fdaf5e63835a8272aefe278e">Version</a> = &quot;0.019&quot;</td></tr>
+<tr class="memitem:abc057f42fdaf5e63835a8272aefe278e"><td class="memItemLeft" align="right" valign="top"><a id="abc057f42fdaf5e63835a8272aefe278e"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>Version</b> = &quot;0.029&quot;</td></tr>
 <tr class="separator:abc057f42fdaf5e63835a8272aefe278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de65d169fd5f5b40b1a5a1b70c33fd7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8c.html#a7de65d169fd5f5b40b1a5a1b70c33fd7">Date</a> = &quot;Sun Jul 23 20:30:05 2017&quot;</td></tr>
+<tr class="memitem:a7de65d169fd5f5b40b1a5a1b70c33fd7"><td class="memItemLeft" align="right" valign="top"><a id="a7de65d169fd5f5b40b1a5a1b70c33fd7"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>Date</b> = &quot;Sun Aug 13 20:42:04 2017&quot;</td></tr>
 <tr class="separator:a7de65d169fd5f5b40b1a5a1b70c33fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5774a453e5fe094a9d4ece0cfd20ab5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5774a453e5fe094a9d4ece0cfd20ab5b">&#9670;&nbsp;</a></span>__USE_MINGW_ANSI_STDIO</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is the primary source file for mp.exe. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Mon Aug 14 10:25:06 2017</dd></dl>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>This is both the location of <a class="el" href="mp_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main() for mp.exe ">main()</a> as well as the central file for the executable. Mp.exe is an OpenMP Mandelbrot image generator. It is designed to be open ended as well as an on-going test bed. As such not everything may work. You've been warned. Best indicator of something wrong is an image that is all black. I suppose in keeping with the windows platform, the image should be all blue, but it is what it is.</p>
+<dl class="section note"><dt>Note</dt><dd>compile: gcc -Wall -o mp -std=c99 -O3 -msse2 -march=native -fopenmp <a class="el" href="cnames_8c.html" title="A collection of functions in aid of Rgb naming and value retrieval. ">cnames.c</a> <a class="el" href="cspace_8c_source.html">cspace.c</a> <a class="el" href="colors_8c_source.html">colors.c</a> <a class="el" href="elapsed_8c.html" title="Routines to provide time information as mp executes. ">elapsed.c</a> <a class="el" href="util_8c.html" title="A collection of functions in aid of support for mp. ">util.c</a> <a class="el" href="c_j_s_o_n_8c_source.html">cJSON.c</a> <a class="el" href="mp_8c.html" title="This is the primary source file for mp.exe. ">mp.c</a> -ljpeg -lgd<br />
+ gcc -ggdb -Wall -o mp -std=c99 -msse2 -march=native -fopenmp <a class="el" href="cnames_8c.html" title="A collection of functions in aid of Rgb naming and value retrieval. ">cnames.c</a> <a class="el" href="cspace_8c_source.html">cspace.c</a> <a class="el" href="colors_8c_source.html">colors.c</a> <a class="el" href="elapsed_8c.html" title="Routines to provide time information as mp executes. ">elapsed.c</a> <a class="el" href="util_8c.html" title="A collection of functions in aid of support for mp. ">util.c</a> <a class="el" href="c_j_s_o_n_8c_source.html">cJSON.c</a> <a class="el" href="mp_8c.html" title="This is the primary source file for mp.exe. ">mp.c</a> -ljpeg -lgd<br />
+ debug: gdb -args …<br />
+</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000005">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a4004850ccef21f42e497c0a3de7cc07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4004850ccef21f42e497c0a3de7cc07d">&#9670;&nbsp;</a></span>GiveDistanceDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define __USE_MINGW_ANSI_STDIO&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ac7c5e8f5759623d9422c61eea8cb6bc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7c5e8f5759623d9422c61eea8cb6bc6">&#9670;&nbsp;</a></span>ct_gain_axesDBL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_d_b_l">AxesDBL</a> ct_gain_axesDBL </td>
+          <td class="memname"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a> GiveDistanceDBL </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -168,43 +164,38 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Double implementation of DEMM. </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00476">476</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="aef8b01c80ffc5c987e102a2a6af5be64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef8b01c80ffc5c987e102a2a6af5be64">&#9670;&nbsp;</a></span>ct_gain_axesFLT()</h2>
+<a id="a18cdd78672ee1a523153bc0942d991a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18cdd78672ee1a523153bc0942d991a3">&#9670;&nbsp;</a></span>GiveDistanceFLT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_f_l_t">AxesFLT</a> ct_gain_axesFLT </td>
+          <td class="memname"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a> GiveDistanceFLT </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -214,43 +205,38 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Float implementation of DEMM. </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all float variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00417">417</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="aea9ece4865183def6db92c5f18c6312b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea9ece4865183def6db92c5f18c6312b">&#9670;&nbsp;</a></span>ct_gain_axesFLT128()</h2>
+<a id="a6f78f72d8c2480810741cfe4256d8204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f78f72d8c2480810741cfe4256d8204">&#9670;&nbsp;</a></span>GiveDistanceFLT128()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_f_l_t128">AxesFLT128</a> ct_gain_axesFLT128 </td>
+          <td class="memname"><a class="el" href="struct_color128.html">Color128</a> GiveDistanceFLT128 </td>
           <td>(</td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color128.html">Color128</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -260,43 +246,38 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>__float128 implementation of DEMM </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all __float128 variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color128.html">Color128</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color128.html">Color128</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00593">593</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a8a2fd7c32c2ff76bbf8b9b9cd661928d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a2fd7c32c2ff76bbf8b9b9cd661928d">&#9670;&nbsp;</a></span>ct_gain_axesLDBL()</h2>
+<a id="a631ba1071f27ae2f112a553f1b03bc21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631ba1071f27ae2f112a553f1b03bc21">&#9670;&nbsp;</a></span>GiveDistanceLDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_l_d_b_l">AxesLDBL</a> ct_gain_axesLDBL </td>
+          <td class="memname"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> GiveDistanceLDBL </td>
           <td>(</td>
-          <td class="paramtype">long double&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long double&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long double&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -305,6 +286,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Long double implementation of DEMM. </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all long double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00535">535</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
 
 </div>
 </div>
@@ -334,106 +328,302 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="mp_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main() for mp.exe ">main()</a> for mp.exe </p>
+<p>Primary routine for the executable. Acts as information collection point and function dispatcher.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Command line argument count. </td></tr>
+    <tr><td class="paramname">argv</td><td>Command line argument list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns EXIT_SUCCESS or EXIT_FAILURE depending. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00036">36</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a19f448efc51ed8ce1d43fbfebd1db7b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f448efc51ed8ce1d43fbfebd1db7b6">&#9670;&nbsp;</a></span>msetDBL()</h2>
+<a id="a18a4cb4dc46fca47a93474cf2a242e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a4cb4dc46fca47a93474cf2a242e95">&#9670;&nbsp;</a></span>MSetCPMDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetDBL </td>
+          <td class="memname"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a> MSetCPMDBL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Double implementation of MSETCPM. </p>
+<p>This is the Continuous Potential Method. It is coded using all double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00684">684</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="a795b661e93a34f5a13ed289c086417ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795b661e93a34f5a13ed289c086417ce">&#9670;&nbsp;</a></span>MSetCPMFLT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a> MSetCPMFLT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Float implementation of MSETCPM. </p>
+<p>This is the Continuous Potential Method. It is coded using all float variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00649">649</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="af31802513cd0719da4aaa5602d6169d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31802513cd0719da4aaa5602d6169d7">&#9670;&nbsp;</a></span>MSetCPMFLT128()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color128.html">Color128</a> MSetCPMFLT128 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color128.html">Color128</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>__float128 implementation of MSETCPM </p>
+<p>This is the Continuous Potential Method. It is coded using all __float128 variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color128.html">Color128</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color128.html">Color128</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00748">748</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="a87eb51be532c563346aa0f98b41f6ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87eb51be532c563346aa0f98b41f6ef9">&#9670;&nbsp;</a></span>MSetCPMLDBL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> MSetCPMLDBL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Long double implementation of MSETCPM. </p>
+<p>This is the Continuous Potential Method. It is coded using all long double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00716">716</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="a034e460e2b1033d1cfef694553053db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034e460e2b1033d1cfef694553053db9">&#9670;&nbsp;</a></span>MSetDBL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetDBL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mandelbrot Set using double. </p>
+<p>Function to compute the Mandelbrot Set using double variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00198">198</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="aa841253987f8fbc49d38a49a3c6918dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa841253987f8fbc49d38a49a3c6918dc">&#9670;&nbsp;</a></span>msetFLT()</h2>
+<a id="a3f9e95e9f968655b1131d3c108aed87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9e95e9f968655b1131d3c108aed87b">&#9670;&nbsp;</a></span>MSetFLT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetFLT </td>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetFLT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mandelbrot Set using float. </p>
+<p>Function to compute the Mandelbrot Set using float variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00124">124</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a39b42ddcada14221f1c14ddc23335830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b42ddcada14221f1c14ddc23335830">&#9670;&nbsp;</a></span>msetFLT128()</h2>
+<a id="a441edd39cff30f76fc120d57d08fa0c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441edd39cff30f76fc120d57d08fa0c9">&#9670;&nbsp;</a></span>MSetFLT128()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetFLT128 </td>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetFLT128 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mandelbrot Set using __float128. </p>
+<p>Function to compute the Mandelbrot Set using __float128 variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00346">346</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a0f055ba9de4e60ff7af3a5e80f191908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f055ba9de4e60ff7af3a5e80f191908">&#9670;&nbsp;</a></span>msetLDBL()</h2>
+<a id="a194bda2f36ff02a5bc60f266285078d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194bda2f36ff02a5bc60f266285078d1">&#9670;&nbsp;</a></span>MSetLDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetLDBL </td>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetLDBL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a7de65d169fd5f5b40b1a5a1b70c33fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7de65d169fd5f5b40b1a5a1b70c33fd7">&#9670;&nbsp;</a></span>Date</h2>
+<p>Mandelbrot Set using long double. </p>
+<p>Function to compute the Mandelbrot Set using long double variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* Date = &quot;Sun Jul 23 20:30:05 2017&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abc057f42fdaf5e63835a8272aefe278e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc057f42fdaf5e63835a8272aefe278e">&#9670;&nbsp;</a></span>Version</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* Version = &quot;0.019&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00272">272</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
 
 </div>
 </div>

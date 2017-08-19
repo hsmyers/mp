@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['which',['which',['../c_j_s_o_n_8h.html#aa2a4dae2a14de4093826005f9bdfd3bb',1,'cJSON.h']]],
-  ['width',['width',['../getopt_8h.html#ae8f341732b04b09c84f67f0439efb79d',1,'Parameters']]]
+  ['zx',['ZX',['../getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4ead35f0f7ef55a2437c16a373c4a9cbaec',1,'getopt.h']]]
 ];

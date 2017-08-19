@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['project_20mp',['Project Mp',['../md_readme.html',1,'']]],
-  ['palette_2ec',['palette.c',['../palette_8c.html',1,'']]],
-  ['palette_2eh',['palette.h',['../palette_8h.html',1,'']]],
-  ['palname',['palname',['../getopt_8h.html#af435d3291ff1a66552d9f3383c6a517c',1,'Parameters']]],
-  ['parameters',['Parameters',['../getopt_8h.html#struct_parameters',1,'']]],
-  ['parse_5fbuffer',['parse_buffer',['../c_j_s_o_n_8c.html#structparse__buffer',1,'']]],
-  ['parse_5fini_5ffile',['parse_ini_file',['../getopt_8c.html#a9eaf01167078a337a57f4f997bcdbd98',1,'parse_ini_file(char *ini_name, Parameters g):&#160;getopt.c'],['../getopt_8h.html#a55011e31e0bfd7dbed9e76bdafae6d12',1,'parse_ini_file(char *ini_name, Parameters p):&#160;getopt.c']]],
-  ['position',['position',['../c_j_s_o_n_8c.html#a24de70a4d517ab351d80c18582cadb66',1,'error']]],
-  ['prebuffer',['prebuffer',['../c_j_s_o_n_8h.html#a039dc262c2ae63f95cfe193245f8ee7e',1,'cJSON.h']]],
-  ['prev',['prev',['../c_j_s_o_n_8h.html#a488a393f610347821fce8e985e79fc2f',1,'cJSON']]],
-  ['printbuffer',['printbuffer',['../c_j_s_o_n_8c.html#structprintbuffer',1,'']]]
+  ['r',['r',['../palette_8h.html#a3da778daa4ccbc628c478b21d6093df5',1,'Rgb']]],
+  ['radius',['radius',['../getopt_8h.html#a15d6bf9a86cdcfd399105f6f07911808',1,'Parameters']]],
+  ['readcolors',['readColors',['../palette_8c.html#af963a7e10e0831386b18783d4e572602',1,'readColors(char *filename):&#160;palette.c'],['../palette_8h.html#af963a7e10e0831386b18783d4e572602',1,'readColors(char *filename):&#160;palette.c']]],
+  ['rgb',['Rgb',['../palette_8h.html#struct_rgb',1,'']]],
+  ['rgbeq',['RgbEQ',['../cnames_8c.html#aea439cc159446e6f63072a4459ff2bd6',1,'cnames.c']]],
+  ['rgbname',['RgbName',['../cnames_8c.html#ab13859f311d3fa7ead9a6963bcc8e07a',1,'cnames.c']]],
+  ['rgbne',['RgbNE',['../cnames_8c.html#ad7856b943e4cf4b93a8df9d2b46f2181',1,'cnames.c']]]
 ];

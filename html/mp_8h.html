@@ -59,7 +59,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -67,7 +67,12 @@ $(function() {
 <div class="title">mp.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sys/time.h&gt;</code><br />
+
+<p>Includes and declarations for <a class="el" href="mp_8c.html" title="This is the primary source file for mp.exe. ">mp.c</a>.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;omp.h&gt;</code><br />
@@ -75,337 +80,123 @@ $(function() {
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;complex.h&gt;</code><br />
 <code>#include &lt;gd.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="palette_8h_source.html">palette.h</a>&quot;</code><br />
+<code>#include &quot;elapsed.h&quot;</code><br />
+<code>#include &quot;colors.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="getopt_8h_source.html">getopt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 </div>
 <p><a href="mp_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:struct_axes_f_l_t128"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#struct_axes_f_l_t128">AxesFLT128</a></td></tr>
-<tr class="separator:struct_axes_f_l_t128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:struct_axes_l_d_b_l"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#struct_axes_l_d_b_l">AxesLDBL</a></td></tr>
-<tr class="separator:struct_axes_l_d_b_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:struct_axes_d_b_l"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#struct_axes_d_b_l">AxesDBL</a></td></tr>
-<tr class="separator:struct_axes_d_b_l"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:struct_axes_f_l_t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#struct_axes_f_l_t">AxesFLT</a></td></tr>
-<tr class="separator:struct_axes_f_l_t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memItemLeft" align="right" valign="top"><a id="a5774a453e5fe094a9d4ece0cfd20ab5b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__USE_MINGW_ANSI_STDIO</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a5774a453e5fe094a9d4ece0cfd20ab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab4ee9a88394fb980bee327e28945fe50"><td class="memItemLeft" align="right" valign="top">typedef struct timespec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#ab4ee9a88394fb980bee327e28945fe50">time_spec</a></td></tr>
+<tr class="memitem:ab4ee9a88394fb980bee327e28945fe50"><td class="memItemLeft" align="right" valign="top"><a id="ab4ee9a88394fb980bee327e28945fe50"></a>
+typedef struct timespec&#160;</td><td class="memItemRight" valign="bottom"><b>time_spec</b></td></tr>
 <tr class="separator:ab4ee9a88394fb980bee327e28945fe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afd8eb7be8de6cd9479e2b5c737a7b114"><td class="memItemLeft" align="right" valign="top">__float128&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#afd8eb7be8de6cd9479e2b5c737a7b114">fabsq</a> (__float128 x)</td></tr>
-<tr class="separator:afd8eb7be8de6cd9479e2b5c737a7b114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c5e8f5759623d9422c61eea8cb6bc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_d_b_l">AxesDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#ac7c5e8f5759623d9422c61eea8cb6bc6">ct_gain_axesDBL</a> (double real, double imag, double diameter, int height, int width)</td></tr>
-<tr class="separator:ac7c5e8f5759623d9422c61eea8cb6bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8b01c80ffc5c987e102a2a6af5be64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_f_l_t">AxesFLT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#aef8b01c80ffc5c987e102a2a6af5be64">ct_gain_axesFLT</a> (float real, float imag, float diameter, int height, int width)</td></tr>
-<tr class="separator:aef8b01c80ffc5c987e102a2a6af5be64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea9ece4865183def6db92c5f18c6312b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_f_l_t128">AxesFLT128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#aea9ece4865183def6db92c5f18c6312b">ct_gain_axesFLT128</a> (__float128 real, __float128 imag, __float128 diameter, int height, int width)</td></tr>
-<tr class="separator:aea9ece4865183def6db92c5f18c6312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2fd7c32c2ff76bbf8b9b9cd661928d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mp_8h.html#struct_axes_l_d_b_l">AxesLDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a8a2fd7c32c2ff76bbf8b9b9cd661928d">ct_gain_axesLDBL</a> (long double real, long double imag, long double diameter, int height, int width)</td></tr>
-<tr class="separator:a8a2fd7c32c2ff76bbf8b9b9cd661928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f448efc51ed8ce1d43fbfebd1db7b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a19f448efc51ed8ce1d43fbfebd1db7b6">msetDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:a19f448efc51ed8ce1d43fbfebd1db7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa841253987f8fbc49d38a49a3c6918dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#aa841253987f8fbc49d38a49a3c6918dc">msetFLT</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:aa841253987f8fbc49d38a49a3c6918dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b42ddcada14221f1c14ddc23335830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a39b42ddcada14221f1c14ddc23335830">msetFLT128</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:a39b42ddcada14221f1c14ddc23335830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f055ba9de4e60ff7af3a5e80f191908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a0f055ba9de4e60ff7af3a5e80f191908">msetLDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
-<tr class="separator:a0f055ba9de4e60ff7af3a5e80f191908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795b661e93a34f5a13ed289c086417ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a795b661e93a34f5a13ed289c086417ce">MSetCPMFLT</a> (<a class="el" href="struct_color_f_l_t.html">ColorFLT</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:a795b661e93a34f5a13ed289c086417ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Float implementation of MSETCPM.  <a href="#a795b661e93a34f5a13ed289c086417ce">More...</a><br /></td></tr>
+<tr class="separator:a795b661e93a34f5a13ed289c086417ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a4cb4dc46fca47a93474cf2a242e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a18a4cb4dc46fca47a93474cf2a242e95">MSetCPMDBL</a> (<a class="el" href="struct_color_d_b_l.html">ColorDBL</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:a18a4cb4dc46fca47a93474cf2a242e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double implementation of MSETCPM.  <a href="#a18a4cb4dc46fca47a93474cf2a242e95">More...</a><br /></td></tr>
+<tr class="separator:a18a4cb4dc46fca47a93474cf2a242e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87eb51be532c563346aa0f98b41f6ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a87eb51be532c563346aa0f98b41f6ef9">MSetCPMLDBL</a> (<a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:a87eb51be532c563346aa0f98b41f6ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Long double implementation of MSETCPM.  <a href="#a87eb51be532c563346aa0f98b41f6ef9">More...</a><br /></td></tr>
+<tr class="separator:a87eb51be532c563346aa0f98b41f6ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31802513cd0719da4aaa5602d6169d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color128.html">Color128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#af31802513cd0719da4aaa5602d6169d7">MSetCPMFLT128</a> (<a class="el" href="struct_color128.html">Color128</a> cp, int maxiter)</td></tr>
+<tr class="memdesc:af31802513cd0719da4aaa5602d6169d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">__float128 implementation of MSETCPM  <a href="#af31802513cd0719da4aaa5602d6169d7">More...</a><br /></td></tr>
+<tr class="separator:af31802513cd0719da4aaa5602d6169d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cdd78672ee1a523153bc0942d991a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a18cdd78672ee1a523153bc0942d991a3">GiveDistanceFLT</a> (<a class="el" href="struct_color_f_l_t.html">ColorFLT</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a18cdd78672ee1a523153bc0942d991a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Float implementation of DEMM.  <a href="#a18cdd78672ee1a523153bc0942d991a3">More...</a><br /></td></tr>
+<tr class="separator:a18cdd78672ee1a523153bc0942d991a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4004850ccef21f42e497c0a3de7cc07d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a4004850ccef21f42e497c0a3de7cc07d">GiveDistanceDBL</a> (<a class="el" href="struct_color_d_b_l.html">ColorDBL</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a4004850ccef21f42e497c0a3de7cc07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double implementation of DEMM.  <a href="#a4004850ccef21f42e497c0a3de7cc07d">More...</a><br /></td></tr>
+<tr class="separator:a4004850ccef21f42e497c0a3de7cc07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631ba1071f27ae2f112a553f1b03bc21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a631ba1071f27ae2f112a553f1b03bc21">GiveDistanceLDBL</a> (<a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a631ba1071f27ae2f112a553f1b03bc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Long double implementation of DEMM.  <a href="#a631ba1071f27ae2f112a553f1b03bc21">More...</a><br /></td></tr>
+<tr class="separator:a631ba1071f27ae2f112a553f1b03bc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f78f72d8c2480810741cfe4256d8204"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color128.html">Color128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a6f78f72d8c2480810741cfe4256d8204">GiveDistanceFLT128</a> (<a class="el" href="struct_color128.html">Color128</a> cp, int iMax)</td></tr>
+<tr class="memdesc:a6f78f72d8c2480810741cfe4256d8204"><td class="mdescLeft">&#160;</td><td class="mdescRight">__float128 implementation of DEMM  <a href="#a6f78f72d8c2480810741cfe4256d8204">More...</a><br /></td></tr>
+<tr class="separator:a6f78f72d8c2480810741cfe4256d8204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992daccd3fbf8aa68779c2316ed4a268"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a992daccd3fbf8aa68779c2316ed4a268">MSetDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="memdesc:a992daccd3fbf8aa68779c2316ed4a268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using double.  <a href="#a992daccd3fbf8aa68779c2316ed4a268">More...</a><br /></td></tr>
+<tr class="separator:a992daccd3fbf8aa68779c2316ed4a268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485118bbb1dbb184a0b5395917ceba87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a485118bbb1dbb184a0b5395917ceba87">MSetFLT</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="memdesc:a485118bbb1dbb184a0b5395917ceba87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using float.  <a href="#a485118bbb1dbb184a0b5395917ceba87">More...</a><br /></td></tr>
+<tr class="separator:a485118bbb1dbb184a0b5395917ceba87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130025cc49c561f4019cbcdfce700bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a130025cc49c561f4019cbcdfce700bb3">MSetFLT128</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="memdesc:a130025cc49c561f4019cbcdfce700bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using __float128.  <a href="#a130025cc49c561f4019cbcdfce700bb3">More...</a><br /></td></tr>
+<tr class="separator:a130025cc49c561f4019cbcdfce700bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98ea1b5899cf3842c7c208269388f83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#aa98ea1b5899cf3842c7c208269388f83">MSetLDBL</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> g)</td></tr>
+<tr class="memdesc:aa98ea1b5899cf3842c7c208269388f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mandelbrot Set using long double.  <a href="#aa98ea1b5899cf3842c7c208269388f83">More...</a><br /></td></tr>
+<tr class="separator:aa98ea1b5899cf3842c7c208269388f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad272d0c60d35409d4207da06bcf17b1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#ad272d0c60d35409d4207da06bcf17b1a">colors</a></td></tr>
+<tr class="memitem:ad272d0c60d35409d4207da06bcf17b1a"><td class="memItemLeft" align="right" valign="top"><a id="ad272d0c60d35409d4207da06bcf17b1a"></a>
+<a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><b>colors</b></td></tr>
 <tr class="separator:ad272d0c60d35409d4207da06bcf17b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e84b6d886b70b0cf21c56e5e26f0ed9"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a0e84b6d886b70b0cf21c56e5e26f0ed9">im</a></td></tr>
+<tr class="memitem:a0e84b6d886b70b0cf21c56e5e26f0ed9"><td class="memItemLeft" align="right" valign="top"><a id="a0e84b6d886b70b0cf21c56e5e26f0ed9"></a>
+gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><b>im</b></td></tr>
 <tr class="separator:a0e84b6d886b70b0cf21c56e5e26f0ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1607f74a316c99ef43fee303bee51d97"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a1607f74a316c99ef43fee303bee51d97">gauss_kernel</a> [3][3]</td></tr>
+<tr class="memitem:a1607f74a316c99ef43fee303bee51d97"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>gauss_kernel</b> [3][3]</td></tr>
 <tr class="separator:a1607f74a316c99ef43fee303bee51d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94d28635593cdde6266cc10ec6a5d41"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#af94d28635593cdde6266cc10ec6a5d41">lpf_filter_6</a> [3][3]</td></tr>
+<tr class="memitem:af94d28635593cdde6266cc10ec6a5d41"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>lpf_filter_6</b> [3][3]</td></tr>
 <tr class="separator:af94d28635593cdde6266cc10ec6a5d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0758c2e857b02b52d38bfa60d552e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a2e0758c2e857b02b52d38bfa60d552e6">lpf_filter_9</a> [3][3]</td></tr>
+<tr class="memitem:a2e0758c2e857b02b52d38bfa60d552e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>lpf_filter_9</b> [3][3]</td></tr>
 <tr class="separator:a2e0758c2e857b02b52d38bfa60d552e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7817d58fc3365e590354a398feff5414"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a7817d58fc3365e590354a398feff5414">lpf_filter_10</a> [3][3]</td></tr>
+<tr class="memitem:a7817d58fc3365e590354a398feff5414"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>lpf_filter_10</b> [3][3]</td></tr>
 <tr class="separator:a7817d58fc3365e590354a398feff5414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a965058f8a17b5ba577f6d8b325407fd2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a965058f8a17b5ba577f6d8b325407fd2">lpf_filter_16</a> [3][3]</td></tr>
+<tr class="memitem:a965058f8a17b5ba577f6d8b325407fd2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>lpf_filter_16</b> [3][3]</td></tr>
 <tr class="separator:a965058f8a17b5ba577f6d8b325407fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0febf49d72dfca19b6e586fea500cd6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#af0febf49d72dfca19b6e586fea500cd6">lpf_filter_32</a> [3][3]</td></tr>
+<tr class="memitem:af0febf49d72dfca19b6e586fea500cd6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>lpf_filter_32</b> [3][3]</td></tr>
 <tr class="separator:af0febf49d72dfca19b6e586fea500cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81080c769ee7d1466b1958b8e44e547f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a81080c769ee7d1466b1958b8e44e547f">hpf_filter_1</a> [3][3]</td></tr>
+<tr class="memitem:a81080c769ee7d1466b1958b8e44e547f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>hpf_filter_1</b> [3][3]</td></tr>
 <tr class="separator:a81080c769ee7d1466b1958b8e44e547f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa6032479a185b51637364bee3446f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a7fa6032479a185b51637364bee3446f7">intensified_sharpen_kernel</a> [3][3]</td></tr>
+<tr class="memitem:a7fa6032479a185b51637364bee3446f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>intensified_sharpen_kernel</b> [3][3]</td></tr>
 <tr class="separator:a7fa6032479a185b51637364bee3446f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f3aab7a9f8a0d95237d2d742fb9095"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a31f3aab7a9f8a0d95237d2d742fb9095">hpf_filter_2</a> [3][3]</td></tr>
+<tr class="memitem:a31f3aab7a9f8a0d95237d2d742fb9095"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>hpf_filter_2</b> [3][3]</td></tr>
 <tr class="separator:a31f3aab7a9f8a0d95237d2d742fb9095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5b90ef2bc0edb336e95c5783c6cae1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mp_8h.html#a5f5b90ef2bc0edb336e95c5783c6cae1">hpf_filter_3</a> [3][3]</td></tr>
+<tr class="memitem:a5f5b90ef2bc0edb336e95c5783c6cae1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><b>hpf_filter_3</b> [3][3]</td></tr>
 <tr class="separator:a5f5b90ef2bc0edb336e95c5783c6cae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="struct_axes_f_l_t128" id="struct_axes_f_l_t128"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#struct_axes_f_l_t128">&#9670;&nbsp;</a></span>AxesFLT128</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Includes and declarations for <a class="el" href="mp_8c.html" title="This is the primary source file for mp.exe. ">mp.c</a>. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Mon Aug 14 11:22:27 2017</dd></dl>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>Support file for <a class="el" href="mp_8c.html" title="This is the primary source file for mp.exe. ">mp.c</a>. This removes the 'clutter' from the primary file for mp.exe.</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000006">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a4004850ccef21f42e497c0a3de7cc07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4004850ccef21f42e497c0a3de7cc07d">&#9670;&nbsp;</a></span>GiveDistanceDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct AxesFLT128</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="acc15ccde617cb0f18df0b1e016a937a5"></a>__float128</td>
-<td class="fieldname">
-ctxfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a997c5dfe1f0ef1f7112aa4a866913599"></a>__float128</td>
-<td class="fieldname">
-ctyfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a24751b8ce05e8c5bc2c64610dd7dd642"></a>__float128</td>
-<td class="fieldname">
-xmax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="af1e253298b60a49e5f7a1dd052275468"></a>__float128</td>
-<td class="fieldname">
-xmin</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a9b177fb1f936271e4ec1045778e9e2ea"></a>__float128</td>
-<td class="fieldname">
-ymax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a9c676c0a43582d9ea00d3018a0a4b151"></a>__float128</td>
-<td class="fieldname">
-ymin</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="struct_axes_l_d_b_l" id="struct_axes_l_d_b_l"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#struct_axes_l_d_b_l">&#9670;&nbsp;</a></span>AxesLDBL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct AxesLDBL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="ac115fcf200bdfa1962909809c5c8977f"></a>long double</td>
-<td class="fieldname">
-ctxfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a1ae48fd4b64be2a22c19c50d572cefea"></a>long double</td>
-<td class="fieldname">
-ctyfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ad46da7b8b982c14b58f175edc4c1183b"></a>long double</td>
-<td class="fieldname">
-xmax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="afc9c7ac423766c37e2a1cb9cb0eb2fe3"></a>long double</td>
-<td class="fieldname">
-xmin</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a3b8e7a88acc56b5173a005ff29b6834f"></a>long double</td>
-<td class="fieldname">
-ymax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a423f22c476736f8a1627063acbfc0426"></a>long double</td>
-<td class="fieldname">
-ymin</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="struct_axes_d_b_l" id="struct_axes_d_b_l"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#struct_axes_d_b_l">&#9670;&nbsp;</a></span>AxesDBL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct AxesDBL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="aca6c1fed110e22d0fe0a6cfcd3f4d93e"></a>double</td>
-<td class="fieldname">
-ctxfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a11513e052101867dae5751ae717f8365"></a>double</td>
-<td class="fieldname">
-ctyfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a44a84c7223681783283927b8877afede"></a>double</td>
-<td class="fieldname">
-xmax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ae8d972bf03fcc9b9b103c7ab039a7e15"></a>double</td>
-<td class="fieldname">
-xmin</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="afd77303b336f75e23687ed30d01124a9"></a>double</td>
-<td class="fieldname">
-ymax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="aad750ce794560a6cb58da22a29969a2e"></a>double</td>
-<td class="fieldname">
-ymin</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="struct_axes_f_l_t" id="struct_axes_f_l_t"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#struct_axes_f_l_t">&#9670;&nbsp;</a></span>AxesFLT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct AxesFLT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a id="a520e859aa39688e2997035ba5f24f515"></a>float</td>
-<td class="fieldname">
-ctxfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a8242fd328e74bfe8816229d8a3f596f2"></a>float</td>
-<td class="fieldname">
-ctyfactor</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a19c4c1aa2322862315f36f5f3a285592"></a>float</td>
-<td class="fieldname">
-xmax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="ade85c4b4a4a8200eb4424c83bd7ace32"></a>float</td>
-<td class="fieldname">
-xmin</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="a2e8c47bb0be78acec1f281c8dcac097e"></a>float</td>
-<td class="fieldname">
-ymax</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a id="afb3a6ab5a64f5e82f2f04c500c068a9c"></a>float</td>
-<td class="fieldname">
-ymin</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ab4ee9a88394fb980bee327e28945fe50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4ee9a88394fb980bee327e28945fe50">&#9670;&nbsp;</a></span>time_spec</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct timespec <a class="el" href="mp_8h.html#ab4ee9a88394fb980bee327e28945fe50">time_spec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ac7c5e8f5759623d9422c61eea8cb6bc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7c5e8f5759623d9422c61eea8cb6bc6">&#9670;&nbsp;</a></span>ct_gain_axesDBL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_d_b_l">AxesDBL</a> ct_gain_axesDBL </td>
+          <td class="memname"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a> GiveDistanceDBL </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -415,43 +206,38 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 
+<p>Double implementation of DEMM. </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00476">476</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="aef8b01c80ffc5c987e102a2a6af5be64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef8b01c80ffc5c987e102a2a6af5be64">&#9670;&nbsp;</a></span>ct_gain_axesFLT()</h2>
+<a id="a18cdd78672ee1a523153bc0942d991a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18cdd78672ee1a523153bc0942d991a3">&#9670;&nbsp;</a></span>GiveDistanceFLT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_f_l_t">AxesFLT</a> ct_gain_axesFLT </td>
+          <td class="memname"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a> GiveDistanceFLT </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -461,43 +247,38 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 
+<p>Float implementation of DEMM. </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all float variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00417">417</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="aea9ece4865183def6db92c5f18c6312b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea9ece4865183def6db92c5f18c6312b">&#9670;&nbsp;</a></span>ct_gain_axesFLT128()</h2>
+<a id="a6f78f72d8c2480810741cfe4256d8204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f78f72d8c2480810741cfe4256d8204">&#9670;&nbsp;</a></span>GiveDistanceFLT128()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_f_l_t128">AxesFLT128</a> ct_gain_axesFLT128 </td>
+          <td class="memname"><a class="el" href="struct_color128.html">Color128</a> GiveDistanceFLT128 </td>
           <td>(</td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color128.html">Color128</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -507,43 +288,38 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 
+<p>__float128 implementation of DEMM </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all __float128 variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color128.html">Color128</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color128.html">Color128</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00593">593</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a8a2fd7c32c2ff76bbf8b9b9cd661928d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a2fd7c32c2ff76bbf8b9b9cd661928d">&#9670;&nbsp;</a></span>ct_gain_axesLDBL()</h2>
+<a id="a631ba1071f27ae2f112a553f1b03bc21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631ba1071f27ae2f112a553f1b03bc21">&#9670;&nbsp;</a></span>GiveDistanceLDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mp_8h.html#struct_axes_l_d_b_l">AxesLDBL</a> ct_gain_axesLDBL </td>
+          <td class="memname"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> GiveDistanceLDBL </td>
           <td>(</td>
-          <td class="paramtype">long double&#160;</td>
-          <td class="paramname"><em>real</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long double&#160;</td>
-          <td class="paramname"><em>imag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long double&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>&#160;</td>
+          <td class="paramname"><em>iMax</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -553,113 +329,306 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 
+<p>Long double implementation of DEMM. </p>
+<p>This is the Distance Estimator Method for the Mandelbrot set. It is coded using all long double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00535">535</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="afd8eb7be8de6cd9479e2b5c737a7b114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd8eb7be8de6cd9479e2b5c737a7b114">&#9670;&nbsp;</a></span>fabsq()</h2>
+<a id="a18a4cb4dc46fca47a93474cf2a242e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a4cb4dc46fca47a93474cf2a242e95">&#9670;&nbsp;</a></span>MSetCPMDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__float128 fabsq </td>
+          <td class="memname"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a> MSetCPMDBL </td>
           <td>(</td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_color_d_b_l.html">ColorDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Double implementation of MSETCPM. </p>
+<p>This is the Continuous Potential Method. It is coded using all double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_d_b_l.html">ColorDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00684">684</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a19f448efc51ed8ce1d43fbfebd1db7b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f448efc51ed8ce1d43fbfebd1db7b6">&#9670;&nbsp;</a></span>msetDBL()</h2>
+<a id="a795b661e93a34f5a13ed289c086417ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795b661e93a34f5a13ed289c086417ce">&#9670;&nbsp;</a></span>MSetCPMFLT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetDBL </td>
+          <td class="memname"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a> MSetCPMFLT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color_f_l_t.html">ColorFLT</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Float implementation of MSETCPM. </p>
+<p>This is the Continuous Potential Method. It is coded using all float variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_f_l_t.html">ColorFLT</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00649">649</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="af31802513cd0719da4aaa5602d6169d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31802513cd0719da4aaa5602d6169d7">&#9670;&nbsp;</a></span>MSetCPMFLT128()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color128.html">Color128</a> MSetCPMFLT128 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color128.html">Color128</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>__float128 implementation of MSETCPM </p>
+<p>This is the Continuous Potential Method. It is coded using all __float128 variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color128.html">Color128</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color128.html">Color128</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00748">748</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="a87eb51be532c563346aa0f98b41f6ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87eb51be532c563346aa0f98b41f6ef9">&#9670;&nbsp;</a></span>MSetCPMLDBL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> MSetCPMLDBL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a>&#160;</td>
+          <td class="paramname"><em>cp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Long double implementation of MSETCPM. </p>
+<p>This is the Continuous Potential Method. It is coded using all long double variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>An instance of the <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> structure holding needed information. </td></tr>
+    <tr><td class="paramname">iMax</td><td>The maximum iteration count.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same instance of <a class="el" href="struct_color_l_d_b_l.html">ColorLDBL</a> the function was called with. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00716">716</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
+</div>
+</div>
+<a id="a992daccd3fbf8aa68779c2316ed4a268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992daccd3fbf8aa68779c2316ed4a268">&#9670;&nbsp;</a></span>MSetDBL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetDBL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mandelbrot Set using double. </p>
+<p>Function to compute the Mandelbrot Set using double variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00198">198</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="aa841253987f8fbc49d38a49a3c6918dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa841253987f8fbc49d38a49a3c6918dc">&#9670;&nbsp;</a></span>msetFLT()</h2>
+<a id="a485118bbb1dbb184a0b5395917ceba87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485118bbb1dbb184a0b5395917ceba87">&#9670;&nbsp;</a></span>MSetFLT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetFLT </td>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetFLT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mandelbrot Set using float. </p>
+<p>Function to compute the Mandelbrot Set using float variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00124">124</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a39b42ddcada14221f1c14ddc23335830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b42ddcada14221f1c14ddc23335830">&#9670;&nbsp;</a></span>msetFLT128()</h2>
+<a id="a130025cc49c561f4019cbcdfce700bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130025cc49c561f4019cbcdfce700bb3">&#9670;&nbsp;</a></span>MSetFLT128()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetFLT128 </td>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetFLT128 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Mandelbrot Set using __float128. </p>
+<p>Function to compute the Mandelbrot Set using __float128 variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00346">346</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
+
 </div>
 </div>
-<a id="a0f055ba9de4e60ff7af3a5e80f191908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f055ba9de4e60ff7af3a5e80f191908">&#9670;&nbsp;</a></span>msetLDBL()</h2>
+<a id="aa98ea1b5899cf3842c7c208269388f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98ea1b5899cf3842c7c208269388f83">&#9670;&nbsp;</a></span>MSetLDBL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void msetLDBL </td>
+          <td class="memname"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> MSetLDBL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Mandelbrot Set using long double. </p>
+<p>Function to compute the Mandelbrot Set using long double variables. This derives an image g.width × g.height, centered at g.center from g.centerX and g.centerY. The complex width is g.diameter. The inner loop is available in 4 methods; ZX, meaning calculate without complex variables, COMPLEX, meaning calculate with complex variables, DEMM, meaning use the Distance Estimator Method for Mandelbrot set and MSETCPM, meaning use the Continuous Potential Method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">P</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure, a collection of configuration information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> structure g, as modified by the function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mp_8c_source.html#l00272">272</a> of file <a class="el" href="mp_8c_source.html">mp.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ad272d0c60d35409d4207da06bcf17b1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad272d0c60d35409d4207da06bcf17b1a">&#9670;&nbsp;</a></span>colors</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="palette_8h.html#struct_array">Array</a> colors</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1607f74a316c99ef43fee303bee51d97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1607f74a316c99ef43fee303bee51d97">&#9670;&nbsp;</a></span>gauss_kernel</h2>
 
@@ -672,6 +641,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {1.0, 2.0, 1.0},</div><div class="line">    {2.0, 4.0, 2.0},</div><div class="line">    {1.0, 2.0, 1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00051">51</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="a81080c769ee7d1466b1958b8e44e547f"></a>
@@ -686,6 +657,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {0.0, -1.0, 0.0},</div><div class="line">    {-1.0, 5.0, -1.0},</div><div class="line">    {0.0, -1.0, 0.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00087">87</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="a31f3aab7a9f8a0d95237d2d742fb9095"></a>
@@ -700,6 +673,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {-1.0, -1.0, -1.0},</div><div class="line">    {-1.0, 9.0, -1.0},</div><div class="line">    {-1.0, -1.0, -1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00099">99</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="a5f5b90ef2bc0edb336e95c5783c6cae1"></a>
@@ -714,19 +689,7 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {1.0, -2.0, 1.0},</div><div class="line">    {-2.0, 5.0, -2.0},</div><div class="line">    {1.0, -2.0, 1.0}</div><div class="line">}</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a0e84b6d886b70b0cf21c56e5e26f0ed9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e84b6d886b70b0cf21c56e5e26f0ed9">&#9670;&nbsp;</a></span>im</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">gdImagePtr im</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00105">105</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
 
 </div>
 </div>
@@ -742,6 +705,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {-1.0, -1.0, -1.0},</div><div class="line">    {-1.0, 8.0, -1.0},</div><div class="line">    {-1.0, -1.0, -1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00093">93</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="a7817d58fc3365e590354a398feff5414"></a>
@@ -756,6 +721,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {1.0, 1.0, 1.0},</div><div class="line">    {1.0, 2.0, 1.0},</div><div class="line">    {1.0, 1.0, 1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00069">69</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="a965058f8a17b5ba577f6d8b325407fd2"></a>
@@ -770,6 +737,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {1.0, 2.0, 1.0},</div><div class="line">    {2.0, 4.0, 2.0},</div><div class="line">    {1.0, 2.0, 1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00075">75</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="af0febf49d72dfca19b6e586fea500cd6"></a>
@@ -784,6 +753,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {1.0, 4.0, 1.0},</div><div class="line">    {4.0, 12.0, 4.0},</div><div class="line">    {1.0, 4.0, 1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00081">81</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="af94d28635593cdde6266cc10ec6a5d41"></a>
@@ -798,6 +769,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {0.0, 1.0, 0.0},</div><div class="line">    {1.0, 2.0, 1.0},</div><div class="line">    {0.0, 1.0, 0.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00057">57</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 <a id="a2e0758c2e857b02b52d38bfa60d552e6"></a>
@@ -812,6 +785,8 @@ ymin</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {1.0, 1.0, 1.0},</div><div class="line">    {1.0, 1.0, 1.0},</div><div class="line">    {1.0, 1.0, 1.0}</div><div class="line">}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mp_8h_source.html#l00063">63</a> of file <a class="el" href="mp_8h_source.html">mp.h</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rgb',['Rgb',['../struct_rgb.html',1,'']]]
+  ['rgb',['Rgb',['../palette_8h.html#struct_rgb',1,'']]]
 ];

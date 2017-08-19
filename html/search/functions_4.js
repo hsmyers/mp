@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['fabsq',['fabsq',['../mp_8h.html#afd8eb7be8de6cd9479e2b5c737a7b114',1,'fabsq(__float128 x):&#160;util.c'],['../util_8c.html#afd8eb7be8de6cd9479e2b5c737a7b114',1,'fabsq(__float128 x):&#160;util.c'],['../util_8h.html#afd8eb7be8de6cd9479e2b5c737a7b114',1,'fabsq(__float128 x):&#160;util.c']]],
-  ['format_5ftimeval',['format_timeval',['../elapsed_8c.html#a96ba6646c82e8ca22e216573314dca7c',1,'format_timeval(struct timeval *tv, char *buf, size_t sz):&#160;elapsed.c'],['../elapsed_8h.html#a96ba6646c82e8ca22e216573314dca7c',1,'format_timeval(struct timeval *tv, char *buf, size_t sz):&#160;elapsed.c']]],
-  ['fractioncount',['fractionCount',['../colors_8c.html#a950fbd59fe19131bff3732d052f81c69',1,'fractionCount(int n, int max):&#160;colors.c'],['../colors_8h.html#a950fbd59fe19131bff3732d052f81c69',1,'fractionCount(int n, int max):&#160;colors.c']]],
-  ['freearray',['freeArray',['../palette_8c.html#a5b01753b157ffa0f4143c2215a51a56a',1,'freeArray(Array *a):&#160;palette.c'],['../palette_8h.html#a5b01753b157ffa0f4143c2215a51a56a',1,'freeArray(Array *a):&#160;palette.c']]],
-  ['fromjson',['fromJSON',['../getopt_8c.html#a946521054a741a1e1f7bb9d08f102cf6',1,'fromJSON(char *jsonfile, Parameters p):&#160;getopt.c'],['../getopt_8h.html#a946521054a741a1e1f7bb9d08f102cf6',1,'fromJSON(char *jsonfile, Parameters p):&#160;getopt.c']]]
+  ['getcl',['getCl',['../util_8c.html#a1b25cdaf77c824997cc56eb3a4593e6e',1,'getCl(int argc, char *argv[]):&#160;util.c'],['../util_8h.html#a1b25cdaf77c824997cc56eb3a4593e6e',1,'getCl(int argc, char *argv[]):&#160;util.c']]],
+  ['getcolors',['getColors',['../palette_8c.html#a4a2bf9070373aa94ba3e735670375c41',1,'getColors(char *palname):&#160;palette.c'],['../palette_8h.html#a4a2bf9070373aa94ba3e735670375c41',1,'getColors(char *palname):&#160;palette.c']]],
+  ['givedistancedbl',['GiveDistanceDBL',['../mp_8c.html#a4004850ccef21f42e497c0a3de7cc07d',1,'GiveDistanceDBL(ColorDBL cp, int iMax):&#160;mp.c'],['../mp_8h.html#a4004850ccef21f42e497c0a3de7cc07d',1,'GiveDistanceDBL(ColorDBL cp, int iMax):&#160;mp.c']]],
+  ['givedistanceflt',['GiveDistanceFLT',['../mp_8c.html#a18cdd78672ee1a523153bc0942d991a3',1,'GiveDistanceFLT(ColorFLT cp, int iMax):&#160;mp.c'],['../mp_8h.html#a18cdd78672ee1a523153bc0942d991a3',1,'GiveDistanceFLT(ColorFLT cp, int iMax):&#160;mp.c']]],
+  ['givedistanceflt128',['GiveDistanceFLT128',['../mp_8c.html#a6f78f72d8c2480810741cfe4256d8204',1,'GiveDistanceFLT128(Color128 cp, int iMax):&#160;mp.c'],['../mp_8h.html#a6f78f72d8c2480810741cfe4256d8204',1,'GiveDistanceFLT128(Color128 cp, int iMax):&#160;mp.c']]],
+  ['givedistanceldbl',['GiveDistanceLDBL',['../mp_8c.html#a631ba1071f27ae2f112a553f1b03bc21',1,'GiveDistanceLDBL(ColorLDBL cp, int iMax):&#160;mp.c'],['../mp_8h.html#a631ba1071f27ae2f112a553f1b03bc21',1,'GiveDistanceLDBL(ColorLDBL cp, int iMax):&#160;mp.c']]]
 ];

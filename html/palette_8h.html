@@ -60,11 +60,15 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">palette.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A collection of functions in aid of palette instantiation, manipulation, and deletion.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;complex.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="getopt_8h_source.html">getopt.h</a>&quot;</code><br />
 </div>
@@ -77,25 +81,59 @@ Data Structures</h2></td></tr>
 <tr class="memitem:struct_array"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#struct_array">Array</a></td></tr>
 <tr class="separator:struct_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a2e19e469e8ce6fcd710ce96047ba476b"><td class="memItemLeft" align="right" valign="top"><a id="a2e19e469e8ce6fcd710ce96047ba476b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PPMREADBUFLEN</b>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a2e19e469e8ce6fcd710ce96047ba476b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a660d798137815840926180ed31ced455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a660d798137815840926180ed31ced455">buildColors</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="memdesc:a660d798137815840926180ed31ced455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a palette from list of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> information.  <a href="#a660d798137815840926180ed31ced455">More...</a><br /></td></tr>
+<tr class="separator:a660d798137815840926180ed31ced455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb17de2d7f1fd0dc94f46a2eabfed4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a9cb17de2d7f1fd0dc94f46a2eabfed4a">fromStart2Finish</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> start, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> finish, int N)</td></tr>
+<tr class="memdesc:a9cb17de2d7f1fd0dc94f46a2eabfed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a start <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value and a finish <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value, create a palette of N steps.  <a href="#a9cb17de2d7f1fd0dc94f46a2eabfed4a">More...</a><br /></td></tr>
+<tr class="separator:a9cb17de2d7f1fd0dc94f46a2eabfed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2bf9070373aa94ba3e735670375c41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a4a2bf9070373aa94ba3e735670375c41">getColors</a> (char *palname)</td></tr>
+<tr class="memdesc:a4a2bf9070373aa94ba3e735670375c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize palette from a palette file.  <a href="#a4a2bf9070373aa94ba3e735670375c41">More...</a><br /></td></tr>
+<tr class="separator:a4a2bf9070373aa94ba3e735670375c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af963a7e10e0831386b18783d4e572602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#af963a7e10e0831386b18783d4e572602">readColors</a> (char *filename)</td></tr>
+<tr class="memdesc:af963a7e10e0831386b18783d4e572602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a palette file.  <a href="#af963a7e10e0831386b18783d4e572602">More...</a><br /></td></tr>
+<tr class="separator:af963a7e10e0831386b18783d4e572602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b088dd21fcfa9cbc9e2b0b92c71558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#ae2b088dd21fcfa9cbc9e2b0b92c71558">setColors</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
+<tr class="memdesc:ae2b088dd21fcfa9cbc9e2b0b92c71558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize palette from command line information.  <a href="#ae2b088dd21fcfa9cbc9e2b0b92c71558">More...</a><br /></td></tr>
+<tr class="separator:ae2b088dd21fcfa9cbc9e2b0b92c71558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81442d65e676cadc4fd3d3a14ed659d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_rgb">Rgb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#aa81442d65e676cadc4fd3d3a14ed659d">parseRGB</a> (char *s, int *n)</td></tr>
+<tr class="memdesc:aa81442d65e676cadc4fd3d3a14ed659d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mini parser for -k option format.  <a href="#aa81442d65e676cadc4fd3d3a14ed659d">More...</a><br /></td></tr>
+<tr class="separator:aa81442d65e676cadc4fd3d3a14ed659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5945c40a9aa27f0face3200a49e78e07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a5945c40a9aa27f0face3200a49e78e07">appendColors</a> (<a class="el" href="palette_8h.html#struct_rgb">Rgb</a> a, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> b, int interval, <a class="el" href="palette_8h.html#struct_array">Array</a> *color)</td></tr>
+<tr class="memdesc:a5945c40a9aa27f0face3200a49e78e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a range of colors to a palette.  <a href="#a5945c40a9aa27f0face3200a49e78e07">More...</a><br /></td></tr>
+<tr class="separator:a5945c40a9aa27f0face3200a49e78e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b01753b157ffa0f4143c2215a51a56a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a5b01753b157ffa0f4143c2215a51a56a">freeArray</a> (<a class="el" href="palette_8h.html#struct_array">Array</a> *a)</td></tr>
+<tr class="memdesc:a5b01753b157ffa0f4143c2215a51a56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate array.  <a href="#a5b01753b157ffa0f4143c2215a51a56a">More...</a><br /></td></tr>
+<tr class="separator:a5b01753b157ffa0f4143c2215a51a56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76bc60de1645ee244d11a85ee2cfd3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a76bc60de1645ee244d11a85ee2cfd3c7">initArray</a> (<a class="el" href="palette_8h.html#struct_array">Array</a> *a, size_t initialSize)</td></tr>
 <tr class="memdesc:a76bc60de1645ee244d11a85ee2cfd3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Dynamic <a class="el" href="palette_8h.html#struct_array">Array</a>.  <a href="#a76bc60de1645ee244d11a85ee2cfd3c7">More...</a><br /></td></tr>
 <tr class="separator:a76bc60de1645ee244d11a85ee2cfd3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023ea2bb8f8a24f034b63decb038d959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a023ea2bb8f8a24f034b63decb038d959">insertArray</a> (<a class="el" href="palette_8h.html#struct_array">Array</a> *a, <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> element)</td></tr>
 <tr class="memdesc:a023ea2bb8f8a24f034b63decb038d959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add item to dynamic array.  <a href="#a023ea2bb8f8a24f034b63decb038d959">More...</a><br /></td></tr>
 <tr class="separator:a023ea2bb8f8a24f034b63decb038d959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b01753b157ffa0f4143c2215a51a56a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a5b01753b157ffa0f4143c2215a51a56a">freeArray</a> (<a class="el" href="palette_8h.html#struct_array">Array</a> *a)</td></tr>
-<tr class="memdesc:a5b01753b157ffa0f4143c2215a51a56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate array.  <a href="#a5b01753b157ffa0f4143c2215a51a56a">More...</a><br /></td></tr>
-<tr class="separator:a5b01753b157ffa0f4143c2215a51a56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a2bf9070373aa94ba3e735670375c41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a4a2bf9070373aa94ba3e735670375c41">getColors</a> (char *palname)</td></tr>
-<tr class="memdesc:a4a2bf9070373aa94ba3e735670375c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize palette from a palette file.  <a href="#a4a2bf9070373aa94ba3e735670375c41">More...</a><br /></td></tr>
-<tr class="separator:a4a2bf9070373aa94ba3e735670375c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b088dd21fcfa9cbc9e2b0b92c71558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#ae2b088dd21fcfa9cbc9e2b0b92c71558">setColors</a> (<a class="el" href="getopt_8h.html#struct_parameters">Parameters</a> p)</td></tr>
-<tr class="memdesc:ae2b088dd21fcfa9cbc9e2b0b92c71558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize palette from command line information.  <a href="#ae2b088dd21fcfa9cbc9e2b0b92c71558">More...</a><br /></td></tr>
-<tr class="separator:ae2b088dd21fcfa9cbc9e2b0b92c71558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf021d31ce48e794518f685093bad6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="palette_8h.html#a6cf021d31ce48e794518f685093bad6a">writeColors</a> (<a class="el" href="palette_8h.html#struct_array">Array</a> colors, char *filename)</td></tr>
+<tr class="memdesc:a6cf021d31ce48e794518f685093bad6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out an image of the palette.  <a href="#a6cf021d31ce48e794518f685093bad6a">More...</a><br /></td></tr>
+<tr class="separator:a6cf021d31ce48e794518f685093bad6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection of functions in aid of palette instantiation, manipulation, and deletion. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Sat Aug 12 07:32:49 2017</dd></dl>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>palettes (color arrays) are collections of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> values and the associated functions here are the ways the palettes are used.</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000008">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="palette_8h_source.html">palette.h</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="struct_rgb" id="struct_rgb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#struct_rgb">&#9670;&nbsp;</a></span>Rgb</h2>
 
@@ -107,25 +145,31 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
+<div class="textblock"><p>The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors. Stored as unsigned char (numbers in the range 0 to 255), the range that a single 8-bit byte can offer. <a href="https://en.wikipedia.org/wiki/RGB_color_model">See Wikipedia RGB article</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="palette_8h_source.html#l00028">28</a> of file <a class="el" href="palette_8h_source.html">palette.h</a>.</p>
+</div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a id="acab4ec8e0d55174258da75ee80f69bef"></a>unsigned char</td>
 <td class="fieldname">
 b</td>
 <td class="fielddoc">
+<p>BLUE color, range [0..255] </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a27a8958ecb91f5f98ee520129a396ce3"></a>unsigned char</td>
 <td class="fieldname">
 g</td>
 <td class="fielddoc">
+<p>GREEN color, range [0..255] </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a3da778daa4ccbc628c478b21d6093df5"></a>unsigned char</td>
 <td class="fieldname">
 r</td>
 <td class="fielddoc">
+<p>RED color, range [0..255] </p>
 </td></tr>
 </table>
 
@@ -142,31 +186,122 @@ r</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
+<div class="textblock"><p>Dynamic array typedef and structure. </p>
+
+<p class="definition">Definition at line <a class="el" href="palette_8h_source.html#l00037">37</a> of file <a class="el" href="palette_8h_source.html">palette.h</a>.</p>
+</div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a id="a1004bb52f35f927022e780a193612db1"></a><a class="el" href="palette_8h.html#struct_rgb">Rgb</a> *</td>
 <td class="fieldname">
 array</td>
 <td class="fielddoc">
+<p>Internal pointer to array content </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a13f67ab957f4fdd3443d7f62b2fd09ce"></a>size_t</td>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
+<p>sizeof item stored * allocated </p>
 </td></tr>
 <tr><td class="fieldtype">
 <a id="a6196b6388bc5b72dd2dea08e483a0c47"></a>size_t</td>
 <td class="fieldname">
 used</td>
 <td class="fielddoc">
+<p>Count of items in array </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5945c40a9aa27f0face3200a49e78e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5945c40a9aa27f0face3200a49e78e07">&#9670;&nbsp;</a></span>appendColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appendColors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="palette_8h.html#struct_rgb">Rgb</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="palette_8h.html#struct_rgb">Rgb</a>&#160;</td>
+          <td class="paramname"><em>finish</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="palette_8h.html#struct_array">Array</a> *&#160;</td>
+          <td class="paramname"><em>colors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a range of colors to a palette. </p>
+<p>This function creates a range of colors between a pair of values, by stepping through <a class="el" href="struct_h_s_v.html">HSV</a> space and then converting each result to <a class="el" href="palette_8h.html#struct_rgb">Rgb</a>. The colors are created with a simple linear interpolation for each value.</p>
+<dl class="section note"><dt>Note</dt><dd>The apparent off-by-one error where the index of values starts at 1 rather than at zero is intentional. It prevents doubling the end/start value that would otherwise occur.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>First color in the sequence of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> values. </td></tr>
+    <tr><td class="paramname">finish</td><td>Last color in the sequence of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> values. </td></tr>
+    <tr><td class="paramname">N</td><td>number of steps in the interval between start and finish. </td></tr>
+    <tr><td class="paramname">colors</td><td>existing dynamic array of colors to extend. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00345">345</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
+</div>
+</div>
+<a id="a660d798137815840926180ed31ced455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660d798137815840926180ed31ced455">&#9670;&nbsp;</a></span>buildColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="palette_8h.html#struct_array">Array</a> buildColors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="getopt_8h.html#struct_parameters">Parameters</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a palette from list of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> information. </p>
+<p>Handle multiple -k entries and construct a palette by parsing the entries. The palette consists of colors laid end to end with each color specified acting as the head and tail of a color segment. Start with first, interpolate for listed (or default) number of values. Next segment starts with previous closing color and proceeds in the same fashion to the next color.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td><a class="el" href="getopt_8h.html#struct_parameters" title="Variable gathered for image calculation. ">Parameters</a> file which contains stack of entries from the -k options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a dynamic palette array. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00275">275</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
+</div>
+</div>
 <a id="a5b01753b157ffa0f4143c2215a51a56a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b01753b157ffa0f4143c2215a51a56a">&#9670;&nbsp;</a></span>freeArray()</h2>
 
@@ -192,6 +327,56 @@ used</td>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00061">61</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
+</div>
+</div>
+<a id="a9cb17de2d7f1fd0dc94f46a2eabfed4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb17de2d7f1fd0dc94f46a2eabfed4a">&#9670;&nbsp;</a></span>fromStart2Finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="palette_8h.html#struct_array">Array</a> fromStart2Finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="palette_8h.html#struct_rgb">Rgb</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="palette_8h.html#struct_rgb">Rgb</a>&#160;</td>
+          <td class="paramname"><em>finish</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a start <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value and a finish <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> value, create a palette of N steps. </p>
+<p>Convert the given bracketing colors to <a class="el" href="struct_h_s_v.html">HSV</a> space and linearly interpolate between them.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>First or starting <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> color. </td></tr>
+    <tr><td class="paramname">finish</td><td>Second or finishing <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> color. </td></tr>
+    <tr><td class="paramname">N</td><td>Number of color values between start and finish ( inclusive ). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an array of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> values, i.e. a palette. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00129">129</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
 </div>
 </div>
 <a id="a4a2bf9070373aa94ba3e735670375c41"></a>
@@ -211,14 +396,16 @@ used</td>
 </div><div class="memdoc">
 
 <p>Initialize palette from a palette file. </p>
-<p>Given the name of a palette file of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> triples, read and load a palette.</p>
+<p>Given the name of a palette file of <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> triples read, create, and load a palette.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">palname</td><td>Name of palette file. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns an instance of array. A palette in this case. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an instance of dynamic array. Palette in this case. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00074">74</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
 
 </div>
 </div>
@@ -253,10 +440,12 @@ used</td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">A</td><td>pointer to an array. </td></tr>
-    <tr><td class="paramname">initialSize</td><td>How many instances of item for inital allocation </td></tr>
+    <tr><td class="paramname">initialSize</td><td>How many instances of item for initial allocation </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00034">34</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
 
 </div>
 </div>
@@ -296,6 +485,91 @@ used</td>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00047">47</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
+</div>
+</div>
+<a id="aa81442d65e676cadc4fd3d3a14ed659d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81442d65e676cadc4fd3d3a14ed659d">&#9670;&nbsp;</a></span>parseRGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="palette_8h.html#struct_rgb">Rgb</a> parseRGB </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mini parser for -k option format. </p>
+<p>-k or &ndash;kolor allows <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> references in tow forms with an optional step indicator allowed in either case. If the reference begins with a '{' it is assumed to be an actual <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> triplet and the the 3 values are scanned and parsed accordingly. If not a curly brace, then the assumption becomes that the entry is a named reference and a color name lookup is performed. Then the parser determines if a colon is present and if so, the numeric value is parsed and returned by setting the int pointer 'n' to the retrieved value. It defaults to 128. Finally the routine returns a palette.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>-k value. </td></tr>
+    <tr><td class="paramname">n</td><td>pointer to an integer which receives the interval or step value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an <a class="el" href="palette_8h.html#struct_rgb">Rgb</a> triplet and sets the pointer to the interval. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00313">313</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
+</div>
+</div>
+<a id="af963a7e10e0831386b18783d4e572602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af963a7e10e0831386b18783d4e572602">&#9670;&nbsp;</a></span>readColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="palette_8h.html#struct_array">Array</a> readColors </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read a palette file. </p>
+<p>Read a palette file and create a palette, using the first line.</p>
+<p>PPM File Format</p>
+<ol type="1">
+<li>A "magic number" for identifying the file type. A ppm image's magic number is the two characters "P6".</li>
+<li>Whitespace (blanks, TABs, CRs, LFs).</li>
+<li>A width, formatted as ASCII characters in decimal.</li>
+<li>Whitespace.</li>
+<li>A height, again in ASCII decimal.</li>
+<li>Whitespace.</li>
+<li>The maximum color value (Maxval), again in ASCII decimal. Must be less than 65536 and more than zero.</li>
+<li>A single whitespace character (usually a newline).</li>
+<li>A raster of Height rows, in order from top to bottom. Each row consists of Width pixels, in order from left to right. Each pixel is a triplet of red, green, and blue samples, in that order. Each sample is represented in pure binary by either 1 or 2 bytes. If the Maxval is less than 256, it is 1 byte. Otherwise, it is 2 bytes. The most significant byte is first.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Name of file to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a dynamic palette array. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00204">204</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
 </div>
 </div>
 <a id="ae2b088dd21fcfa9cbc9e2b0b92c71558"></a>
@@ -322,7 +596,49 @@ used</td>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns an instance of array. Palette in this case. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an instance of dynamic array. Palette in this case. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00107">107</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
+
+</div>
+</div>
+<a id="a6cf021d31ce48e794518f685093bad6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf021d31ce48e794518f685093bad6a">&#9670;&nbsp;</a></span>writeColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeColors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="palette_8h.html#struct_array">Array</a>&#160;</td>
+          <td class="paramname"><em>colors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write out an image of the palette. </p>
+<p>Given a filename create a .ppm image file, displaying the chosen palette.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colors</td><td>Palate to use. </td></tr>
+    <tr><td class="paramname">filename</td><td>Name of file to create and write to, </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="palette_8c_source.html#l00161">161</a> of file <a class="el" href="palette_8c_source.html">palette.c</a>.</p>
 
 </div>
 </div>

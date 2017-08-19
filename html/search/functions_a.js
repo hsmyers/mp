@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parse_5fini_5ffile',['parse_ini_file',['../getopt_8c.html#a9eaf01167078a337a57f4f997bcdbd98',1,'parse_ini_file(char *ini_name, Parameters g):&#160;getopt.c'],['../getopt_8h.html#a55011e31e0bfd7dbed9e76bdafae6d12',1,'parse_ini_file(char *ini_name, Parameters p):&#160;getopt.c']]]
+  ['writecolors',['writeColors',['../palette_8c.html#a6cf021d31ce48e794518f685093bad6a',1,'writeColors(Array colors, char *filename):&#160;palette.c'],['../palette_8h.html#a6cf021d31ce48e794518f685093bad6a',1,'writeColors(Array colors, char *filename):&#160;palette.c']]]
 ];

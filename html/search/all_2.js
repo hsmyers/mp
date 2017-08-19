@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['dict_5finvalid_5fkey',['DICT_INVALID_KEY',['../dictionary_8c.html#a220dbd9af990c8faebfd01bd62b2dde4',1,'dictionary.c']]],
-  ['dictionary',['dictionary',['../dictionary_8h.html#structdictionary',1,'']]],
-  ['dictionary_2ec',['dictionary.c',['../dictionary_8c.html',1,'']]],
-  ['dictionary_2eh',['dictionary.h',['../dictionary_8h.html',1,'']]],
-  ['dictionary_5fdel',['dictionary_del',['../dictionary_8c.html#a11b19a39bef9cf05b19adb01ced4fae5',1,'dictionary_del(dictionary *d):&#160;dictionary.c'],['../dictionary_8h.html#a9d792f2544cf674a371663e2f32128fa',1,'dictionary_del(dictionary *vd):&#160;dictionary.c']]],
-  ['dictionary_5fdump',['dictionary_dump',['../dictionary_8c.html#ae8d5fc632d7846a6f9f4c8a3ef79d0ce',1,'dictionary_dump(const dictionary *d, FILE *out):&#160;dictionary.c'],['../dictionary_8h.html#ae8d5fc632d7846a6f9f4c8a3ef79d0ce',1,'dictionary_dump(const dictionary *d, FILE *out):&#160;dictionary.c']]],
-  ['dictionary_5fget',['dictionary_get',['../dictionary_8c.html#a8691664a012a1c689bd46b6b4477ea68',1,'dictionary_get(const dictionary *d, const char *key, const char *def):&#160;dictionary.c'],['../dictionary_8h.html#a8691664a012a1c689bd46b6b4477ea68',1,'dictionary_get(const dictionary *d, const char *key, const char *def):&#160;dictionary.c']]],
-  ['dictionary_5fhash',['dictionary_hash',['../dictionary_8c.html#a7c1ef0a729e668d1e8d6a7e774feaf2e',1,'dictionary_hash(const char *key):&#160;dictionary.c'],['../dictionary_8h.html#a7c1ef0a729e668d1e8d6a7e774feaf2e',1,'dictionary_hash(const char *key):&#160;dictionary.c']]],
-  ['dictionary_5fnew',['dictionary_new',['../dictionary_8c.html#afd6e7e396a9b18f8e610b1236261f6dd',1,'dictionary_new(size_t size):&#160;dictionary.c'],['../dictionary_8h.html#afd6e7e396a9b18f8e610b1236261f6dd',1,'dictionary_new(size_t size):&#160;dictionary.c']]],
-  ['dictionary_5fset',['dictionary_set',['../dictionary_8c.html#aca582586180a1cd058017e337250848d',1,'dictionary_set(dictionary *d, const char *key, const char *val):&#160;dictionary.c'],['../dictionary_8h.html#aab65a95ad09062716b24a129d8529b76',1,'dictionary_set(dictionary *vd, const char *key, const char *val):&#160;dictionary.c']]],
-  ['dictionary_5funset',['dictionary_unset',['../dictionary_8c.html#a27f0752948d52ccd2568dae22f5db2bc',1,'dictionary_unset(dictionary *d, const char *key):&#160;dictionary.c'],['../dictionary_8h.html#a27f0752948d52ccd2568dae22f5db2bc',1,'dictionary_unset(dictionary *d, const char *key):&#160;dictionary.c']]],
-  ['dictminsz',['DICTMINSZ',['../dictionary_8c.html#aaf4ab97b3163920286cb932a3faedf86',1,'dictionary.c']]]
+  ['center',['center',['../getopt_8h.html#af5465cee976d3b8674a62d46391880a4',1,'Parameters']]],
+  ['centerx',['centerX',['../getopt_8h.html#a7d50e1aaf072cf0ca9ef71109ac6e408',1,'Parameters']]],
+  ['centery',['centerY',['../getopt_8h.html#af356d9179ec59d2ef6b9b6ce581b9546',1,'Parameters']]],
+  ['cjson',['cJSON',['../structc_j_s_o_n.html',1,'']]],
+  ['cjson_5fhooks',['cJSON_Hooks',['../structc_j_s_o_n___hooks.html',1,'']]],
+  ['cnames_2ec',['cnames.c',['../cnames_8c.html',1,'']]],
+  ['color',['color',['../getopt_8h.html#a0ec9c97da0f7373e9c2b4f898ff76e46',1,'Parameters']]],
+  ['color128',['Color128',['../struct_color128.html',1,'']]],
+  ['colordbl',['ColorDBL',['../struct_color_d_b_l.html',1,'']]],
+  ['colorflt',['ColorFLT',['../struct_color_f_l_t.html',1,'']]],
+  ['colorinfo',['ColorInfo',['../struct_color_info.html',1,'']]],
+  ['colorldbl',['ColorLDBL',['../struct_color_l_d_b_l.html',1,'']]],
+  ['complex',['COMPLEX',['../getopt_8h.html#ab733b92e52488cd19ef8fe3db3d2aa4ea5374e1234e4d55af346d6ae6263ad573',1,'getopt.h']]],
+  ['config',['config',['../getopt_8h.html#ab3ec51653a2131c0a7049e0a5e34e651',1,'Parameters']]]
 ];

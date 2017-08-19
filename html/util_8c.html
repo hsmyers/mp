@@ -64,6 +64,9 @@ $(function() {
 <div class="title">util.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A collection of functions in aid of support for mp.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -72,71 +75,48 @@ $(function() {
 <code>#include &lt;quadmath.h&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="util_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1b25cdaf77c824997cc56eb3a4593e6e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a1b25cdaf77c824997cc56eb3a4593e6e">getCl</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a1b25cdaf77c824997cc56eb3a4593e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assemble the command-line as a string.  <a href="#a1b25cdaf77c824997cc56eb3a4593e6e">More...</a><br /></td></tr>
 <tr class="separator:a1b25cdaf77c824997cc56eb3a4593e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a9bd674e096fc80f9a828e26a2397c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a11a9bd674e096fc80f9a828e26a2397c">ReadFile</a> (char *filename)</td></tr>
+<tr class="memitem:a11a9bd674e096fc80f9a828e26a2397c"><td class="memItemLeft" align="right" valign="top"><a id="a11a9bd674e096fc80f9a828e26a2397c"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (char *filename)</td></tr>
 <tr class="separator:a11a9bd674e096fc80f9a828e26a2397c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf66ad96a12d1c1182cf9c3d0bcc658"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#aecf66ad96a12d1c1182cf9c3d0bcc658">scaleWidth</a> (double d, int N, double E)</td></tr>
+<tr class="memitem:aecf66ad96a12d1c1182cf9c3d0bcc658"><td class="memItemLeft" align="right" valign="top"><a id="aecf66ad96a12d1c1182cf9c3d0bcc658"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>scaleWidth</b> (double d, int N, double E)</td></tr>
 <tr class="separator:aecf66ad96a12d1c1182cf9c3d0bcc658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5d458faf1411991315b18a1cadb186"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a2b5d458faf1411991315b18a1cadb186">bestGuess</a> (double diameter, int W)</td></tr>
+<tr class="memitem:a2b5d458faf1411991315b18a1cadb186"><td class="memItemLeft" align="right" valign="top"><a id="a2b5d458faf1411991315b18a1cadb186"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>bestGuess</b> (double diameter, int W)</td></tr>
 <tr class="separator:a2b5d458faf1411991315b18a1cadb186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a544c95555f3b6fe9df537f915772ba"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a6a544c95555f3b6fe9df537f915772ba">guessStr</a> (int g)</td></tr>
+<tr class="memitem:a6a544c95555f3b6fe9df537f915772ba"><td class="memItemLeft" align="right" valign="top"><a id="a6a544c95555f3b6fe9df537f915772ba"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>guessStr</b> (int g)</td></tr>
 <tr class="separator:a6a544c95555f3b6fe9df537f915772ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8742ba0429f6355220c5cea0d64aefe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a8742ba0429f6355220c5cea0d64aefe3">str2abbr</a> (char *abbr, size_t size, const char *s)</td></tr>
+<tr class="memitem:a8742ba0429f6355220c5cea0d64aefe3"><td class="memItemLeft" align="right" valign="top"><a id="a8742ba0429f6355220c5cea0d64aefe3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>str2abbr</b> (char *abbr, size_t size, const char *s)</td></tr>
 <tr class="separator:a8742ba0429f6355220c5cea0d64aefe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8eb7be8de6cd9479e2b5c737a7b114"><td class="memItemLeft" align="right" valign="top">__float128&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#afd8eb7be8de6cd9479e2b5c737a7b114">fabsq</a> (__float128 x)</td></tr>
+<tr class="memitem:afd8eb7be8de6cd9479e2b5c737a7b114"><td class="memItemLeft" align="right" valign="top"><a id="afd8eb7be8de6cd9479e2b5c737a7b114"></a>
+__float128&#160;</td><td class="memItemRight" valign="bottom"><b>fabsq</b> (__float128 x)</td></tr>
 <tr class="separator:afd8eb7be8de6cd9479e2b5c737a7b114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba446f8a322fb49f78eedb821194b491"><td class="memItemLeft" align="right" valign="top"><a id="aba446f8a322fb49f78eedb821194b491"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>countChar</b> (const char *s, const char c)</td></tr>
+<tr class="separator:aba446f8a322fb49f78eedb821194b491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b35b1883d4fd3a19c230997b182e55e"><td class="memItemLeft" align="right" valign="top"><a id="a0b35b1883d4fd3a19c230997b182e55e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>signon</b> (const char *prog, const char *Version)</td></tr>
+<tr class="separator:a0b35b1883d4fd3a19c230997b182e55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a2b5d458faf1411991315b18a1cadb186"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b5d458faf1411991315b18a1cadb186">&#9670;&nbsp;</a></span>bestGuess()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection of functions in aid of support for mp. </p>
+<dl class="section author"><dt>Author</dt><dd>Hugh S. Myers </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Mon Jul 24 17:01:02 2017</dd></dl>
+<p>General catch-all of routines needed but not complicated enough for their own file.</p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000009">Bug:</a></b></dt><dd>No known bugs. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int bestGuess </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>diameter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>W</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afd8eb7be8de6cd9479e2b5c737a7b114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd8eb7be8de6cd9479e2b5c737a7b114">&#9670;&nbsp;</a></span>fabsq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__float128 fabsq </td>
-          <td>(</td>
-          <td class="paramtype">__float128&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
+<p class="definition">Definition in file <a class="el" href="util_8c_source.html">util.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1b25cdaf77c824997cc56eb3a4593e6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b25cdaf77c824997cc56eb3a4593e6e">&#9670;&nbsp;</a></span>getCl()</h2>
 
@@ -163,109 +143,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a6a544c95555f3b6fe9df537f915772ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a544c95555f3b6fe9df537f915772ba">&#9670;&nbsp;</a></span>guessStr()</h2>
+<p>Assemble the command-line as a string. </p>
+<p>Reconstruct the command-line from argc and argv.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Argument count. </td></tr>
+    <tr><td class="paramname">argv</td><td>Command-line substrings array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An image of the original command-line as a pointer to a static buffer. </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* guessStr </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a11a9bd674e096fc80f9a828e26a2397c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11a9bd674e096fc80f9a828e26a2397c">&#9670;&nbsp;</a></span>ReadFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* ReadFile </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aecf66ad96a12d1c1182cf9c3d0bcc658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecf66ad96a12d1c1182cf9c3d0bcc658">&#9670;&nbsp;</a></span>scaleWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double scaleWidth </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>E</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8742ba0429f6355220c5cea0d64aefe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8742ba0429f6355220c5cea0d64aefe3">&#9670;&nbsp;</a></span>str2abbr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void str2abbr </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>abbr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>s</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="util_8c_source.html#l00029">29</a> of file <a class="el" href="util_8c_source.html">util.c</a>.</p>
 
 </div>
 </div>
